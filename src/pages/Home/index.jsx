@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import BannerSwiper from "./BannerSwiper";
 import BlogsSwiper from "./BlogsSwiper";
 import CallToAction from "./CallToAction";
+import InstagramFeeds from "./InstagramFeeds";
 import NewsSwiper from "./NewsSwiper";
 
 const Home = () => {
@@ -302,6 +303,8 @@ const Home = () => {
       <CallToAction />
 
       <NewsSwiper/>
+      
+      <InstagramFeeds/>
     </>
   );
 };
