@@ -9,8 +9,8 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/modelg20" element={<Modelg20Page />} />
+        <Route exact path="/" element={<Home />} />
+        <Route path="/model" element={<Modelg20Page />} />
       </Routes>
       <Footer />
     </BrowserRouter>
