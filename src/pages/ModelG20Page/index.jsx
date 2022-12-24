@@ -1,6 +1,7 @@
 import React from "react";
 import Announcement from "./Announcement";
 import FaqComponent from "./FaqComponent";
+import Registrattion from "./Registrattion";
 import ResourcesLibrary from "./ResourcesLibrary";
 import Testimonial from "./Testimonial";
 
@@ -67,18 +68,34 @@ const Modelg20Page = () => {
                   youth across India to experience debates, panel discussions,
                   and networking on real global issues.
                 </p>
-                <a
-                  href="service.html"
-                  className="btn btn-primary hover-ripple me-5"
-                >
-                  Get Certified
-                </a>
-                <a
-                  href="service.html"
-                  className="btn btn-primary-outline hover-ripple"
-                >
-                  Sign Up
-                </a>
+                <div className="d-flex align-items-center">
+                  <a
+                    href="service.html"
+                    className="btn btn-primary hover-ripple me-5"
+                  >
+                    Get Certified
+                  </a>
+                  <p>
+                    As a G20 Genius. Your first step towards knowing everything
+                    about G20 India.{" "}
+                  </p>
+                </div>
+                <div className="mt-3">
+                  <h5>
+                    Sign up (email Id and submit button) with your emails to
+                    receive our news and real-time updates.
+                  </h5>
+                  <input
+                    type="text"
+                    placeholder="Enter your Email Address"
+                    className="form-control form-control-lg border-warning rounded-pill"
+                  />
+                  <div className="d-flex align-items-center">
+                    <button className="btn btn-primary hover-ripple rounded-pill mt-2 me-5">
+                      Submit
+                    </button>
+                  </div>
+                </div>
               </div>
               <div className="col-md-6">
                 <img
@@ -92,7 +109,8 @@ const Modelg20Page = () => {
               {/* <!-- What Will You Learn --> */}
               <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
                 <h3>
-                  <span className="text-primary">01.</span>Your Learning
+                  {/* <span className="text-primary">01.</span> */}
+                  Your Learning
                 </h3>
                 <p className=" fs-6">
                   As a model G20 delegate, you will learn the art of:
@@ -123,7 +141,8 @@ const Modelg20Page = () => {
               {/* <!-- Participation --> */}
               <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
                 <h3>
-                  <span className="text-primary">02.</span>Who Can Participate?
+                  {/* <span className="text-primary">02.</span> */}
+                  Who Can Participate?
                 </h3>
                 <p className="fs-6">
                   Model G20 summit is for school students, university
@@ -138,8 +157,8 @@ const Modelg20Page = () => {
               {/* <!-- Campus Ambassador --> */}
               <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
                 <h3>
-                  <span className="text-primary">03.</span>Become a G20 Campus
-                  Ambassador
+                  {/* <span className="text-primary">03.</span> */}
+                  Become a G20 Campus Ambassador
                 </h3>
                 <p className="fs-6">
                   In line with the Model G20 program on our website
@@ -158,8 +177,8 @@ const Modelg20Page = () => {
               {/* <!-- Organising Committeee --> */}
               <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
                 <h3>
-                  <span className="text-primary">04.</span>Model G20 Campus
-                  Events Organising Committee
+                  {/* <span className="text-primary">04.</span> */}
+                  Model G20 Campus Events Organising Committee
                 </h3>
                 <p className="fs-6 mb-0">
                   If you want to organise a Model G20 event in your campus,
@@ -909,7 +928,9 @@ const Modelg20Page = () => {
 
         <ResourcesLibrary />
 
-        <section id="scrollspyRegister"></section>
+        <section id="scrollspyRegister">
+          <Registrattion />
+        </section>
       </div>
     </div>
   );

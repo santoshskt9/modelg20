@@ -7,7 +7,7 @@ const bannerContent = [
     mainHeading: "Vasudhaiva Kutumbakam",
     image:"./images/banner/bnr1.webp",
     Description:
-      "India's G20 Presidency will work to promote this universal sense of one-ness. Hence our theme - 'One Earth, One Family, One Future'” – PM Narendra Modi",
+      "India's G20 Presidency will work to promote this universal sense of one-ness. Hence our theme - 'One Earth, One Family, One Future' – PM Narendra Modi",
     buttonData: {
       link: "/",
       text: "More Details",
