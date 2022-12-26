@@ -42,10 +42,10 @@ const Navbar = () => {
                 Engage
               </NavLink>
               <div className="dropdown-menu">
-                <NavLink className="dropdown-item" to="/blog-single.html">
+                <NavLink className="dropdown-item" to="/model-g20">
                   Model G20
                 </NavLink>
-                <NavLink className="dropdown-item" to="/blog-single.html">
+                <NavLink className="dropdown-item" to="/life-environment-intiative">
                   LiFE
                 </NavLink>
                 <NavLink className="dropdown-item" to="/blog-single.html">

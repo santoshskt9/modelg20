@@ -7,7 +7,6 @@ import Testimonial from "./Testimonial";
 
 const Modelg20Page = () => {
   return (
-    <div>
       <div>
         {/* <!-- page title --> */}
         <section
@@ -21,7 +20,7 @@ const Modelg20Page = () => {
           <div className="container pt-5">
             <div className="row">
               <div className="col-12">
-                <h2 className="text-white mb-3">Model G20</h2>
+                <h1 className="text-white mb-3">Model G20</h1>
                 {/* <!-- breadcrumb --> */}
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb bg-transparent p-0">
@@ -932,7 +931,6 @@ const Modelg20Page = () => {
           <Registrattion />
         </section>
       </div>
-    </div>
   );
 };
 
