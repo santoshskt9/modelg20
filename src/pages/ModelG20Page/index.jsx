@@ -237,7 +237,7 @@ const Modelg20Page = () => {
         >
           <div className="container">
             <div className="section-title">
-              <span span className="section-title-border"></span>
+              <span className="section-title-border"></span>
               <h2 className="section-title">G20 Simulation</h2>
             </div>
             {/* <!-- Overview  --> */}
@@ -589,7 +589,7 @@ const Modelg20Page = () => {
             <section className="bg-gray section">
               <div className="container">
                 <div className="section-title">
-                  <span span className="section-title-border"></span>
+                  <span className="section-title-border"></span>
                   <h2 className="section-title">G20 Summit in India</h2>
                 </div>
                 {/* <!-- Overview  --> */}

@@ -105,36 +105,36 @@ const Registrattion = () => {
               <div className="row">
                 <div className="my-3">
                   <h5>Are you a</h5>
-                  <div class="form-check mx-3">
+                  <div className="form-check mx-3">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="checkbox"
                       value=""
                       id="checkStudent"
                     />
-                    <label class="form-check-label" for="checkStudent">
+                    <label className="form-check-label" htmlFor="checkStudent">
                       Student
                     </label>
                   </div>
-                  <div class="form-check mx-3">
+                  <div className="form-check mx-3">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="checkbox"
                       value=""
                       id="checkRepresentative"
                     />
-                    <label class="form-check-label" for="checkRepresentative">
+                    <label className="form-check-label" htmlFor="checkRepresentative">
                       Representive of educational institution
                     </label>
                   </div>
-                  <div class="form-check mx-3">
+                  <div className="form-check mx-3">
                     <input
-                      class="form-check-input"
+                      className="form-check-input"
                       type="checkbox"
                       value=""
                       id="checkProfessional"
                     />
-                    <label class="form-check-label" for="checkProfessional">
+                    <label className="form-check-label" htmlFor="checkProfessional">
                       A professional who organises events
                     </label>
                   </div>
@@ -195,14 +195,14 @@ const Registrattion = () => {
               <h4 className="mb-3">Model G20 Terms and Conditions *</h4>
               {/* points listed here */}
 
-              <div class="form-check mx-3 mb-3">
+              <div className="form-check mx-3 mb-3">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="checkbox"
                   value=""
                   id="checkAgreement"
                 />
-                <label class="form-check-label" for="checkAgreement">
+                <label className="form-check-label" htmlFor="checkAgreement">
                   I agree all the information provided by me is true and i agree
                   to the terms of conditions.
                 </label>

@@ -5,7 +5,7 @@ const ResourcesLibrary = () => {
     <section id="scrollspyLibrary" className="bg-gray section">
       <div className="container">
         <div className="section-title">
-          <span span className="section-title-border"></span>
+          <span className="section-title-border"></span>
           <h2 className="section-title">Resources Library</h2>
         </div>
         <div className="overview">

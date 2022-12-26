@@ -79,7 +79,7 @@ const BlogsSwiper = () => {
         <div className="section bg-secondary section-bottom-lg">
           <div className="container">
             <div className="row justify-content-around">
-              <div className="col-6 text-center">
+              <div className="col-10 col-lg-6 text-center">
                 <span className="section-title-border border-center"></span>
                 <h2 className="section-title text-white">Featured Blogs</h2>
                 <p className="subtitle text-white">
@@ -94,8 +94,16 @@ const BlogsSwiper = () => {
           <div className="container">
             <Swiper
               spaceBetween={50}
-              slidesPerView={3}
+              slidesPerView={1}
               loop={true}
+              breakpoints={{
+                740: {
+                  slidesPerView: 2,
+                },
+                1240: {
+                  slidesPerView: 3,
+                },
+              }}
             >
               {blogsContent.map((blog, index) => {
                 return (

@@ -5,7 +5,7 @@ const Announcement = () => {
     <section className=" section" style={{ maxWidth: "700px" }}>
       <div className="container">
         <div className="section-title">
-          <span span className="section-title-border"></span>
+          <span className="section-title-border"></span>
           <h2 className="section-title">Model G20 Summit Announcements</h2>
         </div>
         <div className="overview">

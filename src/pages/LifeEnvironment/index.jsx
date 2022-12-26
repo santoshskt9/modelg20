@@ -312,13 +312,92 @@ const Life = () => {
           </div>
           <hr className="my-4" />
           {/* <!-- Impact  --> */}
-          <div>
-            <h4 className="fs-2">Impact</h4>
-            <p className="text-dark mb-2 fs-5">
+          <div className="py-4">
+            <h4 className="fs-2 text-center">Impact</h4>
+            <p className="text-dark mb-2 fs-5 text-center col-12 col-lg-10 mx-auto">
               When estimated against a business-as-usual scenario by 1 billion
               Indians in 2022-23 to 2027-28, the impact of LiFE actions can be
               significant, as demonstrated below with select examples:
             </p>
+            <div className="row g-2 g-lg-3 justify-content-center">
+              <div className="col-12 col-md-6 col-lg-2">
+                <div className="box text-center bg-light  border p-3 rounded-4 h-100">
+                  <div className="p-4 d-inline-block rounded-circle border border-warning">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/3176/3176298.png"
+                      alt=""
+                      className="icon-pointer"
+                    />
+                  </div>
+                  <h6 className="mt-4">
+                    Switching off the car / scooter engines at traffic lights /
+                    railway crossings can save up to 22.5 billion kWh of energy.
+                  </h6>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-2">
+                <div className="box text-center bg-light  border p-3 rounded-4 h-100">
+                  <div className="p-4 d-inline-block rounded-circle border border-warning">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/4497/4497450.png"
+                      alt=""
+                      className="icon-pointer"
+                    />
+                  </div>
+                  <h6 className="mt-4">
+                    Turning off running taps when not in active use can save
+                    upto 9 trillion litres of water.
+                  </h6>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-2">
+                <div className="box text-center bg-light  border p-3 rounded-4 h-100">
+                  <div className="p-4 d-inline-block rounded-circle border border-warning">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/4478/4478384.png"
+                      alt=""
+                      className="icon-pointer"
+                    />
+                  </div>
+                  <h6 className="mt-4">
+                    Using a cloth bag instead of a plastic bag while shopping
+                    can save up to 375 million tonnes of solid waste from
+                    entering the landfill.
+                  </h6>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-2">
+                <div className="box text-center bg-light  border p-3 rounded-4 h-100">
+                  <div className="p-4 d-inline-block rounded-circle border border-warning">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/3427/3427844.png"
+                      alt=""
+                      className="icon-pointer"
+                    />
+                  </div>
+                  <h6 className="mt-4">
+                    Discarding non-functioning gadgets in the nearest
+                    e-recycling unit can recycle upto 0.75 million tonnes of
+                    e-waste.
+                  </h6>
+                </div>
+              </div>
+              <div className="col-12 col-md-6 col-lg-2">
+                <div className="box text-center bg-light  border p-3 rounded-4 h-100">
+                  <div className="p-4 d-inline-block rounded-circle border border-warning">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/6905/6905282.png"
+                      alt=""
+                      className="icon-pointer"
+                    />
+                  </div>
+                  <h6 className="mt-4">
+                    Composting waste food at home can save up to 15 billion
+                    tonnes of food from going to landfills.
+                  </h6>
+                </div>
+              </div>
+            </div>
           </div>
           <hr className="my-4" />
           {/* <!-- Youth’s Role in LiFe  --> */}

@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import { Autoplay, Navigation } from "swiper";
 
 const newsContent = [
   {
@@ -58,7 +60,8 @@ const SingleNews = ({ data }) => {
         </h4>
         <span className="section-title-border"></span>
         <p className="card-text">
-          {data.paragraph[0].slice(0,80)+"..."}<Link to={data.link}>Read More</Link>
+          {data.paragraph[0].slice(0, 80) + "..."}
+          <Link to={data.link}>Read More</Link>
         </p>
       </div>
     </article>
@@ -77,18 +80,31 @@ const NewsSwiper = () => {
           </div>
         </div>
         <Swiper
-              spaceBetween={50}
-              slidesPerView={3}
-              loop={true}
-            >
-              {newsContent.map((news, index) => {
-                return (
-                  <SwiperSlide key={index} className="py-4">
-                    <SingleNews data={news} />
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
+          spaceBetween={50}
+          slidesPerView={1}
+          loop={true}
+          autoplay={{
+            delay: 500,
+            disableOnInteraction: false,
+          }}
+          navigation={true}
+          breakpoints={{
+            740: {
+              slidesPerView: 2,
+            },
+            1240: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {newsContent.map((news, index) => {
+            return (
+              <SwiperSlide key={index} className="py-4">
+                <SingleNews data={news} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
       {/* background shapes */}
       <img

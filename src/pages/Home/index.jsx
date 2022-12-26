@@ -216,25 +216,25 @@ const Home = () => {
       {/* End ModelG20  */}
 
       {/* Featured Topics  */}
-      <section class="section">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-around">
-            <div class="col-lg-4 order-2">
-              <span class="section-title-border"></span>
-              <p class="subtitle">Featured</p>
-              <h2 class="section-title mb-2">Featured Topics</h2>
-              <p class="mb-5 fs-5">
+      <section className="section">
+        <div className="container-fluid">
+          <div className="row align-items-center justify-content-around">
+            <div className="col-lg-4 order-2">
+              <span className="section-title-border"></span>
+              <p className="subtitle">Featured</p>
+              <h2 className="section-title mb-2">Featured Topics</h2>
+              <p className="mb-5 fs-5">
                 Take a deep dive into topics everyone is talking about.
               </p>
               {/* feature item */}
-              <ul class="list-unstyled">
-                <li class="d-flex align-items-center mb-5">
-                  <div class="text-center me-4">
-                    <div class="icon-bg water-wave">
-                      {/* <i class="bi bi-cloud icon text-primary"></i> */}
+              <ul className="list-unstyled">
+                <li className="d-flex align-items-center mb-5">
+                  <div className="text-center me-4">
+                    <div className="icon-bg water-wave">
+                      {/* <i className="bi bi-cloud icon text-primary"></i> */}
                       <img
                         src="./images/icons/cdri.png"
-                        class="w-100 p-3"
+                        className="w-100 p-3"
                         alt="cdri"
                       />
                     </div>
@@ -246,13 +246,13 @@ const Home = () => {
                   </div>
                 </li>
                 {/* feature item */}
-                <li class="d-flex align-items-center mb-5">
-                  <div class="text-center me-4">
-                    <div class="icon-bg water-wave">
-                      {/* <i class="bi bi-cloud icon text-primary"></i> */}
+                <li className="d-flex align-items-center mb-5">
+                  <div className="text-center me-4">
+                    <div className="icon-bg water-wave">
+                      {/* <i className="bi bi-cloud icon text-primary"></i> */}
                       <img
                         src="./images/icons/book.png"
-                        class="w-100 p-2"
+                        className="w-100 p-2"
                         alt="nep2020"
                       />
                     </div>
@@ -264,32 +264,32 @@ const Home = () => {
                     Education Policy (NEP) on 29th July 2020.
                   </div>
                 </li>
-                <li class=" mb-5">
-                  <button class="btn btn-primary-outline">
+                <li className=" mb-5">
+                  <button className="btn btn-primary-outline">
                     View More Topics
                   </button>
                 </li>
               </ul>
             </div>
-            <div class="col-lg-5 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0">
-              <div class="feature-img-bg box-shadow">
-                {/* <video src="https://youtu.be/7eWPI1tEz3I" controls class="w-100"></video>        */}
+            <div className="col-lg-5 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0">
+              <div className="feature-img-bg box-shadow">
+                {/* <video src="https://youtu.be/7eWPI1tEz3I" controls className="w-100"></video>        */}
                 <iframe
                   className="d-block w-100"
                   height="400"
                   src="https://www.youtube.com/embed/7eWPI1tEz3I?controls=0"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder={0}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
-              <div class="mt-4">
+              <div className="mt-4">
                 <a
                   href="#"
-                  class="fs-5 text-primary border-bottom border-warning border-2 fw-semibold"
+                  className="fs-5 text-primary border-bottom border-warning border-2 fw-semibold"
                 >
-                  See more featured videos <i class="bi bi-arrow-right"></i>
+                  See more featured videos <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>

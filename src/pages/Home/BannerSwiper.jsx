@@ -42,7 +42,6 @@ const bannerContent = [
 ];
 
 const SingleSlide = ({ data }) => {
-  console.log(data.smallHeading);
   return (
     <div className="hero-slider-item bg-cover hero-section h-100" style={{backgroundImage:`url(${data.image})`}}>
       <div className="d-flex align-items-center h-100">
