@@ -147,7 +147,7 @@ const Home = () => {
           <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
             <div className="col-12">
               <div className="d-flex flex-wrap align-items-center justify-content-between">
-                <div className="col-lg-6">
+                <div className="col-lg-6 text-center text-lg-start">
                   <span className="section-title-border"></span>
                   <h2 className="section-title mb-3">Model G20</h2>
                   <p className="mb-5 fs-5 ">
@@ -156,14 +156,14 @@ const Home = () => {
                     Model G20 pre-summits.
                   </p>
                 </div>
-                <div className="text-center pb-4">
+                <div className="text-center text-lg-start pb-4 w-100">
                   <button className="btn btn-primary-outline">
                     Learn More
                   </button>
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/team-building.png"
@@ -177,7 +177,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/consensus.png"
@@ -188,7 +188,7 @@ const Home = () => {
                 <p>When opinions are shared to insight and learn</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/int-diplomacy.png"
@@ -199,7 +199,7 @@ const Home = () => {
                 <p>Learn the skill of delivering reforms as a diplomat</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/negotiation.png"
