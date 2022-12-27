@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Announcement from "./Announcement";
 import FaqComponent from "./FaqComponent";
 import Registrattion from "./Registrattion";
@@ -6,6 +6,9 @@ import ResourcesLibrary from "./ResourcesLibrary";
 import Testimonial from "./Testimonial";
 
 const Modelg20Page = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
       <div>
         {/* <!-- page title --> */}

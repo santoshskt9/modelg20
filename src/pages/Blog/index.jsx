@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import blogs from "./content";
@@ -7,6 +7,9 @@ const Blog = () => {
   const route = useLocation().pathname;
   const routeArr = route.split("/");
   const blogName = routeArr[2];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {blogs.map((blogItem) => {

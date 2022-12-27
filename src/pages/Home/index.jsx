@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Course from "../Course";
 import BannerSwiper from "./BannerSwiper";
@@ -8,6 +8,9 @@ import InstagramFeeds from "./InstagramFeeds";
 import NewsSwiper from "./NewsSwiper";
 
 const Home = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <>
       <BannerSwiper />

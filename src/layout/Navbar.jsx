@@ -3,11 +3,6 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const route = useLocation().pathname;
-  function scrollTop() {
-    console.log("scrolled");
-    window.scrollTo(0, 0);
-  }
-  scrollTop();
 
   return (
     <nav className="navbar navbar-expand-lg bg-light bg-opacity-75">

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Pointers from "./Pointers";
 
 const daysChallenge = [
@@ -89,6 +89,9 @@ const daysChallenge = [
 ];
 
 const Life = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       {/* <!-- page title --> */}
