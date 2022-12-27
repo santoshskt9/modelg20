@@ -903,7 +903,13 @@ Fonts
   background-position: center center;
   background-repeat: no-repeat;
 }
-
+@media only screen and (min-width: 700px) {
+  .bg-cover {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
 .bg-contain {
   background-size: contain;
   background-position: center center;
@@ -2465,6 +2471,11 @@ blockquote p {
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(8, 8, 8, 0.618);
 }
+@media only screen and (max-width: 700px) {
+  .hero-section {
+    background-position: 71%;
+  }
+}
 .swiper-slide {
   height: auto !important;
 }
@@ -2511,13 +2522,19 @@ blockquote p {
   align-items: center;
   margin-inline: auto;
 }
-.icon-pointer{
+.icon-pointer {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
-.mini-blog-image{
+.mini-blog-image {
   width: 120px;
   height: 80px;
   object-fit: cover;
+}
+
+@media only screen and (max-width:710px){
+  .sm-font-small{
+    font-size: 38px !important;
+  }
 }

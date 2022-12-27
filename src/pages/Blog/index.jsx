@@ -18,7 +18,7 @@ const Blog = () => {
                 className="section"
                 style={{
                   background:
-                    "url(../images/banner/bnr1.webp) no-repeat center",
+                    "url(../images/backgrounds/g20.jpg) no-repeat center",
                   backgroundSize: "cover",
                   boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
                 }}

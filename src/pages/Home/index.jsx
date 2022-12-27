@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Course from "../Course";
 import BannerSwiper from "./BannerSwiper";
 import BlogsSwiper from "./BlogsSwiper";
 import CallToAction from "./CallToAction";
@@ -303,8 +304,10 @@ const Home = () => {
       <CallToAction />
 
       <NewsSwiper/>
+
+      <Course/>
       
-      <InstagramFeeds/>
+      {/* <InstagramFeeds/> */}
     </>
   );
 };

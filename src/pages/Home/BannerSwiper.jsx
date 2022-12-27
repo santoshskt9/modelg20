@@ -6,6 +6,7 @@ const bannerContent = [
     id: 1,
     smallHeading: "वसुधैव कुटुम्बकम",
     mainHeading: "Vasudhaiva Kutumbakam",
+    subheading: "",
     image: "./images/banner/bnr1.webp",
     Description:
       "India's G20 Presidency will work to promote this universal sense of one-ness. Hence our theme - 'One Earth, One Family, One Future' – PM Narendra Modi",
@@ -18,8 +19,8 @@ const bannerContent = [
     id: 2,
     smallHeading: "Model G20",
     image: "./images/banner/bnr2.jpg",
-    mainHeading:
-      "Youth takes the centre stage! Discussions that spark thoughts.",
+    mainHeading: "Youth takes the centre stage!",
+    subheading: "Discussions that spark thoughts.",
     Description:
       "Model G20 is a simulation created to mirror the actual G20 event and designed for young leaders who wish to expose themselves to international relations, diplomacy, critical thinking and public speaking.",
     buttonData: {
@@ -28,11 +29,12 @@ const bannerContent = [
     },
   },
   {
-    id: 2,
+    id: 3,
     smallHeading: "Become a G20 Genius!",
     image: "./images/banner/bnr3.jpg",
     mainHeading:
       "Get certified and become societal influencers and torch bearers of the G20 campaign.",
+    subheading: "",
     Description:
       "The G20 Genius Certificate is a one-of-a-kind learning module that approaches the history, function, operations, objectives and challenges of G20.",
     buttonData: {
@@ -45,18 +47,19 @@ const bannerContent = [
 const SingleSlide = ({ data }) => {
   return (
     <div
-      className="hero-slider-item bg-cover hero-section h-100"
+      className="hero-slider-item bg-cover hero-section h-100 "
       style={{ backgroundImage: `url(${data.image})` }}
     >
       <div className="d-flex align-items-center h-100">
         <div className="container">
           <div className="row">
-            <div className="col-lg-8">
+            <div className="col-lg-9">
               <h4 className="mb-0 letter-spacing text-white">
                 {data.smallHeading}
               </h4>
-              <h1 className="mb-4 text-white">{data.mainHeading}</h1>
-              <p className="mb-5 text-white fs-5">{data.Description}</p>
+              <h1 className="mb-4 text-white sm-font-small">{data.mainHeading}</h1>
+              <h4 className="text-white fs-3">{data.subheading}</h4>
+              <p className="mb-5 text-white fs-4">{data.Description}</p>
               <a href={data.buttonData.link} className="btn btn-light-outline">
                 {data.buttonData.text}
               </a>
@@ -75,7 +78,7 @@ const BannerSwiper = () => {
       slidesPerView={1}
       modules={[Autoplay, Navigation]}
       autoplay={{
-        delay: 2000,
+        delay: 3500,
         disableOnInteraction: false,
       }}
       navigation={true}

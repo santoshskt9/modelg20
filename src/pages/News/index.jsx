@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
 import blogs from "./content";
@@ -7,6 +7,9 @@ const News = () => {
   const route = useLocation().pathname;
   const routeArr = route.split("/");
   const blogName = routeArr[2];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       {blogs.map((blogItem) => {
@@ -18,7 +21,7 @@ const News = () => {
                 className="section"
                 style={{
                   background:
-                    "url(../images/banner/bnr1.webp) no-repeat center",
+                    "url(../images/backgrounds/g20.jpg) no-repeat center",
                   backgroundSize: "cover",
                   boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
                 }}
@@ -72,7 +75,9 @@ const News = () => {
                         <div className="card-type hover-ripple">News</div>
                       </div>
                       <div className="card-meta text-uppercase mb-2">
-                        by <strong className="text-dark">{blogItem.author}</strong> / on{" "}
+                        by{" "}
+                        <strong className="text-dark">{blogItem.author}</strong>{" "}
+                        / on{" "}
                         <strong className="text-dark">{blogItem.date}</strong>
                       </div>
                       <h2>{blogItem.title}</h2>
