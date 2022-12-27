@@ -59,18 +59,17 @@ const SingleBlog = ({ data }) => {
       <div className="card-body position-relative">
         <i className={`card-icon bi bi-arrow-right`}></i>
         <h4>
-          <Link to={"/blog/"+data.slug}  className="text-dark">
+          <a href={"/blog/"+data.slug}  className="text-dark">
             {data.title}
-          </Link>
+          </a>
         </h4>
         <p className="card-text">
           {data.subpara.slice(0,85)+'...'}
         </p>
-        <Link 
-        to={"/blog/"+data.slug} 
+        <a href={"/blog/"+data.slug} 
         className="btn btn-secondary btn-arrow">
           Read More
-        </Link>
+        </a>
       </div>
     </div>
   );
@@ -119,6 +118,9 @@ const BlogsSwiper = () => {
                 );
               })}
             </Swiper>
+          </div>
+          <div className="text-center">
+            <a href="/blog" className="btn btn-primary hover-ripple">View All Blogs</a>
           </div>
         </div>
       </section>

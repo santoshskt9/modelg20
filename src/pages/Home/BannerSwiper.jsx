@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Autoplay, Navigation } from "swiper";
 import { SwiperSlide, Swiper } from "swiper/react";
 const bannerContent = [
@@ -18,13 +19,13 @@ const bannerContent = [
   {
     id: 2,
     smallHeading: "Model G20",
-    image: "./images/banner/bnr2.jpg",
+    image: "./images/banner/modal-g20.jpg",
     mainHeading: "Youth takes the centre stage!",
     subheading: "Discussions that spark thoughts.",
     Description:
       "Model G20 is a simulation created to mirror the actual G20 event and designed for young leaders who wish to expose themselves to international relations, diplomacy, critical thinking and public speaking.",
     buttonData: {
-      link: "/modelg20",
+      link: "/model-g20",
       text: "More Details",
     },
   },
@@ -42,12 +43,30 @@ const bannerContent = [
       text: "Register now!",
     },
   },
+  {
+    id: 4,
+    smallHeading: "Become a G20 Genius!",
+    image:
+      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Anniv-Amitabh-Kant-1_1200x768.jpeg?size=690:388",
+    mainHeading: "India's Sherpa and CEO of Niti Aayog  - Amitabh Kant ",
+    subheading: "",
+    Description:
+      "As G-20 president, India’s Prime Minister Narendra Modi will be setting the agenda of the world. This is a huge responsibility because we are taking over this at a very challenging time in the world.",
+    buttonData: {
+      link: "/register",
+      text: "Know more about India's Presidency",
+    },
+  },
 ];
 
 const SingleSlide = ({ data }) => {
   return (
     <div
-      className="hero-slider-item bg-cover hero-section h-100 "
+      className={
+        data.id == 4
+          ? "hero-slider-item bg-cover hero-section h-100 bg-center"
+          : "hero-slider-item bg-cover hero-section h-100"
+      }
       style={{ backgroundImage: `url(${data.image})` }}
     >
       <div className="d-flex align-items-center h-100">
@@ -57,12 +76,14 @@ const SingleSlide = ({ data }) => {
               <h4 className="mb-0 letter-spacing text-white">
                 {data.smallHeading}
               </h4>
-              <h1 className="mb-4 text-white sm-font-small">{data.mainHeading}</h1>
+              <h1 className="mb-4 text-white sm-font-small">
+                {data.mainHeading}
+              </h1>
               <h4 className="text-white fs-3">{data.subheading}</h4>
               <p className="mb-5 text-white fs-4">{data.Description}</p>
-              <a href={data.buttonData.link} className="btn btn-light-outline">
+              <Link to={data.buttonData.link} className="btn btn-light-outline">
                 {data.buttonData.text}
-              </a>
+              </Link>
             </div>
           </div>
         </div>

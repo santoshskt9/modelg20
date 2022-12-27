@@ -21,7 +21,7 @@ const Footer = () => {
                 The official website of Model G20 India event. Engaging the
                 youth in a meaningful dialogue on international diplomacy,
                 leadership and collective duty; and creating awareness to
-                navigate the changing economic scenarios
+                navigate the changing economic scenarios.
               </p>
               <p className="text-white mb-5 fs-6">
                 Proudly representing India to the world for sustainability,
@@ -59,7 +59,7 @@ const Footer = () => {
                   <h4 className="text-white mb-4">Engage with us</h4>
                   <ul className="list-styled">
                     <li className="mb-2">
-                      <a className="text-white d-block" href="#">
+                      <a className="text-white d-block" href="/model-g20">
                         Model G20
                       </a>
                     </li>
@@ -74,7 +74,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li className="mb-2">
-                      <a className="text-white d-block" href="#">
+                      <a className="text-white d-block" href="/life-environment-intiative">
                         LiFE 21 day challenge
                       </a>
                     </li>
@@ -89,7 +89,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li className="mb-2">
-                      <a className="text-white d-block" href="#">
+                      <a className="text-white d-block" href="/life-environment-intiative">
                         LiFE
                       </a>
                     </li>

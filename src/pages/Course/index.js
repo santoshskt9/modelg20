@@ -24,14 +24,20 @@ const Course = () => {
                 initiatives and culture to the world.
               </p>
               <h4>Course Outline</h4>
-              <p className="fs-5 text-dark">G20 Overview,</p>
               <ul className="list-group border-none bg-gray mt-3">
                 <li className="list-group-item border-0 ps-0 d-flex align-items-center">
                   <span className="p-2 bg-primary clip-cicle text-white mt-2">
                     <i className="bi bi-arrow-right"></i>
                   </span>{" "}
+                  <span className="ps-2 fs-5">What is G20</span>
+                </li>
+                <li className="list-group-item border-0 ps-0 d-flex align-items-center">
+                  <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                    <i className="bi bi-arrow-right"></i>
+                  </span>{" "}
                   <span className="ps-2 fs-5">
-                    Hon'ble Prime Minister of India’s message.
+                    The economic, political and cultural implications of the
+                    group of twenty.{" "}
                   </span>
                 </li>
                 <li className="list-group-item border-0 ps-0 d-flex align-items-center">
@@ -39,29 +45,29 @@ const Course = () => {
                     <i className="bi bi-arrow-right"></i>
                   </span>{" "}
                   <span className="ps-2 fs-5">
-                    What is G20 <br />
-                    the economic, political and cultural implications.
-                  </span>
-                </li>
-                <li className="list-group-item border-0 ps-0 d-flex align-items-center">
-                  <span className="p-2 bg-primary clip-cicle text-white mt-2">
-                    <i className="bi bi-arrow-right"></i>
-                  </span>{" "}
-                  <span className="ps-2 fs-5">
-                    Member countries <br />A video of different cultures coming
-                    together Guest countries - Bangladesh, Egypt, Mauritius,
-                    Netherlands, Nigeria, Oman, Singapore, Spain, UAE.
+                    Member countries and a brief overview
                   </span>
                 </li>
                 <li className="list-group-item border-0 ps-0 d-flex align-items-center">
                   <span className="p-2 bg-primary clip-cicle text-white mt-2">
                     <i className="bi bi-arrow-right"></i>
                   </span>
+                  <span className="ps-2 fs-5">Aims and objectives</span>
+                </li>
+                <li className="list-group-item border-0 ps-0 d-flex align-items-center">
+                  <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                    <i className="bi bi-arrow-right"></i>
+                  </span>
+                  <span className="ps-2 fs-5">Mandate of G20</span>
+                </li>
+                <li className="list-group-item border-0 ps-0 d-flex align-items-center">
+                  <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                    <i className="bi bi-arrow-right"></i>
+                  </span>
                   <span className="ps-2 fs-5">
-                    Aims and objectives <br />
-                    Mandate of G20, International cooperation on economic
-                    challenges, stability and growth, preventing financial
-                    crisis and creating new financial architecture.
+                    International cooperation on economic challenges, stability
+                    and growth, preventing financial crisis and creating new
+                    financial architecture.
                   </span>
                 </li>
                 <li className="list-group-item border-0 ps-0 d-flex align-items-center">
@@ -74,6 +80,12 @@ const Course = () => {
                     shared future, peace, harmony, security etc.
                   </span>
                 </li>
+                <li className="list-group-item border-0 ps-0 d-flex align-items-center">
+                  <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                    <i className="bi bi-arrow-right"></i>
+                  </span>
+                  <span className="ps-2 fs-5">India's role in G20.</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -85,12 +97,20 @@ const Course = () => {
                 className="w-100"
               />
               <ul className="list-group">
-                <li className="list-group-item p-4">
+                <li className="list-group-item p-4 pb-2 border-bottom-0">
                   <h5 className="d-flex justify-content-between">
                     <span>
                       <i className="bi bi-clock text-warning"></i> Duration
                     </span>
-                    <span>38h 17m total length</span>
+                    <span>45min total length</span>
+                  </h5>
+                </li>
+                <li className="list-group-item p-4 pt-2 border-top-0">
+                  <h5 className="d-flex justify-content-between">
+                    <span>
+                      <i className="bi bi-globe text-warning"></i> Mode
+                    </span>
+                    <span className="text-success">Online</span>
                   </h5>
                 </li>
                 <li className="list-group-item p-3 text-center">

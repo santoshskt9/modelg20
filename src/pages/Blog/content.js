@@ -161,4 +161,151 @@ export default [
       },
     ],
   },
+  {
+    id: 2,
+    image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog3.jpeg`,
+    title: "Youth Perception on Climate Change in the G20",
+    slug: "youth-perception-on-climate-change-in-the-g20",
+    author: "admin",
+    date: "",
+    subpara: "",
+    section: [
+      {
+        id: 1,
+        title: "Climate Change: An Emergency",
+        paragraph: [
+          "Climate change is defined as drastic temperature shifts and unpredictable weather patterns. These drastic patterns are due to natural reasons like the diverse variations in the solar cycle. However, since the industrial revolution in the 1800s, the human race has become the major influencer for climate change by burning fossil fuels like gas, oil, coal, etc.",
+          "The creation of greenhouse gas emissions due to the burning of fossil fuels surrounds the earth’s atmosphere in a dark, smoky cover that entraps the sun’s heat and thus raising in temperatures.",
+          "According to the Intergovernmental Panel on Climate Change (IPCC), the issue of climate change is very real. The greenhouse gas concentration in the earth’s atmosphere is rising steadily along with the temperature.",
+          "The prominent consequences of climate change now include water scarcity, rising sea levels, droughts, heatwaves, melting of polar ice, powerful storms and more.",
+          "Carbon dioxide and methane are major pollutant gases that are raising the world’s global warming potential to up to 80 times more. As a result, the earth is currently 1.1°C warmer and the last decade of 2011-2020 was the warmest decade to be recorded.",
+          "Climate change has become a global emergency today, with many international organisations, national economies and institutions setting up newer models of climate change adaptation or coming up with methods to fight this pressing issue.",
+        ],
+        list: [],
+      },
+      {
+        id: 2,
+        title: "Paris Agreement",
+        paragraph: [
+          "As an initiative for climate change action, during the COP 21 conference in Paris on December 12 2015, a legally binding international treaty on climate change was formulated. Its objective was to curb global warming to well below 2°, preferably to 1.5°C, compared to pre-industrial levels. This treaty came to be known as the Paris Agreement.",
+          "In order to achieve the treaty’s long-term goal, 196 nations aim to reach global peaking of greenhouse emissions at the earliest to have a climate-balanced world by the mid-21st century.",
+          "Ever since this agreement came into actual force in 2016, the climate change action scene has got low-carbon solutions and new markets. Besides this, more global companies, and countries have established carbon neutrality targets.",
+        ],
+        list: [],
+      },
+      {
+        id: 3,
+        title: "G20 and Climate Change",
+        paragraph: [
+          "The Group of Twenty or commonly known as G20 is an international platform of 19 nations and the European Union (EU) that thrives on global economic cooperation. The forum majorly addresses macroeconomic concerns but over time it has shifted to combat significant global matters like trade, sustainable development, financial stability, climate change, etc.",
+          "The G20 comprises of world’s greatest countries, both developed and emerging; it accounts for 80% of GDP, 75% of international trade and up to 2/3 of the global population while covering 60% of the global land mass.",
+          "In the context of climate change, in particular, G20 members are accountable for 75% of global greenhouse gas (GHG) emissions. These groups of nations today are significantly in a unique stage for collective policy-making and influencing the climate change action’s global success.",
+          "All global parties, including the G20 forum, are meant to strengthen unified progress towards the goals of the Paris Agreement, under which, all nations must bring forth new plans to reduce their emission rates across their regions. This is known as the Nationally Determined Contributions or NDCs.",
+          "These NDCs have the power to bring down the projected rise of temperature in 2100 to 2.1°C if implemented right. This is a vital step to sufficiently meet the Paris Agreement’s 1.5°C temperature objective.",
+          "Besides, if all G20 members try to adopt mid-century net zero commitments and align their NDCs with a 1.5° C path, the global warming temperature could be reduced or limited to 1.7°C. Under current climate action commitments, all G20 members can collectively bridge three-quarters of the temperature gap to 1.5°C maintaining it within reach.",
+        ],
+        list: [],
+      },
+      {
+        id: 3,
+        title: "UNDP People’s Climate Vote",
+        paragraph: [],
+        list: [
+          {
+            id: 0,
+            title: "Overview: UNDP & DoS Oxford",
+            paragraph: [
+              "The United Nations Development Programme (UNDP) is a platform that associates with different factions of society and helps in building nations to overcome crisis and progress towards development. Currently, UNDP has the greatest portfolio in the UN for climate change which works closely in 140 countries around the globe",
+              "Moreover, it strengthens the ultimate Climate promise and helps 120 nations to uphold their climate change pledges, NDCs under the Paris Agreement.",
+              "The Department of Sociology (DoS) at the University of Oxford is a pristine institution that works on the front lines to showcase the full spectrum of the social world through a well-researched thesis, empirical philosophies, etc.",
+              "Working together with a few non-government organisations (NGOs), UNDP and DoS Oxford launched a People’s Climate Vote survey across 18 G20 countries from October 2020 -June 2021. The objective of this poll was to educate people on climate change and ask for creative solutions and actions that the government can take on to tackle this global issue.",
+              "This survey is a good example to connect public perception to policymakers and to provide practical recommendations on climate change issues country-wise.",
+              "Some of the inferences received from the climate poll include:",
+              "● 65% of adult persons in the G20 nations believe that climate change is a worldwide emergency. 70% of youngsters below 18% perceived the climate emergency to be worsening.",
+              "● There was a 10% difference in stats from Australia and Italy in gathering support for electric vehicles and bicycles from under 18 citizens",
+              "● 14 out of 18 G20 nations displayed majority support for green business and jobs. The largest support was from adults in the UK (74%) hat was followed by Canada, Germany (68% each). The highest support was from youngsters below 18 in Australia (73%).",
+            ],
+          },
+          {
+            id: 1,
+            title: "Youth Perception on Climate Change in the G20",
+            paragraph: [
+              "The People’s Climate Vote was a ground-breaking mission in itself as it allowed 302,000 youth under the age of 18 from G20 nations to share their insights and understanding as they are the new faction to join the workforce, and use their voting rights",
+              "For some countries like Indonesia, it was the first time that the voices of young citizens were heard and recorded on climate change.",
+              "The youth perception is vital and required today more as nations around the globe are in rigorous competition to become more developed climate action takers. Due to the outbreak of the Covid-19 pandemic, the People’s Climate Vote has become more substantial to provide insightful data into the climate crisis perceptions from the G20 nations.",
+              "Through this poll, UNDP has experimented to gather systematic data and opinions to be analysed further in climate change and policy formations. It connects youth’s voice with policymakers- whether related to any particular sector, jobs, or force – addresses the issues that affect particular G20 member countries faces and simultaneously assists in charting out a recovery pathway.",
+              "Some of the key note-worthy opinions on climate change policies include:",
+              "● Under 18 youth popularly supported renewable energy promotion policy as compared to adults with almost 13% generational divide in the survey. Massive support was noted amongst youth from emerging economies such as Turkey and Brazil (64%), and Argentina (62%).",
+              "● Under 18 youth’s support for forest conservation and land to tackle climate change issue policies varied from adults’ perception by a 10% difference. For instance, in Brazil (10%), India and Russia (9%) under 18 youth were in favour of this policy.",
+              "Take a look at some of the G20 country groupings data to understand where the youth perception of climate change saw the most difference.",
+              "Some of the inferences received from the climate poll include:",
+            ],
+          },
+          {
+            id: 2,
+            title: "Indonesia",
+            paragraph: [
+              "Population: 273 million",
+              "GDP: 1.508 trillion USD",
+              "In Indonesia, out of 25,289 respondents, 72% of men and 67% of women believed that climate change is a global emergency. Most of the respondents were under 18 youth groups with 70% showing support for the climate emergency crisis.",
+              "In the context of climate action, the most popular policy in youth perception emerged to be adopting climate-friendly farming techniques (67%), followed by forest and land conservation and investments in green business and jobs with (59%) and (52%) respectively.",
+              "Besides this, the least supported climate policies by youth were affordable insurance (29%) and pollution payment by companies (27%).",
+            ],
+          },
+          {
+            id: 3,
+            title: "South Korea",
+            paragraph: [
+              "Population: 51.8 million",
+              "GDP: 1.630 trillion USD",
+              "The Republic of Korea saw a ground-breaking response rate with up to 49,075 respondents overall. Both men and women here perceive climate change to be a global threat with 75% support. Also, 77% of youth under 18 showed support for the climate emergency crisis.",
+              "Among the Korean republic, forest and land conservation received the most votes (63%), followed by climate-friendly farming (59%), green business investments (56%), and using renewable energy (55%)",
+              "However, helping local communities and affordable insurance climate policies received lesser youth support with (27%) and (24%) respectively.",
+            ],
+          },
+          {
+            id: 4,
+            title: "United States of America",
+            paragraph: [
+              "Population: 329.5 million",
+              "GDP: 20.936 trillion USD",
+              "As a G20 member and one of the most developed economies, public opinion in the US accounts for 65% towards climate change issues. Almost 70% of women and 60% of men consider the climate emergency a real threat.",
+              "Out of 28,227 respondents, 11,831 were youth under 18 to voice their opinion. 69% of youth believe that efforts and policies need to be made towards forest conservation. 65% of them feel using solar, wind and renewable power is important. Most youth perception varies when it comes to knowing about the product manufacturing process, only 46% showed support.",
+            ],
+          },
+          {
+            id: 5,
+            title: "India",
+            paragraph: [
+              "Population: 1.38 billion",
+              "GDP: 2.622 trillion USD",
+              "In India, 67% population under the age of 18 compared to 57% of adults opine that changing climate is a global emergency. In the People’s Climate Vote, 66,139 responses were received out of which a massive 31,390 responses were from the youth of India",
+              "When it comes to various climate action policies, 44% of the youth supports the usage of renewable power, eco-friendly farming methods and conserving forests. Moreover, 43% opted to support using bicycles and electric vehicles and 40% opted for an early disaster warning system to act faster.",
+              "Public opinion was simmered down to 30-31% for supporting the product manufacturing process, burning of fuels and local community work."
+            ],
+          },
+          {
+            id: 6,
+            title: "Argentina",
+            paragraph: [
+              "Population: 45.4 million",
+              "GDP: 383 billion USD",
+             "58% of Argentine citizens believe that climate change is a global issue; out of that 57% are women and 56% are men",
+             "According to the poll, 19,211 responses were from under 18 citizens who feel that the climate crisis could have disastrous effects on the world. Moreover, 57% of youth chose to support forest conservation and renewable power policies, 46% wish for better infrastructure and conserving nature for good lives.",
+             "Only 30% of youth supported good and affordable insurance policies in place to tackle climate change." 
+            ],
+          },
+          {
+            id: 6,
+            title: "To Conclude",
+            paragraph: [
+              "If the People’s Climate Vote is any indicator, then the youth of today across these G20 nations are more aware towards the severity of the climate emergency. Their view on climate change and the desire for action on that front is stronger and more objective.",
+             "The youth are becoming more inclined to advocate and accept the cause of green development, making climate-conscious choices in lifestyle like reducing the wastage of resources and opting for eco-friendly transportation.",
+             "This vote is a remarkable testament to public opinion to lead the climate change action forward with rousing support from all age groups, communities, and nations together."
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];

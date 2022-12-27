@@ -6,6 +6,9 @@ import Footer from "./layout/Footer";
 import Life from "./pages/LifeEnvironment";
 import Blog from "./pages/Blog";
 import News from "./pages/News";
+import AllBlog from "./pages/Blog/AllBlogs";
+import Cdri from "./pages/Topics/Cdri";
+import Nip from "./pages/Topics/Nip";
 
 function App() {
   return (
@@ -15,8 +18,11 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/model-g20" element={<Modelg20Page />} />
         <Route path="/life-environment-intiative" element={<Life />} />
+        <Route exact path="/blog" element={<AllBlog />} />
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />
+        <Route path="/cdri" element={<Cdri />} />
+        <Route path="/nep" element={<Nip />} />
       </Routes>
       <Footer />
     </BrowserRouter>

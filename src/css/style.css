@@ -2538,3 +2538,10 @@ blockquote p {
     font-size: 38px !important;
   }
 }
+.icon-modal-logo{
+  width: 120px;
+  height: 120px;
+}
+.bg-center{
+  background-position: center !important;
+}

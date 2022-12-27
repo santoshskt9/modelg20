@@ -8,9 +8,9 @@ import InstagramFeeds from "./InstagramFeeds";
 import NewsSwiper from "./NewsSwiper";
 
 const Home = () => {
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
   return (
     <>
       <BannerSwiper />
@@ -83,9 +83,9 @@ const Home = () => {
                   mindful utilisation of resources over ‘mindless destructive
                   consumption.’ Take the 21 day challenge and more.
                 </p>
-                <button className="btn btn-primary-outline">
+                <Link to={"/life-environment-intiative"} className="btn btn-primary-outline">
                   Start your LiFE
-                </button>
+                </Link>
               </div>
             </div>
             {/* feature item */}
@@ -153,7 +153,17 @@ const Home = () => {
               <div className="d-flex flex-wrap align-items-center justify-content-between">
                 <div className="col-lg-6 text-center text-lg-start">
                   <span className="section-title-border"></span>
-                  <h2 className="section-title mb-3">Model G20</h2>
+                  <div className="d-flex align-items-center">
+                    {" "}
+                    <img
+                      src={
+                        process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"
+                      }
+                      alt=""
+                      className="icon-modal-logo"
+                    />
+                    <h2 className="section-title mb-3">Model G20</h2>
+                  </div>
                   <p className="mb-5 fs-5 ">
                     As India prepares for its G20 summit 2023, we invite
                     schools, colleges and universities to participate with us in
@@ -161,9 +171,9 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="text-center text-lg-start pb-4 w-100">
-                  <button className="btn btn-primary-outline">
+                  <Link to={"/model-g20"} className="btn btn-primary-outline">
                     Learn More
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -306,10 +316,10 @@ const Home = () => {
 
       <CallToAction />
 
-      <NewsSwiper/>
+      <NewsSwiper />
 
-      <Course/>
-      
+      <Course />
+
       {/* <InstagramFeeds/> */}
     </>
   );

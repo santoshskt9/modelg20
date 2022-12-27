@@ -55,14 +55,14 @@ const SingleNews = ({ data }) => {
           on <strong className="text-dark">{data.date}</strong>
         </div>
         <h4 className="card-title">
-          <Link to={"/news/" + data.slug} className="text-dark">
+          <a href={"/news/" + data.slug} className="text-dark">
             {data.title}
-          </Link>
+          </a>
         </h4>
         <span className="section-title-border"></span>
         <p className="card-text">
           {data.subpara.slice(0, 80) + "..."}
-          <Link to={"/news/" + data.slug}>Read More</Link>
+          <a href={"/news/" + data.slug}>Read More</a>
         </p>
       </div>
     </article>
