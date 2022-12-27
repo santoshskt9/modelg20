@@ -1,52 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navigation } from "swiper";
-import {Swiper, SwiperSlide } from "swiper/react";
-import blogs from '../Blog/content'
-const blogsContent = [
-  {
-    id: 1,
-    image: "./images/issues/issue-1.jpg",
-    imageAlt: "Blogs TOp Image",
-    iconClass: "bi bi-arrow-right",
-    heading: "Lorem ipsum dolor sit amet",
-    linkData: {
-      link: "./",
-      text: "Read More",
-    },
-    paragraph: [
-      "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
-    ],
-  },
-  {
-    id: 2,
-    image: "./images/issues/issue-2.webp",
-    imageAlt: "Blogs TOp Image",
-    iconClass: "bi bi-arrow-right",
-    heading: "Lorem ipsum dolor sit amet",
-    linkData: {
-      link: "./",
-      text: "Read More",
-    },
-    paragraph: [
-      "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
-    ],
-  },
-  {
-    id: 2,
-    image: "./images/issues/issue-3.jpg",
-    imageAlt: "Blogs TOp Image",
-    iconClass: "bi bi-arrow-right",
-    heading: "Lorem ipsum dolor sit amet",
-    linkData: {
-      link: "./",
-      text: "Read More",
-    },
-    paragraph: [
-      "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
-    ],
-  },
-];
+import { Swiper, SwiperSlide } from "swiper/react";
+import blogs from "../Blog/content";
 
 const SingleBlog = ({ data }) => {
   return (
@@ -59,15 +15,16 @@ const SingleBlog = ({ data }) => {
       <div className="card-body position-relative">
         <i className={`card-icon bi bi-arrow-right`}></i>
         <h4>
-          <a href={"/blog/"+data.slug}  className="text-dark">
+          <a href={"/blog/" + data.slug} className="text-dark">
             {data.title}
           </a>
         </h4>
         <p className="card-text">
-          {data.subpara.slice(0,85)+'...'}
+          {data.id == 3
+            ? "Climate change is defined as drastic temperature shifts and unpredictable..."
+            : data.subpara.slice(0, 85) + "..."}
         </p>
-        <a href={"/blog/"+data.slug} 
-        className="btn btn-secondary btn-arrow">
+        <a href={"/blog/" + data.slug} className="btn btn-secondary btn-arrow">
           Read More
         </a>
       </div>
@@ -120,7 +77,9 @@ const BlogsSwiper = () => {
             </Swiper>
           </div>
           <div className="text-center">
-            <a href="/blog" className="btn btn-primary hover-ripple">View All Blogs</a>
+            <a href="/blog" className="btn btn-primary hover-ripple">
+              View All Blogs
+            </a>
           </div>
         </div>
       </section>

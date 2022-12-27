@@ -17,13 +17,13 @@ const Footer = () => {
                   alt="G20"
                 />
               </a>
-              <p className="text-white fs-6">
+              <p className="text-white fs-5 mb-1 lh-sm">
                 The official website of Model G20 India event. Engaging the
                 youth in a meaningful dialogue on international diplomacy,
                 leadership and collective duty; and creating awareness to
                 navigate the changing economic scenarios.
               </p>
-              <p className="text-white mb-5 fs-6">
+              <p className="text-white mb-5 fs-5">
                 Proudly representing India to the world for sustainability,
                 peace and growth.
               </p>
@@ -64,21 +64,27 @@ const Footer = () => {
                       </a>
                     </li>
                     <li className="mb-2">
-                      <a className="text-white d-block" href="#">
+                      <a
+                        className="text-white d-block"
+                        href="/g20-genius-certification"
+                      >
                         G20 Genius Certification
                       </a>
                     </li>
                     <li className="mb-2">
-                      <a className="text-white d-block" href="#">
-                        Campus Ambassador Program
+                      <a className="text-white d-block" href="/model-g20">
+                        Campus Sherpa Program
                       </a>
                     </li>
-                    <li className="mb-2">
-                      <a className="text-white d-block" href="/life-environment-intiative">
+                    {/* <li className="mb-2">
+                      <a
+                        className="text-white d-block"
+                        href="/life-environment-intiative"
+                      >
                         LiFE 21 day challenge
                       </a>
-                    </li>
-                    <li className="mb-2">
+                    </li> */}
+                    {/* <li className="mb-2">
                       <a className="text-white d-block" href="#">
                         Features Stories
                       </a>
@@ -87,17 +93,20 @@ const Footer = () => {
                       <a className="text-white d-block" href="#">
                         PM Speak
                       </a>
-                    </li>
+                    </li> */}
                     <li className="mb-2">
-                      <a className="text-white d-block" href="/life-environment-intiative">
+                      <a
+                        className="text-white d-block"
+                        href="/life-environment-intiative"
+                      >
                         LiFE
                       </a>
                     </li>
-                    <li className="mb-2">
+                    {/* <li className="mb-2">
                       <a className="text-white d-block" href="#">
                         Upcoming events
                       </a>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
                 {/* contact info */}
@@ -105,11 +114,11 @@ const Footer = () => {
                   <h4 className="text-white mb-4">Contact Info</h4>
                   <ul className="list-unstyled">
                     <li className="text-light mb-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                      Necessitatibus iste illo incidunt ex aliquid repellendus!
+                      PLOT NO-730, SHAKTI KHAND-3, INDIRAPURAM, GHAZIABAD, UTTAR
+                      PRADESH-201014
                     </li>
-                    <li className="text-light mb-3">+91 999999999999 </li>
-                    <li className="text-light mb-3">info@G20india.com</li>
+                    <a href="tel:919650631134" className="text-light mb-3">+91 96506 31134</a> <br />
+                    <a href="mailto:info@g20-india.org" className="text-light mb-3">info@g20-india.org</a>
                   </ul>
                 </div>
                 {/* newsletter */}

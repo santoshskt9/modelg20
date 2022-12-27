@@ -9,6 +9,7 @@ import News from "./pages/News";
 import AllBlog from "./pages/Blog/AllBlogs";
 import Cdri from "./pages/Topics/Cdri";
 import Nip from "./pages/Topics/Nip";
+import Course from "./pages/Course";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/model-g20" element={<Modelg20Page />} />
         <Route path="/life-environment-intiative" element={<Life />} />
+        <Route path="/g20-genius-certification" element={<Course />} />
         <Route exact path="/blog" element={<AllBlog />} />
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />

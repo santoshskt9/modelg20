@@ -30,6 +30,11 @@ const Navbar = () => {
                   Home
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/model-g20">
+                  Model G20
+                </NavLink>
+              </li>
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle"
@@ -42,36 +47,30 @@ const Navbar = () => {
                   Engage
                 </NavLink>
                 <div className="dropdown-menu">
-                  <NavLink className="dropdown-item" to="/model-g20">
-                    Model G20
-                  </NavLink>
                   <NavLink
                     className="dropdown-item"
                     to="/life-environment-intiative"
                   >
                     LiFE
                   </NavLink>
-                  <NavLink className="dropdown-item" to="/blog-single.html">
+                  <NavLink className="dropdown-item" to="/g20-genius-certification">
                     G20 Genius Certification
                   </NavLink>
-                  <NavLink className="dropdown-item" to="/blog-single.html">
+                  {/* <NavLink className="dropdown-item" to="/blog-single.html">
                     Campus Ambassador Program
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/blog-single.html">
-                    LiFE 21 day challenge
-                  </NavLink>
+                  </NavLink> */}
                 </div>
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
-                  Featured Stories
+                  Campus Sherpa
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink className="nav-link" to="/">
                   PM Speak
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle"
@@ -81,7 +80,7 @@ const Navbar = () => {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Topics
+                  Themes
                 </NavLink>
                 <div className="dropdown-menu">
                   <NavLink className="dropdown-item" to="/cdri">
@@ -90,7 +89,7 @@ const Navbar = () => {
                   <NavLink className="dropdown-item" to="/nep">
                     NEP 2020
                   </NavLink>
-                  <NavLink className="dropdown-item" to="/blog-single.html">
+                  {/* <NavLink className="dropdown-item" to="/blog-single.html">
                     Startup India
                   </NavLink>
                   <NavLink className="dropdown-item" to="/blog-single.html">
@@ -98,7 +97,7 @@ const Navbar = () => {
                   </NavLink>
                   <NavLink className="dropdown-item" to="/blog-single.html">
                     Skill Development
-                  </NavLink>
+                  </NavLink> */}
                 </div>
               </li>
             </ul>

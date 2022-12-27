@@ -41,7 +41,7 @@ const Home = () => {
                   with the world.
                 </p>
 
-                <button className="btn btn-light-outline">Find out more</button>
+                <Link to={"/model-g20"} className="btn btn-light-outline">Find out more</Link>
               </div>
             </div>
             {/* feature item */}
@@ -62,7 +62,7 @@ const Home = () => {
                   lead development or success of Indian startups, we are showing
                   the world how it is done.
                 </p>
-                <button className="btn btn-primary-outline">Know more</button>
+                <Link to={"/model-g20"} className="btn btn-primary-outline">Know more</Link>
               </div>
             </div>
             {/* feature item */}
@@ -83,7 +83,10 @@ const Home = () => {
                   mindful utilisation of resources over ‘mindless destructive
                   consumption.’ Take the 21 day challenge and more.
                 </p>
-                <Link to={"/life-environment-intiative"} className="btn btn-primary-outline">
+                <Link
+                  to={"/life-environment-intiative"}
+                  className="btn btn-primary-outline"
+                >
                   Start your LiFE
                 </Link>
               </div>
@@ -105,7 +108,7 @@ const Home = () => {
                   socio-political issues and suggest practical solutions in the
                   Leaders summit.
                 </p>
-                <button className="btn btn-primary-outline">Engage Now</button>
+                <Link to={"/model-g20"} className="btn btn-primary-outline">Engage Now</Link>
               </div>
             </div>
           </div>
@@ -117,7 +120,7 @@ const Home = () => {
       <section className="section pt-0">
         <div className="container">
           <div className="row justify-content-between align-items-center">
-            <div className="col-md-5 bg-contain">
+            <div className="col-md-6 bg-contain">
               {/* PM speaks image*/}
               <img
                 className="img-fluid w-100 rounded shadow"
@@ -136,8 +139,42 @@ const Home = () => {
                 paradigm of human-centric globalisation.{" "}
                 <i className="bx bxs-quote-right text-warning bx-tada"></i>
               </p>
-              <Link to="/" className="btn btn-primary hover-ripple">
+              {/* <Link to="/" className="btn btn-primary hover-ripple">
                 View more of PM Modi's speeches
+              </Link> */}
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* /PM speaks */}
+      {/*Sherpa Speaks */}
+      <section className="section pt-0">
+        <div className="container">
+          <div className="row justify-content-between align-items-center">
+            <div className="col-md-6 bg-contain order-1 order-lg-2">
+              {/* Sherpa image*/}
+              <img
+                className="img-fluid w-100 rounded shadow"
+                style={{height:"450px",objectFit:"cover"}}
+                src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Anniv-Amitabh-Kant-1_1200x768.jpeg?size=690:388"
+                alt="About Image"
+              />
+            </div>
+            <div className="col-md-6 pt-4 order-2 order-lg-1">
+              <span className="section-title-border"></span>
+              <p className="subtitle"></p>
+              <h2 className="section-title">Sherpa Speaks</h2>
+              <p className=" fs-5">
+                <i className="bx bxs-quote-left text-warning bx-tada"></i> As
+                G-20 president, India’s Prime Minister Narendra Modi will be
+                setting the agenda of the world. This is a huge responsibility
+                because we are taking over this at a very challenging time in
+                the world.
+                <i className="bx bxs-quote-right text-warning bx-tada"></i>
+              </p>
+              <h6>India's Sherpa and CEO of Niti Aayog  - Amitabh Kant</h6>
+              <Link to="/model-g20" className="btn btn-primary hover-ripple mt-4">
+                View more from our resources library
               </Link>
             </div>
           </div>
@@ -278,11 +315,11 @@ const Home = () => {
                     Education Policy (NEP) on 29th July 2020.
                   </div>
                 </li>
-                <li className=" mb-5">
+                {/* <li className=" mb-5">
                   <button className="btn btn-primary-outline">
                     View More Topics
                   </button>
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="col-lg-5 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0">
@@ -298,14 +335,14 @@ const Home = () => {
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="mt-4">
+              {/* <div className="mt-4">
                 <a
                   href="#"
                   className="fs-5 text-primary border-bottom border-warning border-2 fw-semibold"
                 >
                   See more featured videos <i className="bi bi-arrow-right"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -318,7 +355,7 @@ const Home = () => {
 
       <NewsSwiper />
 
-      <Course />
+      {/* <Course /> */}
 
       {/* <InstagramFeeds/> */}
     </>

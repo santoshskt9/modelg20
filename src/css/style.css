@@ -1425,7 +1425,7 @@ textarea.form-control-sm {
 }
 .navbar .nav-item .nav-link {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
 }
 .navbar .dropdown:hover .dropdown-menu {
   visibility: visible;
@@ -1436,7 +1436,7 @@ textarea.form-control-sm {
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
   padding: 15px;
   border: 0;
-  top: 75px;
+  top: 45px;
   left: -25px;
   border-radius: 0;
   display: block;

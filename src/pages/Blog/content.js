@@ -162,7 +162,7 @@ export default [
     ],
   },
   {
-    id: 2,
+    id: 3,
     image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog3.jpeg`,
     title: "Youth Perception on Climate Change in the G20",
     slug: "youth-perception-on-climate-change-in-the-g20",

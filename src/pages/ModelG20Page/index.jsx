@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import Announcement from "./Announcement";
 import FaqComponent from "./FaqComponent";
 import Registrattion from "./Registrattion";
@@ -84,12 +85,12 @@ const Modelg20Page = () => {
                 networking on real global issues.
               </p>
               <div className="d-flex align-items-center">
-                <a
-                  href="service.html"
+                <Link
+                  to="/g20-genius-certification"
                   className="btn btn-primary hover-ripple me-5"
                 >
                   Get Certified
-                </a>
+                </Link>
                 <p>
                   As a G20 Genius. Your first step towards knowing everything
                   about G20 India.{" "}

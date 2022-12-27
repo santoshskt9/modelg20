@@ -39,24 +39,24 @@ const bannerContent = [
     Description:
       "The G20 Genius Certificate is a one-of-a-kind learning module that approaches the history, function, operations, objectives and challenges of G20.",
     buttonData: {
-      link: "/register",
+      link: "/g20-genius-certification",
       text: "Register now!",
     },
   },
-  {
-    id: 4,
-    smallHeading: "Become a G20 Genius!",
-    image:
-      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Anniv-Amitabh-Kant-1_1200x768.jpeg?size=690:388",
-    mainHeading: "India's Sherpa and CEO of Niti Aayog  - Amitabh Kant ",
-    subheading: "",
-    Description:
-      "As G-20 president, India’s Prime Minister Narendra Modi will be setting the agenda of the world. This is a huge responsibility because we are taking over this at a very challenging time in the world.",
-    buttonData: {
-      link: "/register",
-      text: "Know more about India's Presidency",
-    },
-  },
+  // {
+  //   id: 4,
+  //   smallHeading: "Become a G20 Genius!",
+  //   image:
+  //     "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Anniv-Amitabh-Kant-1_1200x768.jpeg?size=690:388",
+  //   mainHeading: "India's Sherpa and CEO of Niti Aayog  - Amitabh Kant ",
+  //   subheading: "",
+  //   Description:
+  //     "As G-20 president, India’s Prime Minister Narendra Modi will be setting the agenda of the world. This is a huge responsibility because we are taking over this at a very challenging time in the world.",
+  //   buttonData: {
+  //     link: "/register",
+  //     text: "Know more about India's Presidency",
+  //   },
+  // },
 ];
 
 const SingleSlide = ({ data }) => {
@@ -99,7 +99,7 @@ const BannerSwiper = () => {
       slidesPerView={1}
       modules={[Autoplay, Navigation]}
       autoplay={{
-        delay: 3500,
+        delay: 4000,
         disableOnInteraction: false,
       }}
       navigation={true}
