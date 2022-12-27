@@ -2,8 +2,8 @@ export default [
   {
     id: 1,
     image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog1.jpeg`,
-    title: "G20’s Boon To One Of History’s Biggest Bane",
-    slug: "g20s-boon-to-one-of-historys-biggest-bane",
+    title: "2008 financial crisis and how G20 emerged as a solution.",
+    slug: "financial-crisis-and-how-G20-emerged-as-a-solution",
     author: "admin",
     date: "",
     subpara:

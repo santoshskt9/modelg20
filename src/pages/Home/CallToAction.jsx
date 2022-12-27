@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -18,9 +19,9 @@ const CallToAction = () => {
               individuals, holler at us! We are interested in knowing you
               better!
             </p>
-            <a href="contact.html" className="btn btn-primary hover-ripple">
+            <Link to="/g20-campus-ambassador" className="btn btn-primary hover-ripple">
               Know more!
-            </a>
+            </Link>
           </div>
         </div>
       </div>

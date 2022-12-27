@@ -72,7 +72,7 @@ const Footer = () => {
                       </a>
                     </li>
                     <li className="mb-2">
-                      <a className="text-white d-block" href="/model-g20">
+                      <a className="text-white d-block" href="/g20-campus-ambassador">
                         Campus Sherpa Program
                       </a>
                     </li>

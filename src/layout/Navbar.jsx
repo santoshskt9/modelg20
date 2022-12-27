@@ -26,18 +26,18 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link text-dark" to="/">
                   Home
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/model-g20">
+                <NavLink className="nav-link tet-dark" to="/model-g20">
                   Model G20
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <NavLink
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-dark"
                   href="#"
                   role="button"
                   data-toggle="dropdown"
@@ -62,7 +62,7 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="/">
+                <NavLink className="nav-link text-dark" to="/g20-campus-ambassador">
                   Campus Sherpa
                 </NavLink>
               </li>
@@ -73,7 +73,7 @@ const Navbar = () => {
               </li> */}
               <li className="nav-item dropdown">
                 <NavLink
-                  className="nav-link dropdown-toggle"
+                  className="nav-link dropdown-toggle text-dark"
                   to="#"
                   role="button"
                   data-toggle="dropdown"
@@ -143,6 +143,11 @@ const Navbar = () => {
                 Home
               </a>
             </li>
+            <li className="list-group-item p-3 rounded-3 ">
+              <a href="/model-g20" className="fs-6 text-uppercase text-dark">
+                Model G20
+              </a>
+            </li>
             <li className="list-group-item p-3 mt-2 border rounded-3 pb-0">
               <p
                 className="fs-6 text-uppercase text-dark"
@@ -156,23 +161,17 @@ const Navbar = () => {
                 <ul className="list-group">
                   <NavLink
                     className="list-group-item p-3 rounded-3"
-                    to="/model-g20"
-                  >
-                    Model G20
-                  </NavLink>
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
                     to="/life-environment-intiative"
                   >
                     LiFE
                   </NavLink>
                   <NavLink
                     className="list-group-item p-3 rounded-3"
-                    to="/blog-single.html"
+                    to="/g20-genius-certification"
                   >
                     G20 Genius Certification
                   </NavLink>
-                  <NavLink
+                  {/* <NavLink
                     className="list-group-item p-3 rounded-3"
                     to="/blog-single.html"
                   >
@@ -183,18 +182,13 @@ const Navbar = () => {
                     to="/blog-single.html"
                   >
                     LiFE 21 day challenge
-                  </NavLink>
+                  </NavLink> */}
                 </ul>
               </div>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
-              <a href="/" className="fs-6 text-uppercase text-dark">
-                Feature Stories
-              </a>
-            </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3">
-              <a href="/" className="fs-6 text-uppercase text-dark">
-                PM Speak
+              <a href="/g20-campus-ambassador" className="fs-6 text-uppercase text-dark">
+               CAMPUS SHERPA
               </a>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
@@ -204,7 +198,7 @@ const Navbar = () => {
                 data-bs-toggle="collapse"
                 data-bs-target="#collapseTopics"
               >
-                Topics
+                Themes
               </p>
               <div class="collapse p-0 m-0" id="collapseTopics">
                 <ul className="list-group">
@@ -220,7 +214,7 @@ const Navbar = () => {
                   >
                     NEP 2020
                   </NavLink>
-                  <NavLink
+                  {/* <NavLink
                     className="list-group-item p-3 rounded-3"
                     to="/blog-single.html"
                   >
@@ -237,7 +231,7 @@ const Navbar = () => {
                     to="/blog-single.html"
                   >
                     Skill Development
-                  </NavLink>
+                  </NavLink> */}
                 </ul>
               </div>
             </li>
