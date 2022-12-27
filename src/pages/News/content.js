@@ -27,11 +27,11 @@ export default [
     ],
   },
   {
-    id: 1,
+    id: 2,
     image: `${process.env.REACT_APP_MAIN_URL}images/news/news1.jpg`,
     title: "For G-20,India plans mega 200 meetings across fifty cities",
     slug: "for-G-20-India-plans-mega-200-meetings-across-fifty-cities",
-    author: "G Kishan Reddy",
+    author: "ANI",
     date: "Dec 22, 2022 08:57 PM IST",
     subpara:
       "India will assume the presidency of the Group of 20 (G-20), the alliance of 19 major economies and the European Union on December 1st of this year.",
@@ -58,7 +58,75 @@ export default [
           "India’s economic model, which has advocated for open, liberal markets that provide opportunities to even the most vulnerable, has garnered praise from countries and organizations throughout the world.",
           "This is also a historic time for the G-20, which will now be led by a nation that has always placed “dialogue and diplomacy” at the centre of its approach to international relations.",
           "India’s diplomatic and economic policies have helped the country achieve significant growth at a time when other economies have failed or are struggling.",
-          "Many predict that as India brings its tried and tested policies to the G-20 Presidency, the world will greatly benefit under the Brand India approach. (ANI)"
+          "Many predict that as India brings its tried and tested policies to the G-20 Presidency, the world will greatly benefit under the Brand India approach. (ANI)",
+        ],
+        list: [],
+      },
+    ],
+  },
+  {
+    id: 3,
+    image: `${process.env.REACT_APP_MAIN_URL}images/news/news2.jpg`,
+    title:
+      "India’s G-20 presidency: Seven reasons why this is a watershed moment",
+    slug: "indias-g-20-presidency-seven-reasons-why-this-is-a-watershed-moment",
+    author: "Akhilesh Mishra",
+    date: "December 1, 2022 6:00:37 pm",
+    subpara:
+      "India will assume the presidency of the Group of 20 (G-20), the alliance of 19 major economies and the European Union on December 1st of this year.",
+    section: [
+      {
+        id: 1,
+        title: "",
+        paragraph: [
+          "India has formally assumed the presidency of G-20 on December 1 and the Heads of Government Summit has been planned for the second half of 2023. The G20 summit would be qualitatively different from any of the previous multilateral summits that India has hosted. None of the previous summits had the world’s largest economies assembled in one place nor did they have the entire P-5 (permanent members of the UN Security Council) represented. In that sense, the G-20 summit would be the first of its kind in Indian history.",
+          "But this alone is not what makes the Indian presidency of G-20 a turning point at this juncture in geopolitics. There are seven interplaying, unique factors that make India’s presidency a watershed moment.",
+          "First, among large democracies, India has by far been the best performer in handling the Covid-19 pandemic. This includes the entire gamut of responses – from the initial emergency measures like the lockdown’s timing and public communication to the entire chain of vaccination logistics. The contrast with the still unfolding draconian measures in China, the only country of comparable size, makes the Indian success more commendable. For the world, the Indian public goods delivery mechanism, at a billion-plus scale, has set a new template. If India can do it (at a billion plus scale), why can’t we (at a few million scale) would be the new refrain in much of the world.",
+          "Second, the management of the economy by India during the pandemic has been extraordinarily prudent with prescient decision-making. Many glittering “stars” of the economic world panned the Modi government for not following their advice to recklessly print money and spend and later repent. Those who followed that advice – Europe and the US – are witnessing five-decadal high inflation and stalling economies. India, on the other hand, has tamed inflation to moderate levels, emerged as the fastest-growing major economy in the world and is now termed as the “only economic bright spot” in the world. India’s real-time decision making in a crisis, and that it did not get coerced by “expert advice”, has put a new sheen on India’s economic team.",
+          "Third, India’s independent foreign policy, so visibly demonstrated in the ongoing NATO-Russia (Ukraine) war, has made the world sit up and take notice. The assertion of its national interest is also markedly different from the “glory” days of Non-Aligned Movement. Then it was a policy essentially of disengaging from the major world players, laced with empty posturing and mostly at the peril of national interest. Now, the India First policy is about engaging with every player on the world stage with the sole intent of promoting supreme national interest. One day, it could mean purchasing ballistic missiles defence shield from Russia and the next day birthing a grouping like Quad along with the US. Never before has Indian foreign policy been this deft.",
+          "Fourth, this is the only time post-Independence that India has its own success models to offer the world. From scaling up of a seamless digital payment model built on the public digital infrastructure (UPI) to the unique digital identity, and from the successful financial inclusion model of the bottom quintile to the seamless transition to green energy, India now has many models to showcase, particularly for the developing world.",
+          "Fifth, despite the current short-term preoccupation of the West with the war in Ukraine, the emerging medium to long-term global pivot is undeniably towards Asia. In the Asian theatre, meaningful geopolitics is impossible without India having a decisive say. Emerging groups such as the Quad, U2I2 and the IPEF are a testimony to this changed reality. India’s salience has never been this pivotal, post-Independence.",
+          "Sixth, in the last 200 years, India is the only country to have emerged with a geopolitical heft that is part of the international consensus – democracy, vibrant civil society, free press and judiciary – and yet, is different from the western system. All other countries that emerged on the global stage during this period were either part of the Western consensus or not part of the international consensus or too small to matter on the global stage. This places India in a unique position that has not been available to any other country in recent centuries.",
+          "Seventh, the demonstrably successful leadership that Prime Minister Narendra Modi provides not just to India but, on key global strategic issues to the world makes this a unique moment for India, not available post-independence.",
+          "The combination of these seven factors, at this juncture in the evolving new global order, is poised to make the G20 in 2023 a historic turning point. Time for an inclusive, ambitious, action-oriented and decisive G20. Time for India’s presidency.",
+        ],
+        list: [],
+      },
+    ],
+  },
+  {
+    id: 4,
+    image: `${process.env.REACT_APP_MAIN_URL}images/news/news3.webp`,
+    title:
+      "‘5th largest economy, G20 presidency...’: PM Modi defines India in 2022",
+    slug: "5th-largest-economy-g20-presidency-pm-modi-defines-india-in-2022",
+    author: "Sharangee Dutta (Hindustan times)",
+    date: "Dec 25, 2022 12:49 PM IST",
+    subpara:
+      "Prime Minister Narendra Modi on Sunday addressed the country in the 96th edition of the ‘Mann Ki Baat’, which was also its last episode of 2022. Remembering the various events and highlights of the year, PM Modi said that 2022 was defined by the “strength” of India's citizens and their “cooperation, resolve and expansion of success”.",
+    section: [
+      {
+        id: 1,
+        title: "",
+        paragraph: [
+          "“In 2022, the strength of the people of the country, their cooperation, their resolve, their expansion of success was so much that it would be difficult to include all of them in 'Mann Ki Baat',” he said.",
+          "The prime minister added that the year 2022 was “wonderful” and “inspiring” in multiple ways. “This year India completed 75 years of its independence and ‘Amrit Kal’ started in this year. This year the country caught a new pace, all the countrymen did more than one thing,” he said.",
+          "On the occasion of Christmas, PM Modi also extended greetings to the country saying the day marks the remembrance of Jesus Christ's “life and teachings”.“I extend heartiest Christmas greetings to all of you,” he added.     PM Modi also paid tribute to Atal Bihari Vajpayee on the occasion of the former prime minister's 98th birth anniversary. He said that Vajpayee took India to newer heights in every field, including education, foreign policy and the field of infrastructure.",
+          "Referring to the fresh outbreak of Covid-19 in China and several other countries, PM Modi urged people not to loosen their guards and take precautions. He said that wearing masks and washing hands, among other precautionary measures, must be adopted to be safe.",
+        ],
+        list: [],
+      },
+      {
+        id: 1,
+        title:
+          "Here are the achievements of India highlighted by PM Modi in ‘Mann ki Baat’:",
+        paragraph: [
+          "1. “The achievements of 2022 have created a special place for India in the world. The year meant India achieving the status of the world's fifth biggest economy, it meant India administering 220 crore Covid-19 vaccine doses to make a world record.”",
+          "2. “[The year] 2022 meant every citizen of India adopting and living the ‘Aatmanirbhar Bharat’ model. It meant India's first aircraft carrier INS Vikrant's welcome. It meant India's rise in Space, Drone and Research sector.",
+          "3. “[The year 2022] meant India's success in every field, be it even in the sports sector such as the Commonwealth Games or our women's hockey team's win, our youth showed immense ability.”",
+          "4. “Besides all these, 2022 will be remembered for one more reason. That is the extension of the spirit of ‘Ek Bharat Shreshtha Bharat’. In order to celebrate the unity and integrity, people organised several events. From Gujarat's Madhavpur Mela to Tamil Nadu's Kashi Tamil Sangaman, these festivals celebrated the myriad colours of unity.”",
+          "5. “Who can forget the ‘Har Ghar Tiranga’ celebrated in August? Those were goosebump-inducing moments for every citizen of India. Commemorating the 75 years of independence, the entire country embraced the Tricolour during this campaign. More than six crore people even sent selfies with the Tricolour. The Amrit Mahotsav will also be celebrated in the same spirit next year also, and will strengthen the foundation of Amrit Kal.”",
+          "6. “This year, India has also been entrusted with the responsibility to be the president of G20. I had discussed about this in detail the last time as well. In 2023, we have to take the enthusiasm of G20 to greater heights. We have to make this event, a mass movement.”",
         ],
         list: [],
       },

@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    image:`${process.env.REACT_APP_MAIN_URL}images/blog/blog1.jpeg`,
+    image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog1.jpeg`,
     title: "G20’s Boon To One Of History’s Biggest Bane",
     slug: "g20s-boon-to-one-of-historys-biggest-bane",
     author: "admin",
@@ -44,8 +44,9 @@ export default [
   },
   {
     id: 2,
-    image:`${process.env.REACT_APP_MAIN_URL}images/blog/blog2.jpeg`,
-    title: "Model G20, not just a simulation but an experience not to be missed.",
+    image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog2.jpeg`,
+    title:
+      "Model G20, not just a simulation but an experience not to be missed.",
     slug: "model-g20-not-just-a-simulation-but-an-experience-not-to-be-missed",
     author: "admin",
     date: "",
@@ -70,7 +71,7 @@ export default [
       },
       {
         id: 3,
-        title: "What is Model G20?",
+        title: "How does the Model G20 benefit one ?",
         paragraph: [],
         list: [
           {
@@ -105,6 +106,55 @@ export default [
             paragraph: [
               "No conference is complete without a reporting organization. Individuals participating as journalists will get hands-on experience for being a reporter for the period of the conference. Journalism has seen an estimated rise of over 25% in the past year in India. Participating journalists will get to report the simulated summit and dive deep into articles of note.",
               "Free Speech is a right dearly upheld by the Indian Constitution. This simulated experience gives an insight into the lives of journalists and the freedom of expressing their views via words.",
+            ],
+          },
+          {
+            title: "Youth Awareness and Networking",
+            paragraph: [
+              "The Model G20 acts as an wareness program for the youth of India. It enables the youth to dive deep into socio-political matters and fetch for solutions. This process creates a sense of responsibility as an individual and boosts awareness about what is happening around them.",
+              "This conference collects thousands of people from various walks to come together and deliberate. It acts as a pivot to enlarge ones network. It is a stepping stone for those who wish to expand their social circuit and leave a mark.",
+            ],
+          },
+          {
+            title: "Diplomacy",
+            paragraph: [
+              "War is a failure of diplomacy and thus, it is extremely crucial for all member states to be diplomatic in their stance while looking out for themselves. While representing a member state, one learns the art of diplomacy- a trait useful for a lifetime.",
+              "Diplomats try to help their own country, encourage cooperation between nations, and maintain peace. This opportunity enables one to have confidence, patience, the ability to listen, the openness of mind and heart to compromise, and the drive to complete the work demanded.",
+            ],
+          },
+          {
+            title: "Public Speaking",
+            paragraph: [
+              "The act of speaking face to face to a live audience often brings shivers to most. It is an art not inherited to all, but an art to be acquired. Being a delegate in the Model G20 will give you plenty of opportunity to burst your bubble and face your fears.",
+              "Individuals with experience in speaking in front of groups are said to be better at interviews in the future. In the summit each participant has to put forth their stance and diplomatically approach the issues presented to them. One has to debate, dialogue, and deliberate.",
+            ],
+          },
+          {
+            title: "Research Analysis",
+            paragraph: [
+              "What you discuss in the summit wholly depends on what you have prepared. No individual will completely know about a member state’s policies and crises with other nations. Hence, it is mandatory for you to optimize your research skills and obtain as much information as possible.",
+              "Research and Development is a part of every industry. At the end of the conference, not only will you have gained immense knowledge, you will have improved your research and analytical skills, which will definitely help you in the future.",
+            ],
+          },
+          {
+            title: "Communication Skills",
+            paragraph: [
+              "Speaking publicly is one thing, but communicating your viewpoints to people is another. The process of voicing your opinions to safeguard your member state’s policies and then guiding the agenda towards your bloc creates great opportunities to work on your communicating skills.",
+              "Most HR employers have stressed over the importance of good communication skills during an interview. Good communication and interpersonal skills improve the way one operates through their life. Lobbying during and after a committee session is vital for your victory and prepares you for proper communication after..",
+            ],
+          },
+          {
+            title: "Leadership Skills",
+            paragraph: [
+              "Hosting a summit of such stature requires leadership skills. One needs to manage a team and work with a diverse group of people. This sharpens your skills to lead a community of individuals.",
+              "As a delegate, convincing people to be on your bloc also instills leadership qualities within you. Assuring other member states that their concerns will be raised while being the author of one’s own resolution requires a sense of leadership. All these experiences prepare you for the future in a complete manner.",
+            ],
+          },
+          {
+            title: "Event Management",
+            paragraph: [
+              "The process of conducting the conference on campus is not a small task. It is a series of decisions that lead up to the summit. It covers multiple aspects of managing an event of such scale and helps you in problem solving abilities. At the end of the conference you will be confident in managing individuals and events that will always come handy in the future.",
+              "In conclusion, hosting a Model G20 on your campus will enable your students to learn the art of negotiation and networking. It will work towards building their confidence while they add to their prevailing set of attributes with qualities such as public speaking, debating, and writing. Moreover, it is a program that assures a holistic development.",
             ],
           },
         ],
