@@ -1,14 +1,22 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const route = useLocation().pathname;
+  function scrollTop() {
+    window.scrollTo(0, 0);
+  }
+  useEffect(() => {
+    scrollTop();
+  }, [route]);
+
   return (
     <nav className="navbar navbar-expand-lg bg-light bg-opacity-75">
       <div className="container py-3">
         <NavLink className="navbar-brand" to="/">
           <img
             className="img-responsive height-50"
-            src="images/logo.png"
+            src={process.env.REACT_APP_MAIN_URL + "images/logo.png"}
             alt="G20india"
           />
         </NavLink>
@@ -45,7 +53,10 @@ const Navbar = () => {
                 <NavLink className="dropdown-item" to="/model-g20">
                   Model G20
                 </NavLink>
-                <NavLink className="dropdown-item" to="/life-environment-intiative">
+                <NavLink
+                  className="dropdown-item"
+                  to="/life-environment-intiative"
+                >
                   LiFE
                 </NavLink>
                 <NavLink className="dropdown-item" to="/blog-single.html">

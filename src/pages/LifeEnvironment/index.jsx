@@ -104,7 +104,7 @@ const Life = () => {
           <div className="row">
             <div className="col-12">
               <h1 className="text-white mb-3">
-                LiFE{" "}
+                <span className="" style={{textStyle:"lowercase"}}>LiFE </span>
                 <span className="fs-5">
                   (Lifestyle for Environment) Initiative
                 </span>

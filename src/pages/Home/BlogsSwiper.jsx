@@ -1,6 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Navigation } from "swiper";
 import {Swiper, SwiperSlide } from "swiper/react";
-
+import blogs from '../Blog/content'
 const blogsContent = [
   {
     id: 1,
@@ -55,18 +57,20 @@ const SingleBlog = ({ data }) => {
         alt="Card image cap"
       />
       <div className="card-body position-relative">
-        <i className={`card-icon ${data.iconClass}`}></i>
+        <i className={`card-icon bi bi-arrow-right`}></i>
         <h4>
-          <a href="service-single.html" className="text-dark">
-            {data.heading}
-          </a>
+          <Link to={"/blog/"+data.slug}  className="text-dark">
+            {data.title}
+          </Link>
         </h4>
         <p className="card-text">
-          {data.paragraph[0]}
+          {data.subpara.slice(0,85)+'...'}
         </p>
-        <a href={data.linkData.link} className="btn btn-secondary btn-arrow">
-          {data.linkData.text}
-        </a>
+        <Link 
+        to={"/blog/"+data.slug} 
+        className="btn btn-secondary btn-arrow">
+          Read More
+        </Link>
       </div>
     </div>
   );
@@ -95,7 +99,9 @@ const BlogsSwiper = () => {
             <Swiper
               spaceBetween={50}
               slidesPerView={1}
-              loop={true}
+              loop={false}
+              modules={[Navigation]}
+              navigation={true}
               breakpoints={{
                 740: {
                   slidesPerView: 2,
@@ -105,7 +111,7 @@ const BlogsSwiper = () => {
                 },
               }}
             >
-              {blogsContent.map((blog, index) => {
+              {blogs.map((blog, index) => {
                 return (
                   <SwiperSlide key={index} className="py-4">
                     <SingleBlog data={blog} />

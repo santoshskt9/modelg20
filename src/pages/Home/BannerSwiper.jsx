@@ -1,11 +1,12 @@
 import React from "react";
+import { Autoplay, Navigation } from "swiper";
 import { SwiperSlide, Swiper } from "swiper/react";
 const bannerContent = [
   {
     id: 1,
     smallHeading: "वसुधैव कुटुम्बकम",
     mainHeading: "Vasudhaiva Kutumbakam",
-    image:"./images/banner/bnr1.webp",
+    image: "./images/banner/bnr1.webp",
     Description:
       "India's G20 Presidency will work to promote this universal sense of one-ness. Hence our theme - 'One Earth, One Family, One Future' – PM Narendra Modi",
     buttonData: {
@@ -16,7 +17,7 @@ const bannerContent = [
   {
     id: 2,
     smallHeading: "Model G20",
-    image:"./images/banner/bnr2.jpg",
+    image: "./images/banner/bnr2.jpg",
     mainHeading:
       "Youth takes the centre stage! Discussions that spark thoughts.",
     Description:
@@ -29,7 +30,7 @@ const bannerContent = [
   {
     id: 2,
     smallHeading: "Become a G20 Genius!",
-    image:"./images/banner/bnr3.jpg",
+    image: "./images/banner/bnr3.jpg",
     mainHeading:
       "Get certified and become societal influencers and torch bearers of the G20 campaign.",
     Description:
@@ -43,7 +44,10 @@ const bannerContent = [
 
 const SingleSlide = ({ data }) => {
   return (
-    <div className="hero-slider-item bg-cover hero-section h-100" style={{backgroundImage:`url(${data.image})`}}>
+    <div
+      className="hero-slider-item bg-cover hero-section h-100"
+      style={{ backgroundImage: `url(${data.image})` }}
+    >
       <div className="d-flex align-items-center h-100">
         <div className="container">
           <div className="row">
@@ -69,6 +73,12 @@ const BannerSwiper = () => {
     <Swiper
       spaceBetween={0}
       slidesPerView={1}
+      modules={[Autoplay, Navigation]}
+      autoplay={{
+        delay: 2000,
+        disableOnInteraction: false,
+      }}
+      navigation={true}
       loop={true}
     >
       {bannerContent.map((banner, index) => {

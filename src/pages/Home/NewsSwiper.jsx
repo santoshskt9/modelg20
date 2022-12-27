@@ -3,65 +3,66 @@ import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
+import NewsContent from "../News/content";
 
-const newsContent = [
-  {
-    id: 1,
-    image: "./images/blog/post-1.jpg",
-    imageAlt: "Blogs Top Image",
-    date: "1 Sep, 2018",
-    heading: "elit duied aiusmod tempor did labore dolory",
-    link: "./",
-    paragraph: [
-      "Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.",
-    ],
-  },
-  {
-    id: 2,
-    image: "./images/blog/post-2.jpg",
-    imageAlt: "Blogs TOp Image",
-    date: "2 Sep, 2018",
-    heading: "Lorem ipsum dolor sit amet",
-    link: "./",
-    paragraph: [
-      "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
-    ],
-  },
-  {
-    id: 3,
-    image: "./images/blog/post-3.jpg",
-    imageAlt: "Blogs TOp Image",
-    date: "3 Sep, 2018",
-    heading: "Lorem ipsum dolor sit amet",
-    link: "./",
-    paragraph: [
-      "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
-    ],
-  },
-];
+// const newsContent = [
+//   {
+//     id: 1,
+//     image: "./images/blog/post-1.jpg",
+//     imageAlt: "Blogs Top Image",
+//     date: "1 Sep, 2018",
+//     heading: "elit duied aiusmod tempor did labore dolory",
+//     link: "./",
+//     paragraph: [
+//       "Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.",
+//     ],
+//   },
+//   {
+//     id: 2,
+//     image: "./images/blog/post-2.jpg",
+//     imageAlt: "Blogs TOp Image",
+//     date: "2 Sep, 2018",
+//     heading: "Lorem ipsum dolor sit amet",
+//     link: "./",
+//     paragraph: [
+//       "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
+//     ],
+//   },
+//   {
+//     id: 3,
+//     image: "./images/blog/post-3.jpg",
+//     imageAlt: "Blogs TOp Image",
+//     date: "3 Sep, 2018",
+//     heading: "Lorem ipsum dolor sit amet",
+//     link: "./",
+//     paragraph: [
+//       "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
+//     ],
+//   },
+// ];
 
 const SingleNews = ({ data }) => {
   return (
     <article className="card border-0 rounded-0 position-relative box-shadow zindex-1 h-100">
-      <div className="card-type">Article</div>
+      <div className="card-type">News</div>
       <img
         className="card-img-top rounded-0"
         src={data.image}
-        alt={data.imageAlt}
+        // alt={data.imageAlt}
       />
       <div className="card-body">
         <div className="card-meta text-uppercase mb-2">
           on <strong className="text-dark">{data.date}</strong>
         </div>
         <h4 className="card-title">
-          <a href={data.link} className="text-dark">
-            {data.heading}
-          </a>
+          <Link to={"/news/" + data.slug} className="text-dark">
+            {data.title}
+          </Link>
         </h4>
         <span className="section-title-border"></span>
         <p className="card-text">
-          {data.paragraph[0].slice(0, 80) + "..."}
-          <Link to={data.link}>Read More</Link>
+          {data.subpara.slice(0, 80) + "..."}
+          <Link to={"/news/" + data.slug}>Read More</Link>
         </p>
       </div>
     </article>
@@ -82,11 +83,8 @@ const NewsSwiper = () => {
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 500,
-            disableOnInteraction: false,
-          }}
+          loop={false}
+          modules={[Navigation]}
           navigation={true}
           breakpoints={{
             740: {
@@ -97,7 +95,7 @@ const NewsSwiper = () => {
             },
           }}
         >
-          {newsContent.map((news, index) => {
+          {NewsContent.map((news, index) => {
             return (
               <SwiperSlide key={index} className="py-4">
                 <SingleNews data={news} />
