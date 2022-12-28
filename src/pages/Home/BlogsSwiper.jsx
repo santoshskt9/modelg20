@@ -6,7 +6,7 @@ import blogs from "../Blog/content";
 
 const SingleBlog = ({ data }) => {
   return (
-    <div className="card border-0 rounded-0 shadow">
+    <div className="card border-0 rounded-0 shadow pb-0">
       <img
         className="card-img-top rounded-0"
         src={data.image}

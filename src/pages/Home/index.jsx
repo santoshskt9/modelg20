@@ -218,7 +218,7 @@ const Home = () => {
       {/* End ModelG20  */}
 
       {/* Featured Topics  */}
-      <section className="section">
+      <section className="section pb-4">
         <div className="container-fluid">
           <div className="row align-items-center justify-content-around">
             <div className="col-lg-4 order-2">
