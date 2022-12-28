@@ -43,7 +43,7 @@ const CampusAmbass = () => {
         <p className="text-dark fs-5 mb-3">
           In line with the Model G20 program, we want to engage enthusiastic
           youth from schools, colleges and universities to become “Campus
-          Sherpa”. Each institution will have one campus ambassador who will
+          Sherpa”. Each institution will have one campus sherpa who will
           volunteer to undertake a set of activities to promote, manage and
           execute Model G20 programs within their campus.
         </p>
@@ -150,7 +150,7 @@ const CampusAmbass = () => {
         <br /><br />
         <h4>Certifications</h4>
         <p className="text-dark fs-5">
-          G20 Campus Ambassadors and their 10 volunteers will receive
+          G20 Campus Sherpa and their 10 volunteers will receive
           certifications from us for their valuable help in promoting and
           organising Model G20 Events in their campus.
         </p>

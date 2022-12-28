@@ -51,7 +51,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <NavLink
                   className="nav-link text-dark"
-                  to="/g20-campus-ambassador"
+                  to="/g20-campus-sherpa"
                 >
                   Campus Sherpa
                 </NavLink>
@@ -151,7 +151,7 @@ const Navbar = () => {
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
               <a
-                href="/g20-campus-ambassador"
+                href="/g20-campus-sherpa"
                 className="fs-6 text-uppercase text-dark"
               >
                 CAMPUS SHERPA

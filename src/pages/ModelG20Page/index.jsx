@@ -174,7 +174,7 @@ const Modelg20Page = () => {
             <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
               <h3>
                 {/* <span className="text-primary">03.</span> */}
-                Become a G20 Campus Ambassador
+                Become a G20 Campus Sherpa
               </h3>
               <p className="fs-6">
                 In line with the Model G20 program on our website G20-india.org,

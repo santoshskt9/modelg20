@@ -149,7 +149,7 @@ const Home = () => {
       </section>
       {/* /PM speaks */}
       {/*Sherpa Speaks */}
-      <section className="section pt-0">
+      <section className="section pt-0 pb-0">
         <div className="container">
           <div className="row justify-content-between align-items-center">
             <div className="col-md-6 bg-contain order-1 order-lg-2">
@@ -242,9 +242,7 @@ const Home = () => {
                     </div>
                   </div>
                   <a href="/cdri" className="text-dark">
-                    <h4>CDRI</h4>
-                    Hon’ble Prime Minister Narendra Modi launched CDRI during
-                    his UN Climate Summit speech back in 2019.
+                    <h4>Coalition for Disaster Resilient Infrastructure (CDRI)</h4>
                   </a>
                 </li>
                 {/* feature item */}
@@ -260,8 +258,24 @@ const Home = () => {
                     </div>
                   </div>
                   <a href="/nep" className="text-dark">
-                    <h4>NEP 2020</h4>
+                    <h4>NNew Education Policy (NEP) 2020</h4>
                     Transforming School and Higher Education System
+                  </a>
+                </li>
+                <li className="d-flex align-items-center mb-5">
+                  <div className="text-center me-4">
+                    <div className="icon-bg water-wave">
+                      {/* <i className="bi bi-cloud icon text-primary"></i> */}
+                      <img
+                        src="./images/icons/Life.png"
+                        className="w-100 p-2"
+                        alt="nep2020"
+                      />
+                    </div>
+                  </div>
+                  <a href="/life-environment-intiative" className="text-dark">
+                    <h4>Lifestyle for Environment Initiative (LiFE) </h4>
+                    
                   </a>
                 </li>
                 {/* <li className=" mb-5">
@@ -274,11 +288,11 @@ const Home = () => {
             <div className="col-lg-5 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0">
               <div className="feature-img-bg box-shadow">
                 {/* <video src="https://youtu.be/7eWPI1tEz3I" controls className="w-100"></video>        */}
-                <iframe
+               <iframe
                   className="d-block w-100"
                   height="400"
-                  src="https://www.youtube.com/embed/7eWPI1tEz3I?controls=0"
-                  title="YouTube video player"
+                  src="https://www.youtube.com/embed/RdqNad4-i1g"
+                  title="G20 University Connect - Engaging Young Minds (December 1, 2022)"
                   frameBorder={0}
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen

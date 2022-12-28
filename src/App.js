@@ -21,7 +21,7 @@ function App() {
         <Route path="/model-g20" element={<Modelg20Page />} />
         <Route path="/life-environment-intiative" element={<Life />} />
         <Route path="/g20-genius-certification" element={<Course />} />
-        <Route path="/g20-campus-ambassador" element={<CampusAmbass />} />
+        <Route path="/g20-campus-sherpa" element={<CampusAmbass />} />
         <Route exact path="/blog" element={<AllBlog />} />
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />

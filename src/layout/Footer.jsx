@@ -163,7 +163,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">
               <p className="mb-0 text-white">
-                <span className="text-primary">G20 India</span> &copy;
+                <span className="text-primary">Modal G20 India</span> &copy;
                 <script>
                   var CurrentYear = new Date().getFullYear(); var NextYear = new
                   Date().getFullYear() + 1; document.write(CurrentYear + " ~ " +
