@@ -13,12 +13,12 @@ const Navbar = () => {
               className="img-responsive height-50  border-end pe-2  border-3"
               src={process.env.REACT_APP_MAIN_URL + "images/logo.png"}
               alt="G20india"
-            /> 
+            />
             <img
               className="img-responsive height-75"
               src={process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"}
               alt="G20india"
-            /> 
+            />
           </NavLink>
           <button
             className="navbar-toggler"
@@ -58,7 +58,10 @@ const Navbar = () => {
                   >
                     LiFE
                   </NavLink>
-                  <NavLink className="dropdown-item" to="/g20-genius-certification">
+                  <NavLink
+                    className="dropdown-item"
+                    to="/g20-genius-certification"
+                  >
                     G20 Genius Certification
                   </NavLink>
                   {/* <NavLink className="dropdown-item" to="/blog-single.html">
@@ -67,7 +70,10 @@ const Navbar = () => {
                 </div>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link text-dark" to="/g20-campus-ambassador">
+                <NavLink
+                  className="nav-link text-dark"
+                  to="/g20-campus-ambassador"
+                >
                   Campus Sherpa
                 </NavLink>
               </li>
@@ -109,13 +115,10 @@ const Navbar = () => {
             <button className="btn border-0" type="submit">
               <i className="bi bi-search text-dark fs-5"></i>
             </button>
-            <NavLink
-              to="service.html"
-              className="btn btn-primary hover-ripple d-flex align-items-center"
-            >
+            <button className="btn btn-primary hover-ripple d-flex align-items-center">
               <i className="bx bx-calendar fs-5"></i>
               &nbsp;Upcoming&nbsp;Events
-            </NavLink>
+            </button>
           </div>
         </div>
       </nav>
@@ -192,8 +195,11 @@ const Navbar = () => {
               </div>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
-              <a href="/g20-campus-ambassador" className="fs-6 text-uppercase text-dark">
-               CAMPUS SHERPA
+              <a
+                href="/g20-campus-ambassador"
+                className="fs-6 text-uppercase text-dark"
+              >
+                CAMPUS SHERPA
               </a>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
@@ -207,16 +213,10 @@ const Navbar = () => {
               </p>
               <div class="collapse p-0 m-0" id="collapseTopics">
                 <ul className="list-group">
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/cdri"
-                  >
+                  <NavLink className="list-group-item p-3 rounded-3" to="/cdri">
                     CDRI
                   </NavLink>
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/nep"
-                  >
+                  <NavLink className="list-group-item p-3 rounded-3" to="/nep">
                     NEP 2020
                   </NavLink>
                   {/* <NavLink
