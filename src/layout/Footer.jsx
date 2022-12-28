@@ -116,8 +116,7 @@ const Footer = () => {
                   <h4 className="text-white mb-4">Contact Info</h4>
                   <ul className="list-unstyled">
                     <li className="text-light mb-3">
-                      PLOT NO-730, SHAKTI KHAND-3, INDIRAPURAM, GHAZIABAD, UTTAR
-                      PRADESH-201014
+                      B82 Ground Floor, Lajpat Nagar 2 , New Delhi 110024
                     </li>
                     <a href="tel:919650631134" className="text-light mb-3">
                       +91 96506 31134
