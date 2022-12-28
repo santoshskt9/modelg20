@@ -41,7 +41,7 @@ const Home = () => {
                   with the world.
                 </p>
 
-                <Link to={"/model-g20"} className="btn btn-light-outline">Find out more</Link>
+                <button className="btn btn-light-outline">Find out more</button>
               </div>
             </div>
             {/* feature item */}
@@ -62,7 +62,7 @@ const Home = () => {
                   lead development or success of Indian startups, we are showing
                   the world how it is done.
                 </p>
-                <Link to={"/model-g20"} className="btn btn-primary-outline">Know more</Link>
+                <button className="btn btn-primary-outline">Know more</button>
               </div>
             </div>
             {/* feature item */}
@@ -108,7 +108,7 @@ const Home = () => {
                   socio-political issues and suggest practical solutions in the
                   Leaders summit.
                 </p>
-                <Link to={"/model-g20"} className="btn btn-primary-outline">Engage Now</Link>
+                <button className="btn btn-primary-outline">Engage Now</button>
               </div>
             </div>
           </div>
@@ -126,6 +126,7 @@ const Home = () => {
                 className="img-fluid w-100 rounded shadow"
                 src="./images/img1.jpeg"
                 alt="About Image"
+                style={{ height: "450px", objectFit: "cover" }}
               />
             </div>
             <div className="col-md-6 pt-4">
@@ -155,7 +156,7 @@ const Home = () => {
               {/* Sherpa image*/}
               <img
                 className="img-fluid w-100 rounded shadow"
-                style={{height:"450px",objectFit:"cover"}}
+                style={{ height: "450px", objectFit: "cover" }}
                 src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Anniv-Amitabh-Kant-1_1200x768.jpeg?size=690:388"
                 alt="About Image"
               />
@@ -172,10 +173,7 @@ const Home = () => {
                 the world.
                 <i className="bx bxs-quote-right text-warning bx-tada"></i>
               </p>
-              <h6>India's Sherpa and CEO of Niti Aayog  - Amitabh Kant</h6>
-              <Link to="/model-g20" className="btn btn-primary hover-ripple mt-4">
-                View more from our resources library
-              </Link>
+              <h6>India's G20 Sherpa - Mr. Amitabh Kant</h6>
             </div>
           </div>
         </div>
@@ -183,7 +181,7 @@ const Home = () => {
       {/* /PM speaks */}
 
       {/* ModelG20  */}
-      <section className="py-5">
+      <section className="py-5 d-none">
         <div className="container">
           <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
             <div className="col-12">
@@ -207,58 +205,11 @@ const Home = () => {
                     Model G20 pre-summits.
                   </p>
                 </div>
-                <div className="text-center text-lg-start pb-4 w-100">
+                <div className="text-center text-lg-start pb-4 ">
                   <Link to={"/model-g20"} className="btn btn-primary-outline">
                     Learn More
                   </Link>
                 </div>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
-              <div>
-                <img
-                  src="./images/icons/team-building.png"
-                  alt=""
-                  className="icon-120"
-                />
-                <h4 className="mb-3 mt-4">Team building</h4>
-                <p>
-                  Work in groups to build friendly rapport to represent the
-                  team’s message
-                </p>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
-              <div>
-                <img
-                  src="./images/icons/consensus.png"
-                  alt=""
-                  className="icon-120"
-                />
-                <h4 className="mb-3 mt-4">Discussions with consensus</h4>
-                <p>When opinions are shared to insight and learn</p>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
-              <div>
-                <img
-                  src="./images/icons/int-diplomacy.png"
-                  alt=""
-                  className="icon-120"
-                />
-                <h4 className="mb-3 mt-4">International diplomacy</h4>
-                <p>Learn the skill of delivering reforms as a diplomat</p>
-              </div>
-            </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
-              <div>
-                <img
-                  src="./images/icons/negotiation.png"
-                  alt=""
-                  className="icon-120"
-                />
-                <h4 className="mb-3 mt-4">Multilateral Negotiations</h4>
-                <p>Diverse regions come together to debate and negotiate</p>
               </div>
             </div>
           </div>
@@ -290,11 +241,11 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div>
+                  <a href="/cdri" className="text-dark">
                     <h4>CDRI</h4>
                     Hon’ble Prime Minister Narendra Modi launched CDRI during
                     his UN Climate Summit speech back in 2019.
-                  </div>
+                  </a>
                 </li>
                 {/* feature item */}
                 <li className="d-flex align-items-center mb-5">
@@ -308,12 +259,12 @@ const Home = () => {
                       />
                     </div>
                   </div>
-                  <div>
+                  <a href="/nep" className="text-dark">
                     <h4>NEP 2020</h4>
                     Union cabinet brought about transformative reform in school
                     and higher education system by launching the New National
                     Education Policy (NEP) on 29th July 2020.
-                  </div>
+                  </a>
                 </li>
                 {/* <li className=" mb-5">
                   <button className="btn btn-primary-outline">

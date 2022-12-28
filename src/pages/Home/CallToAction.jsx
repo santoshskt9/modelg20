@@ -19,9 +19,9 @@ const CallToAction = () => {
               individuals, holler at us! We are interested in knowing you
               better!
             </p>
-            <Link to="/g20-campus-ambassador" className="btn btn-primary hover-ripple">
+            <a href="/g20-campus-ambassador" className="btn btn-primary hover-ripple">
               Know more!
-            </Link>
+            </a>
           </div>
         </div>
       </div>

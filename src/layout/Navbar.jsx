@@ -10,10 +10,15 @@ const Navbar = () => {
         <div className="container py-3">
           <NavLink className="navbar-brand" to="/">
             <img
-              className="img-responsive height-50"
+              className="img-responsive height-50  border-end pe-2  border-3"
               src={process.env.REACT_APP_MAIN_URL + "images/logo.png"}
               alt="G20india"
-            />
+            /> 
+            <img
+              className="img-responsive height-75"
+              src={process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"}
+              alt="G20india"
+            /> 
           </NavLink>
           <button
             className="navbar-toggler"

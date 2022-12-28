@@ -53,15 +53,15 @@ const Modelg20Page = () => {
           <div className="row justify-content-between mb-80">
             <div className=" col-md-6 mb-5 mb-md-0">
               <div className="d-flex align-items-start justify-content-start">
-                  <div>
-                    <img
-                      src={
-                        process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"
-                      }
-                      alt=""
-                      className="icon-modal-logo"
-                    />
-                  </div>
+                <div>
+                  <img
+                    src={
+                      process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"
+                    }
+                    alt=""
+                    className="icon-modal-logo"
+                  />
+                </div>
                 <div>
                   <span className="section-title-border"></span>
                   <h2 className="section-title">What is Model G20?</h2>
@@ -220,7 +220,59 @@ const Modelg20Page = () => {
         />
       </section>
       {/* <!-- /about us --> */}
-
+      <section className="py-5">
+        <div className="container">
+          <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/team-building.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">Team building</h4>
+                <p>
+                  Work in groups to build friendly rapport to represent the
+                  team’s message
+                </p>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/consensus.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">Discussions with consensus</h4>
+                <p>When opinions are shared to insight and learn</p>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/int-diplomacy.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">International diplomacy</h4>
+                <p>Learn the skill of delivering reforms as a diplomat</p>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/negotiation.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">Multilateral Negotiations</h4>
+                <p>Diverse regions come together to debate and negotiate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <div
         style={{ zIndex: 1200 }}
         className="d-none d-lg-flex d-flex border bg-primary flex-wrap align-items-center sticky-top justify-content-center"

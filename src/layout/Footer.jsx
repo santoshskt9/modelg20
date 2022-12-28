@@ -118,7 +118,7 @@ const Footer = () => {
                       PRADESH-201014
                     </li>
                     <a href="tel:919650631134" className="text-light mb-3">+91 96506 31134</a> <br />
-                    <a href="mailto:info@g20-india.org" className="text-light mb-3">info@g20-india.org</a>
+                    <a href="mailto:info@g20india.org" className="text-light mb-3">info@g20india.org</a>
                   </ul>
                 </div>
                 {/* newsletter */}
