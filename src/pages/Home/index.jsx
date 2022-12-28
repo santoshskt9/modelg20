@@ -261,9 +261,7 @@ const Home = () => {
                   </div>
                   <a href="/nep" className="text-dark">
                     <h4>NEP 2020</h4>
-                    Union cabinet brought about transformative reform in school
-                    and higher education system by launching the New National
-                    Education Policy (NEP) on 29th July 2020.
+                    Transforming School and Higher Education System
                   </a>
                 </li>
                 {/* <li className=" mb-5">

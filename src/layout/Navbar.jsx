@@ -40,34 +40,13 @@ const Navbar = () => {
                   Model G20
                 </NavLink>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item">
                 <NavLink
-                  className="nav-link dropdown-toggle text-dark"
-                  href="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
+                  className="nav-link text-dark"
+                  to="/g20-genius-certification"
                 >
-                  Engage
+                  G20 Genius
                 </NavLink>
-                <div className="dropdown-menu">
-                  <NavLink
-                    className="dropdown-item"
-                    to="/life-environment-intiative"
-                  >
-                    LiFE
-                  </NavLink>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/g20-genius-certification"
-                  >
-                    G20 Genius Certification
-                  </NavLink>
-                  {/* <NavLink className="dropdown-item" to="/blog-single.html">
-                    Campus Ambassador Program
-                  </NavLink> */}
-                </div>
               </li>
               <li className="nav-item">
                 <NavLink
@@ -99,6 +78,12 @@ const Navbar = () => {
                   </NavLink>
                   <NavLink className="dropdown-item" to="/nep">
                     NEP 2020
+                  </NavLink>{" "}
+                  <NavLink
+                    className="dropdown-item"
+                    to="/life-environment-intiative"
+                  >
+                    LiFE
                   </NavLink>
                   {/* <NavLink className="dropdown-item" to="/blog-single.html">
                     Startup India
@@ -156,43 +141,13 @@ const Navbar = () => {
                 Model G20
               </a>
             </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3 pb-0">
-              <p
-                className="fs-6 text-uppercase text-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseEngage"
+            <li className="list-group-item p-3 rounded-3 ">
+              <NavLink
+                className="list-group-item p-3 rounded-3"
+                to="/g20-genius-certification"
               >
-                Engage
-              </p>
-              <div class="collapse p-0 m-0" id="collapseEngage">
-                <ul className="list-group">
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/life-environment-intiative"
-                  >
-                    LiFE
-                  </NavLink>
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/g20-genius-certification"
-                  >
-                    G20 Genius Certification
-                  </NavLink>
-                  {/* <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/blog-single.html"
-                  >
-                    Campus Ambassador Program
-                  </NavLink>
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/blog-single.html"
-                  >
-                    LiFE 21 day challenge
-                  </NavLink> */}
-                </ul>
-              </div>
+                G20 Genius Certification
+              </NavLink>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
               <a
@@ -218,6 +173,12 @@ const Navbar = () => {
                   </NavLink>
                   <NavLink className="list-group-item p-3 rounded-3" to="/nep">
                     NEP 2020
+                  </NavLink>
+                  <NavLink
+                    className="list-group-item p-3 rounded-3"
+                    to="/life-environment-intiative"
+                  >
+                    LiFE
                   </NavLink>
                   {/* <NavLink
                     className="list-group-item p-3 rounded-3"
