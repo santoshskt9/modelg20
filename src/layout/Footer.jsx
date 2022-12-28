@@ -18,10 +18,9 @@ const Footer = () => {
                 />
               </a>
               <p className="text-white fs-5 mb-1 lh-sm">
-                The official website of Model G20 India event. Engaging the
-                youth in a meaningful dialogue on international diplomacy,
-                leadership and collective duty; and creating awareness to
-                navigate the changing economic scenarios.
+                Engaging the youth in a meaningful dialogue on international
+                diplomacy, leadership and collective duty; and creating
+                awareness to navigate the changing economic scenarios.
               </p>
               <p className="text-white mb-5 fs-5">
                 Proudly representing India to the world for sustainability,
@@ -72,7 +71,10 @@ const Footer = () => {
                       </a>
                     </li>
                     <li className="mb-2">
-                      <a className="text-white d-block" href="/g20-campus-ambassador">
+                      <a
+                        className="text-white d-block"
+                        href="/g20-campus-ambassador"
+                      >
                         Campus Sherpa Program
                       </a>
                     </li>
@@ -117,8 +119,16 @@ const Footer = () => {
                       PLOT NO-730, SHAKTI KHAND-3, INDIRAPURAM, GHAZIABAD, UTTAR
                       PRADESH-201014
                     </li>
-                    <a href="tel:919650631134" className="text-light mb-3">+91 96506 31134</a> <br />
-                    <a href="mailto:info@g20india.org" className="text-light mb-3">info@g20india.org</a>
+                    <a href="tel:919650631134" className="text-light mb-3">
+                      +91 96506 31134
+                    </a>{" "}
+                    <br />
+                    <a
+                      href="mailto:info@g20india.org"
+                      className="text-light mb-3"
+                    >
+                      info@g20india.org
+                    </a>
                   </ul>
                 </div>
                 {/* newsletter */}
