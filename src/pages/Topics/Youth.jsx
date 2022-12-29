@@ -2,6 +2,7 @@ import React from "react";
 import BlogsSwiper from "../Home/BlogsSwiper";
 import FaqComponent from "../ModelG20Page/FaqComponent";
 import Events from "./Events";
+import Faq from "./Faq";
 import YouthSwiper from "./YouthSwiper";
 
 const Youth = () => {
@@ -611,7 +612,7 @@ const Youth = () => {
         </div>
       </section>
       {/* How to Join the Community? */}
-      <FaqComponent />
+      <Faq />
     </div>
   );
 };
