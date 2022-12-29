@@ -103,16 +103,7 @@ const Blog = () => {
                         );
                       })}
 
-                      {/* <blockquote>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed eiusmod tempor incididunt labore dolore magna
-                        aliqua. enim minim veniam quis nostrud exercitation
-                        ullamco. laboris nisi ut aliquip ex ea commodo.
-                        <p className="mb-0">
-                          by{" "}
-                          <span className="text-primary">JENNIFER GARNER</span>
-                        </p>
-                      </blockquote> */}
+                      
                       {/* share */}
                       <div className="mb-5">
                         <h5 className="d-inline-block me-3">Share:</h5>

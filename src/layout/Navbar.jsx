@@ -3,7 +3,6 @@ import { NavLink, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const route = useLocation().pathname;
-
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light bg-opacity-75">
@@ -36,7 +35,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link tet-dark" to="/model-g20">
+                <NavLink className="nav-link text-dark" to="/model-g20">
                   Model G20
                 </NavLink>
               </li>
@@ -49,18 +48,15 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className="nav-link text-dark"
-                  to="/g20-campus-sherpa"
-                >
+                <NavLink className="nav-link text-dark" to="/g20-campus-sherpa">
                   Campus Sherpa
                 </NavLink>
               </li>
-              {/* <li className="nav-item">
-                <NavLink className="nav-link" to="/">
-                  PM Speak
+              <li className="nav-item">
+                <NavLink className="nav-link text-dark" to="/youth-community">
+                  Youth Gallery
                 </NavLink>
-              </li> */}
+              </li>
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle text-dark"
@@ -85,13 +81,13 @@ const Navbar = () => {
                   >
                     LiFE
                   </NavLink>
-                  {/* <NavLink className="dropdown-item" to="/blog-single.html">
+                  <NavLink className="dropdown-item" to="/startup-india">
                     Startup India
                   </NavLink>
-                  <NavLink className="dropdown-item" to="/blog-single.html">
+                  <NavLink className="dropdown-item" to="/digital-transform">
                     Digital Transformation
                   </NavLink>
-                  <NavLink className="dropdown-item" to="/blog-single.html">
+                  {/*<NavLink className="dropdown-item" to="/blog-single.html">
                     Skill Development
                   </NavLink> */}
                 </div>

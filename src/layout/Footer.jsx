@@ -168,8 +168,8 @@ const Footer = () => {
                   Date().getFullYear() + 1; document.write(CurrentYear + " ~ " +
                   NextYear)
                 </script>
-                All Right Reserved | <i className="bi bi-cloud-fill"></i>{" "}
-                Goverdhan Learning Cloud
+                All Rights Reserved | <i className="bi bi-cloud-fill"></i>{" "}
+                Govardhan Learning Cloud
               </p>
             </div>
             <div className="col-md-6 text-center text-md-right">

@@ -11,6 +11,9 @@ import Cdri from "./pages/Topics/Cdri";
 import Nip from "./pages/Topics/Nip";
 import Course from "./pages/Course";
 import CampusAmbass from "./pages/Topics/CampusAmbass";
+import StartupIndia from "./pages/Topics/StartupIndia";
+import DigitalTransform from "./pages/Topics/DigitalTransform";
+import Youth from "./pages/Topics/Youth";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
         <Route path="/life-environment-intiative" element={<Life />} />
         <Route path="/g20-genius-certification" element={<Course />} />
         <Route path="/g20-campus-sherpa" element={<CampusAmbass />} />
+        <Route path="/startup-india" element={<StartupIndia />} />
+        <Route path="/youth-community" element={<Youth />} />
+        <Route path="/digital-transform" element={<DigitalTransform />} />
         <Route exact path="/blog" element={<AllBlog />} />
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />
