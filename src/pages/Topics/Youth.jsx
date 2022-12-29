@@ -2,6 +2,7 @@ import React from "react";
 import BlogsSwiper from "../Home/BlogsSwiper";
 import FaqComponent from "../ModelG20Page/FaqComponent";
 import Events from "./Events";
+import YouthSwiper from "./YouthSwiper";
 
 const Youth = () => {
   return (
@@ -407,6 +408,7 @@ const Youth = () => {
           <h3>Youth Gallery</h3>
           {/* Showcase your talent, culture or fashion. Post us your pics, videos and reels on
                 YouthGallery@yuvamanthan.org and we will feature them in this section. */}
+                <YouthSwiper/>
         </div>
       </section>
       {/* Youth Gallery */}
