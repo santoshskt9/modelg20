@@ -13,6 +13,7 @@ import Course from "./pages/Course";
 import CampusAmbass from "./pages/Topics/CampusAmbass";
 import StartupIndia from "./pages/Topics/StartupIndia";
 import DigitalTransform from "./pages/Topics/DigitalTransform";
+import Presidency from "./pages/Presidency";
 import Youth from "./pages/Topics/Youth";
 import Error from "./pages/Error";
 
