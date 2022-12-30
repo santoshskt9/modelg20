@@ -128,30 +128,30 @@ const Navbar = () => {
         <div className="offcanvas-body vw-100 ">
           <ul className="list-group">
             <li className="list-group-item p-3 rounded-3 ">
-              <a href="/" className="fs-6 text-uppercase text-dark">
+              <NavLink to="/" className="fs-6 text-uppercase text-dark">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li className="list-group-item p-3 rounded-3 ">
-              <a href="/model-g20" className="fs-6 text-uppercase text-dark">
+              <NavLink to="/model-g20" className="fs-6 text-uppercase text-dark">
                 Model G20
-              </a>
+              </NavLink>
             </li>
             <li className="list-group-item p-3 rounded-3 ">
               <NavLink
-                className="list-group-item p-3 rounded-3"
+                
                 to="/g20-genius-certification"
               >
                 G20 Genius Certification
               </NavLink>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
-              <a
-                href="/g20-campus-sherpa"
+              <NavLink
+                to="/g20-campus-sherpa"
                 className="fs-6 text-uppercase text-dark"
               >
                 CAMPUS SHERPA
-              </a>
+              </NavLink>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3">
               <p

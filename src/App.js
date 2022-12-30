@@ -27,6 +27,7 @@ function App() {
         <Route path="/g20-genius-certification" element={<Course />} />
         <Route path="/g20-campus-sherpa" element={<CampusAmbass />} />
         <Route path="/startup-india" element={<StartupIndia />} />
+        <Route path="/g20-presidency" element={<Presidency />} />
         <Route path="/youth-community" element={<Youth />} />
         <Route path="/digital-transform" element={<DigitalTransform />} />
         <Route exact path="/blog" element={<AllBlog />} />
