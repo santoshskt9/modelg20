@@ -1,44 +1,14 @@
 import React from "react";
+import BreadCrumb from "../../layout/BreadCrumb";
 
 const Nip = () => {
   return (
     <div>
       {/* <!-- page title --> */}
-      <section
-        className="section"
-        style={{
-          background: "url(images/backgrounds/g20.jpg) no-repeat center",
-          backgroundSize: "cover",
-          boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-        }}
-      >
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="text-white mb-3">NEP</h1>
-              {/* <!-- breadcrumb --> */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb bg-transparent p-0">
-                  <li className="breadcrumb-item font-weight-semebold">
-                    <a className="text-white" href="index.html">
-                      Home
-                    </a>
-                  </li>
-                  <li
-                    className="breadcrumb-item font-weight-semebold active text-primary"
-                    aria-current="page"
-                  >
-                    NEP
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrumb heading={"New Education Policy (NEP)"} />
       {/* <!-- /page title --> */}
       <section className="section container">
-        <h3>NEP 2020</h3>
+        <h3>New Education Policy (NEP) 2020</h3>
         <h4>Overview</h4>
         <p className="text-dark fs-5">
           The Union cabinet brought about transformative reform in the school
@@ -98,12 +68,10 @@ const Nip = () => {
         <p className="text-dark">
           ● There will be no substantial distinction between arts, science,
           academic, vocational, curricular, and subjects of extracurricular
-          streams. <br />
-          ● There will be extra emphasis on Foundational Literacy and Numeracy.{" "}
-          <br />
-          ● Substitution of 10+2 structure with a 5+3+3+4 model. <br />
-          ● No imposition of State Language on Students studying in any State.{" "}
-          <br />
+          streams. <br />● There will be extra emphasis on Foundational Literacy
+          and Numeracy. <br />
+          ● Substitution of 10+2 structure with a 5+3+3+4 model. <br />● No
+          imposition of State Language on Students studying in any State. <br />
           ● Permission of taking Board Exams two times for the students. <br />
           ● The government will spend 6% of the Country’s GDP on Education
           instead of 1.7%. <br />
@@ -124,8 +92,9 @@ const Nip = () => {
           (Performance Assessment, Review, and Analysis of Knowledge for
           Holistic Development). <br />
           ● The government will make literature of India and other classical
-          languages part of the syllabus in schools. <br />● The exams for students will be held only in classes 2nd, 5th,
-          and 8th instead of every academic year.
+          languages part of the syllabus in schools. <br />● The exams for
+          students will be held only in classes 2nd, 5th, and 8th instead of
+          every academic year.
         </p>
         <h4>Education in G20</h4>
         <p className="text-dark">

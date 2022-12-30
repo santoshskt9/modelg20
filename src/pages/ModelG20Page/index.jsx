@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import BreadCrumb from "../../layout/BreadCrumb";
 import Announcement from "./Announcement";
 import FaqComponent from "./FaqComponent";
 import Registrattion from "./Registrattion";
@@ -12,40 +13,7 @@ const Modelg20Page = () => {
   }, []);
   return (
     <div>
-      {/* <!-- page title --> */}
-      <section
-        className="section"
-        style={{
-          background: "url(images/backgrounds/g20.jpg) no-repeat center",
-          backgroundSize: "cover",
-          boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-        }}
-      >
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="text-white mb-3">Model G20</h1>
-              {/* <!-- breadcrumb --> */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb bg-transparent p-0">
-                  <li className="breadcrumb-item font-weight-semebold">
-                    <a className="text-white" href="index.html">
-                      Home
-                    </a>
-                  </li>
-                  <li
-                    className="breadcrumb-item font-weight-semebold active text-primary"
-                    aria-current="page"
-                  >
-                    Model G20
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- /page title --> */}
+      <BreadCrumb heading={"Model G20"} />
 
       {/* <!-- about us --> */}
       <section className="section position-relative">

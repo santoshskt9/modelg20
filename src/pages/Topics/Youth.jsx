@@ -1,4 +1,5 @@
 import React from "react";
+import BreadCrumb from "../../layout/BreadCrumb";
 import BlogsSwiper from "../Home/BlogsSwiper";
 import FaqComponent from "../ModelG20Page/FaqComponent";
 import Events from "./Events";
@@ -10,50 +11,15 @@ const Youth = () => {
     <div>
       {" "}
       {/* <!-- page title --> */}
-      <section
-        className="section"
-        style={{
-          background: "url(images/backgrounds/g20.jpg) no-repeat center",
-          backgroundSize: "cover",
-          boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-        }}
-      >
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="text-white mb-3">
-                Yuvamanthan
-                <span className="fs-5 fst-italic ms-2">
-                  {" "}
-                  (The discussion platform for the Indian Youth*)
-                </span>
-              </h1>
-              {/* <!-- breadcrumb --> */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb bg-transparent p-0">
-                  <li className="breadcrumb-item font-weight-semebold">
-                    <a className="text-white" href="index.html">
-                      Home
-                    </a>
-                  </li>
-                  <li
-                    className="breadcrumb-item font-weight-semebold active text-primary"
-                    aria-current="page"
-                  >
-                    Yuvamanthan
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrumb
+        heading={"Yuvamanthan (The discussion platform for the Indian Youth*)"}
+      />
       {/* <!-- /page title --> */}
       {/* <!-- about us --> */}
       <section className="section position-relative">
         <div className="container">
-          <div className="row justify-content-between mb-80">
-            <div className=" col-md-6 mb-5 mb-md-0">
+          <div className="row align-items-center justify-content-between mb-80">
+            <div className=" col-md-6 mb-5 mb-md-0 order-2 order-lg-1">
               <div className="d-flex align-items-start justify-content-start">
                 <div>
                   <span className="section-title-border"></span>
@@ -83,7 +49,7 @@ const Youth = () => {
                 impact in society.
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6  order-1 order-lg-2">
               <img
                 src="images/youth-img1.jpg"
                 className="w-100 rounded-4"
@@ -92,7 +58,7 @@ const Youth = () => {
             </div>
           </div>
 
-          <div className="row justify-content-between mb-80">
+          <div className="row align-items-center justify-content-between mb-80">
             <div className="col-md-6">
               <img
                 src="images/youth-img2.webp"
@@ -130,9 +96,9 @@ const Youth = () => {
             </div>
           </div>
 
-          <div className="row g-3 g-lg-4 g-xl-5">
+          <div className="row g-3 g-lg-4 g-xl-4">
             {/* <!-- Confidence Building --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+            <div className="col-md-6 col-lg-6">
               <h3>
                 {/* <span className="text-primary">01.</span> */}
                 Confidence Building
@@ -144,7 +110,7 @@ const Youth = () => {
               </p>
             </div>
             {/* <!-- Personality Development --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+            <div className="col-md-6 col-lg-6">
               <h3>
                 {/* <span className="text-primary">02.</span> */}
                 Personality Development
@@ -157,7 +123,7 @@ const Youth = () => {
               </p>
             </div>
             {/* <!-- Awareness in your Pocket – --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+            <div className="col-md-6 col-lg-6">
               <h3>
                 {/* <span className="text-primary">03.</span> */}
                 Awareness in your Pocket
@@ -170,7 +136,7 @@ const Youth = () => {
               </p>
             </div>
             {/* <!-- Speakers of Tomorrow – --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+            <div className="col-md-6 col-lg-6">
               <h3>
                 {/* <span className="text-primary">04.</span> */}
                 Speakers of Tomorrow
@@ -184,7 +150,7 @@ const Youth = () => {
             </div>
 
             {/* <!-- Social Storytelling – --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+            <div className="col-md-6 col-lg-6">
               <h3>
                 {/* <span className="text-primary">04.</span> */}
                 Social Storytelling
@@ -212,7 +178,7 @@ const Youth = () => {
         {/* <!-- background shape --> */}
         <img
           className="img-fluid about-bg-shape"
-          src="images/backgrounds/about-us-3-bg.png"
+          src="./images/backgrounds/about-us-3-bg.png"
           alt="shape"
         />
       </section>
@@ -404,12 +370,16 @@ const Youth = () => {
       </section>
       {/* topics */}
       {/* Youth Gallery */}
-      <section className="section position-relative">
+      <section className=" py-5 position-relative layer-bg">
         <div className="container">
-          <h3>Youth Gallery</h3>
-          {/* Showcase your talent, culture or fashion. Post us your pics, videos and reels on
-                YouthGallery@yuvamanthan.org and we will feature them in this section. */}
-                <YouthSwiper/>
+          <h3 className="text-white">Youth Gallery</h3>
+          <p className="col-lg-7 text-white">
+            Showcase your talent, culture or fashion. Post us your pics, videos
+            and reels on <br /> <a href="mailto:YouthGallery@yuvamanthan.org">
+              <i className="bi bi-envelope"></i> YouthGallery@yuvamanthan.org
+            </a> and we will feature them in this section.
+          </p>
+          <YouthSwiper />
         </div>
       </section>
       {/* Youth Gallery */}

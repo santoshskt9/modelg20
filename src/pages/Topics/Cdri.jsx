@@ -1,43 +1,13 @@
 import React from "react";
+import BreadCrumb from "../../layout/BreadCrumb";
 
 const Cdri = () => {
   return (
     <div>
       {/* <!-- page title --> */}
-      <section
-        className="section"
-        style={{
-          background: "url(images/backgrounds/g20.jpg) no-repeat center",
-          backgroundSize: "cover",
-          boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-        }}
-      >
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="text-white mb-3">
-                Coalition of Disaster Resilient Infrastructure. (CDRI)
-              </h1>
-              {/* <!-- breadcrumb --> */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb bg-transparent p-0">
-                  <li className="breadcrumb-item font-weight-semebold">
-                    <a className="text-white" href="index.html">
-                      Home
-                    </a>
-                  </li>
-                  <li
-                    className="breadcrumb-item font-weight-semebold active text-primary"
-                    aria-current="page"
-                  >
-                    Coalition of Disaster Resilient Infrastructure. (CDRI)
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrumb
+        heading={"Coalition of Disaster Resilient Infrastructure. (CDRI)"}
+      />
       {/* <!-- /page title --> */}
       <section className="section container">
         <h2>Overview</h2>
@@ -73,7 +43,7 @@ const Cdri = () => {
           risk factors, economic needs and the overall sustainable development
           discourse.
         </p>
-        <h4  className="fs-2 mt-4">Mission</h4>
+        <h4 className="fs-2 mt-4">Mission</h4>
         <p className="text-dark mb-3">
           The CDRI was formed to expand the development of resilient
           infrastructure at a rapid pace to answer the imperative sustainable
@@ -162,7 +132,7 @@ const Cdri = () => {
           through the rehabilitation of damaged infrastructure and downtrodden
           services.
         </p>
-        <h4  className="fs-2 mt-4">Emerging Technology</h4>
+        <h4 className="fs-2 mt-4">Emerging Technology</h4>
         <p className="text-dark mb-3">
           The major plus of any new technology is that its scope and potential
           are unknown and unutilised. At times, emerging technological
@@ -180,7 +150,7 @@ const Cdri = () => {
           experts, researchers and scientific partners to build a better
           ecosystem of resilience.
         </p>
-        <h4  className="fs-2">Financing</h4>
+        <h4 className="fs-2">Financing</h4>
         <p className="text-dark mb-3">
           Finance is an important signifier for any infrastructure resilience
           plan. Identifying risk financing strategies and priorities widely
@@ -198,7 +168,7 @@ const Cdri = () => {
           finance(DRF) model to protect the collected funds from fiscal shocks
           and uncertain monetary markets.
         </p>
-        <h4  className="fs-2">Certifications and Standards</h4>
+        <h4 className="fs-2">Certifications and Standards</h4>
         <p className="text-dark mb-3">
           It is significant to have decent standards that must be followed while
           formulating resilient infrastructure systems. This is because those
@@ -330,7 +300,7 @@ const Cdri = () => {
             <br />
           </p>
           <hr />
-          <h4  className="fs-2"> Disaster Risk Reduction</h4>
+          <h4 className="fs-2"> Disaster Risk Reduction</h4>
           <p>
             Simply put, disaster risk reduction is defined as locating possible
             natural and man-made vulnerabilities or hazards and thus taking

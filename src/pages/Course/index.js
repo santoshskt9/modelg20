@@ -1,44 +1,10 @@
 import React from "react";
+import BreadCrumb from "../../layout/BreadCrumb";
 
 const Course = () => {
   return (
     <>
-      <section
-        className="section"
-        style={{
-          background: "url(images/backgrounds/g20.jpg) no-repeat center",
-          backgroundSize: "cover",
-          boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-        }}
-      >
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="text-white mb-3">
-                <span className="" style={{ textStyle: "lowercase" }}>
-                  G20 Genius Certification{" "}
-                </span>
-              </h1>
-              {/* <!-- breadcrumb --> */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb bg-transparent p-0">
-                  <li className="breadcrumb-item font-weight-semebold">
-                    <a className="text-white" href="/">
-                      Home
-                    </a>
-                  </li>
-                  <li
-                    className="breadcrumb-item font-weight-semebold active text-primary"
-                    aria-current="page"
-                  >
-                    G20 Genius Certification
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrumb heading={"G20 Genius Certification"}/>
       <section className="section">
         <div className="container">
           <span className="section-title-border"></span>

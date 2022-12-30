@@ -14,6 +14,7 @@ import CampusAmbass from "./pages/Topics/CampusAmbass";
 import StartupIndia from "./pages/Topics/StartupIndia";
 import DigitalTransform from "./pages/Topics/DigitalTransform";
 import Youth from "./pages/Topics/Youth";
+import Error from "./pages/Error";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/news/:slug" element={<News />} />
         <Route path="/cdri" element={<Cdri />} />
         <Route path="/nep" element={<Nip />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

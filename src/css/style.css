@@ -679,6 +679,18 @@ Heights
 }
 .height-300 {
   height: 300px;
+  object-fit: contain;
+}
+.height-400 {
+  height: 400px;
+  object-fit: contain;
+}
+.height-500 {
+  height: 500px;
+  object-fit: contain;
+}
+.fit-cover {
+  object-fit: cover;
 }
 /* ================
 Padding 
@@ -2538,4 +2550,33 @@ blockquote p {
 
 .text-intial {
   text-transform: initial;
+}
+.breadcrumb {
+  padding-top: 160px;
+}
+@media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 30px;
+  }
+  p,
+  .paragraph {
+    font-size: 15px;
+  }
+}
+ul {
+  padding-left: 0;
+}
+li {
+  color: #000;
+}
+.layer-bg {
+  background: url(../../public/images/layer-bg.jpg) no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.349);
 }

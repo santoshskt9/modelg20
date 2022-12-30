@@ -1,51 +1,21 @@
 import React from "react";
+import BreadCrumb from "../../layout/BreadCrumb";
 
 const CampusAmbass = () => {
   return (
     <div>
       {/* <!-- page title --> */}
-      <section
-        className="section"
-        style={{
-          background: "url(images/backgrounds/g20.jpg) no-repeat center",
-          backgroundSize: "cover",
-          boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-        }}
-      >
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="text-white mb-3">G20 Campus Sherpa Programme</h1>
-              {/* <!-- breadcrumb --> */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb bg-transparent p-0">
-                  <li className="breadcrumb-item font-weight-semebold">
-                    <a className="text-white" href="index.html">
-                      Home
-                    </a>
-                  </li>
-                  <li
-                    className="breadcrumb-item font-weight-semebold active text-primary"
-                    aria-current="page"
-                  >
-                    G20 Campus Sherpa Programme
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrumb heading={"G20 Campus Sherpa Programme"} />
       {/* <!-- /page title --> */}
       <section className="section container">
-        {" "}
         <h3>G20 Campus Sherpa Programme</h3>
         <p className="text-dark fs-5 mb-3">
           In line with the Model G20 Programme on our website G20-india.org, we
           want to engage enthusiastic youth from schools, colleges and
           universities to become 'Campus Sherpa'. Each institution will have one
           campus ambassador who will volunteer to undertake a set of activities
-          to promote, manage and execute Model G20 Programmes within their campus.
+          to promote, manage and execute Model G20 Programmes within their
+          campus.
         </p>
         <h4>How do you become a Sherpa?</h4>
         <p className="text-dark fs-5">
@@ -224,10 +194,11 @@ const CampusAmbass = () => {
         </p>
         <h4>● Youth Awareness and Networking</h4>
         <p className="fs-5 text-dark">
-          The Model G20 acts as an awareness Programme for the youth of India. It
-          enables the youth to dive deep into socio-political matters and fetch
-          for solutions. This process creates a sense of responsibility as an
-          individual and boosts awareness about what is happening around them.
+          The Model G20 acts as an awareness Programme for the youth of India.
+          It enables the youth to dive deep into socio-political matters and
+          fetch for solutions. This process creates a sense of responsibility as
+          an individual and boosts awareness about what is happening around
+          them.
         </p>
         <p className="fs-5 text-dark">
           This conference collects thousands of people from various walks to

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { useLocation } from "react-router-dom";
+import BreadCrumb from "../../layout/BreadCrumb";
 import blogs from "./content";
 
 const AllBlog = () => {
@@ -12,44 +13,7 @@ const AllBlog = () => {
   }, []);
   return (
     <div>
-      {/* <!-- page title --> */}
-      <section
-        className="section"
-        style={{
-          background: "url(../images/backgrounds/g20.jpg) no-repeat center",
-          backgroundSize: "cover",
-          boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-        }}
-      >
-        <div className="container pt-5">
-          <div className="row">
-            <div className="col-12">
-              <h1 className="text-white mb-3 col-lg-6 lh-1">
-                <span className=" fs-1" style={{ textStyle: "lowercase" }}>
-                  Blogs
-                </span>
-              </h1>
-              {/* <!-- breadcrumb --> */}
-              <nav aria-label="breadcrumb">
-                <ol className="breadcrumb bg-transparent p-0">
-                  <li className="breadcrumb-item font-weight-semebold">
-                    <a className="text-white" href="/">
-                      Home
-                    </a>
-                  </li>
-                  <li
-                    className="breadcrumb-item font-weight-semebold active text-primary"
-                    aria-current="page"
-                  >
-                    Blogs
-                  </li>
-                </ol>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* <!-- /page title --> */}
+      <BreadCrumb heading={"Blogs"} />
       <section className="section">
         <div className="container">
           <div className="row">
@@ -83,10 +47,10 @@ const AllBlog = () => {
                             </h4>
                           </div>
                           <p className="card-text">
-                            {blog.subpara.slice(0,85)+"..."}
+                            {blog.subpara.slice(0, 85) + "..."}
                           </p>
                           <a
-                            href={"/blog/"+blog.slug}
+                            href={"/blog/" + blog.slug}
                             className="btn btn-secondary btn-arrow"
                           >
                             read more
