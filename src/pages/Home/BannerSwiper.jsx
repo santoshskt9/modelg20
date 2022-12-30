@@ -34,7 +34,7 @@ const bannerContent = [
     smallHeading: "Become a G20 Genius!",
     image: "./images/banner/bnr3.jpg",
     mainHeading:
-      "Get certified and become societal influencers and torch bearers of the G20 campaign.",
+      "Get certified now and become G20 influencers in your campus.",
     subheading: "",
     Description:
       "The G20 Genius Certificate is a one-of-a-kind learning module that approaches the history, function, operations, objectives and challenges of G20.",

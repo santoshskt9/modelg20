@@ -39,12 +39,13 @@ const BlogsSwiper = () => {
         <div className="section bg-secondary section-bottom-lg">
           <div className="container">
             <div className="row justify-content-around">
-              <div className="col-10 col-lg-6 text-center">
+              <div className="col-10 col-lg-8 text-center">
                 <span className="section-title-border border-center"></span>
                 <h2 className="section-title text-white">Featured Blogs</h2>
                 <p className="subtitle text-white">
-                  Align yourself with the latest on G20. Information, guest
-                  posts and articles for sustainability, peace and growth
+                  Stay updated on the latest G20 buzz. Read our guest articles,
+                  blog posts and get informed on themes such as climate change,
+                  sustainability, macroeconomics and more
                 </p>
               </div>
             </div>

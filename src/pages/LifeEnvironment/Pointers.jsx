@@ -347,18 +347,30 @@ const Pointers = () => {
     <div>
       {/* <!- 75 Pointers under LiFe Mission --> */}
       <div className="pointer">
-        <h4 className="fs-2">75 Pointers under LiFe Mission</h4>
-        <p className="text-dark mb-2 fs-5">
-          Under the progression of LiFe movement, India has ideated unique 75
-          active steps divided into seven categories- water saving, single-use
-          plastic, sustainable food systems, waste reduction, energy, e-waste,
-          and healthy lifestyle.
+        <h4 className="fs-2">
+          75 Steps towards <span className="text-intial">LiFe</span>
+        </h4>
+        <p>
+          To mark India’s 75th independent year from British colonialism, the
+          authorities released a comprehensive list of 75 personal actions
+          across 7 categories.
         </p>
-        <p className="text-dark mb-2 fs-5">
+        <p>
+          These unique categories are thematically aligned to global
+          sustainability, namely - water saving, single-use plastic, sustainable
+          food systems, waste reduction, energy, e-waste, and healthy lifestyle.
+        </p>
+        <p>
+          These active steps as a part of LiFe mission will be easy to practice
+          by all – groups, individuals, and organisations with lesser
+          co-dependence on resources. They are specific and measurable and are
+          highly non-disruptive to day-to-day economic activities.
+        </p>
+        <p>
           The motive is to aware people across the nation to adopt these steps
-          collectively in order to join the climate change fight. The pointers
-          are:
+          collectively in order to join the climate change fight.
         </p>
+        <p>The list of actions are as follows:</p>
       </div>
       <div>
         <ul

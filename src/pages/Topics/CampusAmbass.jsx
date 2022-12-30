@@ -15,7 +15,7 @@ const CampusAmbass = () => {
         <div className="container pt-5">
           <div className="row">
             <div className="col-12">
-              <h1 className="text-white mb-3">G20 Campus Sherpa Program</h1>
+              <h1 className="text-white mb-3">G20 Campus Sherpa Programme</h1>
               {/* <!-- breadcrumb --> */}
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb bg-transparent p-0">
@@ -28,7 +28,7 @@ const CampusAmbass = () => {
                     className="breadcrumb-item font-weight-semebold active text-primary"
                     aria-current="page"
                   >
-                    G20 Campus Sherpa Program
+                    G20 Campus Sherpa Programme
                   </li>
                 </ol>
               </nav>
@@ -39,13 +39,13 @@ const CampusAmbass = () => {
       {/* <!-- /page title --> */}
       <section className="section container">
         {" "}
-        <h3>G20 Campus Sherpa Program</h3>
+        <h3>G20 Campus Sherpa Programme</h3>
         <p className="text-dark fs-5 mb-3">
-          In line with the Model G20 program on our website G20-india.org, we
+          In line with the Model G20 Programme on our website G20-india.org, we
           want to engage enthusiastic youth from schools, colleges and
-          universities to become “Campus Sherpa”. Each institution will have one
+          universities to become 'Campus Sherpa'. Each institution will have one
           campus ambassador who will volunteer to undertake a set of activities
-          to promote, manage and execute Model G20 programs within their campus.
+          to promote, manage and execute Model G20 Programmes within their campus.
         </p>
         <h4>How do you become a Sherpa?</h4>
         <p className="text-dark fs-5">
@@ -54,14 +54,14 @@ const CampusAmbass = () => {
           managing and organizing events inside their campus or outside their
           campus. Anyone who is eager to gain practical knowledge and implement
           it to create a simulation of the Group of Twenty can opt for this
-          program.
+          Programme.
         </p>
         <p className="text-dark fs-5">
           In order to register as a Sherpa, one has to go through an application
           process. The process comprises a comprehensive registration form
           pertaining to the applicant’s details. An applicant is also required
           to acquire a minimum of 5 students from the same institution who will
-          act as volunteers for the program.
+          act as volunteers for the Programme.
         </p>
         <p className="text-dark fs-5">
           Before one signs up for being a Sherpa, one needs to have the G20
@@ -77,12 +77,12 @@ const CampusAmbass = () => {
           engages the user with amusing animations, audio-visuals, quizzes,
           Q&As, and DIY exercises. By placing an emphasis on presenting India's
           initiatives and culture to the rest of the world, it seeks to produce
-          societal influencers and torch bearers of the G20 program known as
+          societal influencers and torch bearers of the G20 Programme known as
           "Vasudhaiva Kutumbakam" and subtly affect the collective conscience.
         </p>
         <h4>What does a Sherpa do?</h4>
-        <ul className="list-group border-none bg-gray mt-3">
-          <li className="list-group-item border-0 bg-gray ps-0">
+        <ul className="list-group border-none  mt-3">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -91,7 +91,7 @@ const CampusAmbass = () => {
               on their campus.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -100,7 +100,7 @@ const CampusAmbass = () => {
               inspired events all year round.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -109,7 +109,7 @@ const CampusAmbass = () => {
               inspired events all year round.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -118,7 +118,7 @@ const CampusAmbass = () => {
               the campus sherpa to us and to the college management.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -128,7 +128,7 @@ const CampusAmbass = () => {
               events on campus.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -138,7 +138,7 @@ const CampusAmbass = () => {
               to attain maximum participation.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -147,7 +147,7 @@ const CampusAmbass = () => {
               the National Model G20.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -156,7 +156,7 @@ const CampusAmbass = () => {
               summit.
             </span>
           </li>
-          <li className="list-group-item border-0 bg-gray ps-0">
+          <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
             </span>{" "}
@@ -166,7 +166,7 @@ const CampusAmbass = () => {
             </span>
           </li>
         </ul>
-        <h4 className="fs-1">Why become a Sherpa?</h4>
+        <h4 className="fs-1 mt-4">Why become a Sherpa?</h4>
         <h4>● International Relations</h4>
         <p className="fs-5 text-dark">
           An understanding of the international ties between the constituent
@@ -188,7 +188,7 @@ const CampusAmbass = () => {
         </p>
         <p className="fs-5 text-dark">
           With over 50% of India’s population being below the age of 25, the
-          government has initiated multiple Know India Programs (KIPs) to
+          government has initiated multiple Know India Programmes (KIPs) to
           educate the youth about its external affairs. Moreover, the Model G20
           convention offers a unique forum for learning about international
           affairs and its consequences.
@@ -224,7 +224,7 @@ const CampusAmbass = () => {
         </p>
         <h4>● Youth Awareness and Networking</h4>
         <p className="fs-5 text-dark">
-          The Model G20 acts as an awareness program for the youth of India. It
+          The Model G20 acts as an awareness Programme for the youth of India. It
           enables the youth to dive deep into socio-political matters and fetch
           for solutions. This process creates a sense of responsibility as an
           individual and boosts awareness about what is happening around them.

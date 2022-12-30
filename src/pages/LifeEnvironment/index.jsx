@@ -103,14 +103,16 @@ const Life = () => {
           boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
         }}
       >
-        <div className="container pt-5">
+        <div className="container breadcrumb pt-5">
           <div className="row">
             <div className="col-12">
-              <h1 className="text-white mb-3">
-                <span className="" style={{textStyle:"lowercase"}}>LiFE </span>
-                <span className="fs-5">
-                  (Lifestyle for Environment) Initiative
+              <h1 className="text-white mb-3 fs-1">
+                Lifestyle for Environment Initiative
+                <span className="" style={{ textStyle: "lowercase" }}>
+                  {" "}
+                  ( LiFE )
                 </span>
+                <span className="fs-5"></span>
               </h1>
               {/* <!-- breadcrumb --> */}
               <nav aria-label="breadcrumb">
@@ -136,19 +138,28 @@ const Life = () => {
 
       <section className="bg-gray section">
         <div className="container">
-          <div className="section-title">
+          <div className="section-title mb-0">
             <span span className="section-title-border"></span>
-            <h2 className="section-title">Overview</h2>
+            <h2>LiFe (Lifestyle for Environment) Initiative</h2>
+            <h4 className="fs-2 mt-4">Overview</h4>
           </div>
           {/* <!-- Overview  --> */}
           <div className="overview">
             <p className="text-dark mb-2 fs-5">
-              'Lifestyle for Environment' or LiFe initiative is a campaign
+              ‘Lifestyle for Environment’ or LiFe initiative is a campaign
               envisioned by honourable Prime Minister Narendra Modi with a prime
               focus on environmentally conscious living. It was globally
               introduced at the 26th United Nations Climate Change Conference of
               the Parties (COP26) in Glasgow in 2021.
             </p>
+            <blockquote className="blockquote">
+              <i className="bx bxs-quote-left"></i> This LiFe campaign can
+              become as a mass movement towards an environmentally conscious
+              lifestyle. <i className="bx bxs-quote-right"></i> <br />
+              <div className="text-end">
+                <span className="ms-auto">- PM Narendra Modi</span>
+              </div>
+            </blockquote>
             <p className="text-dark mb-2 fs-5">
               LiFe is a call to action for every citizen to practice
               sustainability and mindful utilisation of resources over ‘mindless
@@ -162,9 +173,84 @@ const Life = () => {
             </p>
           </div>
           <hr className="my-4" />
+          {/* Throw a way society a challenge  */}
+          <div>
+            <h4 className="fs-2">Throw-away Society: A Challenge</h4>
+            <p>
+              In recent times, the throwaway culture has gathered much traction.
+              It stems from the social concept of a throw-away society that is
+              strongly affected by consumerism, where people tend to use items
+              of single-use and disposable packaging. It is an overall critical
+              viewpoint of overconsumption and excessive usage of limited
+              shelf-life goods and products.
+            </p>
+            <p>
+              It is believed that due to environmental destruction and adverse
+              climatic shifts, the population without proper action will face
+              acute scarcity of basic needs like water, food, etc. Moreover, the
+              global economy could lose up to 18% of GDP BY 2050.
+            </p>
+          </div>
+          <hr className="my-4" />
+          <div>
+            <h4 className="fs-2">Towards a Circular Economy</h4>
+            <p>
+              Under the LiFe initiative, the focus shall be to transition from
+              this so-called throw-away society to a more circular economy.
+            </p>
+            <p>
+              The government authorities have initiated several reforms and
+              policies to mitigate the throw-away influence from the masses and
+              a change in the behaviour of the citizens towards economic
+              conservation. Some of the successful campaigns are:
+            </p>
+            <ul className="list-group border-none bg-gray mt-3">
+              <li className="list-group-item border-0 bg-gray ps-0">
+                <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                  <i className="bi bi-arrow-right"></i>
+                </span>{" "}
+                <span className="ps-2 fs-5">
+                  <b>Swachh Bharat Abhiyan (2014) – </b>This mission had a
+                  massive behavioural change in people regarding healthy
+                  sanitation practices. Almost 100 million restrooms were
+                  created in a span of 7 years.
+                </span>
+              </li>
+              <li className="list-group-item border-0 bg-gray ps-0">
+                <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                  <i className="bi bi-arrow-right"></i>
+                </span>{" "}
+                <span className="ps-2 fs-5">
+                  <b>Pradhan Mantri Ujjwala Scheme (2016) – </b>With a budget
+                  allocation of 80 billion INR, this scheme incremented
+                  households with LPG from 62% to 99.8% in 2021.
+                </span>
+              </li>
+              <li className="list-group-item border-0 bg-gray ps-0">
+                <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                  <i className="bi bi-arrow-right"></i>
+                </span>{" "}
+                <span className="ps-2 fs-5">
+                  <b>Surakshit Sagar Campaign (2022) – </b>This initiative
+                  strategized to target transformation and eco-conservation
+                  through behaviour change of oceanic bodies. It aimed to remove
+                  15000 tonnes of waste from 75 beaches in 75 days.
+                </span>
+              </li>
+            </ul>
+
+            <p>
+              Besides this, the LiFe mission would address this issue as
+              changing the attitude of individuals and communities can have an
+              instrumental impact on environmental safety.
+            </p>
+          </div>
+          <hr className="my-4" />
           {/* <!-- Mission  --> */}
           <div>
-            <h4 className="fs-2">Mission</h4>
+            <h4 className="fs-2">
+              <span style={{ textTransform: "initial" }}>LiFe</span> Mission
+            </h4>
             <p className="text-dark mb-2 fs-5">
               PM Modi green-flagged mission LiFe this year for changing
               citizens’ collective approach towards sustainability. The mission
@@ -205,17 +291,14 @@ const Life = () => {
               under the initiative who think, act in unity while consuming
               Earth’s gifted resources
             </p>
-            <p
-              className="text-dark mb-2 fs-5 p-3 p-lg-4 fs-5 bg-warning bg-opacity-50 rounded-4"
-              style={{ maxWidth: "700px" }}
-            >
+            <blockquote className="blockquote">
               <i className="bx bxs-quote-left"></i> It functions on the basic
               principle, a lifestyle of the planet, for the planet and by the
               planet. <i className="bx bxs-quote-right"></i> <br />
               <div className="text-end">
                 <span className="ms-auto">- PM Narendra Modi</span>
               </div>
-            </p>
+            </blockquote>
             <p className="text-dark mt-3 fs-5">
               Mission LiFe makes the fight against climate change historically
               democratic where every citizen plays a key role. Life in itself is
@@ -224,23 +307,64 @@ const Life = () => {
               is what counts.
             </p>
             <p className="text-dark mt-3 fs-5">
+              Moreover, it aims to inspire the citizens and communities to lead
+              a lifestyle that is in close synchrony of nature’s limited
+              resources and help minimise any exhaustion of those resources.
               Taking a hint from the above thought comes the idea of the
               circular economy. A model of production and consumption that
               entails industries and markets adopting the concept of ‘reduce,
-              reuse, recycle.’ It majorly involves leasing, sharing,
-              refurbishing, repairing and recycling existing models or products
-              to a realistic end rather than scrapping them off in single use.
+              reuse, recycle.’
             </p>
             <p className="text-dark mt-3 fs-5">
-              Overall, through the LiFe initiative, PM Modi hopes to walk in
-              harmony with nature. The expectation is to change individual as
-              well as community behaviour towards the environment and take the
-              smallest of measures to fight the biggest battles of the global
-              climate crisis.
+              Furthermore, it majorly involves leasing, sharing, refurbishing,
+              repairing and recycling existing models or products to a realistic
+              end rather than scrapping them off in single use.
+            </p>
+            <p>
+              Interestingly, India is the first country across the globe to
+              include LiFe in its list of nationally determined contributions.
+              From this, the nation hopes to set and propagate healthy ways of
+              sustainable existence and values of conservation of the ecosystem
+              to combat climate change.
+            </p>
+            <p>
+              Take a look at the following traditional practices that could be
+              part of the LiFe mission:
+            </p>
+            <ul className="p-0">
+              <li className="text-dark mt-3 fs-5">
+                <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                  <i className="bi bi-arrow-right"></i>
+                </span>{" "}
+                Clayware and biodegradable utensils for cooking, serving and
+                storing food items
+              </li>
+              <li className="text-dark mt-3 fs-5">
+                <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                  <i className="bi bi-arrow-right"></i>
+                </span>{" "}
+                Handwashing and sun drying of clothes instead of excessive
+                electronic means of washing
+              </li>
+              <li className="text-dark mt-3 fs-5">
+                <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                  <i className="bi bi-arrow-right"></i>
+                </span>{" "}
+                Traditional rainwater harvesting techniques like underground
+                tankis, check dams, etc.
+              </li>
+            </ul>
+            <p>
+              Mission LiFe seeks to implement such foundation techniques into
+              the regular habit to have a more powerful impact. It is designed
+              and formulated with the goal to mobilise almost every single
+              citizen of India and the globe eventually for taking collective
+              action towards environmental conservation.
             </p>
           </div>
           <hr className="my-4" />
           <div>
+            <h3>Actions Under the LiFe Mission</h3>
             <h4 className="fs-2">21 Days Challenge</h4>
             <p className="text-dark mb-2 fs-5">
               Under the LiFe Mission, the government has initiated has a 21-day
@@ -316,11 +440,22 @@ const Life = () => {
           <hr className="my-4" />
           {/* <!-- Impact  --> */}
           <div className="py-4">
-            <h4 className="fs-2 text-center">Impact</h4>
+            <h4 className="fs-2 text-center">
+              <span className="text-initial">LiFe</span> Mission Impact
+            </h4>
             <p className="text-dark mb-2 fs-5 text-center col-12 col-lg-10 mx-auto">
-              When estimated against a business-as-usual scenario by 1 billion
-              Indians in 2022-23 to 2027-28, the impact of LiFE actions can be
-              significant, as demonstrated below with select examples:
+              Any national or international campaign that is initiated for
+              global welfare can only be assimilated with the constructive
+              influence it can generate for the environment.
+            </p>
+            <p className="text-center col-12 col-lg-10 mx-auto">
+              Similarly, LiFe mission, its proactive measures are expected to
+              bring about a significant impact on the lives of people as well as
+              the ecosystem if laid out perfectly.
+            </p>
+            <p className="text-center col-12 col-lg-10 mx-auto">
+              Take a look below to get the gist of estimated changes that LiFe
+              actions will bring for 1 billion Indians in 2027-28.
             </p>
             <div className="row g-2 g-lg-3 justify-content-center">
               <div className="col-12 col-md-6 col-lg-2">

@@ -76,8 +76,8 @@ const NewsSwiper = () => {
         <div className="row">
           <div className="col-12">
             <span className="section-title-border"></span>
-            <p className="subtitle">Latest News</p>
-            <h2 className="section-title">STAY TUNED WITH LATEST STORIES</h2>
+            <p className="subtitle">What’s New</p>
+            <h2 className="section-title">Latest G20 News and Stories for You.</h2>
           </div>
         </div>
         <Swiper

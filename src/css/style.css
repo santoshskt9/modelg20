@@ -2523,15 +2523,19 @@ blockquote p {
   object-fit: cover;
 }
 
-@media only screen and (max-width:710px){
-  .sm-font-small{
+@media only screen and (max-width: 710px) {
+  .sm-font-small {
     font-size: 38px !important;
   }
 }
-.icon-modal-logo{
+.icon-modal-logo {
   width: 120px;
   height: 120px;
 }
-.bg-center{
+.bg-center {
   background-position: center !important;
+}
+
+.text-intial {
+  text-transform: initial;
 }

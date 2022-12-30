@@ -18,9 +18,10 @@ const Footer = () => {
                 />
               </a>
               <p className="text-white fs-5 mb-1 lh-sm">
-                Engaging the youth in a meaningful dialogue on international
-                diplomacy, leadership and collective duty; and creating
-                awareness to navigate the changing economic scenarios.
+                Engaging the youth in a global dialogue on international
+                diplomacy, leadership and collective duty. A platform to drive
+                change by creating awareness on issues that matter and build
+                capacity to navigate the changing economic scenarios.
               </p>
               <p className="text-white mb-5 fs-5">
                 Proudly representing India to the world for sustainability,
@@ -75,7 +76,7 @@ const Footer = () => {
                         className="text-white d-block"
                         href="/g20-campus-ambassador"
                       >
-                        Campus Sherpa Program
+                        Campus Sherpa Programme
                       </a>
                     </li>
                     {/* <li className="mb-2">
@@ -113,7 +114,7 @@ const Footer = () => {
                 </div>
                 {/* contact info */}
                 <div className="col-6 mb-5">
-                  <h4 className="text-white mb-4">Contact Info</h4>
+                  <h4 className="text-white mb-4">Contact Us</h4>
                   <ul className="list-unstyled">
                     <li className="text-light mb-3">
                       B82 Ground Floor, Lajpat Nagar 2 , New Delhi 110024
@@ -132,7 +133,9 @@ const Footer = () => {
                 </div>
                 {/* newsletter */}
                 <div className="col-12">
-                  <h4 className="text-white mb-4">Subscribe Newsletter</h4>
+                  <h4 className="text-white mb-4">
+                    Subscribe to our newsletter
+                  </h4>
                   <form action="#">
                     <div className="position-relative">
                       <input

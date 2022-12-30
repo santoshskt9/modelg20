@@ -25,90 +25,109 @@ const Home = () => {
             {/* feature item */}
             <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
               <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark active h-100">
-                <div className="icon-bg mb-4 water-wave">
-                  {/* <i className="bi bi-sun-fill icon text-primary"></i> */}
-                  <img
-                    src="./images/icons/india2.png"
-                    alt=""
-                    className="w-100 p-3"
-                  />
+                <div className="d-flex flex-column justify-content-between h-100 align-items-center">
+                  <div>
+                    <div className="icon-bg mb-4 water-wave">
+                      {/* <i className="bi bi-sun-fill icon text-primary"></i> */}
+                      <img
+                        src="./images/icons/india2.png"
+                        alt=""
+                        className="w-100 p-3"
+                      />
+                    </div>
+                    <h4 className="mb-4">India’s G20 Presidency</h4>
+                    <p>
+                      In 2023, India takes the centre stage on the G20 forum for
+                      economic discussions and financial outlook to help build a
+                      better world of peace and harmony.
+                    </p>
+                  </div>
+                  <button className="btn btn-light-outline">
+                    Find out more
+                  </button>
                 </div>
-                <h4 className="mb-4">India’s G20 Presidency</h4>
-                <p>
-                  In a historic turn of events, takes the centre stage at the
-                  most significant economic discussions to help strengthen the
-                  global architecture and fight unforeseen calamities together
-                  with the world.
-                </p>
-
-                <button className="btn btn-light-outline">Find out more</button>
               </div>
             </div>
             {/* feature item */}
             <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
               <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark h-100">
-                <div className="icon-bg mb-4 water-wave">
-                  {/* <i className="bi bi-sun-fill icon text-primary"></i> */}
-                  <img
-                    src="./images/icons/india3.png"
-                    alt=""
-                    className="w-100 p-3"
-                  />
+                <div className="d-flex flex-column justify-content-between h-100 align-items-center">
+                  <div>
+                    <div className="icon-bg mb-4 water-wave">
+                      {/* <i className="bi bi-sun-fill icon text-primary"></i> */}
+                      <img
+                        src="./images/icons/india3.png"
+                        alt=""
+                        className="w-100 p-3"
+                      />
+                    </div>
+                    <h4 className="mb-4">India leads the way</h4>
+                    <p>
+                      India’s innovations and initiatives will be on full
+                      display. From digital transformation, women
+                      led-development to the rise of Indian startups, we will
+                      show the world how it’s done.
+                    </p>
+                  </div>
+                  <button className="btn btn-primary-outline">Know more</button>
                 </div>
-                <h4 className="mb-4">India leads the way</h4>
-                <p>
-                  India’s innovations and initiatives have captured the
-                  imagination of the world. Be it digital transformation, women
-                  lead development or success of Indian startups, we are showing
-                  the world how it is done.
-                </p>
-                <button className="btn btn-primary-outline">Know more</button>
               </div>
             </div>
             {/* feature item */}
             <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
               <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark h-100">
-                <div className="icon-bg mb-4 water-wave">
-                  {/* <i className="bi bi-sun-fill icon text-primary"></i> */}
-                  <img
-                    src="./images/icons/Life.png"
-                    alt=""
-                    className="w-100 p-3"
-                  />
+                <div className="d-flex flex-column justify-content-between h-100 align-items-center">
+                  <div>
+                    <div className="icon-bg mb-4 water-wave">
+                      {/* <i className="bi bi-sun-fill icon text-primary"></i> */}
+                      <img
+                        src="./images/icons/Life.png"
+                        alt=""
+                        className="w-100 p-3"
+                      />
+                    </div>
+                    <h4 className="mb-4" style={{ textTransform: "initial" }}>
+                      LiFe <span className="text-uppercase">Mission</span>
+                    </h4>
+                    <p>
+                      ‘Lifestyle for Environment’ initiative is a call to action
+                      for every citizen to choose sustainability and mindful
+                      utilisation of resources.
+                    </p>
+                  </div>
+                  <Link
+                    to={"/life-environment-intiative"}
+                    className="btn btn-primary-outline"
+                  >
+                    Start your LiFE
+                  </Link>
                 </div>
-                <h4 className="mb-4">Mission LiFe</h4>
-                <p>
-                  ‘Lifestyle for Environment’ or LiFe initiative is a call to
-                  action for every citizen to practice sustainability and
-                  mindful utilisation of resources over ‘mindless destructive
-                  consumption.’ Take the 21 day challenge and more.
-                </p>
-                <Link
-                  to={"/life-environment-intiative"}
-                  className="btn btn-primary-outline"
-                >
-                  Start your LiFE
-                </Link>
               </div>
             </div>
             {/* feature item */}
             <div className="col-lg-3 col-sm-6 mb-4 mb-lg-0">
               <div className="bg-white py-5 px-4 text-center box-shadow transition hover-bg-dark h-100">
-                <div className="icon-bg mb-4 water-wave">
-                  <img
-                    src="./images/icons/youth2.png"
-                    alt=""
-                    className="w-100 p-3"
-                  />
+                <div className="d-flex flex-column justify-content-between h-100 align-items-center">
+                  <div>
+                    <div className="icon-bg mb-4 water-wave">
+                      <img
+                        src="./images/icons/youth2.png"
+                        alt=""
+                        className="w-100 p-3"
+                      />
+                    </div>
+                    <h4 className="mb-4">Youth in G20</h4>
+                    <p>
+                      Youth in G20 is a major attraction and one of the
+                      engagement groups to facilitate the voice of the country’s
+                      socio-political issues and suggest solutions for the G20
+                      Leaders.
+                    </p>
+                  </div>
+                  <button className="btn btn-primary-outline">
+                    Engage Now
+                  </button>
                 </div>
-                <h4 className="mb-4">Youth in G20</h4>
-                <p>
-                  Youth in G20 will be acting as the major attraction and
-                  engagement group to facilitate the voice of the country’s
-                  socio-political issues and suggest practical solutions in the
-                  Leaders summit.
-                </p>
-                <button className="btn btn-primary-outline">Engage Now</button>
               </div>
             </div>
           </div>
@@ -180,50 +199,13 @@ const Home = () => {
       </section>
       {/* /PM speaks */}
 
-      {/* ModelG20  */}
-      <section className="py-5 d-none">
-        <div className="container">
-          <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
-            <div className="col-12">
-              <div className="d-flex flex-wrap align-items-center justify-content-between">
-                <div className="col-lg-6 text-center text-lg-start">
-                  <span className="section-title-border"></span>
-                  <div className="d-flex align-items-center">
-                    {" "}
-                    <img
-                      src={
-                        process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"
-                      }
-                      alt=""
-                      className="icon-modal-logo"
-                    />
-                    <h2 className="section-title mb-3">Model G20</h2>
-                  </div>
-                  <p className="mb-5 fs-5 ">
-                    As India prepares for its G20 summit 2023, we invite
-                    schools, colleges and universities to participate with us in
-                    Model G20 pre-summits.
-                  </p>
-                </div>
-                <div className="text-center text-lg-start pb-4 ">
-                  <Link to={"/model-g20"} className="btn btn-primary-outline">
-                    Learn More
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* End ModelG20  */}
-
       {/* Featured Topics  */}
       <section className="section pb-4">
         <div className="container-fluid">
           <div className="row align-items-center justify-content-around">
             <div className="col-lg-4 order-2">
               <span className="section-title-border"></span>
-              <p className="subtitle">Featured</p>
+              <p className="subtitle">Themes</p>
               <h2 className="section-title mb-2">Featured Topics</h2>
               <p className="mb-5 fs-5">
                 Take a deep dive into topics everyone is talking about.
@@ -242,7 +224,9 @@ const Home = () => {
                     </div>
                   </div>
                   <a href="/cdri" className="text-dark">
-                    <h4>Coalition for Disaster Resilient Infrastructure (CDRI)</h4>
+                    <h4>
+                      Coalition for Disaster Resilient Infrastructure (CDRI)
+                    </h4>
                   </a>
                 </li>
                 {/* feature item */}
@@ -258,8 +242,7 @@ const Home = () => {
                     </div>
                   </div>
                   <a href="/nep" className="text-dark">
-                    <h4>NNew Education Policy (NEP) 2020</h4>
-                    Transforming School and Higher Education System
+                    <h4>New Education Policy (NEP) 2020</h4>
                   </a>
                 </li>
                 <li className="d-flex align-items-center mb-5">
@@ -275,7 +258,6 @@ const Home = () => {
                   </div>
                   <a href="/life-environment-intiative" className="text-dark">
                     <h4>Lifestyle for Environment Initiative (LiFE) </h4>
-                    
                   </a>
                 </li>
                 {/* <li className=" mb-5">
@@ -288,7 +270,7 @@ const Home = () => {
             <div className="col-lg-5 pr-lg-0 order-lg-2 order-1 mb-5 mb-lg-0">
               <div className="feature-img-bg box-shadow">
                 {/* <video src="https://youtu.be/7eWPI1tEz3I" controls className="w-100"></video>        */}
-               <iframe
+                <iframe
                   className="d-block w-100"
                   height="400"
                   src="https://www.youtube.com/embed/RdqNad4-i1g"
