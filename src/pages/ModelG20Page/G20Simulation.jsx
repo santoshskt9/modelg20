@@ -3,9 +3,9 @@ import React from 'react'
 const G20Simulation = () => {
     return (
         <React.Fragment>
-            <section className="mb-5">
+            <section id='scrollSpyG20Simulation' className="mb-5 section bg-gray">
                 <div className="container">
-                    <h1 className='mb-3'>G20 SIMULATION</h1>
+                    <h1 className='mb-3 text-center'>G20 SIMULATION</h1>
                     <div className="row row-cols-1 row-cols-lg-2 mb-5">
                         <div className="col">
                             <h3>Overview</h3>

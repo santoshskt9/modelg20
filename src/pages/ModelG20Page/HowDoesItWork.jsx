@@ -3,7 +3,7 @@ import React from 'react'
 const HowDoesItWork = () => {
     return (
         <React.Fragment>
-            <section className="mb-5">
+            <section id='scrollspyHowDoesItWork' className="section mb-5">
                 <div className="container">
                     <div className="row justify-content-center mb-5">
                         <h1 className='text-center'>HOW DOES IT WORK</h1>

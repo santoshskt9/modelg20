@@ -3,11 +3,11 @@ import React from 'react';
 const G20India = () => {
     return (
         <React.Fragment>
-            <section className='mb-5'>
+            <section id='scrollSpyG20India' className='section mb-5'>
                 <div className="container">
-                    <h3 className='mb-2'>
+                    <h1 className='text-center mb-2'>
                         MODEL G20 INDIA
-                    </h3>
+                    </h1>
                     <div className="row row-cols-1">
                         <div className="col">
                             <h5 className='fs-3 fw-bold'>
