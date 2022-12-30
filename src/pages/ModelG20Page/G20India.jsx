@@ -80,8 +80,8 @@ const G20India = () => {
                                 young minds for international events. Through our “Campus Sherpa” we will create
                                 engagement groups in each campus to parallel the actual G20 groups.
                             </p>
-                            <div className="row">
-                                <div className="col">
+                            <div className="row row-cols-1 row-cols-lg-2">
+                                <div className="col mb-3">
                                     <p>
                                         We encourage institutions to form Engagement groups as follows:
                                     </p>
@@ -99,7 +99,7 @@ const G20India = () => {
                                         <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Youth20</li>
                                     </ul>
                                 </div>
-                                <div className="col">
+                                <div className="col mb-3">
                                 <p>
                                 Furthermore, students keen on exploring careers in economics, business and banking are
                                 encouraged form Finance Track working groups like:

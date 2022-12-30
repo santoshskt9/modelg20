@@ -35,7 +35,7 @@ const ResourceLibrary = () => {
                             documents and reform plans from each G20 member country.
                         </p>
                     </div>
-                    <div className="row">
+                    <div className="row row-cols-1 row-cols-lg-2">
                         <div className="col">
                             {/* <!-- Publications  --> */}
                             <div className="d-block mb-4 border-start shadow border-end border-4 px-4 py-4 border-primary rounded-4">

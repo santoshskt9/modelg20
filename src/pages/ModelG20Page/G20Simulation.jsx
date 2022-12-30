@@ -19,12 +19,12 @@ const G20Simulation = () => {
                             </p>
                         </div>
                         <div className="col">
-
+                            <img src="images/modelg20/flags.jpg" className='w-100 rounded-4' alt="" />
                         </div>
                     </div>
 
-                    <div className="row row-cols-1 row-cols-lg-2 mb-5">
-                        <h3>
+                    <div className="row row-cols-1">
+                        <h3 className='text-center mb-3'>
                             THREE TRACKS OF NEGOTIATIONS
 
                         </h3>
@@ -35,13 +35,13 @@ const G20Simulation = () => {
                             leaders to engage in a dialogue a third track is added in the form of a Leaders Track.
 
                         </p>
-                        <p>
+                        <p className='mb-5'>
                             Therefore participants are clubbed into 3 majors groups or Tracks, namely:
                         </p>
                     </div>
 
-                    <div className="row row-cols-1 row-cols-lg-2 mb-5">
-                        <div className="col">
+                    <div className="row row-cols-1 row-cols-lg-2 align-items-center mb-5">
+                        <div className="col ">
                             <h4>
                                 Finance Track
                             </h4>
@@ -54,12 +54,12 @@ const G20Simulation = () => {
                             </p>
                         </div>
                         <div className="col">
-
+                            <img src="images/modelg20/finance.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
                         </div>
                     </div>
-                    <div className="row row-cols-1 row-cols-lg-2 mb-5">
+                    <div className="row row-cols-1 row-cols-lg-2 align-items-center mb-5">
                         <div className="col">
-
+                            <img src="images/modelg20/flags.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
                         </div>
                         <div className="col">
                             <h4>
@@ -92,12 +92,12 @@ const G20Simulation = () => {
                             </p>
                         </div>
                         <div className="col">
-
+                            <img src="images/modelg20/leaders.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
                         </div>
                     </div>
                     <div className="row row-cols-1 row-cols-lg-2 mb-5">
                         <div className="col">
-
+                            <img src="images/modelg20/duration.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
                         </div>
                         <div className="col">
                             <h3 className='mb-3'>
