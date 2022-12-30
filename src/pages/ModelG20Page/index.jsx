@@ -1,13 +1,16 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import BreadCrumb from "../../layout/BreadCrumb";
 import Announcement from "./Announcement";
 import FaqComponent from "./FaqComponent";
+import G20India from "./G20India";
+import G20Simulation from "./G20Simulation";
 import Registrattion from "./Registrattion";
 import ResourcesLibrary from "./ResourcesLibrary";
 import Testimonial from "./Testimonial";
 
 const Modelg20Page = () => {
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -16,7 +19,7 @@ const Modelg20Page = () => {
       <BreadCrumb heading={"Model G20"} />
 
       {/* <!-- about us --> */}
-      <section className="section position-relative">
+      <section className="section pb-0">
         <div className="container">
           <div className="row justify-content-between mb-80">
             <div className=" col-md-6 mb-5 mb-md-0">
@@ -36,23 +39,19 @@ const Modelg20Page = () => {
                 </div>
               </div>
               <p>
-                Model G20 is an impressive mock simulator created to mirror the
-                actual G20 or Group Twenty summit of leaders from developed to
-                emerging economies. It is aimed and designed for young learners,
-                and professionals who wish to ace the art of public speaking and
-                diplomacy
+                Model G20 is an impressive mock simulator created to mirror the actual G20 or Group of
+                Twenty summit of leaders from developed to emerging economies. It is aimed and designed
+                for young learners, and professionals who wish to ace the art of public speaking and
+                diplomacy.
               </p>
               <p>
-                The next model G20 summit is planned to take place next year
-                around July 2023!
+                Model G20 in 2023 will mirror the actual G20 event happening under India’s presidency and
+                will take place in schools, colleges and universities leading to state level events and finally a
+                National Model G20 in August, 2023 in New Delhi. It will offer the youth across India a
+                chance to participate in debates, panel discussions, cultural programmes and networking
+                centred around real global issues.
               </p>
-              <p className="mb-5">
-                G20 experts and active practitioners have collaborated together
-                to design this G20 simulation. It actively offers the youth
-                across India to experience debates, panel discussions, and
-                networking on real global issues.
-              </p>
-              <div className="d-flex align-items-center">
+              {/* <div className="d-flex align-items-center">
                 <Link
                   to="/g20-genius-certification"
                   className="btn btn-primary hover-ripple me-5"
@@ -79,7 +78,7 @@ const Modelg20Page = () => {
                     Submit
                   </button>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="col-md-6">
               <img
@@ -89,7 +88,8 @@ const Modelg20Page = () => {
               />
             </div>
           </div>
-          <div className="row g-3 g-lg-4 g-xl-5">
+          {/* D-none  */}
+          <div className="row g-3 g-lg-4 g-xl-5 d-none">
             {/* <!-- What Will You Learn --> */}
             <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
               <h3>
@@ -188,8 +188,10 @@ const Modelg20Page = () => {
         />
       </section>
       {/* <!-- /about us --> */}
-      <section className="py-5">
+      <section className="py-5 pt-0">
         <div className="container">
+          <h3>WHAT WILL YOU LEARN?          </h3>
+          <p>As a model G20 delegate, you will learn the art of</p>
           <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
@@ -238,13 +240,135 @@ const Modelg20Page = () => {
                 <p>Diverse regions come together to debate and negotiate</p>
               </div>
             </div>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/negotiation.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">Strategy Building</h4>
+                <p>- Creating strategies for change for a better future for the world
+                  Macroeconomics - Sharing thoughts on economic matters that influence the world  </p>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/negotiation.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">Research and Analysis</h4>
+                <p>Deep diving into factors that affect
+                  Public Speaking - Speaking to a large audience and debating on diverse issues</p>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
+      <section className="mb-5">
+        <div className="container">
+          <h3>
+            WHO CAN PARTICIPATE?
+          </h3>
+          <p>
+            Model G20 summit is for school students, university undergraduates, and young working
+            professionals within the age group of 16-27 (as on 31st December 2023). You can take part
+            in pre-summit sessions by registering within your institution.
+
+          </p>
+        </div>
+      </section>
+      <section className="mb-5">
+        <div className="container">
+          <h3>
+            APPLICATIONS INVITED FROM EDUCATIONAL
+            INSTITUTIONS!
+          </h3>
+          <p>
+            If you are an educational institution interested in organising Model G20 summits in your
+            campus, you can simply register with us and we will help you with the processes.
+          </p>
+          <button className="btn btn-primary"
+            onClick={() => {
+              navigate('/registration');
+            }}
+          >REGISTER AS AN EDUCATIONAL INSTITUTION</button>
+        </div>
+      </section>
+      <section className="mb-5">
+        <div className="container">
+          <h3>
+            BECOME A G20 CAMPUS SHERPA
+          </h3>
+          <p>
+            In line with the Model G20 programme,, we want to engage enthusiastic youth from schools,
+            colleges and universities to become “Campus Ambassadors”. Each institution will have one
+            campus ambassador who will volunteer to undertake a set of activities to promote, manage
+            and execute Model G20 programs within their campus
+          </p>
+          <p>
+            Interested in knowing more?<a href="/g20-campus-sherpa"> Click here</a> for details
+          </p>
+
+        </div>
+      </section>
+      <section className="mb-5">
+        <div className="container">
+          <div className="row row-cols-1 row-cols-lg-2 mb-5">
+            <div className="col">
+              <img src="images/modelg20/cert.png" class="img-fluid rounded-top w-50" alt="" />
+            </div>
+            <div className="col">
+              <div>
+                <h2>
+                  Get Certified!
+                </h2>
+                <p className="fs-3">As a G20 Genius. Your first step towards knowing everything
+                  about G20 India.{" "}</p>
+              </div>
+              <div className="d-flex align-items-center">
+
+                <Link
+                  to="/g20-genius-certification"
+                  className="btn btn-primary hover-ripple me-5"
+                >
+                  Get Certified
+                </Link>
+              </div>
+            </div>
+
+          </div>
+          <div className="row row-cols-1 row-cols-lg-2 mb-5 justify-content-center">
+            <div className="col mt-3 justify-content-center">
+              <p className="fs-2 fw-bolder">Newsletter</p>
+                <p className="fs-5 fw-bold">
+                  Sign up (email Id and submit button) with your emails to
+                  receive our news and real-time updates.
+                </p>
+                <input
+                  type="text"
+                  placeholder="Enter your Email Address"
+                  className="form-control form-control-lg border-warning rounded-pill"
+                />
+                <div className="d-flex align-items-center">
+                  <button className="btn btn-primary hover-ripple rounded-pill mt-2 me-5">
+                    Submit
+                  </button>
+                </div>
+              </div>
+          </div>
+          
         </div>
       </section>
       <div
         style={{ zIndex: 1200 }}
         className="d-none d-lg-flex d-flex border bg-primary flex-wrap align-items-center sticky-top justify-content-center"
       >
+        <a href="#scrollspySummitIndia" className="btn btn-light-outline m-2">
+          Model G20 India
+        </a>
         <a href="#scrollspySimulation" className="btn btn-light-outline m-2">
           G20&nbsp;Simulation
         </a>
@@ -254,9 +378,7 @@ const Modelg20Page = () => {
         <a href="#scrollspyFaq" className="btn btn-light-outline m-2">
           FAQs
         </a>
-        <a href="#scrollspySummitIndia" className="btn btn-light-outline m-2">
-          Model G20 India
-        </a>
+        
         <a href="#scrollspyLibrary" className="btn btn-light-outline m-2">
           Resource Library
         </a>
@@ -264,6 +386,10 @@ const Modelg20Page = () => {
           Registration
         </a>
       </div>
+
+      <G20India />
+
+      <G20Simulation />
 
       {/* <!-- =============G20 Simulation============= --> */}
       <section
@@ -615,7 +741,7 @@ const Modelg20Page = () => {
 
       <Testimonial />
 
-      <FaqComponent />
+
 
       {/* G20 Summit India and Announcements  */}
       <div className="row" id="scrollspySummitIndia">
@@ -963,6 +1089,8 @@ const Modelg20Page = () => {
       <section id="scrollspyRegister">
         <Registrattion />
       </section>
+
+      <FaqComponent />
     </div>
   );
 };

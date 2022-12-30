@@ -16,6 +16,7 @@ import DigitalTransform from "./pages/Topics/DigitalTransform";
 import Presidency from "./pages/Presidency";
 import Youth from "./pages/Topics/Youth";
 import Error from "./pages/Error";
+import Registration from "./pages/Registration";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/registration" element={<Registration />} />
         <Route path="/model-g20" element={<Modelg20Page />} />
         <Route path="/life-environment-intiative" element={<Life />} />
         <Route path="/g20-genius-certification" element={<Course />} />
