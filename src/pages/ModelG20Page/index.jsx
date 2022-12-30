@@ -195,7 +195,7 @@ const Modelg20Page = () => {
           <h3>WHAT WILL YOU LEARN?          </h3>
           <p>As a model G20 delegate, you will learn the art of</p>
           <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div className="col-12 col-md-6 col-lg-4  text-center">
               <div>
                 <img
                   src="./images/icons/team-building.png"
@@ -209,7 +209,7 @@ const Modelg20Page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div className="col-12 col-md-6 col-lg-4  text-center">
               <div>
                 <img
                   src="./images/icons/consensus.png"
@@ -220,7 +220,7 @@ const Modelg20Page = () => {
                 <p>When opinions are shared to insight and learn</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div className="col-12 col-md-6 col-lg-4  text-center">
               <div>
                 <img
                   src="./images/icons/int-diplomacy.png"
@@ -231,7 +231,7 @@ const Modelg20Page = () => {
                 <p>Learn the skill of delivering reforms as a diplomat</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div className="col-12 col-md-6 col-lg-4  text-center">
               <div>
                 <img
                   src="./images/icons/negotiation.png"
@@ -242,10 +242,10 @@ const Modelg20Page = () => {
                 <p>Diverse regions come together to debate and negotiate</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div className="col-12 col-md-6 col-lg-4  text-center">
               <div>
                 <img
-                  src="./images/icons/negotiation.png"
+                  src="./images/icons/brainstorm.png"
                   alt=""
                   className="icon-120"
                 />
@@ -254,10 +254,10 @@ const Modelg20Page = () => {
                   Macroeconomics - Sharing thoughts on economic matters that influence the world  </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div className="col-12 col-md-6 col-lg-4  text-center">
               <div>
                 <img
-                  src="./images/icons/negotiation.png"
+                  src="./images/icons/analysis.png"
                   alt=""
                   className="icon-120"
                 />
@@ -319,10 +319,8 @@ const Modelg20Page = () => {
       <section className="mb-5">
         <div className="container">
           <div className="row row-cols-1 row-cols-lg-2 mb-5">
-            <div className="col">
-              <img src="images/modelg20/cert.png" class="img-fluid rounded-top w-50" alt="" />
-            </div>
-            <div className="col">
+
+            <div className="col mb-5">
               <div>
                 <h2>
                   Get Certified!
@@ -341,27 +339,46 @@ const Modelg20Page = () => {
               </div>
             </div>
 
-          </div>
-          <div className="row row-cols-1 row-cols-lg-2 mb-5 justify-content-center">
-            <div className="col mt-3 justify-content-center">
-              <p className="fs-2 fw-bolder">Newsletter</p>
-                <p className="fs-5 fw-bold">
-                  Sign up (email Id and submit button) with your emails to
-                  receive our news and real-time updates.
-                </p>
-                <input
-                  type="text"
-                  placeholder="Enter your Email Address"
-                  className="form-control form-control-lg border-warning rounded-pill"
-                />
-                <div className="d-flex align-items-center">
-                  <button className="btn btn-primary hover-ripple rounded-pill mt-2 me-5">
-                    Submit
+            <div className="col justify-content-center">
+              <h2>Newsletter</h2>
+              <p className="fs-5 fw-bold">
+                Sign up (email Id and submit button) with your emails to
+                receive our news and real-time updates.
+              </p>
+              {/* <input
+                type="text"
+                placeholder="Enter your Email Address"
+                className="form-control form-control-lg border-warning rounded-pill"
+              />
+              <div className="d-flex align-items-center">
+                <button className="btn btn-primary hover-ripple rounded-pill mt-2 me-5">
+                  Submit
+                </button>
+              </div> */}
+              <form action="#">
+                <div className="position-relative w-75">
+                  <input
+                    type="email"
+                    className="form-control border-1 newsletter-form bg-gray"
+                    id="newsletter"
+                    name="newsletter"
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    type="submit"
+                    className="btn btn-primary btn-subscribe"
+                  >
+                    Subscribe
                   </button>
                 </div>
-              </div>
+              </form>
+            </div>
+
           </div>
-          
+          <div className="row row-cols-1 row-cols-lg-2 mb-5 justify-content-center">
+
+          </div>
+
         </div>
       </section>
       <div
@@ -383,7 +400,7 @@ const Modelg20Page = () => {
         <a href="#scrollspyFaq" className="btn btn-light-outline m-2">
           FAQs
         </a>
-        
+
         {/* <a href="#scrollspyRegister" className="btn btn-light-outline m-2">
           Registration
         </a> */}
