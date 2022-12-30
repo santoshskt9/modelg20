@@ -5,6 +5,7 @@ import Announcement from "./Announcement";
 import FaqComponent from "./FaqComponent";
 import G20India from "./G20India";
 import G20Simulation from "./G20Simulation";
+import HowDoesItWork from "./HowDoesItWork";
 import Registrattion from "./Registrattion";
 import ResourcesLibrary from "./ResourcesLibrary";
 import Testimonial from "./Testimonial";
@@ -390,6 +391,10 @@ const Modelg20Page = () => {
       <G20India />
 
       <G20Simulation />
+
+      <HowDoesItWork />
+
+      <ResourcesLibrary />
 
       {/* <!-- =============G20 Simulation============= --> */}
       <section
