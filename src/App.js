@@ -14,6 +14,8 @@ import CampusAmbass from "./pages/Topics/CampusAmbass";
 import StartupIndia from "./pages/Topics/StartupIndia";
 import DigitalTransform from "./pages/Topics/DigitalTransform";
 import Youth from "./pages/Topics/Youth";
+import Presidency from "./pages/Presidency";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -26,6 +28,7 @@ function App() {
         <Route path="/g20-genius-certification" element={<Course />} />
         <Route path="/g20-campus-sherpa" element={<CampusAmbass />} />
         <Route path="/startup-india" element={<StartupIndia />} />
+        <Route path="/g20-presidency" element={<Presidency />} />
         <Route path="/youth-community" element={<Youth />} />
         <Route path="/digital-transform" element={<DigitalTransform />} />
         <Route exact path="/blog" element={<AllBlog />} />
@@ -33,6 +36,7 @@ function App() {
         <Route path="/news/:slug" element={<News />} />
         <Route path="/cdri" element={<Cdri />} />
         <Route path="/nep" element={<Nip />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
