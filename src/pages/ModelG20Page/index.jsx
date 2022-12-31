@@ -42,16 +42,19 @@ const Modelg20Page = () => {
                 </div>
               </div>
               <p>
-                Model G20 is an impressive mock simulator created to mirror the actual G20 or Group of
-                Twenty summit of leaders from developed to emerging economies. It is aimed and designed
-                for young learners, and professionals who wish to ace the art of public speaking and
-                diplomacy.
+                Model G20 is an impressive mock simulator created to mirror the
+                actual G20 or Group of Twenty summit of leaders from developed
+                to emerging economies. It is aimed and designed for young
+                learners, and professionals who wish to ace the art of public
+                speaking and diplomacy.
               </p>
               <p>
-                Model G20 in 2023 will mirror the actual G20 event happening under India’s presidency and
-                will take place in schools, colleges and universities leading to state level events and finally a
-                National Model G20 in August, 2023 in New Delhi. It will offer the youth across India a
-                chance to participate in debates, panel discussions, cultural programmes and networking
+                Model G20 in 2023 will mirror the actual G20 event happening
+                under India’s presidency and will take place in schools,
+                colleges and universities leading to state level events and
+                finally a National Model G20 in August, 2023 in New Delhi. It
+                will offer the youth across India a chance to participate in
+                debates, panel discussions, cultural programmes and networking
                 centred around real global issues.
               </p>
               {/* <div className="d-flex align-items-center">
@@ -141,7 +144,7 @@ const Modelg20Page = () => {
                 Find further details <a href="#">here</a>
               </p>
             </div>
-            {/* <!-- Campus Ambassador --> */}
+            {/* <!-- Campus Sherpa --> */}
             <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
               <h3>
                 {/* <span className="text-primary">03.</span> */}
@@ -150,8 +153,8 @@ const Modelg20Page = () => {
               <p className="fs-6">
                 In line with the Model G20 program on our website G20-india.org,
                 we want to engage enthusiastic youth from schools, colleges and
-                universities to become “Campus Ambassadors”. Each institution
-                will have one campus ambassador who will volunteer to undertake
+                universities to become “Campus Sherpas”. Each institution
+                will have one campus sherpa who will volunteer to undertake
                 a set of activities to promote, manage and execute Model G20
                 programs within their campus.
               </p>
@@ -193,7 +196,7 @@ const Modelg20Page = () => {
       {/* <!-- /about us --> */}
       <section className="py-5 pt-0">
         <div className="container">
-          <h3>WHAT WILL YOU LEARN?          </h3>
+          <h3>WHAT WILL YOU LEARN? </h3>
           <p>As a model G20 delegate, you will learn the art of</p>
           <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -251,7 +254,9 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Strategy Building</h4>
-                <p>Creating strategies for change for a better future for the world
+                <p>
+                  Creating strategies for change for a better future for the
+                  world
                 </p>
               </div>
             </div>
@@ -263,7 +268,9 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Macroeconomics</h4>
-                <p>Sharing thoughts on economic matters that influence the world  </p>
+                <p>
+                  Sharing thoughts on economic matters that influence the world{" "}
+                </p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -285,7 +292,9 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Public Speaking</h4>
-                <p>Speaking to a large audience and debating on diverse issues</p>
+                <p>
+                  Speaking to a large audience and debating on diverse issues
+                </p>
               </div>
             </div>
           </div>
@@ -293,52 +302,50 @@ const Modelg20Page = () => {
       </section>
       <section className="mb-5">
         <div className="container">
-          <h3>
-            WHO CAN PARTICIPATE?
-          </h3>
+          <h3>WHO CAN PARTICIPATE?</h3>
           <p>
-            Model G20 summit is for school students, university undergraduates, and young working
-            professionals within the age group of 16-27 (as on 31st December 2023). You can take part
-            in pre-summit sessions by registering within your institution.
-
+            Model G20 summit is for school students, university undergraduates,
+            and young working professionals within the age group of 16-27 (as on
+            31st December 2023). You can take part in pre-summit sessions by
+            registering within your institution.
           </p>
         </div>
       </section>
       <section className="mb-5">
         <div className="container">
-          <h3>
-            APPLICATIONS INVITED FROM EDUCATIONAL
-            INSTITUTIONS!
-          </h3>
+          <h3>APPLICATIONS INVITED FROM EDUCATIONAL INSTITUTIONS!</h3>
           <p>
-            If you are an educational institution interested in organising Model G20 summits in your
-            campus, you can simply register with us and we will help you with the processes.
+            If you are an educational institution interested in organising Model
+            G20 summits in your campus, you can simply register with us and we
+            will help you with the processes.
           </p>
-          <button className="btn btn-primary"
+          <button
+            className="btn btn-primary"
             onClick={() => {
-              navigate('/registration');
+              navigate("/registration");
             }}
-          >REGISTER AS AN EDUCATIONAL INSTITUTION</button>
+          >
+            REGISTER AS AN EDUCATIONAL INSTITUTION
+          </button>
         </div>
       </section>
       <section className="mb-5">
         <div className="container">
-          <h3>
-            BECOME A G20 CAMPUS SHERPA
-          </h3>
+          <h3>BECOME A G20 CAMPUS SHERPA</h3>
           <p>
-            In line with the Model G20 programme,, we want to engage enthusiastic youth from schools,
-            colleges and universities to become “Campus Sherpas”. Each institution will have one
-            campus sherpa who will volunteer to undertake a set of activities to promote, manage
+            In line with the Model G20 programme,, we want to engage
+            enthusiastic youth from schools, colleges and universities to become
+            “Campus Sherpas”. Each institution will have one campus sherpa who
+            will volunteer to undertake a set of activities to promote, manage
             and execute Model G20 programs within their campus
           </p>
           <p>
-            Interested in knowing more?<a href="/g20-campus-sherpa"> Click here</a> for details
+            Interested in knowing more?
+            <a href="/g20-campus-sherpa"> Click here</a> for details
           </p>
-
         </div>
       </section>
-            <Card/>
+      <Card />
       <div
         style={{ zIndex: 1200 }}
         className="d-none d-lg-flex d-flex border bg-primary flex-wrap align-items-center sticky-top justify-content-center"

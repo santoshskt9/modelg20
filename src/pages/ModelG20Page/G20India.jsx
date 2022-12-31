@@ -35,7 +35,6 @@ const G20India = () => {
                                 with India’s capabilities, philosophy, social and intellectual strength.”
                             </p>
                         </div>
-                        <img src="" alt="" />
                     </div>
                     <div className="row mb-5">
                         <p>

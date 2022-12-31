@@ -88,7 +88,19 @@ const Testimonial = () => {
         <div className="row">
           <div className="col-md-10 mx-auto">
             <div className="testimonial-slider-2">
-              <Swiper spaceBetween={50} slidesPerView={2} loop={true}>
+              <Swiper
+                spaceBetween={50}
+                slidesPerView={1}
+                loop={true}
+                breakpoints={{
+                  740: {
+                    slidesPerView: 2,
+                  },
+                  1240: {
+                    slidesPerView: 3,
+                  },
+                }}
+              >
                 {testimonialContent.map((testimonial, index) => {
                   return (
                     <SwiperSlide key={index} className="py-4">
