@@ -1,0 +1,128 @@
+import React from 'react';
+
+const G20India = () => {
+    return (
+        <React.Fragment>
+            <section id='scrollSpyG20India' className='section mb-5'>
+                <div className="container">
+                    <h1 className='text-center mb-2'>
+                        MODEL G20 INDIA
+                    </h1>
+                    <div className="row row-cols-1">
+                        <div className="col">
+                            <h5 className='fs-3 fw-bold'>
+                                THE JOURNEY
+                            </h5>
+                            <p>
+                                The Group of Twenty (G20) is one of the premier forums for international economic
+                                cooperation. It holds meetings to discuss the most pressing global matters and formulate
+                                reforms to strengthen global architecture.
+
+                            </p>
+                            <p>
+                                India shared a joyous moment of pride with its 1.4 billion citizens after receiving the G20
+                                presidency for 2023.
+                            </p>
+                            <p>
+                                In the words of honourable Prime Minister, Shri Narendra Modi for the nation’s youth
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row row-cols-1 row-cols-lg-2">
+                        <div className="col">
+                            <p>
+                                “It is the responsibility of the citizens to go beyond the expectations and acquaint the world
+                                with India’s capabilities, philosophy, social and intellectual strength.”
+                            </p>
+                        </div>
+                    </div>
+                    <div className="row mb-5">
+                        <p>
+                            Aligning ourselves with our Hon’ble Prime Ministers Vision, Yuvamanthan brings to the youth
+                            The Model G20 Summit.
+
+                        </p>
+                    </div>
+
+                    <div className="row row-cols-1">
+                        <div className="col mb-5">
+                            <h5 className='fs-3 fw-bold'>
+                                MODEL G20 INDIA THEME
+
+                            </h5>
+                            <p>
+                                The theme for G20 Presidency in India is - <span className='fw-bold'>‘Vasudhaiva Kutumbakam’</span> which translates into
+                                ‘One Earth. One Family. One Future’ – The theme vividly discusses the poignant value of all
+                                life forms on earth and their exponential interconnectivity with the future and universe.
+
+                            </p>
+                            <p>
+                                The summit theme also highlights the significance of LiFE (Lifestyle for Environment). The
+                                key indication to environmental sustainability on individual and national levels.
+
+                            </p>
+                            <p>
+                                Model G20 India will reproduce the same theme among the youth through its 2023 event.
+                                The themes will change over the years to foster new thoughts and visions. Furthermore, we
+                                encourage the participants to engage with us on LiFE initiatives and through campus
+                                engagement groups for years to come.
+
+                            </p>
+                        </div>
+                        <div className="col mb-5">
+                            <h5 className='fs-3 fw-bold'>
+                                ENGAGEMENT GROUPS
+                            </h5>
+                            <p>
+                                Model G20 is a perpetual entity that will organise summits on a yearly basis. A consistent
+                                and effective engagement with the youth is necessary to make our mission of mentoring
+                                young minds for international events. Through our “Campus Sherpa” we will create
+                                engagement groups in each campus to parallel the actual G20 groups.
+                            </p>
+                            <div className="row row-cols-1 row-cols-lg-2">
+                                <div className="col mb-3">
+                                    <p>
+                                        We encourage institutions to form Engagement groups as follows:
+                                    </p>
+                                    <ul>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Business20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Civil20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Labour20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Parliament20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Science20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> SAI20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Startup20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Think20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Urban20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Women20</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Youth20</li>
+                                    </ul>
+                                </div>
+                                <div className="col mb-3">
+                                <p>
+                                Furthermore, students keen on exploring careers in economics, business and banking are
+                                encouraged form Finance Track working groups like:
+                            </p>
+                            <ul>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Development Working Group</li>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Framework Working Group</li>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Financial Architecture (IFA)</li>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Infrastructure Working Group</li>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Sustainable Finance Working Group</li>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Global Partnership for Financial Inclusion (GPFI)</li>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Joint Finance and Health Task Force</li>
+                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Taxation Agenda</li>
+                            </ul>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </React.Fragment>
+    )
+}
+
+export default G20India;

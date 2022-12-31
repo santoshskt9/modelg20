@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Registrattion = () => {
+  const [userType, setUserType] = useState('');
+
+  const userTypeHandler = (e) => {
+    // console.log(e.target.value);
+    setUserType(e.target.value);
+  }
+
   return (
     <section className="section position-relative">
       <div className="container">
@@ -29,8 +36,8 @@ const Registrattion = () => {
 
           {/* Registration Form */}
           <form action="">
-            <div className="row">
-              <div className="col-6 d-flex flex-lg-column">
+            <div className="row row-cols-1 row-cols-lg-2">
+              <div className="col d-flex flex-column">
                 <input
                   type="text"
                   className="form-control mb-3"
@@ -62,16 +69,16 @@ const Registrattion = () => {
                   placeholder="Institution/College Address"
                 />
               </div>
-              <div className="col-6 d-flex flex-column">
-                <div className="row mb-3">
-                  <div className="col">
+              <div className="col d-flex flex-column">
+                <div className="row row-cols-1 row-cols-lg-2 mb-3">
+                  <div className="col mb-3">
                     <input
                       className="form-control"
                       type="text"
                       placeholder="State *"
                     />
                   </div>
-                  <div className="col">
+                  <div className="col mb-3">
                     <input
                       className="form-control"
                       type="text"
@@ -105,45 +112,40 @@ const Registrattion = () => {
               <div className="row">
                 <div className="my-3">
                   <h5>Are you a</h5>
-                  <div className="form-check mx-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkStudent"
-                    />
-                    <label className="form-check-label" htmlFor="checkStudent">
+
+                  {/* UserType Selectors */}
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="userTypeRadio" id="radioStudent" 
+                    onChange={userTypeHandler}
+                    value="student"  />
+                    <label class="form-check-label" for="radioStudent">
                       Student
                     </label>
                   </div>
-                  <div className="form-check mx-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkRepresentative"
-                    />
-                    <label className="form-check-label" htmlFor="checkRepresentative">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="userTypeRadio" id="radioRepresentative" 
+                    onChange={userTypeHandler}
+                    value="representative" />
+                    <label class="form-check-label" for="radioRepresentative">
                       Representive of educational institution
                     </label>
                   </div>
-                  <div className="form-check mx-3">
-                    <input
-                      className="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="checkProfessional"
-                    />
-                    <label className="form-check-label" htmlFor="checkProfessional">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="userTypeRadio" id="radioProfessional" 
+                    onChange={userTypeHandler}
+                    value="professional" />
+                    <label class="form-check-label" for="radioProfessional">
                       A professional who organises events
                     </label>
                   </div>
+                  {/* UserType Selectors */}
                 </div>
+
               </div>
-              <div className="row my-3">
+              {
+                userType==='student'||userType==='professional' ? <div className="row my-3">
                 <h4 className="mb-3">
-                  For students and professionals only. *Not for representives of
-                  an educational institutions.
+                  For students and professionals only.
                 </h4>
                 <div className="mb-3">
                   <label htmlFor="">
@@ -189,7 +191,8 @@ const Registrattion = () => {
                     placeholder="Answer"
                   />
                 </div>
-              </div>
+              </div> : null
+              }
             </div>
             <div className="row">
               <h4 className="mb-3">Model G20 Terms and Conditions *</h4>

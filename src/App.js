@@ -13,8 +13,10 @@ import Course from "./pages/Course";
 import CampusAmbass from "./pages/Topics/CampusAmbass";
 import StartupIndia from "./pages/Topics/StartupIndia";
 import DigitalTransform from "./pages/Topics/DigitalTransform";
+import Presidency from "./pages/Presidency";
 import Youth from "./pages/Topics/Youth";
 import Error from "./pages/Error";
+import Registration from "./pages/Registration";
 
 function App() {
   return (
@@ -22,11 +24,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/registration" element={<Registration />} />
         <Route path="/model-g20" element={<Modelg20Page />} />
         <Route path="/life-environment-intiative" element={<Life />} />
         <Route path="/g20-genius-certification" element={<Course />} />
         <Route path="/g20-campus-sherpa" element={<CampusAmbass />} />
         <Route path="/startup-india" element={<StartupIndia />} />
+        <Route path="/g20-presidency" element={<Presidency />} />
         <Route path="/youth-community" element={<Youth />} />
         <Route path="/digital-transform" element={<DigitalTransform />} />
         <Route exact path="/blog" element={<AllBlog />} />
