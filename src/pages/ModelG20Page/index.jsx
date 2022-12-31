@@ -144,7 +144,7 @@ const Modelg20Page = () => {
                 Find further details <a href="#">here</a>
               </p>
             </div>
-            {/* <!-- Campus Ambassador --> */}
+            {/* <!-- Campus Sherpa --> */}
             <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
               <h3>
                 {/* <span className="text-primary">03.</span> */}
@@ -153,8 +153,8 @@ const Modelg20Page = () => {
               <p className="fs-6">
                 In line with the Model G20 program on our website G20-india.org,
                 we want to engage enthusiastic youth from schools, colleges and
-                universities to become “Campus Ambassadors”. Each institution
-                will have one campus ambassador who will volunteer to undertake
+                universities to become “Campus Sherpas”. Each institution
+                will have one campus sherpa who will volunteer to undertake
                 a set of activities to promote, manage and execute Model G20
                 programs within their campus.
               </p>
