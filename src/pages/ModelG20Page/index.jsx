@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import BreadCrumb from "../../layout/BreadCrumb";
 import Announcement from "./Announcement";
+import Card from "./Card";
 import FaqComponent from "./FaqComponent";
 import G20India from "./G20India";
 import G20Simulation from "./G20Simulation";
@@ -195,7 +196,7 @@ const Modelg20Page = () => {
           <h3>WHAT WILL YOU LEARN?          </h3>
           <p>As a model G20 delegate, you will learn the art of</p>
           <div className="row gy-4 gx-3 gx-lg-4 gx-xl-5 justify-content-around">
-            <div className="col-12 col-md-6 col-lg-4  text-center">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/team-building.png"
@@ -209,7 +210,7 @@ const Modelg20Page = () => {
                 </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4  text-center">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/consensus.png"
@@ -220,7 +221,7 @@ const Modelg20Page = () => {
                 <p>When opinions are shared to insight and learn</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4  text-center">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/int-diplomacy.png"
@@ -231,7 +232,7 @@ const Modelg20Page = () => {
                 <p>Learn the skill of delivering reforms as a diplomat</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4  text-center">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/negotiation.png"
@@ -242,7 +243,7 @@ const Modelg20Page = () => {
                 <p>Diverse regions come together to debate and negotiate</p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4  text-center">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/brainstorm.png"
@@ -250,11 +251,22 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Strategy Building</h4>
-                <p>- Creating strategies for change for a better future for the world
-                  Macroeconomics - Sharing thoughts on economic matters that influence the world  </p>
+                <p>Creating strategies for change for a better future for the world
+                </p>
               </div>
             </div>
-            <div className="col-12 col-md-6 col-lg-4  text-center">
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/macroeconomics.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">Macroeconomics</h4>
+                <p>Sharing thoughts on economic matters that influence the world  </p>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
               <div>
                 <img
                   src="./images/icons/analysis.png"
@@ -262,8 +274,18 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Research and Analysis</h4>
-                <p>Deep diving into factors that affect
-                  Public Speaking - Speaking to a large audience and debating on diverse issues</p>
+                <p>Deep diving into factors that affect</p>
+              </div>
+            </div>
+            <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+              <div>
+                <img
+                  src="./images/icons/public-speaking.png"
+                  alt=""
+                  className="icon-120"
+                />
+                <h4 className="mb-3 mt-4">Public Speaking</h4>
+                <p>Speaking to a large audience and debating on diverse issues</p>
               </div>
             </div>
           </div>
@@ -306,8 +328,8 @@ const Modelg20Page = () => {
           </h3>
           <p>
             In line with the Model G20 programme,, we want to engage enthusiastic youth from schools,
-            colleges and universities to become “Campus Ambassadors”. Each institution will have one
-            campus ambassador who will volunteer to undertake a set of activities to promote, manage
+            colleges and universities to become “Campus Sherpas”. Each institution will have one
+            campus sherpa who will volunteer to undertake a set of activities to promote, manage
             and execute Model G20 programs within their campus
           </p>
           <p>
@@ -316,71 +338,7 @@ const Modelg20Page = () => {
 
         </div>
       </section>
-      <section className="mb-5">
-        <div className="container">
-          <div className="row row-cols-1 row-cols-lg-2 mb-5">
-
-            <div className="col mb-5">
-              <div>
-                <h2>
-                  Get Certified!
-                </h2>
-                <p className="fs-3">As a G20 Genius. Your first step towards knowing everything
-                  about G20 India.{" "}</p>
-              </div>
-              <div className="d-flex align-items-center">
-
-                <Link
-                  to="/g20-genius-certification"
-                  className="btn btn-primary hover-ripple me-5"
-                >
-                  Get Certified
-                </Link>
-              </div>
-            </div>
-
-            <div className="col justify-content-center">
-              <h2>Newsletter</h2>
-              <p className="fs-5 fw-bold">
-                Sign up (email Id and submit button) with your emails to
-                receive our news and real-time updates.
-              </p>
-              {/* <input
-                type="text"
-                placeholder="Enter your Email Address"
-                className="form-control form-control-lg border-warning rounded-pill"
-              />
-              <div className="d-flex align-items-center">
-                <button className="btn btn-primary hover-ripple rounded-pill mt-2 me-5">
-                  Submit
-                </button>
-              </div> */}
-              <form action="#">
-                <div className="position-relative w-75">
-                  <input
-                    type="email"
-                    className="form-control border-1 newsletter-form bg-gray"
-                    id="newsletter"
-                    name="newsletter"
-                    placeholder="Enter your email"
-                  />
-                  <button
-                    type="submit"
-                    className="btn btn-primary btn-subscribe"
-                  >
-                    Subscribe
-                  </button>
-                </div>
-              </form>
-            </div>
-
-          </div>
-          <div className="row row-cols-1 row-cols-lg-2 mb-5 justify-content-center">
-
-          </div>
-
-        </div>
-      </section>
+            <Card/>
       <div
         style={{ zIndex: 1200 }}
         className="d-none d-lg-flex d-flex border bg-primary flex-wrap align-items-center sticky-top justify-content-center"

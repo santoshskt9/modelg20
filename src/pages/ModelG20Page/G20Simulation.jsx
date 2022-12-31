@@ -6,7 +6,7 @@ const G20Simulation = () => {
             <section id='scrollSpyG20Simulation' className="mb-5 section bg-gray">
                 <div className="container">
                     <h1 className='mb-3 text-center'>G20 SIMULATION</h1>
-                    <div className="row row-cols-1 row-cols-lg-2 mb-5">
+                    <div className="row row-cols-1 mb-5">
                         <div className="col">
                             <h3>Overview</h3>
                             <p>
@@ -18,9 +18,9 @@ const G20Simulation = () => {
 
                             </p>
                         </div>
-                        <div className="col">
+                        {/* <div className="col">
                             <img src="images/modelg20/flags.jpg" className='w-100 rounded-4' alt="" />
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="row row-cols-1">
@@ -40,7 +40,7 @@ const G20Simulation = () => {
                         </p>
                     </div>
 
-                    <div className="row row-cols-1 row-cols-lg-2 align-items-center mb-5">
+                    <div className="row row-cols-1  align-items-center mb-5">
                         <div className="col ">
                             <h4>
                                 Finance Track
@@ -53,14 +53,10 @@ const G20Simulation = () => {
 
                             </p>
                         </div>
-                        <div className="col">
-                            <img src="images/modelg20/finance.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
-                        </div>
+                        
                     </div>
-                    <div className="row row-cols-1 row-cols-lg-2 align-items-center mb-5">
-                        <div className="col">
-                            <img src="images/modelg20/flags.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
-                        </div>
+                    <div className="row row-cols-1  align-items-center mb-5">
+                       
                         <div className="col">
                             <h4>
                                 Sherpa Track
@@ -77,7 +73,7 @@ const G20Simulation = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="row row-cols-1 row-cols-lg-2 mb-5">
+                    <div className="row row-cols-1  mb-5">
                         <div className="col">
                             <h4>
                                 Leaders Track
@@ -91,14 +87,10 @@ const G20Simulation = () => {
 
                             </p>
                         </div>
-                        <div className="col">
-                            <img src="images/modelg20/leaders.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
-                        </div>
+                       
                     </div>
-                    <div className="row row-cols-1 row-cols-lg-2 mb-5">
-                        <div className="col">
-                            <img src="images/modelg20/duration.jpg" className='w-75 rounded-4 d-block mx-auto' alt="" />
-                        </div>
+                    <div className="row row-cols-1  mb-5">
+                        
                         <div className="col">
                             <h3 className='mb-3'>
                                 Duration of the event

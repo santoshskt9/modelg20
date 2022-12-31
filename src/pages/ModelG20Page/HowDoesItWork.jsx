@@ -75,7 +75,7 @@ const HowDoesItWork = () => {
                             <p>
                                 Everything discussed in the meetings is recorded by the members attending the
                                 meeting or by transcriptionists appointed for the same or a video recording can also
-                                be done to record the proceedings
+                                be done to record the proceedings.
 
                             </p>
                         </div>
@@ -91,7 +91,7 @@ const HowDoesItWork = () => {
                         <div className="col">
                             <h2 className="text-warning">10</h2>
                             <p>
-                                Each teThe organisers or the Leaders Track then should compile the declarations of Finance
+                                The organisers or the Leaders Track then should compile the declarations of Finance
                                 Track and Sherpa Tracks and their own declaration in a final Communique
                                 Document that is shared with everyone.
 
@@ -101,8 +101,8 @@ const HowDoesItWork = () => {
                         <div className="col">
                             <h2 className="text-warning">11</h2>
                             <p>
-                                EaA jury composed of one female, 1 sector expert will select winners based on
-                                articulation, content, body language
+                                A jury composed of one female, 1 sector expert will select winners based on
+                                articulation, content, body language.
 
                             </p>
                         </div>
