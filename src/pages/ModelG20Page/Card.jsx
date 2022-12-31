@@ -10,7 +10,7 @@ const Card = () => {
                 <div className="container">
                     <div className="row row-cols-1 row-cols-lg-2 mb-5 justify-content-around">
 
-                        <div className="col col-lg-5 card p-5 mb-5 rounded-4" style={{ backgroundImage: 'linear-gradient(90deg,#198cd3,#37c2fd)' }}>
+                        <div className="col col-lg-5 card p-lg-5 p-3 mb-5 rounded-4" style={{ backgroundImage: 'linear-gradient(90deg,#198cd3,#37c2fd)' }}>
                             <div className="card-backicons">
                                 <img src="images/icons/reward.png" className='w-25 position-absolute z-0' alt=""
                                     style={
@@ -72,7 +72,7 @@ const Card = () => {
                         </div> */}
 
 
-                        <div className="col col-lg-5 card p-5 mb-5 rounded-4" style={{ backgroundImage: 'linear-gradient(90deg,#ffbd59,#ffde59)' }}>
+                        <div className="col col-lg-5 card p-lg-5 p-3 mb-5 rounded-4" style={{ backgroundImage: 'linear-gradient(90deg,#ffbd59,#ffde59)' }}>
                             <div className="card-backicons">
                                 <img src="images/icons/newsletter.png" className='w-25 position-absolute z-0' alt=""
                                     style={
@@ -85,7 +85,7 @@ const Card = () => {
                             </div>
                             <div className="content" style={{ zIndex: '1' }}>
                                 <h2>Newsletter</h2>
-                                <p className="fs-5">
+                                <p className="fs-5 fw-lighter">
                                     Sign up with your emails to
                                     receive our news and real-time updates.
                                 </p>
@@ -94,7 +94,7 @@ const Card = () => {
                                     <div className="position-relative w-100">
                                         <input
                                             type="email"
-                                            className="form-control border-1 newsletter-form bg-gray"
+                                            className="form-control  newsletter-form"
                                             id="newsletter"
                                             name="newsletter"
                                             placeholder="Enter your email"

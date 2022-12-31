@@ -308,4 +308,146 @@ export default [
       },
     ],
   },
+  {
+    id: 4,
+    image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog4.jpg`,
+    title: "How India Became a Unicorn Nation?",
+    slug: "how-india-became-a-unicorn-nation",
+    author: "admin",
+    date: "",
+    subpara: "",
+    section: [  
+      {
+        id: 1,
+        title: "Unicorn: Definition & Characteristics",
+        paragraph: [
+          "The term ‘unicorn’ was first coined by Aileen Lee, the founder of Cowboy Ventures, in 2013. In the world of startups, a unicorn is a private-owned business that has a value of over $1 billion or more.",
+          "Big brand names like Flipkart, PayTM, Netflix, Cred, etc. were all once startups that have become huge unicorn players in the market. As of 2021, there are approximately 650 unicorns in the worldwith a total valuation of $2,173 billion.",
+          "Moreover, it is true that not every startup can become a unicorn, in fact, there is only a 0.0006% chance that a startup may transform into a unicorn. However, that shouldn’t demoralise the young business minds to try and achieve the status of becoming a unicorn.",
+          "Here are some unique characteristics of unicorn firms that every startup should know:",
+        ],
+        list: [
+          {
+            id: 0,
+            title: "Driven by Technology",
+            paragraph: [
+              "Most of the unicorns’ business models are based on the latest technology and well-researched innovations. Today, 10% of unicorns are in artificial intelligence, robotics and 13% are in the Fintech sphere. Technology allows startups to work more efficiently and helps businesses to grow more effectively within limited resources.",
+             
+            ],
+          },
+          {
+            id: 1,
+            title: "Private Ownership & Affordability",
+            paragraph: [
+              "As most of the startups are privately owned, they are at a better chance to receive exceptional investment opportunities once they are branded as unicorns in emerging markets. Besides, startups are built around an affordable scale that would incur a lesser loss if the startup venture fails at some point or great profits if the business exceeds user expectations.",
+             
+            ],
+          },
+          {
+            id: 2,
+            title: "Customer Oriented",
+            paragraph: [
+              "A key characteristic of unicorn startups is their customer-centricity. They provide their products, services, and expertise to customers at a reasonable price and their business models are designed to cater for every need of their growing consumer market. Interestingly, up to 62% of unicorns in the industry function as business-to-consumer (B2C) companies.",
+             
+            ],
+          },
+          {
+            id: 3,
+            title: "Problem Solving Quality",
+            paragraph: [
+              "For every startup to pave the way in becoming a unicorn must be dedicated to building something that is truly unique and addresses the existing problems in the market. Startups like Urban Company have reached their unicorn-level success by studying their target audience’s need for an all-in-one app solution for an expert like a plumber, technician, beautician, etc.",
+             
+            ],
+          },
+        ],
+      },
+      {
+        id: 2,
+        title: "Startups & Unicorns in India: A Revolution",
+        paragraph: [
+         "It is fair to say at this point that Indian startups have somewhat become synonymous with a unicorn revolution in the world. As we are shifting aggressively from rough paper ideas to well-ideated startup businesses, it is only fair to say that India’s emerging Startup movement will play a key role in the world’s business landscape.",
+         "Did you know that India has the 3rd largest startup ecosystem in the world which continues to grow into the fastest-growing startup ecosystem with more than 100+ unicorns and 60,000 registered startups.",
+         "Not only that but India is slowly becoming a land of unicorns with more startups forming and competing for a billion-dollar valuation. The growing entrepreneurial system is creating some of the most innovative and profitable business models in the country.",
+         "Today, India has more than 80,000 operational startups, 109 unicorns and almost $274 billion values worth in the global economy.",
+         "In India, InMobi was the first Indian unicorn startup that was established in 2007. It took InMobi four years to become a unicorn. Moreover, Indian companies like Ola, BharatPe, Oyo have already joined the billion-dollar unicorn club. These companies have completely changed the way of work and life for Indian people and have greatly influenced the country’s economy.", 
+         "The revolution of unicorns in India is a good sign for entrepreneurs as they will have access to more resources and funding than before. Plus, new job opportunities for people and better economic growth patterns for the country is a fair output to be expected through unicorns in India.",
+        ],
+        list: [
+          {
+            id: 0,
+            title: "Why are unicorn startups growing in India?",
+            paragraph: [
+              "In 2021, India experienced a massive surge in the number of startups entering the unicorn club with a total valuation of $ 93 billion. In the first few months of 2022, India created added 14 new unicorns to the global market with a total value of $ 18.9 billion.",
+              "Interestingly, India created history in May 2022 when the 100th unicorn emerged in from Bengaluru-based neo-banking startup, Open. This makes India a proud nation with 100 unicorns with a total valuation of $ 332.7 billion in the global economy.",
+              "The rise of India’s unicorns has been due to many reasons, such as;",
+            ],
+          },
+          {
+            id: 1,
+            title: "Government Support & Initiatives",
+            paragraph: [
+              "The government of India has prided itself in lending support and guidance to the startup ecosystem ever since the Startup India campaign was initiated in 2016. There are many policies, schemes and initiatives in place for businesses and startup ventures to grow and build their brand. Some of the government initiatives by the government are SETU Fund, Credit Guarantee fund, E-biz Portal, etc.",
+            ],
+          },
+          {
+            id: 2,
+            title: "Great Population",
+            paragraph: [
+              "With a population of more than 1.3 billion people, India provides a massive market with a target audience, diverse customer needs and innovative potential for budding startups.",
+            ],
+          },
+          {
+            id: 3,
+            title: "Good Investment Potential",
+            paragraph: [
+              "The Indian business sphere offers a great capital market with more venture and equity capitalists taking advantage of this factor. Many private and government firms have begun investing in startups given the rise of the unicorn wave in the country. In the first half of 2022, up to 506 startups have been funded and the total funds are valued to $ 11.8 billion.",
+              "Apart from these factors, the unicorn revolution in India is more successful thanks to the opportunities that have been created by China’s crackdown on tech companies. This has helped India bolster its attractiveness as an emerging market alternative.",
+              "Similarly, during and after the Covid-19 pandemic, customers have moved on to online ventures for their basic needs like groceries, food, medicines, etc. This has created a creative new sphere of offering solutions for Indian startups to grow exponentially thus resulting in the increase of unicorn players from the nation.",
+            ],
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "Top Unicorn Startups in India",
+        paragraph: [
+          "India is the third country in the world to have 100 unicorns under its name, after China and USA. Most of its unicorns have emerged in the e-commerce sector. Interestingly, the top four unicorns in India that is, Flipkart, Paytm, OYO, Byju’s are termed as decacorns, which means the companies that have a gross valuation of $ 10 billion and above.",
+          "Take look at some of the top unicorn startups in India.",
+        ],
+        list: [
+          {
+            id: 0,
+            title: "Meesho",
+            paragraph: [
+              "Meesho is a Bengaluru-based e-commerce startup company that was created by IIT Allums Sajeev Barnal and Vidit Aatrey in 2015. It offers a wide variety of garments, cosmetics, and electronic items on its platform.",
+              "It also connects manufacturers with resellers to market the product on social media forums. After it received funding, Meesho became a unicorn in 2021 with a total valuation of $ 2.1 billion.",
+            ],
+          },
+          {
+            id: 1,
+            title: "Cred",
+            paragraph: [
+              "Cred is a Bengaluru-based fintech startup that was founded by Kunal Shah in 2018. This platform offers a credit-based payment system which has gained it quite a lot of popularity with incredible cashback offers, travel vouchers and rewards. Cred became a unicorn in 2021 and its valuation reached to $ 4.01 billion.",
+            ],
+          },
+          {
+            id: 2,
+            title: "BharatPe",
+            paragraph: [
+              "BharatPe was created by Ashneer Grover and Shashvat Nakrani in 2018. This app-based platform offers an easy digital payment system and is effectively operational in more than 140 cities across the nation. BharatPe received its unicorn status in 2021 with a total value reaching to $ 2.85 billion.",
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: "What Lies Ahead?",
+        paragraph: [
+          "According to a venture capital firm, 3one4, India with the current record-breaking unicorn progression may have over 150 unicorns by 2025. Who knows maybe we can have a greater number of decacorns ($billion valuation) and hectocorns ($billion valuation) as well.",
+          "Despite the tumultuous economic atmosphere, India has garnered much interest from investors and capitalists all around the world. Indian unicorns are versatile, creative and innovative at the same time. Popular names like Zomato, Paytm, Nykka have already listed themselves on the IPO and many more are on the way.",
+        ],
+        list: [],
+      },
+    ],
+  },
 ];
