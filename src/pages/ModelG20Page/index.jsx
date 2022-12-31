@@ -52,7 +52,7 @@ const Modelg20Page = () => {
                 across India to experience debates, panel discussions, and
                 networking on real global issues.
               </p>
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-start align-items-lg-center justify-content-center flex-column flex-lg-row">
                 <Link
                   to="/g20-genius-certification"
                   className="btn btn-primary hover-ripple me-5"
@@ -268,7 +268,7 @@ const Modelg20Page = () => {
       {/* <!-- =============G20 Simulation============= --> */}
       <section
         id="scrollspySimulation"
-        className="bg-gray section"
+        className=" section"
         style={{ position: "relative" }}
       >
         <div className="container">
@@ -618,342 +618,346 @@ const Modelg20Page = () => {
       <FaqComponent />
 
       {/* G20 Summit India and Announcements  */}
-      <div className="row" id="scrollspySummitIndia">
-        <div className="col-12 col-lg-7">
-          {/* <!-- =============G20 Summit India============= --> */}
-          <section className="bg-gray section">
-            <div className="container">
-              <div className="section-title">
-                <span className="section-title-border"></span>
-                <h2 className="section-title">G20 Summit in India</h2>
-              </div>
-              {/* <!-- Overview  --> */}
-              <div className="overview">
-                <h4>Overview</h4>
-                <p className="text-dark mb-2">
-                  The Group of Twenty (20) is one of the premier forums for
-                  international economic cooperation. It holds meetings to
-                  discuss the most pressing global matters and formulate reforms
-                  to strengthen global architecture
-                </p>
-                <p className="text-dark mb-2">
-                  India shared a joyous moment of pride with its 1 billion
-                  citizens after receiving the G20 presidency for 2023. In the
-                  words of honourable Prime Minister, Shri Narendra Modi for the
-                  nation’s youth
-                </p>
-                <p
-                  className="text-dark mb-2 fs-5 p-3 p-lg-4 bg-warning bg-opacity-50 rounded-4"
-                  style={{ maxWidth: "700px" }}
-                >
-                  <i className="bx bxs-quote-left"></i> It is the responsibility
-                  of the citizens to go beyond the expectations and acquaint the
-                  world with India’s capabilities, philosophy, social and
-                  intellectual strength. <i className="bx bxs-quote-right"></i>
-                </p>
-                <p className="text-dark">
-                  <b>Fact:</b> India holds the Presidency of the G20 from 1st
-                  December 2022 to 30th November 2023.
-                </p>
-                <p className="text-dark ">
-                  As part of India’s G20 presidency, many youth-centric
-                  organisations and diverse forums have begun the preparations
-                  and participation under multiple meeting formats.
-                </p>
-              </div>
-              <hr className="my-4" />
-              {/* <!-- G20 Theme  --> */}
-              <div className="three-tracks">
-                <h4>G20 Theme</h4>
-                <p className="text-dark mb-2">
-                  The theme for G20 Presidency in India is -{" "}
-                  <i className="bx bxs-quote-alt-left"></i>{" "}
-                  <i>Vasudhaiva Kutumbakam</i>{" "}
-                  <i className="bx bxs-quote-alt-right"></i> which translates
-                  into ‘One Earth. One Family. One Future’ – The theme vividly
-                  discusses the poignant value of all life forms on earth and
-                  their exponential interconnectivity with the future and
-                  universe.
-                </p>
-                <p className="text-dark mb-2">
-                  The summit theme also highlights the significance of LiFE
-                  (Lifestyle for Environment). The key indication to
-                  environmental sustainability on individual and national
-                  levels.
-                </p>
-              </div>
-              <hr className="my-4" />
-              {/* <!-- G20 Function  --> */}
-              <div className="overview">
-                <h4>G20 Function</h4>
-                <p className="text-dark mb-2">
-                  India under the G20 presidency will be the torchbearer of
-                  moving the G20 agenda forward as a host to the summit. Within
-                  the two tracks – Sherpa and Finance – thematically inclined
-                  working groups will work laboriously to carry forward the
-                  conversations of economic, socio-political and financial
-                  importance.
-                </p>
-                <p className="text-dark mb-2">
-                  India under the G20 presidency will be the torchbearer of
-                  moving the G20 agenda forward as a host to the summit. Within
-                  the two tracks – Sherpa and Finance – thematically inclined
-                  working groups will work laboriously to carry forward the
-                  conversations of economic, socio-political and financial
-                  importance.
-                </p>
-              </div>
-              <hr className="my-4" />
-              {/* <!-- Role of Youth in G20  --> */}
-              <div className="overview">
-                <h4>Role of Youth in G20</h4>
-                <div
-                  className=" mb-2  p-3 p-lg-4 pb-2 pt-5 bg-warning bg-opacity-50 rounded-4"
-                  style={{ maxWidth: "700px" }}
-                >
-                  <p className="fs-5 text-dark text-center mb-0">
-                    <i className="bx bxs-quote-left"></i> Inclusive, ambitious,
-                    decisive, and action-oriented.{" "}
+      <div className="container">
+        <div className="row" id="scrollspySummitIndia">
+          <div className="col-12 col-lg-7">
+            {/* <!-- =============G20 Summit India============= --> */}
+            <section className=" section">
+              <div className="container">
+                <div className="section-title">
+                  <span className="section-title-border"></span>
+                  <h2 className="section-title">G20 Summit in India</h2>
+                </div>
+                {/* <!-- Overview  --> */}
+                <div className="overview">
+                  <h4>Overview</h4>
+                  <p className="text-dark mb-2">
+                    The Group of Twenty (20) is one of the premier forums for
+                    international economic cooperation. It holds meetings to
+                    discuss the most pressing global matters and formulate
+                    reforms to strengthen global architecture
+                  </p>
+                  <p className="text-dark mb-2">
+                    India shared a joyous moment of pride with its 1 billion
+                    citizens after receiving the G20 presidency for 2023. In the
+                    words of honourable Prime Minister, Shri Narendra Modi for
+                    the nation’s youth
+                  </p>
+                  <p
+                    className="text-dark mb-2 fs-5 p-3 p-lg-4 bg-warning bg-opacity-50 rounded-4"
+                    style={{ maxWidth: "700px" }}
+                  >
+                    <i className="bx bxs-quote-left"></i> It is the
+                    responsibility of the citizens to go beyond the expectations
+                    and acquaint the world with India’s capabilities,
+                    philosophy, social and intellectual strength.{" "}
                     <i className="bx bxs-quote-right"></i>
                   </p>
-                  <div className="text-end">
-                    <span className="text-end text-dark">
-                      --Hon’ble PM, Narendra Modi
-                    </span>
-                  </div>
+                  <p className="text-dark">
+                    <b>Fact:</b> India holds the Presidency of the G20 from 1st
+                    December 2022 to 30th November 2023.
+                  </p>
+                  <p className="text-dark ">
+                    As part of India’s G20 presidency, many youth-centric
+                    organisations and diverse forums have begun the preparations
+                    and participation under multiple meeting formats.
+                  </p>
                 </div>
-                <p className="text-dark mb-2">
-                  This vision for the youth of India is what the prime minister
-                  hopes so as to bring better opportunities for all Indians.
-                </p>
-                <p className="text-dark mb-2">
-                  As G20 summit Sherpa meetings will be carried out in every
-                  state by representatives of member nations, this will be a
-                  unique opportunity for young Indians to share their views, and
-                  mission on helping to achieve the PM’s vision.
-                </p>
-                <p className="text-dark mb-2">
-                  They can actively participate in model G20 pre-summits, G20
-                  branding festivals, quiz and poetry competitions, etc.
-                  organised by G20 secretariats to be a part of the global
-                  conversation.
-                </p>
-                <p className="text-dark mb-2">
-                  Moreover, youth can be part of PM’s “digital transformation in
-                  India” discourse by actively taking the narrative forward as
-                  representatives for a digital and inclusive India.
-                </p>
-                <p className="text-dark mb-2">
-                  Check out the multiple <a href="#">youth events here</a> that
-                  the G20 Secretariat has planned for 2023.
-                </p>
-              </div>
-              <hr className="my-4" />
-              <div className="row">
-                <div className="col-12 col-lg-6">
-                  {/* <!-- G20 Engagement Groups  --> */}
-                  <div className="overview">
-                    <h4>G20 Engagement Groups</h4>
-                    <p className="text-dark mb-2">
-                      Engagement groups in the G20 summit are non-government
-                      firms that take part in the policy-making process and
-                      provide recommendations to the G20 leaders
+                <hr className="my-4" />
+                {/* <!-- G20 Theme  --> */}
+                <div className="three-tracks">
+                  <h4>G20 Theme</h4>
+                  <p className="text-dark mb-2">
+                    The theme for G20 Presidency in India is -{" "}
+                    <i className="bx bxs-quote-alt-left"></i>{" "}
+                    <i>Vasudhaiva Kutumbakam</i>{" "}
+                    <i className="bx bxs-quote-alt-right"></i> which translates
+                    into ‘One Earth. One Family. One Future’ – The theme vividly
+                    discusses the poignant value of all life forms on earth and
+                    their exponential interconnectivity with the future and
+                    universe.
+                  </p>
+                  <p className="text-dark mb-2">
+                    The summit theme also highlights the significance of LiFE
+                    (Lifestyle for Environment). The key indication to
+                    environmental sustainability on individual and national
+                    levels.
+                  </p>
+                </div>
+                <hr className="my-4" />
+                {/* <!-- G20 Function  --> */}
+                <div className="overview">
+                  <h4>G20 Function</h4>
+                  <p className="text-dark mb-2">
+                    India under the G20 presidency will be the torchbearer of
+                    moving the G20 agenda forward as a host to the summit.
+                    Within the two tracks – Sherpa and Finance – thematically
+                    inclined working groups will work laboriously to carry
+                    forward the conversations of economic, socio-political and
+                    financial importance.
+                  </p>
+                  <p className="text-dark mb-2">
+                    India under the G20 presidency will be the torchbearer of
+                    moving the G20 agenda forward as a host to the summit.
+                    Within the two tracks – Sherpa and Finance – thematically
+                    inclined working groups will work laboriously to carry
+                    forward the conversations of economic, socio-political and
+                    financial importance.
+                  </p>
+                </div>
+                <hr className="my-4" />
+                {/* <!-- Role of Youth in G20  --> */}
+                <div className="overview">
+                  <h4>Role of Youth in G20</h4>
+                  <div
+                    className=" mb-2  p-3 p-lg-4 pb-2 pt-5 bg-warning bg-opacity-50 rounded-4"
+                    style={{ maxWidth: "700px" }}
+                  >
+                    <p className="fs-5 text-dark text-center mb-0">
+                      <i className="bx bxs-quote-left"></i> Inclusive,
+                      ambitious, decisive, and action-oriented.{" "}
+                      <i className="bx bxs-quote-right"></i>
                     </p>
-                    <p className="text-dark mb-2">
-                      At present, there are nine engagement groups contributing
-                      in the G20 summit which are;
-                    </p>
-                    <ul className="ps-0 fs-6">
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Business20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Civil20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Labour20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Parliament20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Science20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          SAI20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Startup20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Think20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Urban20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Women20
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Youth20
-                        </a>
-                      </li>
-                    </ul>
+                    <div className="text-end">
+                      <span className="text-end text-dark">
+                        --Hon’ble PM, Narendra Modi
+                      </span>
+                    </div>
                   </div>
+                  <p className="text-dark mb-2">
+                    This vision for the youth of India is what the prime
+                    minister hopes so as to bring better opportunities for all
+                    Indians.
+                  </p>
+                  <p className="text-dark mb-2">
+                    As G20 summit Sherpa meetings will be carried out in every
+                    state by representatives of member nations, this will be a
+                    unique opportunity for young Indians to share their views,
+                    and mission on helping to achieve the PM’s vision.
+                  </p>
+                  <p className="text-dark mb-2">
+                    They can actively participate in model G20 pre-summits, G20
+                    branding festivals, quiz and poetry competitions, etc.
+                    organised by G20 secretariats to be a part of the global
+                    conversation.
+                  </p>
+                  <p className="text-dark mb-2">
+                    Moreover, youth can be part of PM’s “digital transformation
+                    in India” discourse by actively taking the narrative forward
+                    as representatives for a digital and inclusive India.
+                  </p>
+                  <p className="text-dark mb-2">
+                    Check out the multiple <a href="#">youth events here</a>{" "}
+                    that the G20 Secretariat has planned for 2023.
+                  </p>
                 </div>
-                <div className="col-12 col-lg-6">
-                  {/* <!-- G20 Finance Track Working Groups  --> */}
-                  <div className="overview">
-                    <h4>G20 Finance Track Working Groups</h4>
-                    <ul className="ps-0 fs-6">
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Development Working Group
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Framework Working Group
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          International Finance Architecture (IFA)
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Infrastructure Working Group
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Sustainable Finance Working Group
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Global Partnership for Financial Inclusion (GPFI)
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          Joint Finance and Health Task Force
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="https://www.g20.org/en/workstreams/engagement-groups/"
-                          target="_blank"
-                        >
-                          <i className="bi bi-arrow-right text-primary me-2"></i>
-                          International Taxation Agenda
-                        </a>
-                      </li>
-                    </ul>
+                <hr className="my-4" />
+                <div className="row">
+                  <div className="col-12 col-lg-6">
+                    {/* <!-- G20 Engagement Groups  --> */}
+                    <div className="overview">
+                      <h4>G20 Engagement Groups</h4>
+                      <p className="text-dark mb-2">
+                        Engagement groups in the G20 summit are non-government
+                        firms that take part in the policy-making process and
+                        provide recommendations to the G20 leaders
+                      </p>
+                      <p className="text-dark mb-2">
+                        At present, there are nine engagement groups
+                        contributing in the G20 summit which are;
+                      </p>
+                      <ul className="ps-0 fs-6">
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Business20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Civil20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Labour20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Parliament20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Science20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            SAI20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Startup20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Think20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Urban20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Women20
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Youth20
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div className="col-12 col-lg-6">
+                    {/* <!-- G20 Finance Track Working Groups  --> */}
+                    <div className="overview">
+                      <h4>G20 Finance Track Working Groups</h4>
+                      <ul className="ps-0 fs-6">
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Development Working Group
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Framework Working Group
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            International Finance Architecture (IFA)
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Infrastructure Working Group
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Sustainable Finance Working Group
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Global Partnership for Financial Inclusion (GPFI)
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            Joint Finance and Health Task Force
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.g20.org/en/workstreams/engagement-groups/"
+                            target="_blank"
+                          >
+                            <i className="bi bi-arrow-right text-primary me-2"></i>
+                            International Taxation Agenda
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
+            </section>
+            {/* <!-- =============///G20 Simulation============= --> */}
+          </div>
+          <div className="col-12 col-lg-5">
+            <div className="sticky-top h-100">
+              <Announcement />
             </div>
-          </section>
-          {/* <!-- =============///G20 Simulation============= --> */}
-        </div>
-        <div className="col-12 col-lg-5">
-          <div className="sticky-top h-100">
-            <Announcement />
           </div>
         </div>
       </div>
