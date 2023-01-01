@@ -19,26 +19,32 @@ const G20India = () => {
                                 reforms to strengthen global architecture.
 
                             </p>
-                            <p>
+                            
+
+                        </div>
+                    </div>
+                    <div className="row row-cols-1 row-cols-lg-2 align-items-center mb-3">
+                        <div className="col col-lg-8">
+                        <p>
                                 India shared a joyous moment of pride with its 1.4 billion citizens after receiving the G20
                                 presidency for 2023.
                             </p>
                             <p>
-                                In the words of honourable Prime Minister, Shri Narendra Modi for the nation’s youth
+                                In the words of honourable Prime Minister, <span className='fw-bold'>Shri Narendra Modi</span> for the nation’s youth
+                            </p>
+                            <p className='fs-5 text-center fw-semibold fst-italic w-75'>
+                                <i class='bx bxs-quote-alt-left'></i>It is the responsibility of the citizens to go beyond the expectations and acquaint the world
+                                with India’s capabilities, philosophy, social and intellectual strength.<i class='bx bxs-quote-alt-right' ></i>
                             </p>
                         </div>
-                    </div>
-                    <div className="row row-cols-1 row-cols-lg-2">
-                        <div className="col">
-                            <p>
-                                “It is the responsibility of the citizens to go beyond the expectations and acquaint the world
-                                with India’s capabilities, philosophy, social and intellectual strength.”
-                            </p>
+                        <div className="col col-lg-1"></div>
+                        <div className="col col-lg-3">
+                            <img src="images/modelg20/modiji.png" className='w-100 mx-auto d-block' alt="" />
                         </div>
                     </div>
                     <div className="row mb-5">
-                        <p>
-                            Aligning ourselves with our Hon’ble Prime Ministers Vision, Yuvamanthan brings to the youth
+                        <p className='col col-lg-8'>
+                            Aligning ourselves with our Hon’ble Prime Ministers Vision, <span className='fw-bold'>Yuvamanthan</span> brings to the youth
                             The Model G20 Summit.
 
                         </p>
@@ -99,24 +105,24 @@ const G20India = () => {
                                     </ul>
                                 </div>
                                 <div className="col mb-3">
-                                <p>
-                                Furthermore, students keen on exploring careers in economics, business and banking are
-                                encouraged form Finance Track working groups like:
-                            </p>
-                            <ul>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Development Working Group</li>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Framework Working Group</li>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Financial Architecture (IFA)</li>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Infrastructure Working Group</li>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Sustainable Finance Working Group</li>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Global Partnership for Financial Inclusion (GPFI)</li>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Joint Finance and Health Task Force</li>
-                                <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Taxation Agenda</li>
-                            </ul>
+                                    <p>
+                                        Furthermore, students keen on exploring careers in economics, business and banking are
+                                        encouraged form Finance Track working groups like:
+                                    </p>
+                                    <ul>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Development Working Group</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Framework Working Group</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Financial Architecture (IFA)</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Infrastructure Working Group</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Sustainable Finance Working Group</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Global Partnership for Financial Inclusion (GPFI)</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Joint Finance and Health Task Force</li>
+                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Taxation Agenda</li>
+                                    </ul>
                                 </div>
                             </div>
 
-                            
+
                         </div>
                     </div>
                 </div>
