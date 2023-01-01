@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar navbar-expand-lg bg-light bg-opacity-75">
-        <div className="container py-3">
+        <div className="container">
           <NavLink className="navbar-brand" to="/">
             <img
               className="img-responsive height-50  border-end pe-2  border-3"
@@ -28,12 +28,12 @@ const Navbar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+            <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around">
+              {/* <li className="nav-item">
                 <NavLink className="nav-link text-dark" to="/">
                   Home
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink className="nav-link text-dark" to="/model-g20">
                   Model G20
@@ -79,7 +79,7 @@ const Navbar = () => {
                     className="dropdown-item"
                     to="/life-environment-intiative"
                   >
-                    LiFE
+                    <span className="text-initial">LiFE</span>
                   </NavLink>
                   <NavLink className="dropdown-item" to="/startup-india">
                     Startup India
@@ -93,9 +93,9 @@ const Navbar = () => {
                 </div>
               </li>
             </ul>
-            <button className="btn border-0" type="submit">
+            {/* <button className="btn border-0" type="submit">
               <i className="bi bi-search text-dark fs-5"></i>
-            </button>
+            </button> */}
             <button className="btn btn-primary hover-ripple d-flex align-items-center">
               <i className="bx bx-calendar fs-5"></i>
               &nbsp;Upcoming&nbsp;Events
@@ -127,25 +127,25 @@ const Navbar = () => {
         </div>
         <div className="offcanvas-body vw-100 ">
           <ul className="list-group">
-            <li className="list-group-item p-3 rounded-3 ">
+            {/* <li className="list-group-item p-3 rounded-3 " data-bs-dismiss="offcanvas">
               <NavLink to="/" className="fs-6 text-uppercase text-dark">
                 Home
               </NavLink>
-            </li>
-            <li className="list-group-item p-3 rounded-3 ">
-              <NavLink to="/model-g20" className="fs-6 text-uppercase text-dark">
+            </li> */}
+            <li className="list-group-item p-3 mb-2 rounded-3 " data-bs-dismiss="offcanvas">
+              <NavLink to="/model-g20" className="fs-6 text-uppercase text-dark" >
                 Model G20
               </NavLink>
             </li>
-            <li className="list-group-item p-3 rounded-3 ">
+            <li className="list-group-item p-3 rounded-3 " data-bs-dismiss="offcanvas">
               <NavLink
-                
+
                 to="/g20-genius-certification"
               >
                 G20 Genius Certification
               </NavLink>
             </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3">
+            <li className="list-group-item p-3 mt-2 border rounded-3" data-bs-dismiss="offcanvas">
               <NavLink
                 to="/g20-campus-sherpa"
                 className="fs-6 text-uppercase text-dark"
@@ -153,7 +153,7 @@ const Navbar = () => {
                 CAMPUS SHERPA
               </NavLink>
             </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3">
+            <li className="list-group-item p-3 mt-2 border rounded-3" >
               <p
                 className="fs-6 text-uppercase text-dark"
                 type="button"
@@ -164,18 +164,24 @@ const Navbar = () => {
               </p>
               <div class="collapse p-0 m-0" id="collapseTopics">
                 <ul className="list-group">
-                  <NavLink className="list-group-item p-3 rounded-3" to="/cdri">
-                    CDRI
-                  </NavLink>
-                  <NavLink className="list-group-item p-3 rounded-3" to="/nep">
-                    NEP 2020
-                  </NavLink>
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/life-environment-intiative"
-                  >
-                    LiFE
-                  </NavLink>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink className="list-group-item p-3 rounded-3" to="/cdri">
+                      CDRI
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink className="list-group-item p-3 rounded-3" to="/nep">
+                      NEP 2020
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/life-environment-intiative"
+                    >
+                      <span className="text-initial">LiFE</span>
+                    </NavLink>
+                  </li>
                   {/* <NavLink
                     className="list-group-item p-3 rounded-3"
                     to="/blog-single.html"

@@ -477,7 +477,7 @@ const Youth = () => {
                   <div className="px-3">
                     <span className="section-title-border mb-2"></span>
                     <p className="text-dark lh-sm fs-6 fw-semibold">
-                      21-day challenge under LiFe initiative
+                      21-day challenge under LiFE initiative
                     </p>
                     <span>Last updated 28 mins ago</span>
                   </div>

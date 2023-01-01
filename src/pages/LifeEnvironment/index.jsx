@@ -95,26 +95,26 @@ const Life = () => {
   }, []);
   return (
     <div>
-      <BreadCrumb heading={"Lifestyle For Environment Initiative: LiFe"} />
+      <BreadCrumb heading={"Lifestyle For Environment Initiative: LiFE"} />
 
       <section className="bg-gray section">
         <div className="container">
           <div className="section-title mb-0">
             <span span className="section-title-border"></span>
-            <h2>LiFe (Lifestyle for Environment) Initiative</h2>
+            <h2><span className="text-initial">LiFE</span> (Lifestyle for Environment) Initiative</h2>
             <h4 className="fs-2 mt-4">Overview</h4>
           </div>
           {/* <!-- Overview  --> */}
           <div className="overview">
             <p className="text-dark mb-2 fs-5">
-              ‘Lifestyle for Environment’ or LiFe initiative is a campaign
+              ‘Lifestyle for Environment’ or LiFE initiative is a campaign
               envisioned by honourable Prime Minister Narendra Modi with a prime
               focus on environmentally conscious living. It was globally
               introduced at the 26th United Nations Climate Change Conference of
               the Parties (COP26) in Glasgow in 2021.
             </p>
             <blockquote className="blockquote">
-              <i className="bx bxs-quote-left"></i> This LiFe campaign can
+              <i className="bx bxs-quote-left"></i> This LiFE campaign can
               become as a mass movement towards an environmentally conscious
               lifestyle. <i className="bx bxs-quote-right"></i> <br />
               <div className="text-end">
@@ -122,7 +122,7 @@ const Life = () => {
               </div>
             </blockquote>
             <p className="text-dark mb-2 fs-5">
-              LiFe is a call to action for every citizen to practice
+              LiFE is a call to action for every citizen to practice
               sustainability and mindful utilisation of resources over ‘mindless
               destructive consumption.’
             </p>
@@ -156,7 +156,7 @@ const Life = () => {
           <div>
             <h4 className="fs-2">Towards a Circular Economy</h4>
             <p>
-              Under the LiFe initiative, the focus shall be to transition from
+              Under the LiFE initiative, the focus shall be to transition from
               this so-called throw-away society to a more circular economy.
             </p>
             <p>
@@ -201,7 +201,7 @@ const Life = () => {
             </ul>
 
             <p>
-              Besides this, the LiFe mission would address this issue as
+              Besides this, the LiFE mission would address this issue as
               changing the attitude of individuals and communities can have an
               instrumental impact on environmental safety.
             </p>
@@ -210,10 +210,10 @@ const Life = () => {
           {/* <!-- Mission  --> */}
           <div>
             <h4 className="fs-2">
-              <span style={{ textTransform: "initial" }}>LiFe</span> Mission
+              <span className="text-initial">LiFE</span> Mission
             </h4>
             <p className="text-dark mb-2 fs-5">
-              PM Modi green-flagged mission LiFe this year for changing
+              PM Modi green-flagged mission LiFE this year for changing
               citizens’ collective approach towards sustainability. The mission
               has three simple strategies.
             </p>
@@ -261,8 +261,8 @@ const Life = () => {
               </div>
             </blockquote>
             <p className="text-dark mt-3 fs-5">
-              Mission LiFe makes the fight against climate change historically
-              democratic where every citizen plays a key role. Life in itself is
+              Mission LiFE makes the fight against climate change historically
+              democratic where every citizen plays a key role. LiFE in itself is
               a circular existence where a person is born, lives and then dies.
               However, how life is lived in regard to earth’s finite resources
               is what counts.
@@ -283,14 +283,14 @@ const Life = () => {
             </p>
             <p>
               Interestingly, India is the first country across the globe to
-              include LiFe in its list of nationally determined contributions.
+              include LiFE in its list of nationally determined contributions.
               From this, the nation hopes to set and propagate healthy ways of
               sustainable existence and values of conservation of the ecosystem
               to combat climate change.
             </p>
             <p>
               Take a look at the following traditional practices that could be
-              part of the LiFe mission:
+              part of the LiFE mission:
             </p>
             <ul className="p-0">
               <li className="text-dark mt-3 fs-5">
@@ -316,7 +316,7 @@ const Life = () => {
               </li>
             </ul>
             <p>
-              Mission LiFe seeks to implement such foundation techniques into
+              Mission LiFE seeks to implement such foundation techniques into
               the regular habit to have a more powerful impact. It is designed
               and formulated with the goal to mobilise almost every single
               citizen of India and the globe eventually for taking collective
@@ -325,10 +325,10 @@ const Life = () => {
           </div>
           <hr className="my-4" />
           <div>
-            <h3>Actions Under the LiFe Mission</h3>
+            <h3>Actions Under the <span className="text-initial">LiFE</span> Mission</h3>
             <h4 className="fs-2">21 Days Challenge</h4>
             <p className="text-dark mb-2 fs-5">
-              Under the LiFe Mission, the government has initiated has a 21-day
+              Under the LiFE Mission, the government has initiated has a 21-day
               challenge which lists out activities and measures that one can
               undertake to minimize the wasteful consumption of resources. The
               aim is to act consciously while undergoing day-to-day activities
@@ -402,7 +402,7 @@ const Life = () => {
           {/* <!-- Impact  --> */}
           <div className="py-4">
             <h4 className="fs-2 text-center">
-              <span className="text-initial">LiFe</span> Mission Impact
+              <span className="text-initial">LiFE</span> Mission Impact
             </h4>
             <p className="text-dark mb-2 fs-5 text-center col-12 col-lg-10 mx-auto">
               Any national or international campaign that is initiated for
@@ -410,12 +410,12 @@ const Life = () => {
               influence it can generate for the environment.
             </p>
             <p className="text-center col-12 col-lg-10 mx-auto">
-              Similarly, LiFe mission, its proactive measures are expected to
+              Similarly, LiFE mission, its proactive measures are expected to
               bring about a significant impact on the lives of people as well as
               the ecosystem if laid out perfectly.
             </p>
             <p className="text-center col-12 col-lg-10 mx-auto">
-              Take a look below to get the gist of estimated changes that LiFe
+              Take a look below to get the gist of estimated changes that LiFE
               actions will bring for 1 billion Indians in 2027-28.
             </p>
             <div className="row g-2 g-lg-3 justify-content-center">
@@ -499,18 +499,18 @@ const Life = () => {
             </div>
           </div>
           <hr className="my-4" />
-          {/* <!-- Youth’s Role in LiFe  --> */}
+          {/* <!-- Youth’s Role in LiFE  --> */}
           <div>
-            <h4 className="fs-2">Youth’s Role in LiFe</h4>
+            <h4 className="fs-2">Youth’s Role in <span className="text-initial">LiFE</span></h4>
             <p className="text-dark mb-2 fs-5">
               As India comprises more than 65% in the youth majority, they can
-              actively contribute to the Lifestyle for Environment (LiFe)
+              actively contribute to the Lifestyle for Environment (LiFE)
               initiative.
             </p>{" "}
             <p className="text-dark mb-2 fs-5">
               The digital transformation of India under PM Modi’s leadership has
               given rise to multiple social platforms, and viral culture in
-              India where youngsters can take part and spread the LiFe message
+              India where youngsters can take part and spread the LiFE message
               to remote corners of the country all with a touch on their
               smartphones and screens.
             </p>{" "}
@@ -518,7 +518,7 @@ const Life = () => {
               There are many initiatives and programmes that the youth can
               organise in groups or individual levels in
               schools/colleges/universities that would get better traction for
-              the LiFe initiative.
+              the LiFE initiative.
             </p>
             <ul className="list-group border-none bg-gray mt-3">
               <li className="list-group-item border-0 bg-gray ps-0">
@@ -589,7 +589,7 @@ const Life = () => {
                 <span className="ps-2 fs-5">
                   <b> Engaging students, teachers in various contests</b> like
                   quizzes, debates, article writing, skits, theatre, dramas set
-                  on LiFe’s message or strategized 75 pointers
+                  on LiFE’s message or strategized 75 pointers
                 </span>
               </li>
               <li className="list-group-item border-0 bg-gray ps-0">
@@ -606,7 +606,7 @@ const Life = () => {
                 </span>{" "}
                 <span className="ps-2 fs-5">
                   <b>Posting on social media</b> with trendy and viral content
-                  related to LiFe initiative
+                  related to LiFE initiative
                 </span>
               </li>
             </ul>

@@ -2,9 +2,9 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer>
+    <footer >
       {/* main footer */}
-      <div className="section bg-secondary">
+      <div className="bg-secondary py-5">
         <div className="container">
           <div className="row justify-content-between">
             {/* footer content */}
@@ -160,12 +160,12 @@ const Footer = () => {
         </div>
       </div>
       {/* copyright */}
-      <div className="bg-secondary-darken py-4">
+      <div className="bg-secondary-darken py-3">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 text-center text-md-left mb-3 mb-md-0">
-              <p className="mb-0 text-white">
-                <span className="text-primary">Modal G20 India</span> &copy;
+            <div className=" text-center text-md-left mb-3 mb-md-0">
+              <p className="mb-0 text-white fs-6">
+                <span className="text-primary fs-6">Modal G20 India</span> &copy;
                 <script>
                   var CurrentYear = new Date().getFullYear(); var NextYear = new
                   Date().getFullYear() + 1; document.write(CurrentYear + " ~ " +
@@ -175,7 +175,7 @@ const Footer = () => {
                 Govardhan Learning Cloud
               </p>
             </div>
-            <div className="col-md-6 text-center text-md-right">
+            {/* <div className="col-md-6 text-center text-md-right">
               <ul className="list-inline">
                 <li className="list-inline-item mx-0">
                   <a
@@ -194,7 +194,7 @@ const Footer = () => {
                   </a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

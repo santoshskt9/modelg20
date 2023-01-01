@@ -87,7 +87,7 @@ const Home = () => {
                       />
                     </div>
                     <h4 className="mb-4" style={{ textTransform: "initial" }}>
-                      LiFe <span className="text-uppercase">Mission</span>
+                      LiFE <span className="text-uppercase">Mission</span>
                     </h4>
                     <p>
                       ‘Lifestyle for Environment’ initiative is a call to action
@@ -97,9 +97,9 @@ const Home = () => {
                   </div>
                   <Link
                     to={"/life-environment-intiative"}
-                    className="btn btn-primary-outline"
+                    className="btn btn-primary-outline text-initial"
                   >
-                    Start your LiFE
+                    START YOUR LiFE
                   </Link>
                 </div>
               </div>
@@ -257,7 +257,7 @@ const Home = () => {
                     </div>
                   </div>
                   <a href="/life-environment-intiative" className="text-dark">
-                    <h4>Lifestyle for Environment Initiative (LiFE) </h4>
+                    <h4>Lifestyle for Environment Initiative <span className="text-initial">(LiFE)</span> </h4>
                   </a>
                 </li>
                 {/* <li className=" mb-5">

@@ -281,14 +281,14 @@ const Presidency = () => {
                             </p>
 
                         </div>
-                        {/* <!-- Green Development, Climate Finance and LiFe --> */}
+                        {/* <!-- Green Development, Climate Finance and LiFE --> */}
                         <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
                             <h3>
                                 {/* <span className="text-primary">02.</span> */}
-                                Green Development, Climate Finance and LiFe
+                                Green Development, Climate Finance and <span className='text-initial'>LiFE</span>
                             </h3>
                             <p className="fs-6">
-                                As a key priority, India will steer G20 nations to find adequate finance and use of technology for climate change issues keeping in view climate justice. In line with this, India will also incorporate LiFe (Lifestyle for Environment), a social movement in association with having eco-friendly and sustainable life choices as an individual and as a citizen.
+                                As a key priority, India will steer G20 nations to find adequate finance and use of technology for climate change issues keeping in view climate justice. In line with this, India will also incorporate LiFE (Lifestyle for Environment), a social movement in association with having eco-friendly and sustainable life choices as an individual and as a citizen.
                             </p>
 
                         </div>

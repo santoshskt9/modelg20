@@ -24,7 +24,7 @@ const faqs = [
   {
     id: 5,
     q: "How can I join the Yuvamanthan community?",
-    a: "If you like to be a part of our diverse community, all you need to do is register on our youth portal or mail us at <a>www.yuvamanthan.org</a> and you’ll receive further instructions thereupon. For more queries, please <a>contact us here</a>.",
+    a: "If you like to be a part of our diverse community, all you need to do is register on our youth portal or mail us at www.yuvamanthan.org and you’ll receive further instructions thereupon. For more queries, please contact us here.",
   },
   
 ];

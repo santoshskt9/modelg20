@@ -345,10 +345,10 @@ const listOfActions = {
 const Pointers = () => {
   return (
     <div>
-      {/* <!- 75 Pointers under LiFe Mission --> */}
+      {/* <!- 75 Pointers under LiFE Mission --> */}
       <div className="pointer">
         <h4 className="fs-2">
-          75 Steps towards <span className="text-intial">LiFe</span>
+          75 Steps towards <span className="text-intial">LiFE</span>
         </h4>
         <p>
           To mark India’s 75th independent year from British colonialism, the
@@ -361,7 +361,7 @@ const Pointers = () => {
           food systems, waste reduction, energy, e-waste, and healthy lifestyle.
         </p>
         <p>
-          These active steps as a part of LiFe mission will be easy to practice
+          These active steps as a part of LiFE mission will be easy to practice
           by all – groups, individuals, and organisations with lesser
           co-dependence on resources. They are specific and measurable and are
           highly non-disruptive to day-to-day economic activities.

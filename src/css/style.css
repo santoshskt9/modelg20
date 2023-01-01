@@ -2548,8 +2548,8 @@ blockquote p {
   background-position: center !important;
 }
 
-.text-intial {
-  text-transform: initial;
+.text-initial {
+  text-transform: none !important;
 }
 .breadcrumb {
   padding-top: 160px;
