@@ -208,8 +208,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Team building</h4>
                 <p>
-                  Work in groups to build friendly rapport to represent the
-                  team’s message
+                Work in groups to build a friendly rapport with other teams to represent your team’s message.
                 </p>
               </div>
             </div>
@@ -221,7 +220,7 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Discussions with consensus</h4>
-                <p>When opinions are shared to insight and learn</p>
+                <p>When opinions are shared as insights you learn to influence others and draw meaningful conclusions.</p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -232,7 +231,7 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">International diplomacy</h4>
-                <p>Learn the skill of delivering reforms as a diplomat</p>
+                <p>Influence actions through negotiations for a common cause without rhetoric or upsetting others.</p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -243,7 +242,7 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Multilateral Negotiations</h4>
-                <p>Diverse regions come together to debate and negotiate</p>
+                <p>Negotiating with countries on economics and socio-politico issues with varied perspectives.</p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -255,8 +254,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Strategy Building</h4>
                 <p>
-                  Creating strategies for change for a better future for the
-                  world
+                Working together with teams to create strategies that impact the future of the world.
                 </p>
               </div>
             </div>
@@ -269,7 +267,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Macroeconomics</h4>
                 <p>
-                  Sharing thoughts on economic matters that influence the world{" "}
+                Researching and deliberating thoughts on economic matters to create resilient economies.
                 </p>
               </div>
             </div>
@@ -281,7 +279,7 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Research and Analysis</h4>
-                <p>Deep diving into factors that affect</p>
+                <p>Deep diving into topics and themes on global issues and preparing content at short notice.</p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -293,7 +291,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Public Speaking</h4>
                 <p>
-                  Speaking to a large audience and debating on diverse issues
+                Perfect the art of speaking to a large audience, debating, and influencing juries with impactful content.
                 </p>
               </div>
             </div>
