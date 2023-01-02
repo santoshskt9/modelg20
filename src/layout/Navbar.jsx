@@ -5,12 +5,12 @@ const Navbar = () => {
   const route = useLocation().pathname;
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-light bg-opacity-75">
+      <nav className="navbar py-2  py-lg-0 navbar-expand-lg bg-light bg-opacity-75">
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
+          <NavLink className="navbar-brand " to="/">
             <img
               className="img-responsive height-50  border-end pe-2  border-3"
-              src={process.env.REACT_APP_MAIN_URL + "images/logo.png"}
+              src={process.env.REACT_APP_MAIN_URL + "images/yuva-logo.png"}
               alt="G20india"
             />
             <img
@@ -96,10 +96,18 @@ const Navbar = () => {
             {/* <button className="btn border-0" type="submit">
               <i className="bi bi-search text-dark fs-5"></i>
             </button> */}
-            <button className="btn btn-primary hover-ripple d-flex align-items-center">
+            {/* <button className="btn btn-primary hover-ripple d-flex align-items-center">
               <i className="bx bx-calendar fs-5"></i>
               &nbsp;Upcoming&nbsp;Events
-            </button>
+            </button> */}
+            {/* <NavLink className="navbar-brand" to="/">
+            <img
+              className="img-responsive height-50   pe-2  border-3"
+              src={process.env.REACT_APP_MAIN_URL + "images/logo.png"}
+              alt="G20india"
+            />
+            
+          </NavLink> */}
           </div>
         </div>
       </nav>

@@ -129,7 +129,7 @@ h6,
   position: relative;
   z-index: 1;
   transition: 0.3s ease-in;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 .btn:focus {
   outline: 0;
@@ -1506,6 +1506,21 @@ textarea.form-control-sm {
 }
 .navbar-light .navbar-nav .nav-link:hover {
   color: var(--main-color);
+}
+
+.navbar-brand {
+  width: 20% !important
+}
+
+@media screen and (max-width: 500px) {
+  .navbar-brand > img {
+    height: 45px;
+  }
+}
+@media screen and (max-width: 290px) {
+  .navbar-brand > img {
+    height: 30px;
+  }
 }
 
 /* search */

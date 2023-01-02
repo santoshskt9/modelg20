@@ -1,7 +1,10 @@
-import React from "react";
+import React, {useEffect} from "react";
 import BreadCrumb from "../../layout/BreadCrumb";
 
 const Course = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <BreadCrumb heading={"G20 Genius Certification"}/>

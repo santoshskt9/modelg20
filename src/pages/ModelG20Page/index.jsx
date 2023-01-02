@@ -318,12 +318,14 @@ const Modelg20Page = () => {
             will help you with the processes.
           </p>
           <button
-            className="btn btn-primary"
+            className="btn btn-primary py-3"
             onClick={() => {
               navigate("/registration");
             }}
+            style={{whiteSpace:'pre-wrap !important'}}
           >
-            REGISTER AS AN EDUCATIONAL INSTITUTION
+           <span className=" w-100" >
+           REGISTER AS AN EDUCATIONAL INSTITUTION </span> 
           </button>
         </div>
       </section>

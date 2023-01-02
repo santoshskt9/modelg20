@@ -1,5 +1,6 @@
 import React from "react";
 import BreadCrumb from "../../layout/BreadCrumb";
+import { Link } from "react-router-dom";
 
 const CampusAmbass = () => {
   return (
@@ -10,12 +11,7 @@ const CampusAmbass = () => {
       <section className="section container">
         <h3>G20 Campus Sherpa Programme</h3>
         <p className="text-dark fs-5 mb-3">
-          In line with the Model G20 Programme on our website G20-india.org, we
-          want to engage enthusiastic youth from schools, colleges and
-          universities to become 'Campus Sherpa'. Each institution will have one
-          campus ambassador who will volunteer to undertake a set of activities
-          to promote, manage and execute Model G20 Programmes within their
-          campus.
+          In line with the Model G20 Programme, we want to engage enthusiastic youth from schools, colleges and universities to become 'Campus Sherpas'. Each institution will have one campus sherpa who will volunteer to undertake a set of activities to promote, manage and execute Model G20 Programmes within their campus.
         </p>
         <h4>How do you become a Sherpa?</h4>
         <p className="text-dark fs-5">
@@ -37,6 +33,39 @@ const CampusAmbass = () => {
           Before one signs up for being a Sherpa, one needs to have the G20
           Genius Certificate.
         </p>
+        <div className="row ">
+          <div className="col col-lg-5 card p-lg-5 p-3 mb-5 rounded-4"
+            style={{ backgroundImage: 'linear-gradient(90deg,#198cd3,#37c2fd)' }}>
+            <div className="card-backicons">
+              <img src="images/icons/reward.png" className='w-25 position-absolute z-0' alt=""
+                style={
+                  {
+                    top: '5px',
+                    right: '5px',
+                    opacity: '90%'
+                  }
+                } />
+            </div>
+            <div className="content" style={{ zIndex: 1 }}>
+              <div>
+                <h2 className='card-title' style={{ color: '#fff' }}>
+                  Get Certified!
+                </h2>
+                <p className="fs-5 fw-lighter text-white">As a G20 Genius. Your first step towards knowing everything
+                  about G20 India.{" "}</p>
+              </div>
+              <div className="d-flex align-items-center">
+
+                <Link
+                  to="/g20-genius-certification"
+                  className="btn btn-light-outline hover-ripple me-5"
+                >
+                  Get Certified
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
         <p className="text-dark fs-5">
           The G20 Genius Certificate is a unique educational tool that treats
           the background, role, activities, goals, and challenges of the G20 as
@@ -70,15 +99,7 @@ const CampusAmbass = () => {
               inspired events all year round.
             </span>
           </li>
-          <li className="list-group-item border-0  ps-0">
-            <span className="p-2 bg-primary clip-cicle text-white mt-2">
-              <i className="bi bi-arrow-right"></i>
-            </span>{" "}
-            <span className="ps-2 fs-5">
-              Along with the simulation, they are required to organize youth
-              inspired events all year round.
-            </span>
-          </li>
+          
           <li className="list-group-item border-0  ps-0">
             <span className="p-2 bg-primary clip-cicle text-white mt-2">
               <i className="bi bi-arrow-right"></i>
@@ -165,7 +186,7 @@ const CampusAmbass = () => {
         </p>
         <h4>● National Affairs</h4>
         <p className="fs-5 text-dark">
-          A Sherpa can also partake as a delegate in the national summit. It is
+          It is
           well known that in order to effectively represent a member state, a
           delegate should be conversant about its internal issues. Being a
           delegate one gets to learn an enormous amount about the member state’s
@@ -290,7 +311,7 @@ const CampusAmbass = () => {
           knowledge incorporated in this tenure. With such legitimate
           certifications, anybody’s resume will stand out.
         </p>
-        <button className="btn btn-primary hover-ripple">Register</button>
+        <button className="btn btn-primary hover-ripple">Apply here to become a Campus Sherpa</button>
       </section>
     </div>
   );
