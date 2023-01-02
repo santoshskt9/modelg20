@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-
   return (
     <>
       <nav className="navbar py-2  py-lg-0 navbar-expand-lg bg-light bg-opacity-75">
@@ -29,15 +28,20 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around">
-              {/* <li className="nav-item">
-                <NavLink className="nav-link text-dark" to="/">
-                  Home
-                </NavLink>
-              </li> */}
-              <li className="nav-item">
-                <NavLink className="nav-link text-dark" to="/model-g20">
+              <li className="nav-item dropdown">
+                <NavLink
+                  className="nav-link dropdown-toggle text-dark"
+                  to="/model-g20"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
                   Model G20
                 </NavLink>
+                <div className="dropdown-menu">
+                  <NavLink className="dropdown-item" to="/g20-campus-sherpa">
+                    Campus Sherpa
+                  </NavLink>
+                </div>
               </li>
               <li className="nav-item">
                 <NavLink
@@ -47,16 +51,8 @@ const Navbar = () => {
                   G20 Genius
                 </NavLink>
               </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-dark" to="/g20-campus-sherpa">
-                  Campus Sherpa
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-dark" to="/youth-community">
-                  Youth Gallery
-                </NavLink>
-              </li>
+              <li className="nav-item"></li>
+
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle text-dark"
@@ -69,45 +65,33 @@ const Navbar = () => {
                   Themes
                 </NavLink>
                 <div className="dropdown-menu">
-                  <NavLink className="dropdown-item" to="/cdri">
-                    CDRI
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/nep">
-                    NEP 2020
-                  </NavLink>{" "}
                   <NavLink
                     className="dropdown-item"
                     to="/life-environment-intiative"
                   >
                     <span className="text-initial">LiFE</span>
                   </NavLink>
+                  <NavLink className="dropdown-item" to="/nep">
+                    NEP 2020
+                  </NavLink>{" "}
                   <NavLink className="dropdown-item" to="/startup-india">
                     Startup India
                   </NavLink>
                   <NavLink className="dropdown-item" to="/digital-transform">
                     Digital Transformation
                   </NavLink>
-                  {/*<NavLink className="dropdown-item" to="/blog-single.html">
-                    Skill Development
-                  </NavLink> */}
+                  <NavLink className="dropdown-item" to="/cdri">
+                    CDRI
+                  </NavLink>
                 </div>
               </li>
             </ul>
-            {/* <button className="btn border-0" type="submit">
-              <i className="bi bi-search text-dark fs-5"></i>
-            </button> */}
-            {/* <button className="btn btn-primary hover-ripple d-flex align-items-center">
-              <i className="bx bx-calendar fs-5"></i>
-              &nbsp;Upcoming&nbsp;Events
-            </button> */}
-            {/* <NavLink className="navbar-brand" to="/">
-            <img
-              className="img-responsive height-50   pe-2  border-3"
-              src={process.env.REACT_APP_MAIN_URL + "images/logo.png"}
-              alt="G20india"
-            />
-            
-          </NavLink> */}
+            <NavLink
+              to={"/youth-community"}
+              className="btn btn-primary hover-ripple d-flex align-items-center ms-3 text-initial"
+            >
+              Youvamanthan
+            </NavLink>
           </div>
         </div>
       </nav>
@@ -135,17 +119,21 @@ const Navbar = () => {
         </div>
         <div className="offcanvas-body vw-100 ">
           <ul className="list-group">
-            {/* <li className="list-group-item p-3 rounded-3 " data-bs-dismiss="offcanvas">
-              <NavLink to="/" className="fs-6 text-uppercase text-dark">
-                Home
-              </NavLink>
-            </li> */}
-            <li className="list-group-item p-3 mb-2 rounded-3 " data-bs-dismiss="offcanvas">
-              <NavLink to="/model-g20" className="fs-6 text-uppercase text-dark" >
+            <li
+              className="list-group-item p-3 mb-2 rounded-3 "
+              data-bs-dismiss="offcanvas"
+            >
+              <NavLink
+                to="/model-g20"
+                className="fs-6 text-uppercase text-dark"
+              >
                 Model G20
               </NavLink>
             </li>
-            <li className="list-group-item p-3 rounded-3 " data-bs-dismiss="offcanvas">
+            <li
+              className="list-group-item p-3 border rounded-3 "
+              data-bs-dismiss="offcanvas"
+            >
               <NavLink
                 className="fs-6 text-uppercase text-dark"
                 to="/g20-genius-certification"
@@ -153,7 +141,10 @@ const Navbar = () => {
                 G20 Genius
               </NavLink>
             </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3" data-bs-dismiss="offcanvas">
+            <li
+              className="list-group-item p-3 mt-2 border rounded-3"
+              data-bs-dismiss="offcanvas"
+            >
               <NavLink
                 to="/g20-campus-sherpa"
                 className="fs-6 text-uppercase text-dark"
@@ -161,15 +152,8 @@ const Navbar = () => {
                 CAMPUS SHERPA
               </NavLink>
             </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3" data-bs-dismiss="offcanvas">
-              <NavLink
-                to="/youth-community"
-                className="fs-6 text-uppercase text-dark"
-              >
-                Youth Gallery
-              </NavLink>
-            </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3" >
+
+            <li className="list-group-item p-3 mt-2 border rounded-3">
               <p
                 className="fs-6 text-uppercase text-dark"
                 type="button"
@@ -178,18 +162,8 @@ const Navbar = () => {
               >
                 Themes
               </p>
-              <div class="collapse p-0 m-0" id="collapseTopics">
+              <div className="collapse p-0 m-0" id="collapseTopics">
                 <ul className="list-group">
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink className="list-group-item p-3 rounded-3" to="/cdri">
-                      CDRI
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink className="list-group-item p-3 rounded-3" to="/nep">
-                      NEP 2020
-                    </NavLink>
-                  </li>
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
                       className="list-group-item p-3 rounded-3"
@@ -198,6 +172,16 @@ const Navbar = () => {
                       <span className="text-initial">LiFE</span>
                     </NavLink>
                   </li>
+
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/nep"
+                    >
+                      NEP 2020
+                    </NavLink>
+                  </li>
+
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
                       className="list-group-item p-3 rounded-3"
@@ -214,27 +198,27 @@ const Navbar = () => {
                       Digital Transformation
                     </NavLink>
                   </li>
-                  
-                  {/* <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/blog-single.html"
-                  >
-                    Startup India
-                  </NavLink>
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/blog-single.html"
-                  >
-                    Digital Transformation
-                  </NavLink>
-                  <NavLink
-                    className="list-group-item p-3 rounded-3"
-                    to="/blog-single.html"
-                  >
-                    Skill Development
-                  </NavLink> */}
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/cdri"
+                    >
+                      CDRI
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
+            </li>
+            <li
+              className="list-group-item mt-2 border-0 rounded-3"
+              data-bs-dismiss="offcanvas"
+            >
+              <NavLink
+                to={"/youth-community"}
+                className="btn btn-primary hover-ripple w-100 text-initial"
+              >
+                Youvamanthan
+              </NavLink>
             </li>
           </ul>
         </div>

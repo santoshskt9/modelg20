@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import Course from "../Course";
 import BannerSwiper from "./BannerSwiper";
 import BlogsSwiper from "./BlogsSwiper";
 import CallToAction from "./CallToAction";
-import InstagramFeeds from "./InstagramFeeds";
 import NewsSwiper from "./NewsSwiper";
 
 const Home = () => {
@@ -31,7 +29,7 @@ const Home = () => {
                       {/* <i className="bi bi-sun-fill icon text-primary"></i> */}
                       <img
                         src="./images/icons/india2.png"
-                        alt=""
+                        alt="feature"
                         className="w-100 p-3"
                       />
                     </div>
@@ -144,7 +142,7 @@ const Home = () => {
               <img
                 className="img-fluid w-100 rounded shadow"
                 src="./images/img1.jpeg"
-                alt="About Image"
+                alt="About"
                 style={{ height: "450px", objectFit: "cover" }}
               />
             </div>
@@ -177,7 +175,7 @@ const Home = () => {
                 className="img-fluid w-100 rounded shadow"
                 style={{ height: "450px", objectFit: "cover" }}
                 src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202012/Anniv-Amitabh-Kant-1_1200x768.jpeg?size=690:388"
-                alt="About Image"
+                alt="About"
               />
             </div>
             <div className="col-md-6 pt-4 order-2 order-lg-1">

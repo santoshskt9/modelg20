@@ -26,7 +26,6 @@ const faqs = [
     q: "How can I join the Yuvamanthan community?",
     a: "If you like to be a part of our diverse community, all you need to do is register on our youth portal or mail us at www.yuvamanthan.org and you’ll receive further instructions thereupon. For more queries, please contact us here.",
   },
-  
 ];
 
 const FaqItem = ({ faq, index }) => {
@@ -34,7 +33,7 @@ const FaqItem = ({ faq, index }) => {
     <div className="accordion-item border-0">
       <h2 className="accordion-header">
         <button
-          className={`accordion-button ${index==0?"":"collapsed"} fs-3`}
+          className={`accordion-button ${index === 0 ? "" : "collapsed"} fs-3`}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target={`#accord${index}`}
@@ -44,13 +43,11 @@ const FaqItem = ({ faq, index }) => {
       </h2>
       <div
         id={`accord${index}`}
-        className={`accordion-collapse collapse ${index==0?"show":""}`}
+        className={`accordion-collapse collapse ${index === 0 ? "show" : ""}`}
         data-bs-parent="#accordionFAQ"
       >
         <div className="accordion-body">
-          <p className="text-dark fs-5">
-            {faq.a}
-          </p>
+          <p className="text-dark fs-5">{faq.a}</p>
         </div>
       </div>
     </div>
@@ -71,12 +68,12 @@ const Faq = () => {
           </p>
         </div>
         <div className="accordion" id="accordionFAQ">
-          {faqs.map((faq,index)=>{
-           return <FaqItem key={index} index={index} faq={faq}/>
+          {faqs.map((faq, index) => {
+            return <FaqItem key={index} index={index} faq={faq} />;
           })}
         </div>
         <div className="text-center mt-4">
-            <button className="btn btn-primary">View More FAQs</button>
+          <button className="btn btn-primary">View More FAQs</button>
         </div>
       </div>
     </section>

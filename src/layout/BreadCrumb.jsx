@@ -14,7 +14,7 @@ const BreadCrumb = ({heading}) => {
           boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
         }}
       >
-        <div className="container pt-5">
+        <div className="container pt-2 pt-sm-3 pt-md-4 pt-lg-5">
           <div className="row">
             <div className="col-lg-8">
               <h2 className="text-white mb-3 text-initial">{heading}</h2>
@@ -23,13 +23,13 @@ const BreadCrumb = ({heading}) => {
                 <ol className="breadcrumb bg-transparent p-0">
                   {routeArr.map((rout, index) => {
                     return index === 0 ? (
-                      <li className="breadcrumb-item font-weight-semebold">
+                      <li key={index} className="breadcrumb-item font-weight-semebold">
                         <Link className="text-white" to="/">
                           Home
                         </Link>
                       </li>
                     ) : (
-                      <li className="breadcrumb-item font-weight-semebold">
+                      <li key={index} className="breadcrumb-item font-weight-semebold">
                         <Link className="text-white text-uppercase" to={"/" + rout}>
                           {rout}
                         </Link>

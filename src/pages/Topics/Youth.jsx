@@ -1,8 +1,6 @@
 import React from "react";
 import BreadCrumb from "../../layout/BreadCrumb";
 import BlogsSwiper from "../Home/BlogsSwiper";
-import FaqComponent from "../ModelG20Page/FaqComponent";
-import Events from "./Events";
 import Faq from "./Faq";
 import YouthSwiper from "./YouthSwiper";
 
@@ -423,7 +421,7 @@ const Youth = () => {
               </h2>
             </div>
           </div>
-          <div class="row justify-content-center g-4">
+          <div className="row justify-content-center g-4">
             <div className="col-12 col-md-6 col-lg-4">
               <div className="calendar-box p-3 border rounded h-100 border-warning">
                 <div className="d-flex align-items-center h-100">

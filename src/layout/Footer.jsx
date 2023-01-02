@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer >
+    <footer>
       {/* main footer */}
       <div className="bg-secondary py-5">
         <div className="container">
@@ -10,13 +11,18 @@ const Footer = () => {
             {/* footer content */}
             <div className="col-lg-5 mb-5 mb-lg-0">
               {/* logo */}
-              <a className="mb-4 d-inline-block" href="index.html">
+              <Link to={"/"}>
                 <img
-                  className="img-fluid height-75"
-                  src={process.env.REACT_APP_MAIN_URL + "images/logo.png"}
-                  alt="G20"
+                  className="img-responsive height-50  border-end pe-2  border-3"
+                  src={process.env.REACT_APP_MAIN_URL + "images/yuva-logo.png"}
+                  alt="G20india"
                 />
-              </a>
+                <img
+                  className="img-responsive height-75"
+                  src={process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"}
+                  alt="G20india"
+                />
+              </Link>
               <p className="text-white fs-5 mb-1 lh-sm">
                 Engaging the youth in a global dialogue on international
                 diplomacy, leadership and collective duty. A platform to drive
@@ -165,7 +171,8 @@ const Footer = () => {
           <div className="row">
             <div className=" text-center text-md-left mb-3 mb-md-0">
               <p className="mb-0 text-white fs-6">
-                <span className="text-primary fs-6">Modal G20 India</span> &copy;
+                <span className="text-primary fs-6">Model G20 India</span>{" "}
+                &copy;
                 <script>
                   var CurrentYear = new Date().getFullYear(); var NextYear = new
                   Date().getFullYear() + 1; document.write(CurrentYear + " ~ " +
