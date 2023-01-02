@@ -130,10 +130,10 @@ const Footer = () => {
                     </a>{" "}
                     <br />
                     <a
-                      href="mailto:info@g20india.org"
+                      href="mailto:modelg20@yuvamanthan.org"
                       className="text-light mb-3"
                     >
-                      info@g20india.org
+                      modelg20@yuvamanthan.org
                     </a>
                   </ul>
                 </div>
