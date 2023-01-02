@@ -1,16 +1,12 @@
 import React, { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {  useNavigate, Link } from "react-router-dom";
 import BreadCrumb from "../../layout/BreadCrumb";
-import Announcement from "./Announcement";
 import Card from "./Card";
 import FaqComponent from "./FaqComponent";
 import G20India from "./G20India";
 import G20Simulation from "./G20Simulation";
 import HowDoesItWork from "./HowDoesItWork";
-import Registrattion from "./Registrattion";
 import ResourceLibrary from "./ResourceLibrary";
-import ResourcesLibrary from "./ResourcesLibrary";
-import Testimonial from "./Testimonial";
 
 const Modelg20Page = () => {
   const navigate = useNavigate();
@@ -94,97 +90,7 @@ const Modelg20Page = () => {
               />
             </div>
           </div>
-          {/* D-none  */}
-          <div className="row g-3 g-lg-4 g-xl-5 d-none">
-            {/* <!-- What Will You Learn --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-              <h3>
-                {/* <span className="text-primary">01.</span> */}
-                Your Learning
-              </h3>
-              <p className=" fs-6">
-                As a model G20 delegate, you will learn the art of:
-              </p>
-              <ul className="ps-0 fs-6">
-                <li>
-                  <i className="bi bi-arrow-right text-primary me-2"></i>
-                  International Diplomacy
-                </li>
-                <li>
-                  <i className="bi bi-arrow-right text-primary me-2"></i>
-                  Public Speaking
-                </li>
-                <li>
-                  <i className="bi bi-arrow-right text-primary me-2"></i>Team
-                  Leadership
-                </li>
-                <li>
-                  <i className="bi bi-arrow-right text-primary me-2"></i>
-                  Strategy Building
-                </li>
-                <li>
-                  <i className="bi bi-arrow-right text-primary me-2"></i>
-                  Multilateral Negotiation
-                </li>
-              </ul>
-            </div>
-            {/* <!-- Participation --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-              <h3>
-                {/* <span className="text-primary">02.</span> */}
-                Who Can Participate?
-              </h3>
-              <p className="fs-6">
-                Model G20 summit is for school students, university
-                undergraduates, and young working professionals within the age
-                group of 16-27. You can take part in pre-summit sessions by
-                registering within your institution.
-              </p>
-              <p className="fs-6">
-                Find further details <a href="#">here</a>
-              </p>
-            </div>
-            {/* <!-- Campus Sherpa --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-              <h3>
-                {/* <span className="text-primary">03.</span> */}
-                Become a G20 Campus Sherpa
-              </h3>
-              <p className="fs-6">
-                In line with the Model G20 program on our website G20-india.org,
-                we want to engage enthusiastic youth from schools, colleges and
-                universities to become “Campus Sherpas”. Each institution
-                will have one campus sherpa who will volunteer to undertake
-                a set of activities to promote, manage and execute Model G20
-                programs within their campus.
-              </p>
-              <p className="fs-6">
-                Interested in knowing more? <a href="#">Click here</a> for
-                details
-              </p>
-            </div>
-            {/* <!-- Organising Committeee --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-              <h3>
-                {/* <span className="text-primary">04.</span> */}
-                Model G20 Campus Events Organising Committee
-              </h3>
-              <p className="fs-6 mb-0">
-                If you want to organise a Model G20 event in your campus,
-                register yourself with us and a representative will reach out to
-                you.
-              </p>
-              <p>
-                <span className="text-danger fs-4">*</span> Please note that
-                Model G20 India will not pay or sponsor the campus events and
-                the organising committee will have to arrange all funds required
-                to execute the event.
-              </p>
-              <a href="" className="btn btn-primary-outline">
-                Register Now
-              </a>
-            </div>
-          </div>
+          
         </div>
         {/* <!-- background shape --> */}
         <img
@@ -341,7 +247,7 @@ const Modelg20Page = () => {
           </p>
           <p>
             Interested in knowing more?
-            <a href="/g20-campus-sherpa"> Click here</a> for details
+            <Link to="/g20-campus-sherpa"> Click here</Link> for details
           </p>
         </div>
       </section>

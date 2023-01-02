@@ -1,8 +1,8 @@
-import React, { useEffect, useLayoutEffect } from "react";
-import { NavLink, useLocation } from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const route = useLocation().pathname;
+
   return (
     <>
       <nav className="navbar py-2  py-lg-0 navbar-expand-lg bg-light bg-opacity-75">
@@ -147,10 +147,10 @@ const Navbar = () => {
             </li>
             <li className="list-group-item p-3 rounded-3 " data-bs-dismiss="offcanvas">
               <NavLink
-
+                className="fs-6 text-uppercase text-dark"
                 to="/g20-genius-certification"
               >
-                G20 Genius Certification
+                G20 Genius
               </NavLink>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3" data-bs-dismiss="offcanvas">
@@ -159,6 +159,14 @@ const Navbar = () => {
                 className="fs-6 text-uppercase text-dark"
               >
                 CAMPUS SHERPA
+              </NavLink>
+            </li>
+            <li className="list-group-item p-3 mt-2 border rounded-3" data-bs-dismiss="offcanvas">
+              <NavLink
+                to="/youth-community"
+                className="fs-6 text-uppercase text-dark"
+              >
+                Youth Gallery
               </NavLink>
             </li>
             <li className="list-group-item p-3 mt-2 border rounded-3" >
@@ -190,6 +198,23 @@ const Navbar = () => {
                       <span className="text-initial">LiFE</span>
                     </NavLink>
                   </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/startup-india"
+                    >
+                      Startup India
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/digital-transform"
+                    >
+                      Digital Transformation
+                    </NavLink>
+                  </li>
+                  
                   {/* <NavLink
                     className="list-group-item p-3 rounded-3"
                     to="/blog-single.html"
