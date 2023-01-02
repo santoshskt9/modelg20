@@ -123,7 +123,8 @@ const Footer = () => {
                   <h4 className="text-white mb-4">Contact Us</h4>
                   <ul className="list-unstyled">
                     <li className="text-light mb-3">
-                      B82 Ground Floor, Lajpat Nagar 2 , New Delhi 110024
+                      A 92 ( First Floor) South Extension Part II New Delhi-
+                      110049
                     </li>
                     <a href="tel:919650631134" className="text-light mb-3">
                       +91 96506 31134

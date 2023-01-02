@@ -99,6 +99,15 @@ const CampusRegister = () => {
                 </div>
                 <div className="col-12 col-lg-6">
                   <span className="form-label">
+                    Enter G20 Certification Number
+                  </span>
+                  <input
+                    type="text"
+                    className="form-control p-3"
+                  />
+                </div>
+                <div className="col-12 col-lg-6">
+                  <span className="form-label">
                     How did your team came to know about the Model G20 Summit? *
                   </span>
                   <input
