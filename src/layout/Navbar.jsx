@@ -90,7 +90,7 @@ const Navbar = () => {
               to={"/youth-community"}
               className="btn btn-primary hover-ripple d-flex align-items-center ms-3 text-initial"
             >
-              Youvamanthan
+              Yuvamanthan
             </NavLink>
           </div>
         </div>
@@ -217,7 +217,7 @@ const Navbar = () => {
                 to={"/youth-community"}
                 className="btn btn-primary hover-ripple w-100 text-initial"
               >
-                Youvamanthan
+                Yuvamanthan
               </NavLink>
             </li>
           </ul>
