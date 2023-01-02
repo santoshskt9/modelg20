@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       {/* main footer */}
-      <div className="py-5" style={{ background: "#747875" }}>
+      <div className="py-5" style={{ background: "#A9A9A9" }}>
         <div className="container">
           <div className="row justify-content-between">
             {/* footer content */}
