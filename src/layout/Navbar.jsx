@@ -8,8 +8,8 @@ const Navbar = () => {
         <div className="container">
           <NavLink className="navbar-brand " to="/">
             <img
-              className="img-responsive height-100 pe-2  border-3"
-              src={process.env.REACT_APP_MAIN_URL + "images/yuva-india-logo-2.png"}
+              className="img-responsive height-75 pe-2  border-3"
+              src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
               alt="G20india"
             />
             {/* <img
@@ -111,8 +111,8 @@ const Navbar = () => {
         <div className="offcanvas-header">
           <NavLink className="navbar-brand" to="/">
             <img
-              className="img-responsive height-100"
-              src={process.env.REACT_APP_MAIN_URL + "images/yuva-india-logo.png"}
+              className="img-responsive height-75"
+              src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
               alt="G20india"
             />
           </NavLink>
