@@ -37,23 +37,33 @@ const Footer = () => {
               {/* social links */}
               <ul className="list-inline social-icon-alt">
                 <li className="list-inline-item">
-                  <a className="hover-ripple" href="#">
+                  <a className="hover-ripple" target={"_blank"} href="https://www.facebook.com/profile.php?id=100088850808774">
                     <i className="bi bi-facebook"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="hover-ripple" href="#">
+                  <a className="hover-ripple" target={"_blank"} href="https://www.instagram.com/yuvamanthan_org/">
+                    <i className="bi bi-instagram"></i>
+                  </a>
+                </li>
+                <li className="list-inline-item">
+                  <a className="hover-ripple" target={"_blank"} href="https://twitter.com/Yuvamanthan_org">
                     <i className="bi bi-twitter"></i>
                   </a>
                 </li>
                 <li className="list-inline-item">
-                  <a className="hover-ripple" href="#">
+                  <a className="hover-ripple" target={"_blank"} href="https://www.linkedin.com/in/yuva-manthan-09aa2025b/">
                     <i className="bi bi-linkedin"></i>
                   </a>
                 </li>
-                <li className="list-inline-item">
-                  <a className="hover-ripple" href="#">
+                {/* <li className="list-inline-item">
+                  <a className="hover-ripple" target={"_blank"} href="https://www.snapchat.com/add/yuvamanthan?share_id=OfIKjBhKRKeBESnNbuR2KQ&locale=en_IN">
                     <i className="bi bi-pinterest"></i>
+                  </a>
+                </li> */}
+                <li className="list-inline-item">
+                  <a className="hover-ripple" target={"_blank"} href="https://www.snapchat.com/add/yuvamanthan?sender_web_id=cc1dcfed-7ef4-4996-9c78-6d5df3acdee6&device_type=desktop&is_copy_url=true">
+                    <i className="bi bi-snapchat"></i>
                   </a>
                 </li>
               </ul>

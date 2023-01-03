@@ -210,23 +210,6 @@ const Home = () => {
               </p>
               {/* feature item */}
               <ul className="list-unstyled">
-                <li className="d-flex align-items-center mb-5">
-                  <div className="text-center me-4">
-                    <div className="icon-bg water-wave">
-                      {/* <i className="bi bi-cloud icon text-primary"></i> */}
-                      <img
-                        src="./images/icons/cdri.png"
-                        className="w-100 p-3"
-                        alt="cdri"
-                      />
-                    </div>
-                  </div>
-                  <a href="/cdri" className="text-dark">
-                    <h4>
-                      Coalition for Disaster Resilient Infrastructure (CDRI)
-                    </h4>
-                  </a>
-                </li>
                 {/* feature item */}
                 <li className="d-flex align-items-center mb-5">
                   <div className="text-center me-4">
@@ -243,10 +226,9 @@ const Home = () => {
                     <h4>New Education Policy (NEP) 2020</h4>
                   </a>
                 </li>
-                <li className="d-flex align-items-center mb-5">
+                {/* <li className="d-flex align-items-center mb-5">
                   <div className="text-center me-4">
                     <div className="icon-bg water-wave">
-                      {/* <i className="bi bi-cloud icon text-primary"></i> */}
                       <img
                         src="./images/icons/Life.png"
                         className="w-100 p-2"
@@ -255,7 +237,40 @@ const Home = () => {
                     </div>
                   </div>
                   <a href="/life-environment-intiative" className="text-dark">
-                    <h4>Lifestyle for Environment Initiative <span className="text-initial">(LiFE)</span> </h4>
+                    <h4>
+                      Lifestyle for Environment Initiative{" "}
+                      <span className="text-initial">(LiFE)</span>{" "}
+                    </h4>
+                  </a>
+                </li> */}
+                <li className="d-flex align-items-center mb-5">
+                  <div className="text-center me-4">
+                    <div className="icon-bg water-wave">
+                      {/* <i className="bi bi-cloud icon text-primary"></i> */}
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/683/683527.png"
+                        className="w-100 p-3"
+                        alt="cdri"
+                      />
+                    </div>
+                  </div>
+                  <a href="/startup-india" className="text-dark">
+                    <h4>Start-up India</h4>
+                  </a>
+                </li>
+                <li className="d-flex align-items-center mb-5">
+                  <div className="text-center me-4">
+                    <div className="icon-bg water-wave">
+                      {/* <i className="bi bi-cloud icon text-primary"></i> */}
+                      <img
+                        src="https://cdn-icons-png.flaticon.com/512/1814/1814562.png"
+                        className="w-100 p-3"
+                        alt="cdri"
+                      />
+                    </div>
+                  </div>
+                  <a href="/digital-transform" className="text-dark">
+                    <h4>Digital Transformation</h4>
                   </a>
                 </li>
                 {/* <li className=" mb-5">
