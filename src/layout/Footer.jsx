@@ -12,17 +12,18 @@ const Footer = () => {
             <div className="col-lg-5 mb-5 mb-lg-0">
               {/* logo */}
               <Link to={"/"}>
-                <img
+                {/* <img
                   className="img-responsive height-50  border-end pe-2  border-3"
                   src={process.env.REACT_APP_MAIN_URL + "images/yuva-logo.png"}
                   alt="G20india"
                 />
+                */}
                 <img
                   className="img-responsive height-75"
-                  src={process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"}
+                  src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
                   alt="G20india"
                 />
-              </Link>
+              </Link> 
               <p className="text-white fs-5 mb-1 lh-sm">
                 Engaging the youth in a global dialogue on international
                 diplomacy, leadership and collective duty. A platform to drive
