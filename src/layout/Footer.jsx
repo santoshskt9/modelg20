@@ -56,11 +56,11 @@ const Footer = () => {
                     <i className="bi bi-linkedin"></i>
                   </a>
                 </li>
-                {/* <li className="list-inline-item">
-                  <a className="hover-ripple" target={"_blank"} href="https://www.snapchat.com/add/yuvamanthan?share_id=OfIKjBhKRKeBESnNbuR2KQ&locale=en_IN">
+                <li className="list-inline-item">
+                  <a className="hover-ripple" target={"_blank"} href="https://pin.it/1HUmny3">
                     <i className="bi bi-pinterest"></i>
                   </a>
-                </li> */}
+                </li>
                 <li className="list-inline-item">
                   <a className="hover-ripple" target={"_blank"} href="https://www.snapchat.com/add/yuvamanthan?sender_web_id=cc1dcfed-7ef4-4996-9c78-6d5df3acdee6&device_type=desktop&is_copy_url=true">
                     <i className="bi bi-snapchat"></i>

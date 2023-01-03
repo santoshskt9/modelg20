@@ -18,6 +18,7 @@ import Youth from "./pages/Topics/Youth";
 import Error from "./pages/Error";
 import Registration from "./pages/Registration";
 import CampusRegister from "./pages/Registration/CampusRegister";
+import Education from "./pages/Topics/Education";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/g20-presidency" element={<Presidency />} />
         <Route path="/youth-community" element={<Youth />} />
         <Route path="/digital-transform" element={<DigitalTransform />} />
+        <Route path="/education-for-all" element={<Education/>} />
         <Route exact path="/blog" element={<AllBlog />} />
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />
