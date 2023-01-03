@@ -111,7 +111,7 @@ const Navbar = () => {
         <div className="offcanvas-header">
           <NavLink className="navbar-brand" to="/">
             <img
-              className="img-responsive height-100"
+              className="img-responsive height-75"
               src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
               alt="G20india"
             />
@@ -123,7 +123,7 @@ const Navbar = () => {
             aria-label="Close"
           ></button>
         </div>
-        <div className="offcanvas-body vw-100 ">
+        <div className="offcanvas-body  ">
           <ul className="list-group">
             <li
               className="list-group-item p-3 mb-2 rounded-3 "
