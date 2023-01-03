@@ -123,7 +123,7 @@ const Navbar = () => {
             aria-label="Close"
           ></button>
         </div>
-        <div className="offcanvas-body vw-100 ">
+        <div className="offcanvas-body">
           <ul className="list-group">
             <li
               className="list-group-item p-3 mb-2 rounded-3 "
