@@ -33,20 +33,21 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around">
-              <li className="nav-item dropdown">
+              <li className="nav-item">
                 <NavLink
-                  className="nav-link dropdown-toggle text-dark"
+                  className="nav-link text-dark"
                   to="/model-g20"
-                  aria-haspopup="true"
-                  aria-expanded="false"
                 >
                   Model G20
                 </NavLink>
-                <div className="dropdown-menu">
-                  <NavLink className="dropdown-item" to="/g20-campus-sherpa">
-                    Campus Sherpa
-                  </NavLink>
-                </div>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link text-dark"
+                  to="/g20-campus-sherpa"
+                >
+                  Campus Sherpa
+                </NavLink>
               </li>
               <li className="nav-item">
                 <NavLink
