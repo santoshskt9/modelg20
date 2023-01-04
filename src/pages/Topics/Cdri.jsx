@@ -6,7 +6,7 @@ const Cdri = () => {
     <div>
       {/* <!-- page title --> */}
       <BreadCrumb
-        heading={"Coalition of Disaster Resilient Infrastructure. (CDRI)"}
+        heading={"Coalition of Disaster Resilient Infrastructure (CDRI)"}
       />
       {/* <!-- /page title --> */}
       <section className="section container">
@@ -64,10 +64,13 @@ const Cdri = () => {
           systems by building links between codes, design, planning, operations,
           and maintenance of those systems.
         </p>
+        <h3>Themes</h3>
         <p className="text-dark mb-3">
           Take a look at the following subject areas that highlight CDRI’s work
           on the global platform.
         </p>
+        <h4 className="fs-2 mt-4">Community-based approach</h4>
+
         <p className="text-dark mb-3">
           The role of community participation is receiving worldwide recognition
           in today’s time. So, by formulating capacities of local groups and
@@ -182,6 +185,7 @@ const Cdri = () => {
           enforcing and upgrading regulations for resilient infrastructures
           given the dynamic nature of technology and disaster risks.
         </p>
+        <h4 className="fs-2">Guiding Principles and Programmes</h4>
         <p className="text-dark mb-2">
           For any futuristic initiative to work and prosper, there are some
           guided agendas or principles at work that help keep the focus in
@@ -249,19 +253,19 @@ const Cdri = () => {
             The Coalition of Disaster Resilient Infrastructure as a global
             platform works on the following three vital strategic programmes.
             <br />
-            - Advocacy and Partnerships: This particular programme focuses on
+            <b>- Advocacy and Partnerships</b>: This particular programme focuses on
             bridging the gap between knowledge and execution between members. It
             promotes the safe distribution of knowledge of ideas through digital
             or print platforms and one-on-one workshops. It also forwards the
             CDRI functioning alignments with other various global campaigns.
             <br />
-            - Research and Knowledge Management: This programme was made to
+            <b>- Research and Knowledge Management</b>: This programme was made to
             advertise the collaborative research by-products and systems to
             members to have a better purview to build resilient infrastructure.
             Also, this includes a global database of resilience and sector-focus
             information with flagship reports.
             <br />
-            - Technical Support and Capacity Creation: This programme acts as an
+            <b>- Technical Support and Capacity Creation</b>: This programme acts as an
             anchor between various national and international development
             projects with a prime focus on technical support and innovation. It
             includes creating capacities, altering risk governance and funding

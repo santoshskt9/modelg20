@@ -10,7 +10,7 @@ const Youth = () => {
       {" "}
       {/* <!-- page title --> */}
       <BreadCrumb
-        heading={"Yuvamanthan (The discussion platform for the Indian Youth*)"}
+        heading={"Yuvamanthan (The Discussion Platform for the Indian Youth)"}
       />
       {/* <!-- /page title --> */}
       {/* <!-- about us --> */}
@@ -382,7 +382,7 @@ const Youth = () => {
       </section>
       {/* Youth Gallery */}
       {/* Social Wall of Fame */}
-      <section className="section position-relative">
+      <section className="section position-relative pb-0">
         <div className="container">
           <h2>Social Wall of Fame</h2>
           <p>
@@ -396,6 +396,8 @@ const Youth = () => {
             design creative to allow youth to post pictures, selfies or videos
             on trending topics or any contest-related result images.
           </p>
+
+          <h3 className="text-warning">COMING SOON.....</h3>
         </div>
       </section>
       {/* Social Wall of Fame */}
@@ -403,6 +405,8 @@ const Youth = () => {
       <section className="section position-relative">
         <div className="container">
           <h3>Youth Star of the Week</h3>
+          <h3 className="text-warning">COMING SOON.....</h3>
+
           {/* Showcase your talent, culture or fashion. Post us your pics, videos and reels on
                 YouthGallery@yuvamanthan.org and we will feature them in this section. */}
         </div>

@@ -36,7 +36,7 @@ const BlogsSwiper = () => {
   return (
     <div>
       <section className="bg-gray-white pb-0">
-        <div className="section bg-secondary section-bottom-lg">
+        <div className="section  section-bottom-lg bg-blue-grad">
           <div className="container">
             <div className="row justify-content-around">
               <div className="col-10 col-lg-8 text-center">
