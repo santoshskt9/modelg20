@@ -122,9 +122,9 @@ const Home = () => {
                       Leaders.
                     </p>
                   </div>
-                  <button className="btn btn-primary-outline">
+                  <Link to={"/youth-community"} className="btn btn-primary-outline">
                     Engage Now
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

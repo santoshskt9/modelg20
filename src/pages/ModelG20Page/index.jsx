@@ -50,8 +50,8 @@ const Modelg20Page = () => {
               <p>
                 YMG20 in 2023 will run parallel to the actual G20 events happening
                 under India’s presidency and will take place in schools, colleges
-                and universities, leading to state-level events and finally a
-                <span className="fw-bold">Yuvamanthan National Model G20 in August 2023</span>. It offers youth
+                and universities, leading to state-level events and finally a 
+                 <span className="fw-bold"> Yuvamanthan National Model G20 in August 2023</span>. It offers youth
                 a chance to participate in an all-encompassing discussion on trade,
                 economics and socio-political affairs as well as cultural programmes
                 centred around real global issues and craft critical actions while at
