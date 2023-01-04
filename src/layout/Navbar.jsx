@@ -80,6 +80,9 @@ const Navbar = () => {
                   <NavLink className="dropdown-item" to="/nep">
                     NEP 2020
                   </NavLink>{" "}
+                  <NavLink className="dropdown-item" to="/education-for-all">
+                    Education For All
+                  </NavLink>{" "}
                   <NavLink className="dropdown-item" to="/startup-india">
                     Startup India
                   </NavLink>
