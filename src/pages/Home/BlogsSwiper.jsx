@@ -6,7 +6,7 @@ import blogs from "../Blog/content";
 
 const SingleBlog = ({ data }) => {
   return (
-    <div className="card border-0 rounded-0 shadow pb-0">
+    <div className="card border-0 rounded-0 shadow pb-0 h-100">
       <img
         className="card-img-top rounded-0"
         src={data.image}
@@ -20,9 +20,9 @@ const SingleBlog = ({ data }) => {
           </a>
         </h4>
         <p className="card-text">
-          {data.id == 3
-            ? "Climate change is defined as drastic temperature shifts and unpredictable..."
-            : data.subpara.slice(0, 85) + "..."}
+          {data.subpara == ""
+            ? data.section[0].paragraph[0].slice(0, 85)
+            : data.subpara.slice(0, 85)}...
         </p>
         <a href={"/blog/" + data.slug} className="btn btn-secondary btn-arrow">
           Read More
@@ -35,7 +35,7 @@ const SingleBlog = ({ data }) => {
 const BlogsSwiper = () => {
   return (
     <div>
-      <section className="bg-gray-white">
+      <section className="bg-gray-white pb-0">
         <div className="section bg-secondary section-bottom-lg">
           <div className="container">
             <div className="row justify-content-around">

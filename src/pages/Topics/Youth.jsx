@@ -59,7 +59,7 @@ const Youth = () => {
           <div className="row align-items-center justify-content-between mb-80">
             <div className="col-md-6">
               <img
-                src="images/youth-img2.webp"
+                src="images/youth-girl.jpg"
                 className="w-100 rounded-4"
                 alt=""
               />

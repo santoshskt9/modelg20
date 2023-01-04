@@ -98,7 +98,7 @@ const Course = () => {
             <div className="col-12 col-lg-4 order-1 order-lg-2">
               <div>
                 <img
-                  src="https://res.cloudinary.com/dev-empty/image/upload/v1662282955/uheioegbcm7ghvmpiouh.jpg"
+                  src="./images/course.webp"
                   alt=""
                   className="w-100"
                 />

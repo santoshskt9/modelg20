@@ -47,7 +47,9 @@ const AllBlog = () => {
                             </h4>
                           </div>
                           <p className="card-text">
-                            {blog.subpara.slice(0, 85) + "..."}
+                            {blog.subpara == ""
+                              ? blog.section[0].paragraph[0].slice(0, 85)
+                              : blog.subpara.slice(0, 85)}...
                           </p>
                           <a
                             href={"/blog/" + blog.slug}

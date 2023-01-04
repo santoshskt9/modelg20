@@ -2901,7 +2901,8 @@ blockquote p {
 }
 
 .breadcrumb {
-  padding-top: 160px;
+  padding-top: 130px;
+  padding-bottom: 80px;
 }
 
 @media only screen and (max-width: 750px) {

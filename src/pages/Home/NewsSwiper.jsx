@@ -5,42 +5,6 @@ import "swiper/css/navigation";
 import { Autoplay, Navigation } from "swiper";
 import NewsContent from "../News/content";
 
-// const newsContent = [
-//   {
-//     id: 1,
-//     image: "./images/blog/post-1.jpg",
-//     imageAlt: "Blogs Top Image",
-//     date: "1 Sep, 2018",
-//     heading: "elit duied aiusmod tempor did labore dolory",
-//     link: "./",
-//     paragraph: [
-//       "Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt. mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus error. sit voluptatem.",
-//     ],
-//   },
-//   {
-//     id: 2,
-//     image: "./images/blog/post-2.jpg",
-//     imageAlt: "Blogs TOp Image",
-//     date: "2 Sep, 2018",
-//     heading: "Lorem ipsum dolor sit amet",
-//     link: "./",
-//     paragraph: [
-//       "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
-//     ],
-//   },
-//   {
-//     id: 3,
-//     image: "./images/blog/post-3.jpg",
-//     imageAlt: "Blogs TOp Image",
-//     date: "3 Sep, 2018",
-//     heading: "Lorem ipsum dolor sit amet",
-//     link: "./",
-//     paragraph: [
-//       "Lorem ipsum dolor sit amet, consecte tur adipis elit sed eiusmod.",
-//     ],
-//   },
-// ];
-
 const SingleNews = ({ data }) => {
   return (
     <article className="card border-0 rounded-0 position-relative box-shadow zindex-1 h-100">
@@ -61,8 +25,10 @@ const SingleNews = ({ data }) => {
         </h4>
         <span className="section-title-border"></span>
         <p className="card-text">
-          {data.subpara.slice(0, 80) + "..."}
-          <a href={"/news/" + data.slug}>Read More</a>
+          {data.subpara === ""
+            ? data.section[0].paragraph[0].slice(0, 85)
+            : data.subpara.slice(0, 80)}... 
+          <a href={"/news/" + data.slug}> Read More</a>
         </p>
       </div>
     </article>
@@ -77,7 +43,9 @@ const NewsSwiper = () => {
           <div className="col-12">
             <span className="section-title-border"></span>
             <p className="subtitle">What’s New</p>
-            <h2 className="section-title">Latest G20 News and Stories for You.</h2>
+            <h2 className="section-title">
+              Latest G20 News and Stories for You.
+            </h2>
           </div>
         </div>
         <Swiper
