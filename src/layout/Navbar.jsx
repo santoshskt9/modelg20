@@ -190,7 +190,14 @@ const Navbar = () => {
                       NEP 2020
                     </NavLink>
                   </li>
-
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/education-for-all"
+                    >
+                      NEP 2020
+                    </NavLink>
+                  </li>
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
                       className="list-group-item p-3 rounded-3"
