@@ -195,7 +195,7 @@ const Navbar = () => {
                       className="list-group-item p-3 rounded-3"
                       to="/education-for-all"
                     >
-                      NEP 2020
+                      Education For All
                     </NavLink>
                   </li>
                   <li data-bs-dismiss="offcanvas" className="mb-2">
