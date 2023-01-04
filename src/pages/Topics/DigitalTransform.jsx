@@ -4,7 +4,7 @@ import BreadCrumb from "../../layout/BreadCrumb";
 const DigitalTransform = () => {
   return (
     <div>
-      <BreadCrumb heading={"Digital Transform"} />
+      <BreadCrumb heading={"Digital Transformation"} />
       {/* Content  */}
       <section className="py-5 container">
         <h3>India’s Digital Transformation</h3>
