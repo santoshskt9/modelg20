@@ -81,7 +81,7 @@ const DigitalTransform = () => {
           <div className="col">
             <img
               src="images/digital/mudrayojana.jpg"
-              class="w-100 height-500 rounded-top"
+              className="w-100 height-500 rounded-top"
               alt=""
             />
           </div>
@@ -137,7 +137,7 @@ const DigitalTransform = () => {
           <div className="col order-1 order-lg-2">
             <img
               src="images/digital/di.png"
-              class="w-100 height-300 rounded-4 fit-cover"
+              className="w-100 height-300 rounded-4 fit-cover"
               alt=""
             />
           </div>

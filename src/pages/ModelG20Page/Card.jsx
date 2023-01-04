@@ -112,22 +112,22 @@ const Card = () => {
 
                     </div>
                     {/* <div className="row row-cols-1 row-cols-lg-2 mb-5">
-            <div class="row justify-content-evenly align-items-stretch px-3 py-5 p-sm-5 m-0">
-              <div class="section7Card1 col-md-5 text-light p-5 rounded-4  mb-4">
-                <h1 class="text-start" style="font-family: &quot;DM Serif Display&quot;;">Ready to go?</h1>
-                <div class="mx-auto">
-                  <p class="text-justify">Register through easy steps on this website and choose from a host of solutions.&nbsp;&nbsp;</p>
-                  <button class="btn btn-outline-warning border-light text-light fw-bold rounded-pill px-4 mt-4 py-2">Get started</button>
+            <div className="row justify-content-evenly align-items-stretch px-3 py-5 p-sm-5 m-0">
+              <div className="section7Card1 col-md-5 text-light p-5 rounded-4  mb-4">
+                <h1 className="text-start" style="font-family: &quot;DM Serif Display&quot;;">Ready to go?</h1>
+                <div className="mx-auto">
+                  <p className="text-justify">Register through easy steps on this website and choose from a host of solutions.&nbsp;&nbsp;</p>
+                  <button className="btn btn-outline-warning border-light text-light fw-bold rounded-pill px-4 mt-4 py-2">Get started</button>
                 </div>
               </div>
-              <div class="section7Card2 col-md-5 p-5 rounded-4 mb-4">
-                <h1 class="text-start DMserif">Need advice?</h1>
-                <div class="mx-auto">
-                  <p class="text-justify">Have any questions on how SafeInSchool works? Not sure which solution is right for you? Call our helpline number and we will be happy to answer all your questions.</p>
-                  <button class="btn btn-outline-primary border-dark text-dark fw-bold rounded-pill px-4 mt-4 py-2">
+              <div className="section7Card2 col-md-5 p-5 rounded-4 mb-4">
+                <h1 className="text-start DMserif">Need advice?</h1>
+                <div className="mx-auto">
+                  <p className="text-justify">Have any questions on how SafeInSchool works? Not sure which solution is right for you? Call our helpline number and we will be happy to answer all your questions.</p>
+                  <button className="btn btn-outline-primary border-dark text-dark fw-bold rounded-pill px-4 mt-4 py-2">
                     Call now: +91 XXXXXXXXX
                   </button>
-                  <p class="fst-italic">(Working hours - 10am - 5pm, Mon-Fri)</p>
+                  <p className="fst-italic">(Working hours - 10am - 5pm, Mon-Fri)</p>
                 </div>
               </div>
             </div>

@@ -33,8 +33,8 @@ const G20India = () => {
                                 In the words of honourable Prime Minister, <span className='fw-bold'>Shri Narendra Modi</span> for the nation’s youth
                             </p>
                             <p className='fs-5 text-center fw-semibold fst-italic w-75'>
-                                <i class='bx bxs-quote-alt-left'></i>It is the responsibility of the citizens to go beyond the expectations and acquaint the world
-                                with India’s capabilities, philosophy, social and intellectual strength.<i class='bx bxs-quote-alt-right' ></i>
+                                <i className='bx bxs-quote-alt-left'></i>It is the responsibility of the citizens to go beyond the expectations and acquaint the world
+                                with India’s capabilities, philosophy, social and intellectual strength.<i className='bx bxs-quote-alt-right' ></i>
                             </p>
                         </div>
                         <div className="col col-lg-1"></div>
@@ -91,17 +91,17 @@ const G20India = () => {
                                         We encourage institutions to form Engagement groups as follows:
                                     </p>
                                     <ul>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Business20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Civil20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Labour20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Parliament20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Science20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> SAI20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Startup20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Think20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Urban20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Women20</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Youth20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Business20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Civil20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Labour20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Parliament20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Science20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> SAI20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Startup20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Think20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Urban20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Women20</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Youth20</li>
                                     </ul>
                                 </div>
                                 <div className="col mb-3">
@@ -110,14 +110,14 @@ const G20India = () => {
                                         encouraged form Finance Track working groups like:
                                     </p>
                                     <ul>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Development Working Group</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Framework Working Group</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Financial Architecture (IFA)</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Infrastructure Working Group</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Sustainable Finance Working Group</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Global Partnership for Financial Inclusion (GPFI)</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> Joint Finance and Health Task Force</li>
-                                        <li className='fs-5'><i class='bx bx-right-arrow-circle text-primary' > </i> International Taxation Agenda</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Development Working Group</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Framework Working Group</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> International Financial Architecture (IFA)</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Infrastructure Working Group</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Sustainable Finance Working Group</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Global Partnership for Financial Inclusion (GPFI)</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> Joint Finance and Health Task Force</li>
+                                        <li className='fs-5'><i className='bx bx-right-arrow-circle text-primary' > </i> International Taxation Agenda</li>
                                     </ul>
                                 </div>
                             </div>

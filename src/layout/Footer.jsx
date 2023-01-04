@@ -11,7 +11,7 @@ const Footer = () => {
             {/* footer content */}
             <div className="col-lg-5 mb-5 mb-lg-0">
               {/* logo */}
-              <Link to={"/"}>
+              <Link to={"/"} >
                 {/* <img
                   className="img-responsive height-50  border-end pe-2  border-3"
                   src={process.env.REACT_APP_MAIN_URL + "images/yuva-logo.png"}
@@ -24,7 +24,7 @@ const Footer = () => {
                   alt="G20india"
                 />
               </Link> 
-              <p className="text-white fs-5 mb-1 lh-sm">
+              <p className="text-white fs-5 mb-1 lh-sm mt-4">
                 Engaging the youth in a global dialogue on international
                 diplomacy, leadership and collective duty. A platform to drive
                 change by creating awareness on issues that matter and build

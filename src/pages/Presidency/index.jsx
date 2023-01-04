@@ -120,12 +120,12 @@ const Presidency = () => {
                             </p>
                         </div>
                         <div className="col">
-                            <figure class="text-start">
-                                <blockquote class="blockquote">
+                            <figure className="text-start">
+                                <blockquote className="blockquote">
 
-                                    <p><i class='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> India's G20 Presidency will work to promote this universal sense of one-ness. Hence our theme - One Earth, One Family, One Future. <i class='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
+                                    <p><i className='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> India's G20 Presidency will work to promote this universal sense of one-ness. Hence our theme - One Earth, One Family, One Future. <i className='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
 
-                                    <figcaption class="blockquote-footer text-end">
+                                    <figcaption className="blockquote-footer text-end">
                                         <cite title="Source Title">PM Narendra Modi</cite>
                                     </figcaption>
                                 </blockquote>
@@ -161,17 +161,17 @@ const Presidency = () => {
                                 Moreover, various international organisations and regional organisations are major participating delegations in the G20 agenda meetings that will be attending the G20 gathering as well. They are –
                             </p>
                             <ul>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> World Bank</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> International Monetary Fund (IMF)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> World Health Organisation (WHO)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> World Trade Organisation (WTO)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> United Nations (UN)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> International Labour Organisation (ILO)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> Financial Stability Board (FSB)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> Organisation for Economic Co-operation and Development (OECD)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> African Union (AU)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> African Union Development Agency (AUDA-NEPAD)</li>
-                                <li><i class="bi bi-plus-circle-dotted"> </i> The Association of Southeast Asian Nations (ASEAN)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> World Bank</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> International Monetary Fund (IMF)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> World Health Organisation (WHO)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> World Trade Organisation (WTO)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> United Nations (UN)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> International Labour Organisation (ILO)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> Financial Stability Board (FSB)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> Organisation for Economic Co-operation and Development (OECD)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> African Union (AU)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> African Union Development Agency (AUDA-NEPAD)</li>
+                                <li><i className="bi bi-plus-circle-dotted"> </i> The Association of Southeast Asian Nations (ASEAN)</li>
                             </ul>
                         </div>
                         <div className="col-lg-6">
@@ -208,11 +208,11 @@ const Presidency = () => {
                     </div>
                     <div className="mb-5 row row-cols-1 row-cols-lg-2">
                         <div className="col">
-                            <div class="card">
-                                <div class="card-body">
-                                    <blockquote class="blockquote mb-0">
-                                        <p><i class='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> The greatest challenges we face - climate change, terrorism, and pandemics - can be solved not by fighting each other, but only by acting together. <i class='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
-                                        <footer class="blockquote-footer text-end">PM <cite title="Source title">Narendra Modi</cite></footer>
+                            <div className="card">
+                                <div className="card-body">
+                                    <blockquote className="blockquote mb-0">
+                                        <p><i className='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> The greatest challenges we face - climate change, terrorism, and pandemics - can be solved not by fighting each other, but only by acting together. <i className='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
+                                        <footer className="blockquote-footer text-end">PM <cite title="Source title">Narendra Modi</cite></footer>
                                     </blockquote>
                                 </div>
                             </div>
@@ -336,10 +336,10 @@ const Presidency = () => {
                             </p>
 
                         </div>
-                        <figure class="text-start">
-                            <blockquote class="blockquote">
-                                <p><i class='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> Let us join together to make India's G20 Presidency a Presidency of healing, harmony and hope. Let us work together to shape a new paradigm - of human-centric globalisation. <i class='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
-                                <figcaption class="blockquote-footer text-end">
+                        <figure className="text-start">
+                            <blockquote className="blockquote">
+                                <p><i className='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> Let us join together to make India's G20 Presidency a Presidency of healing, harmony and hope. Let us work together to shape a new paradigm - of human-centric globalisation. <i className='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
+                                <figcaption className="blockquote-footer text-end">
                                     PM <cite title="Source Title">Narendra Modi</cite>
                                 </figcaption>
                             </blockquote>

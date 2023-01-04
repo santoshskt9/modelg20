@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import {  useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import BreadCrumb from "../../layout/BreadCrumb";
 import Card from "./Card";
 import FaqComponent from "./FaqComponent";
@@ -20,7 +20,7 @@ const Modelg20Page = () => {
       {/* <!-- about us --> */}
       <section className="section pb-0">
         <div className="container">
-          <div className="row justify-content-between mb-80">
+          <div className="row justify-content-between mb-80 align-items-center">
             <div className=" col-md-6 mb-5 mb-md-0">
               <div className="d-flex align-items-start justify-content-start">
                 <div>
@@ -38,20 +38,24 @@ const Modelg20Page = () => {
                 </div>
               </div>
               <p>
-                Model G20 is an impressive mock simulator created to mirror the
-                actual G20 or Group of Twenty summit of leaders from developed
-                to emerging economies. It is aimed and designed for young
-                learners, and professionals who wish to ace the art of public
-                speaking and diplomacy.
+                <span className="fw-bold">Yuvamanthan Model G20 (YMG20)</span> is a youth engagement mock
+                simulator created to mirror the actual G20 or Group of Twenty
+                summit of leaders. It is conceived and designed for young learners
+                and professionals who wish to ace the art of public speaking,
+                strategy and diplomacy. It aims to unlock the true potential of Indian
+                youth as it convenes young leaders, thinkers and innovators on a
+                platform that promotes consensus building, negotiation, and shared
+                ideas.
               </p>
               <p>
-                Model G20 in 2023 will mirror the actual G20 event happening
-                under India’s presidency and will take place in schools,
-                colleges and universities leading to state level events and
-                finally a National Model G20 in August, 2023 in New Delhi. It
-                will offer the youth across India a chance to participate in
-                debates, panel discussions, cultural programmes and networking
-                centred around real global issues.
+                YMG20 in 2023 will run parallel to the actual G20 events happening
+                under India’s presidency and will take place in schools, colleges
+                and universities, leading to state-level events and finally a
+                <span className="fw-bold">Yuvamanthan National Model G20 in August 2023</span>. It offers youth
+                a chance to participate in an all-encompassing discussion on trade,
+                economics and socio-political affairs as well as cultural programmes
+                centred around real global issues and craft critical actions while at
+                it.
               </p>
               {/* <div className="d-flex align-items-center">
                 <Link
@@ -90,7 +94,7 @@ const Modelg20Page = () => {
               />
             </div>
           </div>
-          
+
         </div>
         {/* <!-- background shape --> */}
         <img
@@ -114,7 +118,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Team building</h4>
                 <p>
-                Work in groups to build a friendly rapport with other teams to represent your team’s message.
+                  Work in groups to build a friendly rapport with other teams to represent your team’s message.
                 </p>
               </div>
             </div>
@@ -160,7 +164,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Strategy Building</h4>
                 <p>
-                Working together with teams to create strategies that impact the future of the world.
+                  Working together with teams to create strategies that impact the future of the world.
                 </p>
               </div>
             </div>
@@ -173,7 +177,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Macroeconomics</h4>
                 <p>
-                Researching and deliberating thoughts on economic matters to create resilient economies.
+                  Researching and deliberating thoughts on economic matters to create resilient economies.
                 </p>
               </div>
             </div>
@@ -197,7 +201,7 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Public Speaking</h4>
                 <p>
-                Perfect the art of speaking to a large audience, debating, and influencing juries with impactful content.
+                  Perfect the art of speaking to a large audience, debating, and influencing juries with impactful content.
                 </p>
               </div>
             </div>
@@ -228,10 +232,10 @@ const Modelg20Page = () => {
             onClick={() => {
               navigate("/registration");
             }}
-            style={{whiteSpace:'pre-wrap !important'}}
+            style={{ whiteSpace: 'pre-wrap !important' }}
           >
-           <span className=" w-100" >
-           REGISTER AS AN EDUCATIONAL INSTITUTION </span> 
+            <span className=" w-100" >
+              REGISTER AS AN EDUCATIONAL INSTITUTION </span>
           </button>
         </div>
       </section>
