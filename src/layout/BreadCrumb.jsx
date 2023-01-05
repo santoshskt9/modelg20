@@ -1,11 +1,16 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Link, useLocation } from "react-router-dom";
 
-const BreadCrumb = ({heading}) => {
+const BreadCrumb = ({ heading }) => {
   const route = useLocation().pathname;
   const routeArr = route.split("/");
   return (
     <>
+      <Helmet>
+        <title>{heading}</title>
+        <link rel="canonical" href={"https://www.yuvamanthan.org" + route} />
+      </Helmet>
       <section
         className="section breadcrumb"
         style={{
@@ -23,14 +28,23 @@ const BreadCrumb = ({heading}) => {
                 <ol className="breadcrumb bg-transparent p-0">
                   {routeArr.map((rout, index) => {
                     return index === 0 ? (
-                      <li key={index} className="breadcrumb-item font-weight-semebold">
+                      <li
+                        key={index}
+                        className="breadcrumb-item font-weight-semebold"
+                      >
                         <Link className="text-white" to="/">
                           Home
                         </Link>
                       </li>
                     ) : (
-                      <li key={index} className="breadcrumb-item font-weight-semebold">
-                        <Link className="text-white text-uppercase" to={"/" + rout}>
+                      <li
+                        key={index}
+                        className="breadcrumb-item font-weight-semebold"
+                      >
+                        <Link
+                          className="text-white text-uppercase"
+                          to={"/" + rout}
+                        >
                           {rout}
                         </Link>
                       </li>

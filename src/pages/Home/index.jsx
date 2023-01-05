@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import BannerSwiper from "./BannerSwiper";
 import BlogsSwiper from "./BlogsSwiper";
@@ -11,8 +12,11 @@ const Home = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>{"Yuvamanthan, the organizers of Model G20 India."}</title>
+        <link rel="canonical" href={"https://www.yuvamanthan.org/"} />
+      </Helmet>
       <BannerSwiper />
-
       {/* banner feature */}
       <section
         className="translate-top ***"
@@ -67,7 +71,12 @@ const Home = () => {
                       show the world how it’s done.
                     </p>
                   </div>
-                  <Link to={"/achievements-of-india"} className="btn btn-primary-outline">Know more</Link>
+                  <Link
+                    to={"/achievements-of-india"}
+                    className="btn btn-primary-outline"
+                  >
+                    Know more
+                  </Link>
                 </div>
               </div>
             </div>
@@ -122,7 +131,10 @@ const Home = () => {
                       Leaders.
                     </p>
                   </div>
-                  <Link to={"/youth-community"} className="btn btn-primary-outline">
+                  <Link
+                    to={"/youth-community"}
+                    className="btn btn-primary-outline"
+                  >
                     Engage Now
                   </Link>
                 </div>
