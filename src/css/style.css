@@ -1301,10 +1301,11 @@ Fonts
 /* icon animation */
 .icon-bg {
   position: relative;
-  background-color: var(--main-bg-trans-color-2);
+  background-color: #01d95b98;
   display: inline-block;
   height: 100px;
   width: 100px;
+  box-shadow: 0 0 40px #01d95a;
   border-radius: 120px 135px 110px 90px;
 }
 
@@ -1838,8 +1839,7 @@ textarea.form-control-sm {
   background: rgb(65, 3, 56);
   background: radial-gradient(
     circle,
-    rgba(65, 3, 56, 1) 0%,
-    rgba(0, 0, 38, 1) 50%,
+    rgb(0, 0, 59) 50%,
     rgba(1, 0, 39, 1) 100%
   );
 }
@@ -2950,7 +2950,7 @@ li {
 }
 
 .bg-blue-grad {
-  background: linear-gradient( #2d9ed6, #103548) !important;
+  background: linear-gradient(#2d9ed6, #103548) !important;
 }
 .bg-rad-spc {
   background: rgb(65, 3, 56);
@@ -2961,6 +2961,6 @@ li {
     rgba(1, 0, 39, 1) 100%
   );
 }
-b{
+b {
   font-weight: 600;
 }
