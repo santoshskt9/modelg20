@@ -1,12 +1,10 @@
-import React, { useEffect, useLayoutEffect } from "react";
+import React from "react";
+import GotoTop from "../../layout/GotoTop";
 
 const CampusRegister = () => {
-  useLayoutEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <div>
-      {" "}
+      <GotoTop />{" "}
       <section className="section position-relative">
         <div className="container">
           <div className="row justify-content-center mb-80">

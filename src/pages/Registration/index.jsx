@@ -1,11 +1,9 @@
 import React, { useEffect } from "react";
 
 const Registration = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <section className="section position-relative">
+      {/* <GotoTop /> */}
       <div className="container">
         <div className="row justify-content-center mb-80">
           <div className=" col-md-9 text-center mb-5 mb-md-0">

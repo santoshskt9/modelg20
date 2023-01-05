@@ -67,7 +67,7 @@ const Home = () => {
                       show the world how it’s done.
                     </p>
                   </div>
-                  <button className="btn btn-primary-outline">Know more</button>
+                  <Link to={"/achievements-of-india"} className="btn btn-primary-outline">Know more</Link>
                 </div>
               </div>
             </div>

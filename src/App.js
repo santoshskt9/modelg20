@@ -19,11 +19,14 @@ import Error from "./pages/Error";
 import Registration from "./pages/Registration";
 import CampusRegister from "./pages/Registration/CampusRegister";
 import Education from "./pages/Topics/Education";
+import GotoTop from "./layout/GotoTop";
+import IndiaAchivements from "./pages/Topics/IndiaAchivements";
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <GotoTop />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
@@ -35,8 +38,9 @@ function App() {
         <Route path="/startup-india" element={<StartupIndia />} />
         <Route path="/g20-presidency" element={<Presidency />} />
         <Route path="/youth-community" element={<Youth />} />
+        <Route path="/achievements-of-india" element={<IndiaAchivements />} />
         <Route path="/digital-transform" element={<DigitalTransform />} />
-        <Route path="/education-for-all" element={<Education/>} />
+        <Route path="/education-for-all" element={<Education />} />
         <Route exact path="/blog" element={<AllBlog />} />
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />

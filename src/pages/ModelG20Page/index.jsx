@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { useNavigate, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 import BreadCrumb from "../../layout/BreadCrumb";
 import Card from "./Card";
 import FaqComponent from "./FaqComponent";
@@ -9,7 +9,6 @@ import HowDoesItWork from "./HowDoesItWork";
 import ResourceLibrary from "./ResourceLibrary";
 
 const Modelg20Page = () => {
-  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -38,24 +37,28 @@ const Modelg20Page = () => {
                 </div>
               </div>
               <p>
-                <span className="fw-bold">Yuvamanthan Model G20 (YMG20)</span> is a youth engagement mock
-                simulator created to mirror the actual G20 or Group of Twenty
-                summit of leaders. It is conceived and designed for young learners
-                and professionals who wish to ace the art of public speaking,
-                strategy and diplomacy. It aims to unlock the true potential of Indian
-                youth as it convenes young leaders, thinkers and innovators on a
-                platform that promotes consensus building, negotiation, and shared
-                ideas.
+                <span className="fw-bold">Yuvamanthan Model G20 (YMG20)</span>{" "}
+                is a youth engagement mock simulator created to mirror the
+                actual G20 or Group of Twenty summit of leaders. It is conceived
+                and designed for young learners and professionals who wish to
+                ace the art of public speaking, strategy and diplomacy. It aims
+                to unlock the true potential of Indian youth as it convenes
+                young leaders, thinkers and innovators on a platform that
+                promotes consensus building, negotiation, and shared ideas.
               </p>
               <p>
-                YMG20 in 2023 will run parallel to the actual G20 events happening
-                under India’s presidency and will take place in schools, colleges
-                and universities, leading to state-level events and finally a 
-                 <span className="fw-bold"> Yuvamanthan National Model G20 in August 2023</span>. It offers youth
-                a chance to participate in an all-encompassing discussion on trade,
-                economics and socio-political affairs as well as cultural programmes
-                centred around real global issues and craft critical actions while at
-                it.
+                YMG20 in 2023 will run parallel to the actual G20 events
+                happening under India’s presidency and will take place in
+                schools, colleges and universities, leading to state-level
+                events and finally a
+                <span className="fw-bold">
+                  {" "}
+                  Yuvamanthan National Model G20 in August 2023
+                </span>
+                . It offers youth a chance to participate in an all-encompassing
+                discussion on trade, economics and socio-political affairs as
+                well as cultural programmes centred around real global issues
+                and craft critical actions while at it.
               </p>
               {/* <div className="d-flex align-items-center">
                 <Link
@@ -94,7 +97,6 @@ const Modelg20Page = () => {
               />
             </div>
           </div>
-
         </div>
         {/* <!-- background shape --> */}
         <img
@@ -118,7 +120,8 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Team building</h4>
                 <p>
-                  Work in groups to build a friendly rapport with other teams to represent your team’s message.
+                  Work in groups to build a friendly rapport with other teams to
+                  represent your team’s message.
                 </p>
               </div>
             </div>
@@ -130,7 +133,10 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Discussions with consensus</h4>
-                <p>When opinions are shared as insights you learn to influence others and draw meaningful conclusions.</p>
+                <p>
+                  When opinions are shared as insights you learn to influence
+                  others and draw meaningful conclusions.
+                </p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -141,7 +147,10 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">International diplomacy</h4>
-                <p>Influence actions through negotiations for a common cause without rhetoric or upsetting others.</p>
+                <p>
+                  Influence actions through negotiations for a common cause
+                  without rhetoric or upsetting others.
+                </p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -152,7 +161,10 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Multilateral Negotiations</h4>
-                <p>Negotiating with countries on economics and socio-politico issues with varied perspectives.</p>
+                <p>
+                  Negotiating with countries on economics and socio-politico
+                  issues with varied perspectives.
+                </p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -164,7 +176,8 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Strategy Building</h4>
                 <p>
-                  Working together with teams to create strategies that impact the future of the world.
+                  Working together with teams to create strategies that impact
+                  the future of the world.
                 </p>
               </div>
             </div>
@@ -177,7 +190,8 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Macroeconomics</h4>
                 <p>
-                  Researching and deliberating thoughts on economic matters to create resilient economies.
+                  Researching and deliberating thoughts on economic matters to
+                  create resilient economies.
                 </p>
               </div>
             </div>
@@ -189,7 +203,10 @@ const Modelg20Page = () => {
                   className="icon-120"
                 />
                 <h4 className="mb-3 mt-4">Research and Analysis</h4>
-                <p>Deep diving into topics and themes on global issues and preparing content at short notice.</p>
+                <p>
+                  Deep diving into topics and themes on global issues and
+                  preparing content at short notice.
+                </p>
               </div>
             </div>
             <div className="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
@@ -201,7 +218,8 @@ const Modelg20Page = () => {
                 />
                 <h4 className="mb-3 mt-4">Public Speaking</h4>
                 <p>
-                  Perfect the art of speaking to a large audience, debating, and influencing juries with impactful content.
+                  Perfect the art of speaking to a large audience, debating, and
+                  influencing juries with impactful content.
                 </p>
               </div>
             </div>
@@ -223,20 +241,58 @@ const Modelg20Page = () => {
         <div className="container">
           <h3>APPLICATIONS INVITED FROM EDUCATIONAL INSTITUTIONS!</h3>
           <p>
+            {" "}
+            YMG20 brings a host of benefits to participating schools, colleges
+            and universities:
+          </p>
+          <p>
+            {" "}
+            - Educational institutions can appoint their faculty to manage
+            student groups, exposing them to student and career development
+            space.
+          </p>
+          <p>
+            {" "}
+            - YMG20 is a career-advancement platform for students seeking a
+            career in civil services, international finance, international
+            business and diplomacy. It gives real-time exposure to students
+            through engagement groups, summits, webinars and podcasts.
+          </p>
+          <p>
+            {" "}
+            - Yuvamanthan will engage with the who’s who from diverse fields and
+            will share knowledge and ideas with the students at a regular
+            cadence.
+          </p>
+          <p>
+            {" "}
+            - As an item of extra curricula, it connects with schools looking to
+            do something different for the students.
+          </p>
+          <p>
+            {" "}
+            - Your events get promoted on our website and social media giving
+            publicity and eyeballs across India.
+          </p>
+          <p>
+            {" "}
+            - Schools will benefit from Yuvamanthan's tie-ups with foreign
+            universities through exchange programmes in the future.
+          </p>
+          <p>
             If you are an educational institution interested in organising Model
             G20 summits in your campus, you can simply register with us and we
             will help you with the processes.
           </p>
-          <button
+          <Link
+            to={"/registration"}
             className="btn btn-primary py-3"
-            onClick={() => {
-              navigate("/registration");
-            }}
-            style={{ whiteSpace: 'pre-wrap !important' }}
+            style={{ whiteSpace: "pre-wrap !important" }}
           >
-            <span className=" w-100" >
-              REGISTER AS AN EDUCATIONAL INSTITUTION </span>
-          </button>
+            <span className=" w-100">
+              REGISTER AS AN EDUCATIONAL INSTITUTION
+            </span>
+          </Link>
         </div>
       </section>
       <section className="mb-5">
