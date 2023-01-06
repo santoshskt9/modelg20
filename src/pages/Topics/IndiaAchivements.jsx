@@ -1181,7 +1181,7 @@ const IndiaAchivements = () => {
           </div>
         </div>
         <div className="roadmap-img">
-          <img src="./images/achivements/roadmap.png" alt="" />
+          <img src="./images/achivements/roadmap.png" alt="" className="w-100"/>
         </div>
       </div>
       <div className="container-fluid bg-blue-grad py-5">
