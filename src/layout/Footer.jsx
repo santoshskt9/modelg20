@@ -143,7 +143,7 @@ const Footer = () => {
                   <h4 className="text-secondary mb-4">Contact Us</h4>
                   <ul className="list-unstyled">
                     <li className="text-secondary mb-3">
-                      A 92 ( First Floor) South Extension Part II New Delhi-
+                      A 92 (First Floor) South Extension Part II New Delhi-
                       110049
                     </li>
                     <a href="tel:919650631134" className="text-secondary mb-3">

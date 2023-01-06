@@ -2964,3 +2964,15 @@ li {
 b {
   font-weight: 600;
 }
+
+.fnt-small {
+  font-size: 15px;
+}
+.bg-covered {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-inset {
+  box-shadow: inset 0 0 0 2000px rgb(0, 0, 0, 0.7);
+}
