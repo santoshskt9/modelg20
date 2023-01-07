@@ -21,11 +21,12 @@ import CampusRegister from "./pages/Registration/CampusRegister";
 import Education from "./pages/Topics/Education";
 import GotoTop from "./layout/GotoTop";
 import IndiaAchivements from "./pages/Topics/IndiaAchivements";
-
+import { Toaster } from "react-hot-toast";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
+      <Toaster />
       <GotoTop />
       <Routes>
         <Route exact path="/" element={<Home />} />

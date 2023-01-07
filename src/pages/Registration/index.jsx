@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
+import { postInstituteRegister } from "../../api";
+import InstituteRegComp from "./InstituteRegComp";
 
 const Registration = () => {
+  useEffect(() => {
+    postInstituteRegister();
+  }, []);
   return (
     <section className="section position-relative">
       {/* <GotoTop /> */}
@@ -27,126 +32,14 @@ const Registration = () => {
               </h4>
             </div>
           </div>
-
-          {/* Registration Form */}
-          <form action="" className="container " style={{ maxWidth: "1100px" }}>
-            <div className="row g-3 gy-2 text-dark fw-semibold">
-              <div className="col-3 col-md-2 col-lg-1">
-                <span className="form-label">Title </span>
-                <select name="" id="" className="form-select py-3 ps-3 pe-3">
-                  <option value="Mr.">Mr.</option>
-                  <option value="Mrs.">Mrs.</option>
-                  <option value="Ms.">Ms.</option>
-                </select>
-              </div>
-              <div className="col-9 col-md-10 col-lg-4">
-                <span className="form-label">
-                  First Name <b className="text-danger">*</b>
-                </span>
-                <input type="text" className="form-control" />
-              </div>
-              <div className="col-6 col-md-6 col-lg-3">
-                <span className="form-label">Middle Name </span>
-                <input type="text" className="form-control" />
-              </div>
-              <div className="col-6 col-md-6 col-lg-4">
-                <span className="form-label">
-                  Last Name <b className="text-danger">*</b>
-                </span>
-                <input type="text" className="form-control" />
-              </div>
-              <div className="col-12 col-lg-6">
-                <span className="form-label">
-                  Institution/College Name where the event will be organised{" "}
-                  <b className="text-danger">*</b>
-                </span>
-                <input type="text" className="form-control" />
-              </div>
-              <div className="col-12 col-lg-6">
-                <span className="form-label">
-                  Institution/College Address <b className="text-danger">*</b>
-                </span>
-                <input type="text" className="form-control" />
-              </div>
-              <div className="col-12 col-lg-3">
-                <span className="form-label">
-                  State <b className="text-danger">*</b>
-                </span>
-                <input className="form-control" type="text" />
-              </div>
-              <div className="col-12 col-lg-3">
-                <span className="form-label">
-                  Pincode <b className="text-danger">*</b>
-                </span>
-                <input className="form-control" type="text" />
-              </div>
-              {/* contact Information  */}
-              <div className="col-12">
-                <hr className="my-4" />
-                <h5>Contact Information</h5>
-              </div>
-              <div className="col-12 col-lg-6">
-                <span className="form-label">
-                  Email <b className="text-danger">*</b>
-                </span>
-                <input className="form-control" type="email" />
-              </div>
-              <div className="col-12 col-lg-6">
-                <span className="form-label">
-                  Confirm Email <b className="text-danger">*</b>
-                </span>
-                <input className="form-control" type="email" />
-              </div>
-              <div className="col-12 col-lg-6">
-                <span className="form-label">
-                  Contact Number <b className="text-danger">*</b>
-                </span>
-                <input className="form-control" type="phone" />
-              </div>
-              {/* Model G20 Terms and Conditions * */}
-              <div className="col-12">
-                <h5>
-                  Model G20 Terms and Conditions{" "}
-                  <b className="text-danger">*</b>
-                </h5>
-                <div className="form-check">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="checkAgreement"
-                  />
-                  <span className="form-check-label">
-                    I agree all the information provided by me is true and i
-                    agree to the{" "}
-                    <span
-                      className="text-primary"
-                      style={{ cursor: "pointer" }}
-                      data-bs-toggle="modal"
-                      data-bs-target="#g20instituteModal"
-                    >
-                      terms of conditions.
-                    </span>
-                  </span>
-                </div>
-              </div>
-              <div className="col-12">
-                <button
-                  type="submit"
-                  className="btn btn-primary-outline hover-ripple"
-                >
-                  REGISTER NOW
-                </button>
-              </div>
-            </div>
-          </form>
+          <InstituteRegComp />
         </div>
 
         {/* terms and conditions pop  */}
         <div
           className="modal fade"
           id="g20instituteModal"
-          tabindex="-1"
+          tabIndex="-1"
           aria-labelledby="exampleModalLabel"
           aria-hidden="true"
         >
