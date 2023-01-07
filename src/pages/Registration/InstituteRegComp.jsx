@@ -1,18 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import { useFormik } from "formik";
 import { instituteregisterSchema } from "../../schema/register";
 import { postInstituteRegister } from "../../api";
 import { toast } from "react-hot-toast";
 const InstituteRegComp = () => {
+  const [tnc, setTnc] = useState(false);
   const onSubmit = async (values, action) => {
-    const registerto = await postInstituteRegister(values);
-    console.log(registerto);
-    if (registerto.data.status === "ERROR") {
+    toast.loading("Loading...");
+    try {
+      const registerto = await postInstituteRegister(values);
+      console.log("result", registerto);
+      if (registerto.data.status === "ERROR") {
+        toast.dismiss();
+        return toast.error(registerto.data.message);
+      } else {
+        toast.dismiss();
+        return toast.success(registerto.data.message);
+      }
+    } catch (error) {
+      console.log("error", error);
       toast.dismiss();
-      return toast.error(registerto.data.message);
-    } else {
-      toast.dismiss();
-      return toast.success(registerto.data.message);
+      return toast.error("Something went wrong check your connection");
     }
   };
   const { values, errors, touched, isSubmitting, handleSubmit, handleChange } =
@@ -272,8 +280,9 @@ const InstituteRegComp = () => {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value=""
-                id="checkAgreement"
+                value="accept"
+                checked={tnc}
+                onChange={(e) => setTnc(e.target.checked)}
               />
               <span className="form-check-label">
                 I agree all the information provided by me is true and i agree
@@ -293,7 +302,7 @@ const InstituteRegComp = () => {
             <button
               type="submit"
               className="btn btn-primary-outline hover-ripple"
-              disabled={isSubmitting}
+              disabled={isSubmitting || !tnc}
             >
               REGISTER NOW
             </button>

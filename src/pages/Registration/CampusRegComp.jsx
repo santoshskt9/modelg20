@@ -6,9 +6,10 @@ import { postCampusRegister } from "../../api";
 
 const CampusRegComp = () => {
   const [resume, setResume] = useState();
+  const [tnc, setTnc] = useState(false);
   const formdata = new FormData();
   const onSubmit = async (values, actions) => {
-    toast.loading();
+    toast.loading("Submitting form please wait");
     formdata.append("resume", resume);
     formdata.append("first_name", values.first_name);
     formdata.append("middle_name", values.middle_name);
@@ -25,14 +26,24 @@ const CampusRegComp = () => {
     formdata.append("views_on_g20", values.views_on_g20);
     formdata.append("topics", values.topics);
     console.log("registerdata", resume, formdata);
-    const registerto = await postCampusRegister({ ...values, resume });
-    console.log(registerto);
-    if (registerto.data.status === "ERROR") {
+    if (resume.size > 1200000) {
       toast.dismiss();
-      return toast.error(registerto.data.message);
+      return toast.error("Maximum resume file size is 600kb");
     } else {
-      toast.dismiss();
-      return toast.success(registerto.data.message);
+      try {
+        const registerto = await postCampusRegister({ ...values, resume });
+        console.log(registerto);
+        if (registerto.data.status === "ERROR") {
+          toast.dismiss();
+          return toast.error(registerto.data.message);
+        } else {
+          toast.dismiss();
+          return toast.success(registerto.data.message);
+        }
+      } catch (error) {
+        toast.dismiss();
+        return toast.error("Something went wrong check your connection");
+      }
     }
   };
 
@@ -380,7 +391,7 @@ const CampusRegComp = () => {
               What topics your team would like to address in the model G20
               summit? <b className="text-danger">*</b> (any 3)
             </span>
-            <div className="row row-cols-1 row-cols-lg-3">
+            <div className="row row-cols-1 gy-3 row-cols-lg-3">
               <div className="col">
                 <input
                   type="text"
@@ -441,7 +452,11 @@ const CampusRegComp = () => {
               <input
                 className="form-check-input"
                 type="checkbox"
-                value=""
+                value="accept"
+                checked={tnc}
+                onChange={(e) => {
+                  setTnc(e.target.checked);
+                }}
                 id="checkAgreement"
               />
               <label className="form-check-label" htmlFor="checkAgreement">
@@ -462,7 +477,7 @@ const CampusRegComp = () => {
             <button
               type="submit"
               className="btn btn-primary-outline hover-ripple"
-              disabled={isSubmitting}
+              disabled={isSubmitting || !tnc}
             >
               REGISTER NOW
             </button>
