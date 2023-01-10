@@ -73,6 +73,12 @@ const Navbar = () => {
                 <div className="dropdown-menu">
                   <NavLink
                     className="dropdown-item"
+                    to="/shared-future"
+                  >
+                    <span className="text-initial">Shared Future</span>
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
                     to="/life-environment-intiative"
                   >
                     <span className="text-initial">LiFE</span>
@@ -173,6 +179,14 @@ const Navbar = () => {
               </p>
               <div className="collapse p-0 m-0" id="collapseTopics">
                 <ul className="list-group">
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/shared-future"
+                    >
+                      <span className="text-initial">Shared Future</span>
+                    </NavLink>
+                  </li>
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
                       className="list-group-item p-3 rounded-3"

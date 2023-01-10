@@ -4,7 +4,7 @@ const faqs = [
   {
     id: 1,
     q: "What does G20 stand for?",
-    a: "The Group of Twenty (20) is one of the premier forums for international economic cooperation. It holds meetings to discuss the most pressing global matters and formulate reforms to strengthen global architecture.",
+    a: "The Group of Twenty (G20) is one of the premier forums for international economic cooperation. It holds meetings to discuss the most pressing global matters and formulate reforms to strengthen global architecture.",
   },
   {
     id: 2,
@@ -14,7 +14,7 @@ const faqs = [
   {
     id: 3,
     q: "Why is India in the news for G20 this time?",
-    a: "In December 2022, India bagged the presidency of the G20 summit for 2023. This means that India will steer the G20 agenda for one year with a series of events and host the actual G20 summit of Leaders in October 2023. Click here to read the full press release",
+    a: "In December 2022, India bagged the presidency of the G20 summit for 2023. This means that India will steer the G20 agenda for one year with a series of events and host the actual G20 summit of Leaders in October 2023.",
   },
   {
     id: 4,
@@ -34,7 +34,7 @@ const faqs = [
   {
     id: 7,
     q: "How many members need to register to form a Model G20 delegation?",
-    a: "Typically, a delegation needs to have 5-7 members. The main role members are a Sherpa, Sous Sherpa(deputy), Finance Minister, Central Bank Governor, and senior advisors(yaks).",
+    a: "Typically, a delegation needs to have 1-7 members. The main role members are a Sherpa, Sous Sherpa(deputy), Finance Minister, Central Bank Governor, and senior advisors (yaks).",
   },
   {
     id: 8,

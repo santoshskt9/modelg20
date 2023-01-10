@@ -146,6 +146,8 @@ const CampusRegComp = () => {
               name="resume"
               onChange={(e) => setResume(e.target.files[0])}
               className="form-control form-control-lg p-3"
+              accept="application/msword, text/plain, application/pdf"
+              // accept="application/msword, text/plain, application/pdf, image/*"
               required
             />
           </div>
@@ -481,6 +483,11 @@ const CampusRegComp = () => {
             >
               REGISTER NOW
             </button>
+            {errors.length !== 0 && touched.views_on_g20 && (
+              <span className="text-danger fnt-small d-block">
+                Please fill form correctly
+              </span>
+            )}
           </div>
         </div>
       </form>

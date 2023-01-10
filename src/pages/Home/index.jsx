@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import GotoTop from "../../layout/GotoTop";
 import BannerSwiper from "./BannerSwiper";
 import BlogsSwiper from "./BlogsSwiper";
 import CallToAction from "./CallToAction";
@@ -12,6 +13,7 @@ const Home = () => {
   }, []);
   return (
     <>
+      <GotoTop />
       <Helmet>
         <title>{"Yuvamanthan Model G20 India"}</title>
         <link rel="canonical" href={"https://www.yuvamanthan.org/"} />
@@ -44,9 +46,12 @@ const Home = () => {
                       better world of peace and harmony.
                     </p>
                   </div>
-                  <button className="btn btn-light-outline">
+                  <Link
+                    to={"/g20-presidency"}
+                    className="btn btn-light-outline"
+                  >
                     Find out more
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>

@@ -386,15 +386,15 @@ const Youth = () => {
         <div className="container">
           <h2>Social Wall of Fame</h2>
           <p>
-            In this space, we will put up 2-3 social media interface banners
+            {/* In this space, we will put up 2-3 social media interface banners
             like IG, FB, and Twitter. Here we will post the latest and trending
             carousel posts or tweets with a comment section to allow youth
-            engagement and interest.
+            engagement and interest. */}
           </p>
           <p>
-            Also, a separate section will be made under this space in a graphic
+            {/* Also, a separate section will be made under this space in a graphic
             design creative to allow youth to post pictures, selfies or videos
-            on trending topics or any contest-related result images.
+            on trending topics or any contest-related result images. */}
           </p>
 
           <h3 className="text-warning">COMING SOON.....</h3>

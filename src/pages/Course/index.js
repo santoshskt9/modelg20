@@ -1,5 +1,6 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import BreadCrumb from "../../layout/BreadCrumb";
+import CourseEnroll from "../Registration/CourseEnroll";
 
 const Course = () => {
   useEffect(() => {
@@ -7,7 +8,7 @@ const Course = () => {
   }, []);
   return (
     <>
-      <BreadCrumb heading={"G20 Genius Certification"}/>
+      <BreadCrumb heading={"G20 Genius Certification"} />
       <section className="section">
         <div className="container">
           <span className="section-title-border"></span>
@@ -97,11 +98,7 @@ const Course = () => {
             </div>
             <div className="col-12 col-lg-4 order-1 order-lg-2">
               <div>
-                <img
-                  src="./images/course.webp"
-                  alt=""
-                  className="w-100"
-                />
+                <img src="./images/course.webp" alt="" className="w-100" />
                 <ul className="list-group">
                   <li className="list-group-item p-4 pb-2 border-bottom-0">
                     <h5 className="d-flex justify-content-between">
@@ -120,7 +117,11 @@ const Course = () => {
                     </h5>
                   </li>
                   <li className="list-group-item p-3 text-center">
-                    <button className="btn btn-primary w-100 rounded-3  hover-ripple">
+                    <button
+                      className="btn btn-primary w-100 rounded-3  hover-ripple"
+                      data-bs-toggle="modal"
+                      data-bs-target="#courseEnroll"
+                    >
                       Enroll Now
                     </button>
                   </li>
@@ -130,6 +131,8 @@ const Course = () => {
           </div>
         </div>
       </section>
+      {/* <!-- Modal --> */}
+      <CourseEnroll />
     </>
   );
 };

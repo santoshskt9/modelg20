@@ -15,7 +15,6 @@ const Modelg20Page = () => {
   return (
     <div>
       <BreadCrumb heading={"Model G20"} />
-
       {/* <!-- about us --> */}
       <section className="section pb-0">
         <div className="container">
@@ -336,15 +335,10 @@ const Modelg20Page = () => {
           Registration
         </a> */}
       </div>
-
       <G20India />
-
       <G20Simulation />
-
       <HowDoesItWork />
-
       <ResourceLibrary />
-
       <FaqComponent />
     </div>
   );

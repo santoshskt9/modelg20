@@ -182,7 +182,7 @@ const Education = () => {
           <p>
             Over the years, India has changed the shape of its modern educational infrastructure with
           </p>
-          <ul className='p-4'>
+          <ul className='p-4 fs-5'>
             <li>● 23 All India Institute of Medical Sciences (AIIMS) for the modern healthcare system</li>
             <li>● 20 Indian Institute of Management (IIMs) for making business leaders of tomorrow</li>
             <li>● 23 Indian Institute of Technology (IITs) for leading advancements in science, innovation and
@@ -195,7 +195,7 @@ const Education = () => {
             India as a participant in the global campaign for EFA has created various outlets for children and
             adults to have access to quality education with
           </p>
-          <ul className='p-4'>
+          <ul className='p-4 fs-5'>
             <li>● 8902 AICTE-recognised institutions that have over 3 million intake capacity</li>
             <li>● 1057 government-approved and deemed universities</li>
             <li>● 596 medical colleges to make one college per district available</li>

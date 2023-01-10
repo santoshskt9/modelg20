@@ -1,28 +1,44 @@
 import React from "react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import { EffectCoverflow, Pagination } from "swiper";
+import { getYouthGallery } from "../../api";
+import { useEffect } from "react";
 
-const SlideComp = () => {
+const SlideComp = ({ contentItem }) => {
   return (
     <>
-      <div className="border p-3  shadow-lg bg-white rounded-4 ">
-        <div className="row">
-          <div className="col-12 col-xl-12">
-            <img src="./images/youth1.jpg" alt="" className="w-100 rounded-4" />
-          </div>
-          <div className="col-12 col-xl-12 p-3">
-            <blockquote className="fst-normal shadow-none p-2 ps-3 fs-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Cupiditate doloremque dolorum ab illum nulla sint repellendus
-              explicabo nisi blanditiis, quos quia, natus amet eveniet ex fuga
-              illo enim rem quis!
-            </blockquote>
-            <h6 className="fs-4">Ritesh Kumar</h6>
-            <p className="text-secondary fst-italic">KVS (Tughlakabad)</p>
-          </div>
+      <div className="p-0 p-relative ">
+        <img
+          src={`${process.env.REACT_APP_API_BASE_URL}${contentItem.img}`}
+          alt=""
+          style={{ height: "450px", objectFit: "cover" }}
+          className="w-100 rounded-4"
+        />
+        <div
+          className="p-3 w-100"
+          style={{
+            boxShadow: "0px 0px 30px rgb(0,0,0,0.5)",
+            borderRadius: "0px 30px 30px 30px",
+            transform: "translate(32px, -38px)",
+            backgroundColor: "#FAD961",
+            backgroundImage: "linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%)",
+          }}
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/7671/7671367.png"
+            alt=""
+            style={{
+              height: "55px",
+              marginBottom: "-30px",
+              transform: "translate(-32px, -38px)",
+            }}
+          />
+          <p className="fst-normal shadow-none fs-5">{contentItem.content}</p>
+          <h6 className="fs-5">{contentItem.name}</h6>
+          <p className="text-secondary fnt-small">{contentItem.subinfo}</p>
         </div>
       </div>
     </>
@@ -30,6 +46,18 @@ const SlideComp = () => {
 };
 
 const YouthSwiper = () => {
+  const [youthItem, setYouthItem] = useState([]);
+  const fetchYouths = async () => {
+    try {
+      const res = await getYouthGallery();
+      setYouthItem(res.data.resources);
+    } catch (error) {
+      console.log("error", error);
+    }
+  };
+  useEffect(() => {
+    fetchYouths();
+  }, []);
   return (
     <div>
       {" "}
@@ -37,8 +65,8 @@ const YouthSwiper = () => {
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
-          spaceBetween={0}
-          centeredSlides={true}
+          spaceBetween={50}
+          centeredSlides={false}
           slidesPerView={1}
           coverflowEffect={{
             rotate: 40,
@@ -58,17 +86,15 @@ const YouthSwiper = () => {
           //   style={{height:'550px'}}
           pagination={true}
           modules={[EffectCoverflow, Pagination]}
-          className="mySwiper"
+          className="mySwiper w-100"
         >
-          <SwiperSlide className="p-4 row justify-content-center">
-            <SlideComp />
-          </SwiperSlide>
-          <SwiperSlide className="p-4 row justify-content-center">
-            <SlideComp />
-          </SwiperSlide>
-          <SwiperSlide className="p-4 row justify-content-center">
-            <SlideComp />
-          </SwiperSlide>
+          {youthItem.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <SlideComp contentItem={item} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </>
     </div>

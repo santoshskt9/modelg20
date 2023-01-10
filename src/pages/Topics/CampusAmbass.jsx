@@ -33,11 +33,11 @@ const CampusAmbass = () => {
           to acquire a minimum of 5 students from the same institution who will
           act as volunteers for the Programme.
         </p>
-        <p className="text-dark fs-5">
+        <p className="text-dark fs-5 fw-semibold">
           Before one signs up for being a Sherpa, one needs to have the G20
           Genius Certificate.
         </p>
-        <div className="row ">
+        <div className="row p-2">
           <div
             className="col col-lg-5 card p-lg-5 p-3 mb-5 rounded-4"
             style={{

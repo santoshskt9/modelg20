@@ -10,7 +10,6 @@ const api = axios.create({
 export async function postInstituteRegister(data) {
   try {
     const res = await api.post("register/institution", data);
-    console.log("data", res);
     return res;
   } catch (error) {
     return error;
@@ -19,9 +18,16 @@ export async function postInstituteRegister(data) {
 export async function postCampusRegister(data) {
   try {
     const res = await api.post("register/campussherpa", data);
-    console.log("data", res);
     return res;
   } catch (error) {
     return error;
   }
+}
+export async function getResourcesLibrary() {
+  const res = await api.get("content/resource");
+  return res;
+}
+export async function getYouthGallery() {
+  const res = await api.get("content/youthgallery");
+  return res;
 }

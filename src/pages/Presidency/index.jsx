@@ -1,363 +1,348 @@
-
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import BreadCrumb from "../../layout/BreadCrumb";
+import GotoTop from "../../layout/GotoTop";
 
 const Presidency = () => {
-    return (
-        <React.Fragment>
-            {/* <!-- page title --> */}
-            <section
-                className="section"
-                style={{
-                    background: "url(images/backgrounds/g20.jpg) no-repeat center",
-                    backgroundSize: "cover",
-                    boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
-                }}
-            >
-                <div className="container pt-5">
-                    <div className="row">
-                        <div className="col-12">
-                            <h1 className="text-white mb-3">India’s G20 Presidency</h1>
-                            {/* <!-- breadcrumb --> */}
-                            <nav aria-label="breadcrumb">
-                                <ol className="breadcrumb bg-transparent p-0">
-                                    <li className="breadcrumb-item font-weight-semebold">
-                                        <a className="text-white" href="index.html">
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li
-                                        className="breadcrumb-item font-weight-semebold active text-primary"
-                                        aria-current="page"
-                                    >
-                                        Presidency
-                                    </li>
-                                </ol>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            {/* <!-- /page title --> */}
+  return (
+    <>
+      <GotoTop />
+      {/* <!-- page title --> */}
+      <BreadCrumb heading={"India’s G20 Presidency"} />
+      {/* <!-- /page title --> */}
 
-            <section className="section position-relative">
-                <div className="container">
-                    <div className="row justify-content-between">
-                        <div className=" col-md-12 mb-md-0">
-                            <div className="d-flex align-items-start justify-content-start">
-                                <div>
-                                    <img
-                                        src={
-                                            process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"
-                                        }
-                                        alt=""
-                                        className="icon-modal-logo"
-                                    />
-                                </div>
-                                <div>
-                                    <span className="section-title-border"></span>
-                                    <h2 className="section-title">G20 Overview</h2>
-                                </div>
-                            </div>
-                            <p>
-                                The Group of Twenty (20) is one of the premier forums for international economic cooperation. It holds meetings to discuss the most pressing global matters and formulate reforms to strengthen global architecture.
-                            </p>
-                            <p>
-                                The G20 group accounts for 85% of global GDP, 75% of international trade and two-thirds of the world population, making it the premier forum for international economic cooperation.
-                            </p>
-                            <p>
-                                Typically, the G20 summit consists of two parallel tracks – The Finance track and the Sherpa track. Each track’s meeting is held separately wherein they discuss and negotiate matters of economic and political importance.
-                            </p>
-
-                            <p className="mb-5">
-                                To know more about G20 summit track meetings,
-                                <Link to="#"> click here</Link>
-                            </p>
-                            <p>
-                                The group comprises 19 countries – (Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, the Republic of Korea, Mexico, Russia, Saudi Arabia, South Africa, Turkey, the United Kingdom and the United States) and European Union.
-                            </p>
-                            <p className="mb-5">
-                                According to the rotating presidency ‘troika’ system – previous, current, and succeeding presidencies – India is the current G20 president for 2023. Under the Indian presidency, the troika will comprise Indonesia, India and Brazil.
-                            </p>
-                        </div>
-                        {/* <div className="col-md-6">
-                            <img
-                                src="images/modelg20/main.jpg"
-                                className="w-100 rounded-4"
-                                alt=""
-                            />
-                        </div> */}
-                    </div>
-
-
-                </div>
-                {/* <!-- background shape --> */}
-                <img
-                    className="img-fluid about-bg-shape"
-                    src="images/backgrounds/about-us-3-bg.png"
-                    alt="shape"
-                />
-            </section>
-
-            <section className="section position-relative">
-                <div className="container">
-                    <div className="row mb-5">
-                        <div className="col">
-                            <div className='d-flex justify-content-center'>
-                                <span className="section-title-border"></span>
-                                <h2 className="section-title">India’s G20 Presidency</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row row-cols-1 row-cols-lg-2">
-                        <div className="col">
-                            <div className='mb-3'>
-                                <span className="section-title-border"></span>
-                                <h2 className="section-title">Overview: Theme & Logo</h2>
-                            </div>
-                            <p className='mb-2'>
-                                December 1st 2022 was a monumental day for the country and its 1.38 billion citizens as India assumed the G20 presidency and is prepared to host a grand summit for the world’s developing and developed economies.
-                            </p>
-                        </div>
-                        <div className="col">
-                            <figure className="text-start">
-                                <blockquote className="blockquote">
-
-                                    <p><i className='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> India's G20 Presidency will work to promote this universal sense of one-ness. Hence our theme - One Earth, One Family, One Future. <i className='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
-
-                                    <figcaption className="blockquote-footer text-end">
-                                        <cite title="Source Title">PM Narendra Modi</cite>
-                                    </figcaption>
-                                </blockquote>
-                            </figure>
-                        </div>
-                        <div className="col">
-                            <p>
-                                India’s G20 theme of ‘Vasudaiva Kutumbhakam’ is inspired by the Sanskrit text from Maha Upanishad. This immensely glorifies the message of having universal one-ness that India wishes to demonstrate to all G20 nations. The theme affirms and shows respect for all forms of life – plants, animals, humans – and their cyclical connectivity to the planet, Earth.
-                            </p>
-                            <p>
-                                The logo for India’s G20 theme is unique as it drives colour inspiration from the country’s national flag – saffron, white, green and blue. It showcases Earth in a form of the Lotus, India’s national flower, which means growing strong amongst challenges. The planet resonates with India’s pro-planet approach to life that is in sync with nature.
-                            </p>
-                            <p>
-                                Additionally, beneath the G20 logo is written ‘Bharat’, which means ‘India’ in the old Devanagari script.
-                            </p>
-                            <p className="mb-5">
-                                To read more about India’s G20 presidency,
-                                <Link to="/"> click here</Link>
-                            </p>
-                        </div>
-                    </div>
-                    <div className="row">
-
-                        <div className="col col-lg-6">
-                            <div className='mb-3'>
-                                <span className="section-title-border"></span>
-                                <h2 className="section-title">Invited Nations & Delegations</h2>
-                            </div>
-                            <p>
-                                Apart from the G20 member countries, India has extended the invitation to various other nations who be attending the September 2023 summit as special guests. They are - Netherlands, Nigeria, UAE, Spain, Egypt, Bangladesh, Oman, Mauritius and Singapore.
-                            </p>
-                            <p>
-                                Moreover, various international organisations and regional organisations are major participating delegations in the G20 agenda meetings that will be attending the G20 gathering as well. They are –
-                            </p>
-                            <ul>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> World Bank</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> International Monetary Fund (IMF)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> World Health Organisation (WHO)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> World Trade Organisation (WTO)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> United Nations (UN)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> International Labour Organisation (ILO)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> Financial Stability Board (FSB)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> Organisation for Economic Co-operation and Development (OECD)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> African Union (AU)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> African Union Development Agency (AUDA-NEPAD)</li>
-                                <li><i className="bi bi-plus-circle-dotted"> </i> The Association of Southeast Asian Nations (ASEAN)</li>
-                            </ul>
-                        </div>
-                        <div className="col-lg-6">
-                            <img
-                                src="images/g20.jpeg"
-                                className="w-100 rounded-4 mb-4"
-                                alt=""
-                            />
-                            <div className="row row-cols-1 row-cols-lg-2">
-                                <div className="col-md-6">
-                                    <img
-                                        src="images/deligates/world-bank.jpg"
-                                        className="w-100 rounded-4"
-                                        alt=""
-                                    />
-                                </div>
-                                <div className="col-md-6">
-                                    <img
-                                        src="images/deligates/imf.jpg"
-                                        className="w-100 rounded-4"
-                                        alt=""
-                                    />
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div className="col-12 mb-5">
-
-                        </div>
-                        <div className="col-12">
-                            <p>Under the aegis of the G20 agenda, India will invite the International Solar Alliance (ISA), Coalition of Disaster Resilient Infrastructure (CDRI) and Asian Development Bank (ADB) as guest international organisations to the G20 summit in 2023.</p>
-                        </div>
-                    </div>
-                    <div className="mb-5 row row-cols-1 row-cols-lg-2">
-                        <div className="col">
-                            <div className="card">
-                                <div className="card-body">
-                                    <blockquote className="blockquote mb-0">
-                                        <p><i className='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> The greatest challenges we face - climate change, terrorism, and pandemics - can be solved not by fighting each other, but only by acting together. <i className='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
-                                        <footer className="blockquote-footer text-end">PM <cite title="Source title">Narendra Modi</cite></footer>
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col">
-                            <div className='d-flex justify-content-center'>
-                                <span className="section-title-border"></span>
-                                <h2 className="section-title">Key G20 Agenda & Priorities</h2>
-                            </div>
-                            <p>
-                                The passion clubbed with a sense of harmony and togetherness is what the Modi-led governance wishes to showcase to the world. A government that works not as a top ruling authority but as citizen-led democracy.
-                            </p>
-                        </div>
-                        <div className="col-12">
-                            <p>
-                                Besides this, Indian Sherpa, Amitabh Kant hopes that under India’s presidency, G20 nations will strive to reach a common consensus and subsequent reforms to challenges that are slowing down the economies, a debt crisis that could impact almost 70 countries, poverty crisis post-pandemic and existential climate crisis.
-                            </p>
-                            <p>
-                                Another key agenda from India would be suggesting reforms in financial institutions like IMF, World Bank and WTO. The objective is to make these organisations more politically and socially attuned to the needs and goals of developing nations.
-                            </p>
-                            <p>
-                                Take a look at the following list of agendas and priorities that India will touch upon as a part of its G20 presidency:
-                            </p>
-                        </div>
-                        <div className="col">
-                            <img
-                                src="images/presidency/agenda.jpg"
-                                className="w-100 rounded-4"
-                                alt=""
-                            />
-                        </div>
-                    </div>
-                    <div className="row">
-                        {/* <!-- Digital Transformation --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Digital Transformation
-                            </h3>
-                            <p className="fs-6">
-                                One of the prime agendas for India as the G20 president is carrying forward the communication of digital technology and transformation in the 2023 summit.
-                            </p>
-                            <p className="fs-6">
-                                Under this agenda, India hopes to share its success story of ideating and implementing Union Paid Interface (UPI), CoWin, MyGov apps and more.
-                            </p>
-                        </div>
-                        {/* <!-- Startup India --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Startup India
-                            </h3>
-                            <p className="fs-6">
-                                As one of the engagement groups, Startup20, India hopes to highlight the nation’s startup movement and how digital transformation has played a key role in its fast-paced success. It also would recommend actions, and relative measures to foster collaboration and innovations across G20 leaders during the summit.
-                            </p>
-
-                        </div>
-                        {/* <!-- Disaster Risk Reduction --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Disaster Risk Reduction
-                            </h3>
-                            <p className="fs-6">
-                                As one of the working streams in Sherpa Track, Disaster risk reduction is created under India’s G20 presidency this year to inspire group efforts, multi-disciplinary research and development along with policy recommendations for reducing the risks of disaster.
-                            </p>
-
-                        </div>
-                        {/* <!-- Green Development, Climate Finance and LiFE --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Green Development, Climate Finance and <span className='text-initial'>LiFE</span>
-                            </h3>
-                            <p className="fs-6">
-                                As a key priority, India will steer G20 nations to find adequate finance and use of technology for climate change issues keeping in view climate justice. In line with this, India will also incorporate LiFE (Lifestyle for Environment), a social movement in association with having eco-friendly and sustainable life choices as an individual and as a citizen.
-                            </p>
-
-                        </div>
-                        {/* <!-- Women-led Development --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Women-led Development
-                            </h3>
-                            <p className="fs-6">
-                                On a global platform, India will highlight gender-inclusive growth in association with women empowerment and women representation. The five key priority areas here would be: entrepreneurship, bridging the gender digital divide, grassroots leadership, education, and skill development. The intention is to empower women to take on leading positions and boost socio-economic development.
-                            </p>
-
-                        </div>
-                        {/* <!-- Multilateral Institutions --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Multilateral Institutions
-                            </h3>
-                            <p className="fs-6">
-                                India will attempt to have more reformed multilateralism amongst the G20 congregation in hopes to have more inclusivity, accountability, and equitable international syndicate. In order to promote global multilateral unity, India has invited the world’s largest economies and the entire P-5(permanent members of the UN Security Council).
-                            </p>
-
-                        </div>
-                        {/* <!-- Sustainable Development Goals (SDGs) --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Sustainable Development Goals (SDGs)
-                            </h3>
-                            <p className="fs-6">
-                                In line with the 2030 agenda for sustainable development, India’s G20 agenda will be to carry the dialogue forward and recommit to pivotal SDGs like no poverty, zero hunger, food security and upliftment of standard of living.
-                            </p>
-
-                        </div>
-                        {/* <!-- Inclusive, Progressive and Resilient Growth --> */}
-                        <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
-                            <h3>
-                                {/* <span className="text-primary">02.</span> */}
-                                Inclusive, Progressive and Resilient Growth
-                            </h3>
-                            <p className="fs-6">
-                                Under Modi’s leadership, India during G20 will aim to focus on a full structural transformation of trade and manufacturing sectors. This includes initiating momentum for the integration of MSMEs in global trade, promoting labour rights and welfare, addressing the skills gap and building inclusive agriculture chains and food systems.
-                            </p>
-
-                        </div>
-                        <figure className="text-start">
-                            <blockquote className="blockquote">
-                                <p><i className='bx bxs-quote-left bx-flip-horizontal bx-tada bx-sm text-warning' ></i> Let us join together to make India's G20 Presidency a Presidency of healing, harmony and hope. Let us work together to shape a new paradigm - of human-centric globalisation. <i className='bx bxs-quote-right bx-tada bx-flip-horizontal bx-sm text-warning' ></i></p>
-                                <figcaption className="blockquote-footer text-end">
-                                    PM <cite title="Source Title">Narendra Modi</cite>
-                                </figcaption>
-                            </blockquote>
-                        </figure>
-                        <div className="text-center">
-                            <p>To know more about India’s G20 mission,
-                                <Link to="/">click here</Link>
-                                .
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-        </React.Fragment>
-    )
-}
+      <section className="section position-relative">
+        <div className="container">
+          <div>
+            <span className="section-title-border"></span>
+            <h2 className="section-title">
+              India to Set the Agenda for the World
+            </h2>
+          </div>
+          <p>
+            The world is currently a perfect storm and every nation is currently
+            making an attempt to last the night. Every morning the headlines
+            highlight a new obstacle brought to light for the leaders of today.
+          </p>
+          <p>
+            As the new G20 chair, India inherits the responsibility of steering
+            collective action for restoring global economic and financial
+            stability in the reverberations of the pandemic and the
+            Russia-Ukraine war. India's presidency would place a high priority
+            on developing a solid plan for a sustained recovery in economic
+            growth and readjusting the action plan to achieve the 2030 SDG
+            Agenda. To speed the transition from the existing "brown" economy to
+            a more sustainable and low-carbon one, the G20 must concentrate its
+            efforts on developing effective policies, as well as a regulatory,
+            institutional, and market environment.
+          </p>
+          <p>
+            With the G20 knocking on our country’s door, there has been
+            speculation being made for what should be brought up for
+            deliberations by our nation. Various crises around the world have
+            been stirring lately, and here’s what we feel might be the chosen
+            ones.
+          </p>
+          {/* ------------------- */}
+          <h4 className="fs-2 mt-3">The dominoes are falling</h4>
+          <p>
+            One chaotic, disappointing year just came to an end. Another one is
+            likely in store.
+          </p>
+          <p>
+            The IMF's annual economic forecast, which was published in October,
+            predicted sluggish global growth in 2023. It gave specific attention
+            to three issues: the invasion of Ukraine by Russia, the persistent
+            consequences of COVID, particularly in China, and high inflation and
+            tighter monetary policy. Given the rise in inflation and interest
+            rates, as well as a significant increase in geopolitical risk, the
+            fact that the world did not experience a catastrophic financial
+            crisis in 2022 is a remarkable feat. However, the global financial
+            system is facing a significant stress test because of the record
+            levels of public and private debt that were reached during the
+            now-past period of ultra-low interest rates, as well as the high
+            chance of recession.
+          </p>
+          <p>
+            The labor market remains remarkably strong at year-end, and it seems
+            inevitable that it will weaken. The only question is the pace and
+            severity of that weakening. Although the weakening may be gradual
+            and mild, the bigger concern is a potential drop in consumption.
+            Prices are going up, interest rates are going up, savings rates are
+            going down, there is more borrowing, and wealth levels are going
+            down for consumers. Consumer spending has been steady thus far. We
+            might be in for a lengthier recession driven by consumers as the
+            economy weakens rather than merely sharp drops in investment and
+            corresponding job losses. The white-collar workforce will likely be
+            the main target of these drops in labor demand. As a result, the
+            economy may continue to struggle for a longer period of time even
+            though the unemployment rate remains relatively low (4% to 5%).
+          </p>
+          <p>
+            India, Indonesia, and Brazil would constitute the troika under the
+            Presidency. The troika would include three developing nations and
+            rising economies for the first time, giving them a stronger voice.
+            This will provide it the unique opportunity to look at developments
+            from the perspective of the developing world. The term "troika"
+            refers to the G20's top hierarchy, which comprises the present,
+            past, and future presidents (Indonesia, India and Brazil).
+          </p>
+          {/* ------------------------ */}
+          <h4 className="fs-2 mt-3">Logo and Theme of India's Presidency</h4>
+          <p>
+            Vasudhaiva Kutumbakam, which translates to "One Earth, One Family,
+            One Future," is the slogan of India's G20 presidency. It is taken
+            from the Maha Upanishad, an old Sanskrit literature. The topic
+            essentially emphasizes the importance of all life—human, animal,
+            plant, and microorganism—as well as their interdependence on Earth
+            and across the universe. The topic also emphasizes LiFE (Lifestyle
+            for Environment), with its associated environmentally sound and
+            responsible decisions made at the level of both individual
+            lifestyles and national development, leading to globally
+            transformative activities that result in a cleaner, greener, and
+            bluer future
+          </p>
+          <p>
+            The vibrant colors of India's national flag—saffron, white, green,
+            and blue—were used as inspiration for the G20 Logo. Planet Earth is
+            compared to the lotus, the national flower of India, which
+            symbolizes growth over adversity. India's pro-planet philosophy of
+            living in complete harmony with nature is reflected in the Earth.
+            "Bharat" is inscribed in Devanagari script below the G20 logo.
+          </p>
+          <h4 className="fs-2 mt-3">What's new in 2023</h4>
+          <p>
+            Under India's Presidency, a new working group on disaster risk
+            reduction would be established to promote group work among the G20,
+            carry out multidisciplinary research, and exchange best practices on
+            disaster risk reduction.
+          </p>
+          <p>
+            Bangladesh, Egypt, Mauritius, the Netherlands, Nigeria, Oman,
+            Singapore, Spain, and the UAE are the countries that India has
+            invited as special guests.
+          </p>
+          <p>
+            The following international organizations have been invited to the
+            G-20: UN, IMF, World Bank, WHO, WTO, ILO, FSB, OECD, Chairs of the
+            African Union, NEPAD, ASEAN, ADB, ISA, and CDRI.
+          </p>
+          <p>
+            The G20 will have meetings in cities other than New Delhi and other
+            developed cities. India will host more than 200 meetings in more
+            than 50 cities across 32 different workstreams, drawing inspiration
+            from its G20 Presidency theme of "Vasudhaiva Kutumbakam"—"One Earth,
+            One Family, One Future," as well as the Prime Minister's vision of a
+            "all of government" approach. This will give G20 delegates and
+            guests a glimpse of India's rich cultural heritage and give them an
+            authentic Indian experience.
+          </p>
+          <p>
+            Being the incoming G20 chair, India is bound to build on the agenda
+            from what has been acquired and delivered in the previous summit in
+            Bali. Indonesia was loudly vocal about three aspects- digital
+            transformation, energy transition, and the global health system.
+          </p>
+          {/* -------------------------- */}
+          <h4 className="fs-2 mt-3">Key issues and talking points</h4>
+          <p>
+            The world’s biggest nightmare that seemed to have ceased - Covid -
+            is showing signs of resumption once again. The horrors of the past
+            three horrors are projecting stealthily. If it were to come back
+            once again, how are the nations going to react? With the current
+            trend towards a global economic crisis, is the world ready to shut
+            down again? Will life cease and businesses fade away at the cost of
+            health? The stakes are high and there are immediate calls to be
+            taken. Moreover, the execution and implementation of global policies
+            is something to be discussed in our upcoming summit.
+          </p>
+          <p>
+            As the new G20 chair, India inherits the responsibility of steering
+            collective action for restoring global economic and financial
+            stability in the reverberations of the pandemic and the
+            Russia-Ukraine war. The food and fuel crises triggered by the
+            conflict are only getting worse with days passing by. Geopolitical
+            tensions between the West and Russia hindered cooperation inside the
+            G20, which posed a challenge to Indonesia's leadership. The
+            credibility of the G20 has been questioned as a result of this
+            split. India's neutral posture in the Russia-Ukraine conflict offers
+            hope that it could be able to convince both parties to take part in
+            the G20 discussions and break the current impasse. India must come
+            up with innovative ways to overcome these geopolitical divides and
+            open the path for dialogue centered on cooperation and shared
+            prosperity. In fact, one may anticipate that India's presidency
+            would influence the formulation of a clear G20 position on the
+            conflict between Russia and Ukraine.
+          </p>
+          <p>
+            The design of a strong strategy for a durable rebound of economic
+            growth and recalibrating the action plan for attaining the 2030 SDG
+            Agenda would be priorities for India's presidency. The G20 must
+            focus its efforts on creating a strong policy, as well as a
+            regulatory, institutional, and market environment, in order to
+            hasten the shift from the current "brown" economy to a more
+            sustainable and low-carbon one
+          </p>
+          <p>
+            Assuring an equitable economic recovery is one of the most important
+            worldwide concerns in the post-pandemic and post-war age. This can
+            be accomplished by coordinated efforts to maintain the multilateral
+            trading system, provide open supply chains to enable the movement of
+            key commodities, and diversify investment and production. Vasudhaiva
+            Kutumbakam (One Earth, One Family, One Future), which emphasizes
+            global interconnection and symbolizes India's pro-planet stance, is
+            the subject of India's presidency. It suggests that India would work
+            to increase global interconnection, capitalize on its benefits, and
+            develop creative solutions to any problems that may arise as a
+            result. In order to create an inclusive and sustainable multilateral
+            economic system, India's G20 presidency would be crucial. India's
+            presidency can serve as a neutral platform for direct discussions
+            between the West and other nations.
+          </p>
+          <p>
+            One of the three main focuses during the Indonesian presidency was
+            "digital transformation." The Digital Economy Task Force evolved
+            into the Digital Economy Working Group in 2022. For inclusive
+            economic development and to advance global cooperation on
+            significant digital concerns, India must take the lead in
+            prioritizing digitalization. The challenge of digital transformation
+            will be addressed by developing digital solutions to hasten the
+            achievement of the SDGs.
+          </p>
+          <p>
+            In order to promote the adoption of G20 commitments pertaining to
+            women's problems, one of the engagement groups under Indonesia's G20
+            Presidency was the W20. They have expressed the hope that the four
+            main issues related to women's empowerment that were pursued during
+            Indonesia’s G20 Presidency will be taken up during India’s
+            presidency of the grouping this year. Moreover, policies that will
+            encourage the employment profiles of women and the reduction of the
+            gap can be of discussion in the halls of this year’s summit.
+          </p>
+          <p>
+            The G20 presidency presents an ideal opportunity for India to
+            involve its youth in exploring innovative solutions to 'glocal'
+            challenges like reducing climate change, transitioning to a just
+            energy system, embracing technology, redefining the future of work,
+            and achieving sustainable economic growth. One such forum inside the
+            G20 system that gives the young people a chance to be heard and
+            submit their answers to the G20 leaders is the Y20. The Indian G20
+            presidency may use the global stage to address important issues
+            affecting young people, such as jobs, technology, housing, and
+            governance.
+          </p>
+          <p>
+            The list of probable agendas is infinite as the list of problems in
+            the world do not seem to halt. Moreover, what’s on their mind is
+            dependent on India's stance on global forums.
+          </p>
+          {/* ---------------------- */}
+          <h4 className="fs-2 mt-3">The policies nurturing our youth</h4>
+          <p>
+            We have consistently tailored our policies to suit the brilliance of
+            our youth under PM Modi's direction. The National Education Policy
+            2020 is a comprehensive and forward-looking framework built on the
+            tenets of accessibility, equality, quality, affordability, and
+            accountability. It strives to develop each student's creative
+            potential in line with the demands of the twenty-first century. Our
+            people are the true resource of our country.
+          </p>
+          <p>
+            Therefore, it is appropriate that the G20-related actions under our
+            leadership centre on this collaboration. By holding the meetings in
+            more than 50 different sites around the nation, the experience of
+            the president will be pan-Indian.
+          </p>
+          <p>
+            Each state government, each Union Territory, and each individual
+            citizen have a stake in the outcome of India's presidency.
+          </p>
+          {/* -------------------------- */}
+          <h4 className="fs-2 mt-3">
+            Proactiveness of the youth is needed for G20
+          </h4>
+          <p>
+            The G20 Secretariat hopes to give the nation's citizens the chance
+            to participate in India's G20 history during its Presidency. The G20
+            secretariat is organizing a range of intriguing activities to
+            encourage active engagement, including
+          </p>
+          <ul className="list-group border-none  mt-3">
+            <li className="list-group-item border-0  ps-0">
+              <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                <i className="bi bi-arrow-right"></i>
+              </span>{" "}
+              <span className="ps-2 fs-5">Model G20</span>
+            </li>
+            <li className="list-group-item border-0  ps-0">
+              <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                <i className="bi bi-arrow-right"></i>
+              </span>{" "}
+              <span className="ps-2 fs-5">G20 branding at festivals</span>
+            </li>
+            <li className="list-group-item border-0  ps-0">
+              <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                <i className="bi bi-arrow-right"></i>
+              </span>{" "}
+              <span className="ps-2 fs-5">
+                Selfie competitions with monuments, particularly those
+                illuminated with the G20 emblem
+              </span>
+            </li>
+            <li className="list-group-item border-0  ps-0">
+              <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                <i className="bi bi-arrow-right"></i>
+              </span>{" "}
+              <span className="ps-2 fs-5">Poetry Contests</span>
+            </li>
+            <li className="list-group-item border-0  ps-0">
+              <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                <i className="bi bi-arrow-right"></i>
+              </span>{" "}
+              <span className="ps-2 fs-5">Quiz Challenges</span>
+            </li>
+          </ul>
+          <p>
+            India's youth must take part in these events and make the G20 truly
+            representative of the people by making the most of this unique
+            opportunity.
+          </p>
+          <p>
+            Universities can provide students with the training they need to
+            convey their local history as well as significant buildings, works
+            of art, and other cultural practices. Then, these students can
+            assist in planning some of the meetings and mentor international
+            delegates. Partner universities might be chosen for various sites by
+            the G20 secretariat and the department of higher education.
+          </p>
+          <p>
+            Aside from visiting significant historical, economic, and cultural
+            sites, visitors may also enjoy immersive activities like village
+            tours, nature hikes, and visits to the weekly and local markets.
+            English and other G20 languages can be used to create informative
+            videos. G20 delegates can post testimonies and pictures of their
+            travels to the official website. Students may receive training to
+            serve as session rapporteurs. For aid with translation, universities
+            with foreign language departments may be especially helpful. The G20
+            secretariat may employ this pool of translators and rapporteurs over
+            various sessions after providing them with additional training. This
+            could also serve as a human resource pool for potential future
+            international gatherings that we hold.
+          </p>
+          <p>
+            Moreover, PK Mishra, the principal secretary to the Prime Minister,
+            firmly believes that students and young individuals are in fact
+            India's cultural ambassadors since they are the torchbearers of our
+            rich heritage. The young must lead initiatives to highlight the rich
+            cultural mosaic and diverse developments of their individual states
+            when tourists from other areas of the world visit Indian states.
+            These encounters and exchanges with foreign delegates will establish
+            the groundwork for a long-lasting and mutually beneficial connection
+            among the young people of all G20 nations.
+          </p>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default Presidency;

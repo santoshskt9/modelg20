@@ -22,12 +22,12 @@ import Education from "./pages/Topics/Education";
 import GotoTop from "./layout/GotoTop";
 import IndiaAchivements from "./pages/Topics/IndiaAchivements";
 import { Toaster } from "react-hot-toast";
+import SharedFuture from "./pages/Topics/SharedFuture";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Toaster />
-      <GotoTop />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
@@ -37,6 +37,7 @@ function App() {
         <Route path="/g20-genius-certification" element={<Course />} />
         <Route path="/g20-campus-sherpa" element={<CampusAmbass />} />
         <Route path="/startup-india" element={<StartupIndia />} />
+        <Route path="/shared-future" element={<SharedFuture />} />
         <Route path="/g20-presidency" element={<Presidency />} />
         <Route path="/youth-community" element={<Youth />} />
         <Route path="/achievements-of-india" element={<IndiaAchivements />} />
