@@ -13,7 +13,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>{"Yuvamanthan, the organizers of Model G20 India."}</title>
+        <title>{"Yuvamanthan Model G20 India"}</title>
         <link rel="canonical" href={"https://www.yuvamanthan.org/"} />
       </Helmet>
       <BannerSwiper />

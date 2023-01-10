@@ -7,7 +7,6 @@ const api = axios.create({
     "Content-Type": "multipart/form-data",
   },
 });
-
 export async function postInstituteRegister(data) {
   try {
     const res = await api.post("register/institution", data);
