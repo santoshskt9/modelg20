@@ -99,6 +99,15 @@ const Footer = () => {
                     <i className="bi bi-snapchat text-secondary"></i>
                   </a>
                 </li>
+                <li className="list-inline-item">
+                  <a
+                    className="hover-ripple border-secondary"
+                    target={"_blank"}
+                    href="https://www.youtube.com/@yuvamanthan_"
+                  >
+                    <i className="bi bi-youtube text-secondary"></i>
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col-lg-6">

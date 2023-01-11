@@ -34,18 +34,12 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around">
               <li className="nav-item">
-                <NavLink
-                  className="nav-link text-dark"
-                  to="/model-g20"
-                >
+                <NavLink className="nav-link text-dark" to="/model-g20">
                   Model G20
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink
-                  className="nav-link text-dark"
-                  to="/g20-campus-sherpa"
-                >
+                <NavLink className="nav-link text-dark" to="/g20-campus-sherpa">
                   Campus Sherpa
                 </NavLink>
               </li>
@@ -71,16 +65,19 @@ const Navbar = () => {
                   Themes
                 </NavLink>
                 <div className="dropdown-menu">
+                  <NavLink className="dropdown-item" to="/future-of-work">
+                    <span className="text-initial">Future of Work</span>
+                  </NavLink>
                   <NavLink
                     className="dropdown-item"
                     to="/health-well-being-and-sports"
                   >
-                    <span className="text-initial">Health, Well-Being, and Sports: Agenda for Youth</span>
+                    <span className="text-initial">
+                      Health, Well-Being, and
+                      <br /> Sports : Agenda for Youth
+                    </span>
                   </NavLink>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/shared-future"
-                  >
+                  <NavLink className="dropdown-item" to="/shared-future">
                     <span className="text-initial">Shared Future</span>
                   </NavLink>
                   <NavLink
@@ -188,9 +185,19 @@ const Navbar = () => {
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
                       className="list-group-item p-3 rounded-3"
+                      to="/future-of-work"
+                    >
+                      <span className="text-initial">Future of Work</span>
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
                       to="/health-well-being-and-sports"
                     >
-                      <span className="text-initial">Health, Well-Being, and Sports: Agenda for Youth</span>
+                      <span className="text-initial">
+                        Health, Well-Being, and Sports: Agenda for Youth
+                      </span>
                     </NavLink>
                   </li>
                   <li data-bs-dismiss="offcanvas" className="mb-2">
