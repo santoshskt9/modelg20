@@ -130,9 +130,9 @@ const Home = () => {
                     </div>
                     <h4 className="mb-4">Youth in G20</h4>
                     <p>
-                      Youth in G20 is a major attraction and one of the
-                      engagement groups to facilitate the voice of the country’s
-                      socio-political issues and suggest solutions for the G20
+                      Youth engagement is one of the crucial aspects to the
+                      success of G20. Unleash your creativity and be heard.
+                      Participate with suggestions and solutions for the
                       Leaders.
                     </p>
                   </div>

@@ -22,7 +22,8 @@ const SingleBlog = ({ data }) => {
         <p className="card-text">
           {data.subpara == ""
             ? data.section[0].paragraph[0].slice(0, 85)
-            : data.subpara.slice(0, 85)}...
+            : data.subpara.slice(0, 85)}
+          ...
         </p>
         <a href={"/blog/" + data.slug} className="btn btn-secondary btn-arrow">
           Read More
@@ -43,9 +44,10 @@ const BlogsSwiper = () => {
                 <span className="section-title-border border-center"></span>
                 <h2 className="section-title text-white">Featured Blogs</h2>
                 <p className="subtitle text-white">
-                  Stay updated on the latest G20 buzz. Read our guest articles,
-                  blog posts and get informed on themes such as climate change,
-                  sustainability, macroeconomics and more
+                  Stay updated on the latest G20 buzz. Read our collection of
+                  stories, guest articles, features on trending topics such as
+                  youth culture, climate change, sustainability, macroeconomics
+                  and more.
                 </p>
               </div>
             </div>
@@ -69,11 +71,12 @@ const BlogsSwiper = () => {
               }}
             >
               {blogs.map((blog, index) => {
-                return (
-                  <SwiperSlide key={index} className="py-4">
-                    <SingleBlog data={blog} />
-                  </SwiperSlide>
-                );
+                if (index < 4)
+                  return (
+                    <SwiperSlide key={index} className="py-4">
+                      <SingleBlog data={blog} />
+                    </SwiperSlide>
+                  );
               })}
             </Swiper>
           </div>

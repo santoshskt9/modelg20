@@ -281,7 +281,7 @@ export default [
               "GDP: 2.622 trillion USD",
               "In India, 67% population under the age of 18 compared to 57% of adults opine that changing climate is a global emergency. In the People’s Climate Vote, 66,139 responses were received out of which a massive 31,390 responses were from the youth of India",
               "When it comes to various climate action policies, 44% of the youth supports the usage of renewable power, eco-friendly farming methods and conserving forests. Moreover, 43% opted to support using bicycles and electric vehicles and 40% opted for an early disaster warning system to act faster.",
-              "Public opinion was simmered down to 30-31% for supporting the product manufacturing process, burning of fuels and local community work."
+              "Public opinion was simmered down to 30-31% for supporting the product manufacturing process, burning of fuels and local community work.",
             ],
           },
           {
@@ -290,9 +290,9 @@ export default [
             paragraph: [
               "Population: 45.4 million",
               "GDP: 383 billion USD",
-             "58% of Argentine citizens believe that climate change is a global issue; out of that 57% are women and 56% are men",
-             "According to the poll, 19,211 responses were from under 18 citizens who feel that the climate crisis could have disastrous effects on the world. Moreover, 57% of youth chose to support forest conservation and renewable power policies, 46% wish for better infrastructure and conserving nature for good lives.",
-             "Only 30% of youth supported good and affordable insurance policies in place to tackle climate change." 
+              "58% of Argentine citizens believe that climate change is a global issue; out of that 57% are women and 56% are men",
+              "According to the poll, 19,211 responses were from under 18 citizens who feel that the climate crisis could have disastrous effects on the world. Moreover, 57% of youth chose to support forest conservation and renewable power policies, 46% wish for better infrastructure and conserving nature for good lives.",
+              "Only 30% of youth supported good and affordable insurance policies in place to tackle climate change.",
             ],
           },
           {
@@ -300,8 +300,8 @@ export default [
             title: "To Conclude",
             paragraph: [
               "If the People’s Climate Vote is any indicator, then the youth of today across these G20 nations are more aware towards the severity of the climate emergency. Their view on climate change and the desire for action on that front is stronger and more objective.",
-             "The youth are becoming more inclined to advocate and accept the cause of green development, making climate-conscious choices in lifestyle like reducing the wastage of resources and opting for eco-friendly transportation.",
-             "This vote is a remarkable testament to public opinion to lead the climate change action forward with rousing support from all age groups, communities, and nations together."
+              "The youth are becoming more inclined to advocate and accept the cause of green development, making climate-conscious choices in lifestyle like reducing the wastage of resources and opting for eco-friendly transportation.",
+              "This vote is a remarkable testament to public opinion to lead the climate change action forward with rousing support from all age groups, communities, and nations together.",
             ],
           },
         ],
@@ -316,7 +316,7 @@ export default [
     author: "admin",
     date: "",
     subpara: "",
-    section: [  
+    section: [
       {
         id: 1,
         title: "Unicorn: Definition & Characteristics",
@@ -332,7 +332,6 @@ export default [
             title: "Driven by Technology",
             paragraph: [
               "Most of the unicorns’ business models are based on the latest technology and well-researched innovations. Today, 10% of unicorns are in artificial intelligence, robotics and 13% are in the Fintech sphere. Technology allows startups to work more efficiently and helps businesses to grow more effectively within limited resources.",
-             
             ],
           },
           {
@@ -340,7 +339,6 @@ export default [
             title: "Private Ownership & Affordability",
             paragraph: [
               "As most of the startups are privately owned, they are at a better chance to receive exceptional investment opportunities once they are branded as unicorns in emerging markets. Besides, startups are built around an affordable scale that would incur a lesser loss if the startup venture fails at some point or great profits if the business exceeds user expectations.",
-             
             ],
           },
           {
@@ -348,7 +346,6 @@ export default [
             title: "Customer Oriented",
             paragraph: [
               "A key characteristic of unicorn startups is their customer-centricity. They provide their products, services, and expertise to customers at a reasonable price and their business models are designed to cater for every need of their growing consumer market. Interestingly, up to 62% of unicorns in the industry function as business-to-consumer (B2C) companies.",
-             
             ],
           },
           {
@@ -356,7 +353,6 @@ export default [
             title: "Problem Solving Quality",
             paragraph: [
               "For every startup to pave the way in becoming a unicorn must be dedicated to building something that is truly unique and addresses the existing problems in the market. Startups like Urban Company have reached their unicorn-level success by studying their target audience’s need for an all-in-one app solution for an expert like a plumber, technician, beautician, etc.",
-             
             ],
           },
         ],
@@ -365,12 +361,12 @@ export default [
         id: 2,
         title: "Startups & Unicorns in India: A Revolution",
         paragraph: [
-         "It is fair to say at this point that Indian startups have somewhat become synonymous with a unicorn revolution in the world. As we are shifting aggressively from rough paper ideas to well-ideated startup businesses, it is only fair to say that India’s emerging Startup movement will play a key role in the world’s business landscape.",
-         "Did you know that India has the 3rd largest startup ecosystem in the world which continues to grow into the fastest-growing startup ecosystem with more than 100+ unicorns and 60,000 registered startups.",
-         "Not only that but India is slowly becoming a land of unicorns with more startups forming and competing for a billion-dollar valuation. The growing entrepreneurial system is creating some of the most innovative and profitable business models in the country.",
-         "Today, India has more than 80,000 operational startups, 109 unicorns and almost $274 billion values worth in the global economy.",
-         "In India, InMobi was the first Indian unicorn startup that was established in 2007. It took InMobi four years to become a unicorn. Moreover, Indian companies like Ola, BharatPe, Oyo have already joined the billion-dollar unicorn club. These companies have completely changed the way of work and life for Indian people and have greatly influenced the country’s economy.", 
-         "The revolution of unicorns in India is a good sign for entrepreneurs as they will have access to more resources and funding than before. Plus, new job opportunities for people and better economic growth patterns for the country is a fair output to be expected through unicorns in India.",
+          "It is fair to say at this point that Indian startups have somewhat become synonymous with a unicorn revolution in the world. As we are shifting aggressively from rough paper ideas to well-ideated startup businesses, it is only fair to say that India’s emerging Startup movement will play a key role in the world’s business landscape.",
+          "Did you know that India has the 3rd largest startup ecosystem in the world which continues to grow into the fastest-growing startup ecosystem with more than 100+ unicorns and 60,000 registered startups.",
+          "Not only that but India is slowly becoming a land of unicorns with more startups forming and competing for a billion-dollar valuation. The growing entrepreneurial system is creating some of the most innovative and profitable business models in the country.",
+          "Today, India has more than 80,000 operational startups, 109 unicorns and almost $274 billion values worth in the global economy.",
+          "In India, InMobi was the first Indian unicorn startup that was established in 2007. It took InMobi four years to become a unicorn. Moreover, Indian companies like Ola, BharatPe, Oyo have already joined the billion-dollar unicorn club. These companies have completely changed the way of work and life for Indian people and have greatly influenced the country’s economy.",
+          "The revolution of unicorns in India is a good sign for entrepreneurs as they will have access to more resources and funding than before. Plus, new job opportunities for people and better economic growth patterns for the country is a fair output to be expected through unicorns in India.",
         ],
         list: [
           {
@@ -445,6 +441,54 @@ export default [
         paragraph: [
           "According to a venture capital firm, 3one4, India with the current record-breaking unicorn progression may have over 150 unicorns by 2025. Who knows maybe we can have a greater number of decacorns ($billion valuation) and hectocorns ($billion valuation) as well.",
           "Despite the tumultuous economic atmosphere, India has garnered much interest from investors and capitalists all around the world. Indian unicorns are versatile, creative and innovative at the same time. Popular names like Zomato, Paytm, Nykka have already listed themselves on the IPO and many more are on the way.",
+        ],
+        list: [],
+      },
+    ],
+  },
+  {
+    id: 4,
+    image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog5.webp`,
+    title: "India’s Rise and Its Global Implications",
+    slug: "indias-rise-and-its-global-implications",
+    author: "admin",
+    date: "",
+    subpara: "",
+    section: [
+      {
+        id: 1,
+        title: "",
+        paragraph: [
+          "The most common definition of globalisation follows that the world is getting excessively interlinked, and networks of interdependence are more intense than ever. This also means that what happens in one part of the world can affect the other regions irrespective of spatial and cultural dissimilarities. It is an age where the successes and failures of a nation are not contained within the national boundaries. This stands true for India as well, where the path it takes over the next few years is closely watched by the world and will also determine the trajectory of global development.",
+          "As a country which accounts for one-sixth of the world’s population and has a huge demographic dividend, India has always held a significant global position. Due to its unique geographical location in South Asia, its colonial history, active participation in international forums and its alliance-building characteristic, India is also seen as a more lucrative partner in global economic growth and influential in shaping global trends. In India, 183 million more people between the ages of 15 and 64 are expected to be added to the labour force between 2020 and 2050. Further, it is expected that by 2027, India’s working-age population will grow to be 18.6% of the global labour force. Making this population pool a fully equipped resource in terms of education, skills, and health would also generate a vital source of labour for the rest of the world. It is widely acknowledged that India and the rest of the world stand to gain significantly from maximising the potential of this resource. Additionally, the labour force would unlock the potential consumer demand for industries to meet. According to the World Economic Forum, the middle class will comprise the largest proportion of the population in India by 2030 and is predicted to account for 75% of consumer expenditure in 2030, up from roughly 50% presently. Around 80% of households will have middle incomes by that time. This would further lead to exponential demand, increasing India’s consumption costs and making it profitable.",
+          "The middle class is predicted to account for 75% of consumer spending in 2030. Around 80% of households will have middle incomes by that time, up from roughly 50% currently. This market would have exponential demand, which would increase India’s consumption costs and make it profitable. If India is successful in utilising its demographic dividend, a more educated and better-employed youth population will support the consumption increase from this expanding middle-class group with the addition of almost 140 million additional families. Globally, industries will have the chance to serve this market better and utilise the population’s youth and skills.",
+          "India has the sixth-largest economy after the United States, China, Japan, Germany, and the United Kingdom. According to IMF estimates, India contributes roughly 15% of global growth despite facing significant obstacles like poverty, unequal resource distribution, and inadequate healthcare and education. In addition, from 2000 to 2020, India’s contribution to the global GDP at current prices (PPP) rose from 4% to 6.8%. This compels one to consider the likelihood of global growth once India achieves a more equitable distribution of prosperity among its various classes, communities, and regions. India’s actual potential will be unleashed, and the country will be able to contribute to global prosperity in a much more significant way if the obstacles that stand in its way are overcome.",
+          "By obtaining USD 83.57 billion in FDI, India set a record for annual FDI inflow and demonstrated its rapid rise as a top investment destination. FDI inflows have increased 20 times during the past 20 years. Ongoing efforts are to improve India’s status as a secure and desirable investment location. FDI inflows boost production, make it easier for investors to transfer knowledge, and as a result, provide India with a competitive edge in a variety of industries. ",
+          "Due to its crucial contribution to the global supply of vaccinations during the COVID-19 crisis, the nation’s standing in the world was further strengthened. In total, 98 nations received more than 235 million doses of the COVID-19 vaccine from India. India’s potential to share the benefits of its domestic scientific research system would be further improved by improving the manufacturing and scientific research ecosystem. Going beyond national interests demonstrates a global solidarity ethos. The country has become a key participant in the Asian bloc and an important participant in the changing geopolitical landscape of a multipolar world. Furthermore, India’s decision to address its sustainability goals and issues related to economic growth can provide an example for many other developing countries in a similar position, especially regarding climate change. ",
+          "India’s approach will certainly have an impact on the rest of the world in the following decades. Long-term economic success for India rests on its ability to create a clear national value proposition that identifies the opportunities and features of its business environment. Numerous non-economic elements also affect a country’s ability to influence the global economy. It is essential to consider India’s success beyond only its strength on the economic front. India’s capacity to make social progress, produce in a sustainable manner, and distribute assets and value more fairly must all be considered while defining success in India. By including all of the previously described factors, the competitiveness framework redefines what success means for India. ",
+        ],
+        list: [],
+      },
+    ],
+  },
+  {
+    id: 5,
+    image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog5.jpg`,
+    title: "Making cities smart and sustainable",
+    slug: "making-cities-smart-and-sustainable",
+    author: "admin",
+    date: "",
+    subpara: "",
+    section: [
+      {
+        id: 1,
+        title: "",
+        paragraph: [
+          "As the world is becoming more urban than ever, it is crucial to place cities at the centre of the development agenda to try to enhance their liveability and mobility. At the same time, it is vital to place economic growth and sustainability parallel to each other. Focussing on sustainability is particularly important for addressing the environmental challenges facing cities that have become routine features — air and water pollution, traffic jams, congestion and waterlogging. In this context, conversations on urban design encourage targeted deliberations that seek to scale up approaches to making cities smart and sustainable and helping them mature into places of socio-economic opportunities for its expanding labour force. A better quality of life, a safer and more secure environment, and a greater ability to function as an urban entity are just a few of the vital benefits of effective urban planning methods. Inclusive urban design generates results that holistically make for better-built environments and, in turn, a way of living, regardless of the size of a city planning project. Additionally, it gives each city a distinct sense of identity and creates the foundation for greater adaptability to changing climatic, economic, or social factors.",
+          "In this setting, the idea of a “smart city” combines information and communication technology (ICT) with numerous physical devices linked to an Internet of Things (IoT) network in order to connect with inhabitants and improve the effectiveness of local operations and services. City municipalities may engage directly with both community and city infrastructure, thanks to smart city technology, which also enables them to keep an eye on what is occurring in the city and how it is changing. ICT is utilised to improve the quality of urban services, their effectiveness, and interactivity, as well as to cut costs and resource usage and improve citizen-government interaction. Frameworks for smart cities are created to control urban traffic and enable quick responses. The concept of a smart city depends upon gathering data and information that is further used to improve the processes, operations and governance systems of the city. Furthermore, this data is leveraged for managing resources, assets and services effectively and efficiently. A smart city is driven by information systems and aids the monitoring and managing of utilities like power plants, water supply networks and garbage disposal to services like schools and hospitals.",
+          "Additionally, the spread and support of discourse on sustainability have also significantly influenced how our cities are planned and developed, in addition to this development. Today, the idea of a smart city is seen as a vision, manifesto, or promise that seeks to define the ideal and sustainable city design for the 21stcentury. A smart city is thus a productive, technologically advanced, environmentally friendly, and socially inclusive metropolis. In other words, smart city applications put a specific technical focus in the foreground of developing solutions for ecological, sociological, economic, and management concerns. In India, the concept of smart cities (under the aegis of the Smart Cities Mission) is based on six fundamental principles – putting the community at the core of planning and implementation, optimal use of resources in a way that generates more outcomes using lesser resources, cooperative and competitive federalism, adopting innovative methods for sustainable solutions, using technology as a means to achieving goals and financial convergence.",
+          "Currently, 54 per cent of the world’s population lives in cities, and that percentage is predicted to rise to 66 per cent by 2050 due to urbanisation, which will result in the addition of 2.5 billion more people to cities over the course of the next three decades. In order to keep up with this rapid expansion— which is straining the resources of our cities — environmental, social, and economic sustainability is essential. According to the World Bank, smart cities make the process of urbanisation more inclusive through the integration of migrants and the impoverished into the city; bringing together the formal and informal sectors; connecting the urban centres and peripheries; and providing services for both the rich and the poor. These smart and digital cities with embedded networks of surveillance also offer protection and security through an enhanced criminal investigation mechanism.",
+          "Rethinking cities to make them more liveable, inclusive, and integrated is a key component in promoting smart cities. Smart cities need to build fair, participatory, sustainable, inclusive, and all-encompassing urban development policies and planning in order to achieve these feasible goals. Moreover, to better plan for expansion and handle day-to-day operational issues, we must provide our cities with dynamic mechanisms. This, therefore, facilitates proper strategic planning, development, and management activities that serve as a coherent vision for the future of urban ecosystems in our smart cities. In order to improve the quality of life and lessen the environmental impact of urbanisation, a sustainable smart city with environmental, social, economic, and cultural dimensions must be established. This city must also integrate the newest technology with governance and enhance innovative socio-technical, socio-economic, and sociocultural aspects of growth.",
         ],
         list: [],
       },

@@ -25,6 +25,8 @@ import { Toaster } from "react-hot-toast";
 import SharedFuture from "./pages/Topics/SharedFuture";
 import HealthWell from "./pages/Topics/HealthWell";
 import FutureOfWork from "./pages/Topics/FutureOfWork";
+import ClimateChange from "./pages/themes/ClimateChange";
+import PeaceBuilding from "./pages/themes/PeaceBuilding";
 function App() {
   return (
     <BrowserRouter>
@@ -51,6 +53,8 @@ function App() {
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />
         <Route path="/cdri" element={<Cdri />} />
+        <Route path="/peacebuilding-and-reconciliation" element={<PeaceBuilding />} />
+        <Route path="/climate-change-and-disaster-risk-reduction" element={<ClimateChange />} />
         <Route path="/nep" element={<Nip />} />
         <Route path="*" element={<Error />} />
       </Routes>

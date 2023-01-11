@@ -36,7 +36,9 @@ const Course = () => {
                     <span className="p-2 bg-primary clip-cicle text-white mt-2">
                       <i className="bi bi-arrow-right"></i>
                     </span>{" "}
-                    <span className="ps-2 fs-5">What is G20</span>
+                    <span className="ps-2 fs-5">
+                      What is Group of Twenty or G20?
+                    </span>
                   </li>
                   <li className="list-group-item border-0 ps-0 d-flex align-items-center">
                     <span className="p-2 bg-primary clip-cicle text-white mt-2">
@@ -44,7 +46,7 @@ const Course = () => {
                     </span>{" "}
                     <span className="ps-2 fs-5">
                       The economic, political and cultural implications of the
-                      group of twenty.{" "}
+                      G20 Summit.
                     </span>
                   </li>
                   <li className="list-group-item border-0 ps-0 d-flex align-items-center">
@@ -52,20 +54,8 @@ const Course = () => {
                       <i className="bi bi-arrow-right"></i>
                     </span>{" "}
                     <span className="ps-2 fs-5">
-                      Member countries and a brief overview
+                      Aims, objectives and mandate of G20.
                     </span>
-                  </li>
-                  <li className="list-group-item border-0 ps-0 d-flex align-items-center">
-                    <span className="p-2 bg-primary clip-cicle text-white mt-2">
-                      <i className="bi bi-arrow-right"></i>
-                    </span>
-                    <span className="ps-2 fs-5">Aims and objectives</span>
-                  </li>
-                  <li className="list-group-item border-0 ps-0 d-flex align-items-center">
-                    <span className="p-2 bg-primary clip-cicle text-white mt-2">
-                      <i className="bi bi-arrow-right"></i>
-                    </span>
-                    <span className="ps-2 fs-5">Mandate of G20</span>
                   </li>
                   <li className="list-group-item border-0 ps-0 d-flex align-items-center">
                     <span className="p-2 bg-primary clip-cicle text-white mt-2">
@@ -82,9 +72,25 @@ const Course = () => {
                       <i className="bi bi-arrow-right"></i>
                     </span>
                     <span className="ps-2 fs-5">
-                      Global cooperation on climate, sustainability, health,
+                      Global dialogue on climate, sustainability, health,
                       digital transformation, women lead development, inclusive
                       shared future, peace, harmony, security etc.
+                    </span>
+                  </li>
+                  <li className="list-group-item border-0 ps-0 d-flex align-items-center">
+                    <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                    <span className="ps-2 fs-5">
+                      India's Presidency and what it means.
+                    </span>
+                  </li>
+                  <li className="list-group-item border-0 ps-0 d-flex align-items-center">
+                    <span className="p-2 bg-primary clip-cicle text-white mt-2">
+                      <i className="bi bi-arrow-right"></i>
+                    </span>
+                    <span className="ps-2 fs-5">
+                      India's role in G20 and our initiatives for the world.
                     </span>
                   </li>
                   <li className="list-group-item border-0 ps-0 d-flex align-items-center">
@@ -105,7 +111,7 @@ const Course = () => {
                       <span>
                         <i className="bi bi-clock text-warning"></i> Duration
                       </span>
-                      <span>45min total length</span>
+                      <span>45min</span>
                     </h5>
                   </li>
                   <li className="list-group-item p-4 pt-2 border-top-0">

@@ -12,16 +12,6 @@ const Navbar = () => {
               src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
               alt="G20india"
             />
-            {/* <img
-              className="img-responsive height-50  border-end pe-2  border-3"
-              src={process.env.REACT_APP_MAIN_URL + "images/yuva-logo.png"}
-              alt="G20india"
-            />
-            <img
-              className="img-responsive height-75"
-              src={process.env.REACT_APP_MAIN_URL + "images/logo-modal.png"}
-              alt="G20india"
-            /> */}
           </NavLink>
           <button
             className="navbar-toggler"
@@ -62,7 +52,7 @@ const Navbar = () => {
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Themes
+                  Topics
                 </NavLink>
                 <div className="dropdown-menu">
                   <NavLink className="dropdown-item" to="/future-of-work">
@@ -70,16 +60,46 @@ const Navbar = () => {
                   </NavLink>
                   <NavLink
                     className="dropdown-item"
+                    to="/peacebuilding-and-reconciliation"
+                  >
+                    <span className="text-initial">
+                      Peacebuilding and Reconciliation
+                    </span>
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/climate-change-and-disaster-risk-reduction"
+                  >
+                    <span className="text-initial">
+                      Climate Change and Disaster Risk Reduction
+                    </span>
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
                     to="/health-well-being-and-sports"
                   >
                     <span className="text-initial">
-                      Health, Well-Being, and
+                      Health Well-Being and
                       <br /> Sports : Agenda for Youth
                     </span>
                   </NavLink>
                   <NavLink className="dropdown-item" to="/shared-future">
                     <span className="text-initial">Shared Future</span>
                   </NavLink>
+                </div>
+              </li>
+              <li className="nav-item dropdown">
+                <NavLink
+                  className="nav-link dropdown-toggle text-dark"
+                  to="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Themes
+                </NavLink>
+                <div className="dropdown-menu">
                   <NavLink
                     className="dropdown-item"
                     to="/life-environment-intiative"
@@ -173,14 +193,14 @@ const Navbar = () => {
 
             <li className="list-group-item p-3 mt-2 border rounded-3">
               <p
-                className="fs-6 text-uppercase text-dark"
+                className="fs-6 text-uppercase text-dark mb-0"
                 type="button"
                 data-bs-toggle="collapse"
-                data-bs-target="#collapseTopics"
+                data-bs-target="#collapseThemes"
               >
                 Themes
               </p>
-              <div className="collapse p-0 m-0" id="collapseTopics">
+              <div className="collapse p-0 m-0 mt-3" id="collapseThemes">
                 <ul className="list-group">
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
@@ -193,10 +213,30 @@ const Navbar = () => {
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
                       className="list-group-item p-3 rounded-3"
+                      to="/peacebuilding-and-reconciliation"
+                    >
+                      <span className="text-initial">
+                        Peacebuilding and Reconciliation
+                      </span>
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/climate-change-and-disaster-risk-reduction"
+                    >
+                      <span className="text-initial">
+                      Climate Change and Disaster Risk Reduction
+                      </span>
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
                       to="/health-well-being-and-sports"
                     >
                       <span className="text-initial">
-                        Health, Well-Being, and Sports: Agenda for Youth
+                        Health Well-Being and Sports
                       </span>
                     </NavLink>
                   </li>
@@ -208,6 +248,20 @@ const Navbar = () => {
                       <span className="text-initial">Shared Future</span>
                     </NavLink>
                   </li>
+                </ul>
+              </div>
+            </li>
+            <li className="list-group-item p-3 mt-2 border rounded-3">
+              <p
+                className="fs-6 text-uppercase mb-0 text-dark"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTopics"
+              >
+                Topics
+              </p>
+              <div className="collapse p-0 m-0 mt-3" id="collapseTopics">
+                <ul className="list-group">
                   <li data-bs-dismiss="offcanvas" className="mb-2">
                     <NavLink
                       className="list-group-item p-3 rounded-3"
