@@ -4,7 +4,7 @@ export default [
     image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog1.jpeg`,
     title: "2008 financial crisis and how G20 emerged as a solution.",
     slug: "financial-crisis-and-how-G20-emerged-as-a-solution",
-    author: "admin",
+    author: "Yuvamanthan",
     date: "",
     subpara:
       "The 2008 financial crisis is said to be one of mankind’s biggest economic mistakes. The Global Financial Crisis was a result of pure shortsightedness and poor judgment. Before we dive deep into who steered us away from the whirlpool, let’s understand what brought us into such deep waters.",
@@ -48,7 +48,7 @@ export default [
     title:
       "Model G20, not just a simulation but an experience not to be missed.",
     slug: "model-g20-not-just-a-simulation-but-an-experience-not-to-be-missed",
-    author: "admin",
+    author: "Yuvamanthan",
     date: "",
     subpara:
       "Before one dives into how a Model G20 will benefit the students on campus, it is important to understand the essence of the summit. Thus, let’s explore what the summit has to offer!",
@@ -166,7 +166,7 @@ export default [
     image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog3.jpeg`,
     title: "Youth Perception on Climate Change in the G20",
     slug: "youth-perception-on-climate-change-in-the-g20",
-    author: "admin",
+    author: "Yuvamanthan",
     date: "",
     subpara: "",
     section: [
@@ -313,7 +313,7 @@ export default [
     image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog4.jpg`,
     title: "How India Became a Unicorn Nation?",
     slug: "how-india-became-a-unicorn-nation",
-    author: "admin",
+    author: "Yuvamanthan",
     date: "",
     subpara: "",
     section: [
@@ -451,7 +451,7 @@ export default [
     image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog5.webp`,
     title: "India’s Rise and Its Global Implications",
     slug: "indias-rise-and-its-global-implications",
-    author: "admin",
+    author: "Amit Kapoor",
     date: "",
     subpara: "",
     section: [
@@ -476,7 +476,7 @@ export default [
     image: `${process.env.REACT_APP_MAIN_URL}images/blog/blog5.jpg`,
     title: "Making cities smart and sustainable",
     slug: "making-cities-smart-and-sustainable",
-    author: "admin",
+    author: "Amit Kapoor & Bibek Debroy",
     date: "",
     subpara: "",
     section: [

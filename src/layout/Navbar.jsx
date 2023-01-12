@@ -79,7 +79,7 @@ const Navbar = () => {
                     to="/health-well-being-and-sports"
                   >
                     <span className="text-initial">
-                      Health Well-Being and
+                      Health , Well-Being and
                       <br /> Sports : Agenda for Youth
                     </span>
                   </NavLink>
@@ -236,7 +236,7 @@ const Navbar = () => {
                       to="/health-well-being-and-sports"
                     >
                       <span className="text-initial">
-                        Health Well-Being and Sports
+                        Health , Well-Being and Sports
                       </span>
                     </NavLink>
                   </li>
