@@ -1,4 +1,5 @@
 import React from 'react';
+import ThemesAndTopics from './ThemesAndTopics';
 
 const G20India = () => {
     return (
@@ -75,6 +76,7 @@ const G20India = () => {
 
                             </p>
                         </div>
+                        <ThemesAndTopics /> 
                         <div className="col mb-5">
                             <h5 className='fs-3 fw-bold'>
                                 ENGAGEMENT GROUPS
