@@ -144,7 +144,7 @@ const Navbar = () => {
           <NavLink className="navbar-brand" to="/">
             <img
               className="img-responsive height-75"
-              src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
+              src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva-1.png"}
               alt="G20india"
             />
           </NavLink>

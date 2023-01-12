@@ -28,7 +28,7 @@ const Footer = () => {
                 <img
                   className="img-responsive height-75 "
                   style={{ maxWidth: "300px", objectFit: "contain" }}
-                  src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
+                  src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva3.png"}
                   alt="G20india"
                 />
               </Link>
