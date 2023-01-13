@@ -20,13 +20,13 @@ const G20India = () => {
                                 reforms to strengthen global architecture.
 
                             </p>
-                            
+
 
                         </div>
                     </div>
                     <div className="row row-cols-1 row-cols-lg-2 align-items-center mb-3">
                         <div className="col col-lg-8">
-                        <p>
+                            <p>
                                 India shared a joyous moment of pride with its 1.4 billion citizens after receiving the G20
                                 presidency for 2023.
                             </p>
@@ -76,7 +76,7 @@ const G20India = () => {
 
                             </p>
                         </div>
-                        <ThemesAndTopics /> 
+                        <ThemesAndTopics />
                         <div className="col mb-5">
                             <h5 className='fs-3 fw-bold'>
                                 ENGAGEMENT GROUPS
@@ -123,8 +123,6 @@ const G20India = () => {
                                     </ul>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
                 </div>
