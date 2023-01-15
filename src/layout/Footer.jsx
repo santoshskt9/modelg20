@@ -49,7 +49,7 @@ const Footer = () => {
                   <a
                     className="hover-ripple border-secondary"
                     target={"_blank"}
-                    href="https://www.facebook.com/profile.php?id=100088850808774"
+                    href="https://www.facebook.com/profile.php?id=100089167461647&mibextid=ZbWKwL"
                   >
                     <i className="bi bi-facebook text-secondary"></i>
                   </a>

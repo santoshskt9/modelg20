@@ -80,7 +80,7 @@ const ResourceLibrary = () => {
                         <div className="text-end">
                           <a
                             href={`${process.env.REACT_APP_API_BASE_URL}${lib.pdf}`}
-                            target={"_blank"}
+                           
                             download={`${lib.title}`}
                           >
                             <i className="bx bx-link-external fs-3"></i>

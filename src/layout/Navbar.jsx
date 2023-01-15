@@ -41,53 +41,6 @@ const Navbar = () => {
                   G20 Genius
                 </NavLink>
               </li>
-              <li className="nav-item"></li>
-
-              <li className="nav-item dropdown">
-                <NavLink
-                  className="nav-link dropdown-toggle text-dark"
-                  to="#"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Topics
-                </NavLink>
-                <div className="dropdown-menu">
-                  <NavLink className="dropdown-item" to="/future-of-work">
-                    <span className="text-initial">Future of Work</span>
-                  </NavLink>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/peacebuilding-and-reconciliation"
-                  >
-                    <span className="text-initial">
-                      Peacebuilding and Reconciliation
-                    </span>
-                  </NavLink>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/climate-change-and-disaster-risk-reduction"
-                  >
-                    <span className="text-initial">
-                      Climate Change and Disaster Risk Reduction
-                    </span>
-                  </NavLink>
-                  <NavLink
-                    className="dropdown-item"
-                    to="/health-well-being-and-sports"
-                  >
-                    <span className="text-initial">
-                      Health , Well-Being and
-                      <br /> Sports : Agenda for Youth
-                    </span>
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/shared-future">
-                    <span className="text-initial">Shared Future</span>
-                  </NavLink>
-                </div>
-              </li>
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link dropdown-toggle text-dark"
@@ -99,28 +52,76 @@ const Navbar = () => {
                 >
                   Themes
                 </NavLink>
-                <div className="dropdown-menu">
-                  <NavLink
-                    className="dropdown-item"
-                    to="/life-environment-intiative"
-                  >
-                    <span className="text-initial">LiFE</span>
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/nep">
-                    NEP 2020
-                  </NavLink>{" "}
-                  <NavLink className="dropdown-item" to="/education-for-all">
-                    Education For All
-                  </NavLink>{" "}
-                  <NavLink className="dropdown-item" to="/startup-india">
-                    Startup India
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/digital-transform">
-                    Digital Transformation
-                  </NavLink>
-                  <NavLink className="dropdown-item" to="/cdri">
-                    CDRI
-                  </NavLink>
+                <div
+                  className="dropdown-menu"
+                  style={{ width: "500px", right: "-150px",left:"unset" }}
+                >
+                  <div className="row row-cols-2">
+                    <div className="col">
+                      <h5 className="px-3">Main Themes</h5>
+                      <NavLink className="dropdown-item" to="/future-of-work">
+                        <span className="text-initial">Future of Work</span>
+                      </NavLink>
+                      <NavLink
+                        className="dropdown-item"
+                        to="/peacebuilding-and-reconciliation"
+                      >
+                        <span className="text-initial">
+                          Peacebuilding and <br /> Reconciliation
+                        </span>
+                      </NavLink>
+                      <NavLink
+                        className="dropdown-item"
+                        to="/climate-change-and-disaster-risk-reduction"
+                      >
+                        <span className="text-initial">
+                          Climate Change and <br /> Disaster Risk Reduction
+                        </span>
+                      </NavLink>
+                      <NavLink
+                        className="dropdown-item"
+                        to="/health-well-being-and-sports"
+                      >
+                        <span className="text-initial">
+                          Health , Well-Being and
+                          <br /> Sports : Agenda for Youth
+                        </span>
+                      </NavLink>
+                      <NavLink className="dropdown-item" to="/shared-future">
+                        <span className="text-initial">Shared Future</span>
+                      </NavLink>
+                    </div>
+                    <div className="col">
+                      <h5 className="px-3">Topics</h5>
+                      <NavLink
+                        className="dropdown-item"
+                        to="/life-environment-intiative"
+                      >
+                        <span className="text-initial">LiFE</span>
+                      </NavLink>
+                      <NavLink className="dropdown-item" to="/nep">
+                        NEP 2020
+                      </NavLink>{" "}
+                      <NavLink
+                        className="dropdown-item"
+                        to="/education-for-all"
+                      >
+                        Education For All
+                      </NavLink>{" "}
+                      <NavLink className="dropdown-item" to="/startup-india">
+                        Startup India
+                      </NavLink>
+                      <NavLink
+                        className="dropdown-item"
+                        to="/digital-transform"
+                      >
+                        Digital Transformation
+                      </NavLink>
+                      <NavLink className="dropdown-item" to="/cdri">
+                        CDRI
+                      </NavLink>
+                    </div>
+                  </div>
                 </div>
               </li>
             </ul>
@@ -226,7 +227,7 @@ const Navbar = () => {
                       to="/climate-change-and-disaster-risk-reduction"
                     >
                       <span className="text-initial">
-                      Climate Change and Disaster Risk Reduction
+                        Climate Change and Disaster Risk Reduction
                       </span>
                     </NavLink>
                   </li>
