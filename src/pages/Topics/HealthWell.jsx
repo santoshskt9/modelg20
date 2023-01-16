@@ -245,20 +245,32 @@ const HealthWell = () => {
 
         <h4 className="mt-4 fs-3">Promotion of Indigenous Sports</h4>
         <p>
-          Today, the sports sector is becoming a significant element in a
-          country’s socioeconomic development and prestige. For that to
-          continue, every nation must invest in the latest technology-ridden
-          infrastructure that relates to best sports practices, training,
-          research and wellness throughout the sporting institutions.
+          Today, the sports sector is becoming a significant element in a country’s socioeconomic development
+          as well as a medium of cultural diplomacy between nations. Many countries including India regard
+          sports as a delicate power, it is a way to maintain cordial relations among the countries. The United
+          Nations also believes that ‘sports’ is one of the greatest diplomatic aspects in the promotion of
+          international security as well as peace.
         </p>
         <p>
-          Moreover, proper policies and the implementation of robust laws to
-          promote sports amongst young citizens will go a long way as well.
+          With that in mind, sporting events like cricket, football, and tennis have garnered worldwide
+          inter-cultural exchanges and interests that people unite in one voice while cheering this so-called,
+          ‘Sports Diplomacy’ tactic by the authorities.
+
         </p>
         <p>
-          Take a look at some of the following sports initiatives and schemes
-          launched by the Indian government to inspire and carry the ‘Sports for
-          All’ dream for young citizens.
+          For instance, FIFA World Cup 2022 was recorded to be the most streamed sporting world cup event
+          in the past 10 years. From this stream of thought, promoting the upkeep and development of sports
+          becomes all the more necessary.
+        </p>
+        <p>
+          For that to continue, every nation must invest in the latest technology-ridden infrastructure that
+          relates to best sports practices, training, research and wellness throughout the sporting institutions.
+        </p>
+        <p>
+          Proper policies and the implementation of robust laws to promote sports amongst young citizens will
+          go a long way as well. Take a look at some of the following sports initiatives and schemes launched
+          by the Indian government to inspire and carry the ‘Sports for All’ dream for young citizens.
+
         </p>
         <ul className="list-group border-none  mt-3">
           <li className="list-group-item border-0  ps-0">
@@ -310,6 +322,47 @@ const HealthWell = () => {
             </span>
           </li>
         </ul>
+        <p className="mt-4">
+          Sports being at the centre, the responsibility to promote and develop sports in a country specifically
+          for indigenous groups and tribal societies rests with the state and union governments. To enable
+          young players’ talent and inspire them to showcase their capacity in sports is a must to bridge
+          sociocultural gaps.
+
+        </p>
+        <p>
+          For instance, one of the verticals of the Khelo India Scheme, ‘Promotion of rural and
+          indigenous/tribal games’, is designed to promote and encourage the rise of traditional sports in India.
+        </p>
+        <p>
+          Moreover, there are various other schemes and initiatives at work to carry the idea of unity in
+          diversity in sports faction as well whilst strengthening and globalising indigenous/tribal sports.
+
+        </p>
+        <p>
+          In India, NYKS is implementing Tribal Youth Exchange Programme in collaboration with the Left Wing
+          Extremism (LWE) Division of the Ministry of Home Affairs. The main objective of this programme is to
+          enable tribal youth to appreciate unity in diversity, and expose them to development activities and
+          technological/ industrial advancement in other parts of the country.
+
+        </p>
+        <p>
+          The Ministry of Youth Affairs in India implements various Sports Promotional Schemes across the
+          country through the Sports Authority of India (SAI) and other institutions to promote services like
+          expert coaching, sports equipment, sports kit, competition exposure, etc.
+        </p>
+
+        <p>
+          Additionally, the Ministry has also worked extensively to raise awareness about old traditional sports
+          like Gatka, Roll Ball, Tug of War, Kalaripayattu, etc. by means of documentaries on social platforms in
+          order to revive them into mainstream sports and aware today’s youth about their history.
+
+        </p>
+        <p>
+
+          To conclude, for increasing participation in various sports, the players must be provided with a
+          proper platform, along with adequate facilities and to prosper in cordial relations between nations,
+          the world economies must work collectively to use sports as a medium of cultural diplomacy.
+        </p>
       </div>
     </div>
   );
