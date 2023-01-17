@@ -23,11 +23,6 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around">
-              {/* <li className="nav-item">
-                <NavLink className="nav-link text-dark" to="/team">
-                  Team
-                </NavLink>
-              </li> */}
               <li className="nav-item">
                 <NavLink className="nav-link text-dark" to="/model-g20">
                   Model G20
@@ -59,7 +54,7 @@ const Navbar = () => {
                 </NavLink>
                 <div
                   className="dropdown-menu"
-                  style={{ width: "500px", right: "-150px",left:"unset" }}
+                  style={{ width: "500px", right: "-150px", left: "unset" }}
                 >
                   <div className="row row-cols-2">
                     <div className="col">
@@ -129,6 +124,11 @@ const Navbar = () => {
                   </div>
                 </div>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-dark" to="/team">
+                  Team
+                </NavLink>
+              </li>
             </ul>
             <NavLink
               to={"/youth-community"}
@@ -163,17 +163,6 @@ const Navbar = () => {
         </div>
         <div className="offcanvas-body">
           <ul className="list-group">
-            {/* <li
-              className="list-group-item p-3 mb-2 rounded-3 "
-              data-bs-dismiss="offcanvas"
-            >
-              <NavLink
-                to="/team"
-                className="fs-6 text-uppercase text-dark"
-              >
-                Team
-              </NavLink>
-            </li> */}
             <li
               className="list-group-item p-3 mb-2 rounded-3 "
               data-bs-dismiss="offcanvas"
@@ -330,6 +319,14 @@ const Navbar = () => {
                   </li>
                 </ul>
               </div>
+            </li>
+            <li
+              className="list-group-item p-3 mb-2 rounded-3 "
+              data-bs-dismiss="offcanvas"
+            >
+              <NavLink to="/team" className="fs-6 text-uppercase text-dark">
+                Team
+              </NavLink>
             </li>
             <li
               className="list-group-item mt-2 border-0 rounded-3"
