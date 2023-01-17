@@ -23,6 +23,11 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around">
+              {/* <li className="nav-item">
+                <NavLink className="nav-link text-dark" to="/team">
+                  Team
+                </NavLink>
+              </li> */}
               <li className="nav-item">
                 <NavLink className="nav-link text-dark" to="/model-g20">
                   Model G20
@@ -158,6 +163,17 @@ const Navbar = () => {
         </div>
         <div className="offcanvas-body">
           <ul className="list-group">
+            {/* <li
+              className="list-group-item p-3 mb-2 rounded-3 "
+              data-bs-dismiss="offcanvas"
+            >
+              <NavLink
+                to="/team"
+                className="fs-6 text-uppercase text-dark"
+              >
+                Team
+              </NavLink>
+            </li> */}
             <li
               className="list-group-item p-3 mb-2 rounded-3 "
               data-bs-dismiss="offcanvas"

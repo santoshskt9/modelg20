@@ -27,6 +27,7 @@ import HealthWell from "./pages/Topics/HealthWell";
 import FutureOfWork from "./pages/Topics/FutureOfWork";
 import ClimateChange from "./pages/themes/ClimateChange";
 import PeaceBuilding from "./pages/themes/PeaceBuilding";
+import Team from "./pages/Team";
 function App() {
   return (
     <BrowserRouter>
@@ -35,6 +36,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/registration" element={<Registration />} />
+        <Route path="/team" element={<Team/>}/>
         <Route path="/campussherpa-registration" element={<CampusRegister />} />
         <Route path="/model-g20" element={<Modelg20Page />} />
         <Route path="/life-environment-intiative" element={<Life />} />
