@@ -29,6 +29,7 @@ import ClimateChange from "./pages/themes/ClimateChange";
 import PeaceBuilding from "./pages/themes/PeaceBuilding";
 import Team from "./pages/Team";
 import WomenEmpower from "./pages/Topics/WomenEmpower";
+import UnlearnRelearnReskill from "./pages/Topics/UnlearnRelearnReskill";
 function App() {
   return (
     <BrowserRouter>
@@ -59,6 +60,7 @@ function App() {
         <Route path="/woman-empowerment" element={<WomenEmpower />} />
         <Route path="/peacebuilding-and-reconciliation" element={<PeaceBuilding />} />
         <Route path="/climate-change-and-disaster-risk-reduction" element={<ClimateChange />} />
+        <Route path="/unlearn-relearn-and-reskill" element={<UnlearnRelearnReskill />} />
         <Route path="/nep" element={<Nip />} />
         <Route path="*" element={<Error />} />
       </Routes>
