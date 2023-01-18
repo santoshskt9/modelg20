@@ -120,8 +120,17 @@ const Navbar = () => {
                       <NavLink className="dropdown-item" to="/cdri">
                         CDRI
                       </NavLink>
-                      <NavLink className="dropdown-item" to="/woman-empowerment">
-                      Woman Empowerment
+                      <NavLink
+                        className="dropdown-item"
+                        to="/woman-empowerment"
+                      >
+                        Woman Empowerment
+                      </NavLink>
+                      <NavLink
+                        className="dropdown-item"
+                        to="/unlearn-relearn-and-reskill"
+                      >
+                        Unlearn, Relearn and <br /> Reskill
                       </NavLink>
                     </div>
                   </div>
@@ -326,6 +335,14 @@ const Navbar = () => {
                       to="/woman-empowerment"
                     >
                       Women Empowerment
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/unlearn-relearn-and-reskill"
+                    >
+                      Unlearn relearn and Reskill
                     </NavLink>
                   </li>
                 </ul>
