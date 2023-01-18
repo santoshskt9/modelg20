@@ -28,6 +28,7 @@ import FutureOfWork from "./pages/Topics/FutureOfWork";
 import ClimateChange from "./pages/themes/ClimateChange";
 import PeaceBuilding from "./pages/themes/PeaceBuilding";
 import Team from "./pages/Team";
+import WomenEmpower from "./pages/Topics/WomenEmpower";
 function App() {
   return (
     <BrowserRouter>
@@ -55,6 +56,7 @@ function App() {
         <Route path="/blog/:slug" element={<Blog />} />
         <Route path="/news/:slug" element={<News />} />
         <Route path="/cdri" element={<Cdri />} />
+        <Route path="/woman-empowerment" element={<WomenEmpower />} />
         <Route path="/peacebuilding-and-reconciliation" element={<PeaceBuilding />} />
         <Route path="/climate-change-and-disaster-risk-reduction" element={<ClimateChange />} />
         <Route path="/nep" element={<Nip />} />
