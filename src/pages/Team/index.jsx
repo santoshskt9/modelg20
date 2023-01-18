@@ -6,33 +6,35 @@ const Team = () => {
     <div>
       <BreadCrumb heading={"Leadership Team"} />
       <div className="container py-5">
-        <p>
-          Our leadership team strives to make YMG20 an impactful summit. Our
-          team consists of experts and volunteers who are working closely with
-          other stakeholders to ensure that the summit is a resounding success.
-          The coordination and efforts span from creating content, developing IT
-          infrastructure and promotional strategies to working closely with G20
-          experts and educational institutions.
-        </p>
-        <p>
-          We also have a team of student volunteers who do most of the
-          groundwork for the institutional-level events called ‘Campus Sherpas’.
-          We especially thank the Teacher Coordinators who eventually make it
-          all happen and it goes without saying that Campus Sherpas along with
-          Teacher Coordinators are the backbone of YMG20.
-        </p>
-        <p>
-          If your want to engage with us, feel free to drop us an email on
-          <a href="mailto:modelg20@yuvamanthan.org">
-            {" "}
-            modelg20@yuvamanthan.org
-          </a>
-        </p>
-        <div>
+        <div className="text-center">
+          <h2>Team YMG20</h2>
+          <p>
+            Our leadership team strives to make YMG20 an impactful summit. Our
+            team consists of experts and volunteers who are working closely with
+            other stakeholders to ensure that the summit is a resounding
+            success. The coordination and efforts span from creating content,
+            developing IT infrastructure and promotional strategies to working
+            closely with G20 experts and educational institutions.
+          </p>
+          <p>
+            We also have a team of student volunteers who do most of the
+            groundwork for the institutional-level events called ‘Campus
+            Sherpas’. We especially thank the Teacher Coordinators who
+            eventually make it all happen and it goes without saying that Campus
+            Sherpas along with Teacher Coordinators are the backbone of YMG20.
+          </p>
+          <p>
+            If your want to engage with us, feel free to drop us an email on
+            <a href="mailto:modelg20@yuvamanthan.org">
+              {" "}
+              modelg20@yuvamanthan.org
+            </a>
+          </p>
+        </div>
+        <div className="mt-5">
           <div className="col-12 text-center">
             <span className="section-title-border border-center"></span>
-            <p className="subtitle">Our Team</p>
-            <h2 className="section-title">Leadership Team</h2>
+            <h3 className="fs-2 section-title">Leadership Team</h3>
           </div>
           <div className="row g-3 g-lg-4">
             <div className="col-lg-4 col-12">
@@ -40,7 +42,7 @@ const Team = () => {
                 <div className="team-member-img position-relative mb-5">
                   <img
                     className="img-fluid w-100"
-                    src="images/team/team-6.jpg"
+                    src="images/team/nitin.jpeg"
                     alt="team-member"
                     style={{
                       objectPosition: "center",
@@ -80,7 +82,7 @@ const Team = () => {
                 <h4 className="fs-3 font-monospace">Nitin Agrawal</h4>
                 <p>Managing Director</p>
               </div>
-              <p>
+              <p className="text-justify">
                 Nitin is a serial entrepreneur and runs multiple social
                 enterprise initiatives in the area of education and youth
                 development. He works extensively with the government clientele
@@ -98,24 +100,25 @@ const Team = () => {
               </p>
             </div>
           </div>
-          <div className="row g-3 g-lg-4 text-end">
+          <div className="row g-3 g-lg-4 ">
             <div className="col-12 col-lg-8">
               <div>
                 <h4 className="fs-3 font-monospace">Danish Kamal</h4>
                 <p>Director - Strategy and Communications</p>
               </div>
-              <p>
+              <p className="text-justify">
                 Danish brings with him a vast experience in digital marketing
                 and communications strategy. Having worked with big brands like
-                Apple, Canon, WPP etc. and for multiple startups, he is
+                Apple, Dentsu, WPP etc. and for multiple startups, he is
                 responsible for strategy, communications and development of
                 YMG20 platform. He has also been previously associated with
                 Energy, Aviation, Security and Defense think tanks and was
                 responsible for events, expositions, digital development and
-                branding efforts. His experience extends beyond building brands
+                branding efforts. He has two entrepreneural stints as founder of
+                digital agencies. His experience extends beyond building brands
                 to public policy and driving social narratives for government
                 initiatives. He holds an MBA in International Business and loves
-                to travel internationally in his free time.
+                to explore Indian and international cuisine.
               </p>
             </div>
             <div className="col-lg-4 col-12">
@@ -165,11 +168,8 @@ const Team = () => {
               <div className="row">
                 <div className="col-12 text-center">
                   <span className="section-title-border border-center"></span>
-                  <p className="subtitle">Our Team</p>
-                  <h2 className="section-title">
-                    We Are Dynamic Team and
-                    <br />
-                    Business Agency
+                  <h2 className="fs-1 section-title">
+                    WE ARE A YOUNG TEAM AND GROWING
                   </h2>
                 </div>
               </div>

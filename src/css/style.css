@@ -1695,7 +1695,6 @@ textarea.form-control-sm {
   }
 }
 
-
 .navbar .dropdown-item:hover {
   color: var(--main-color);
   background: transparent;
@@ -2978,4 +2977,8 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+.text-justify {
+  text-align: justify !important;
 }
