@@ -36,6 +36,10 @@ const Team = React.lazy(() => import("./pages/Team"));
 const WomenEmpower = React.lazy(() => import("./pages/Topics/WomenEmpower"));
 const Life = React.lazy(() => import("./pages/LifeEnvironment"));
 const Blog = React.lazy(() => import("./pages/Blog"));
+const UnlearnRelearnReskill = React.lazy(() =>
+  import("./pages/Topics/UnlearnRelearnReskill")
+);
+
 function App() {
   return (
     <BrowserRouter>
@@ -44,7 +48,12 @@ function App() {
       <Suspense
         fallback={
           <div className="w-100 d-flex vh-100 align-items-center justify-content-between">
-           <img src="images/loading.gif" alt="" className="d-block mx-auto" style={{maxWidth:"100%"}}/>
+            <img
+              src="images/loading.gif"
+              alt=""
+              className="d-block mx-auto"
+              style={{ maxWidth: "100%" }}
+            />
           </div>
         }
       >
@@ -84,6 +93,10 @@ function App() {
           <Route
             path="/climate-change-and-disaster-risk-reduction"
             element={<ClimateChange />}
+          />
+          <Route
+            path="/unlearn-relearn-and-reskill"
+            element={<UnlearnRelearnReskill />}
           />
           <Route path="/nep" element={<Nip />} />
           <Route path="*" element={<Error />} />

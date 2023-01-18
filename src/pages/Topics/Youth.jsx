@@ -329,9 +329,9 @@ const Youth = () => {
               </p>
             </div>
             {/* <!-- Education For All --> */}
-            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+            {/* <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
               <h3>
-                {/* <span className="text-primary">01.</span> */}
+                
                 Education For All
               </h3>
               <p className=" fs-6">
@@ -341,7 +341,7 @@ const Youth = () => {
                 educational enrichment, why is illiteracy still looming over the
                 country?
               </p>
-            </div>
+            </div> */}
             {/* <!-- Women's Empowerment --> */}
             <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
               <h3>
@@ -359,6 +359,217 @@ const Youth = () => {
                 females across the country to empower their lives and become
                 more than a household existence. So, how are we doing to
                 strengthen the narrative of women’s empowerment?
+              </p>
+            </div>
+            {/* <!-- Future of Work --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Future of Work
+              </h3>
+              <p className=" fs-6">
+                The Indian economy is one of the fastest-growing in the world and is on a high growth trajectory.
+                India made a huge leap last year, climbing 30 spots to land at position 100 in the World Bank's
+                ease of doing business assessment. These are important developments that bode well for the
+                prognosis of overall development. However, as we discuss India's growth story, there are a
+                number of obstacles to overcome
+              </p>
+            </div>
+            {/* <!-- Peacebuilding and Reconciliation --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Peacebuilding and Reconciliation
+              </h3>
+              <p className=" fs-6">
+                India has been a prominent T/PCC (Troop/Police Contributing Country) to UN peacekeeping
+                efforts and an active PBC member. Indian peacebuilding initiatives are fundamentally based on
+                respect for member states' national goals and sense of ownership. Through its enormous
+                development partnerships with nations of the Global South, India has always played a positive
+                and vital role in the framework of peacebuilding. In post-conflict scenarios, India continues to
+                support nations through bilateral and multilateral fora by giving sizable grants and lenient loans.
+              </p>
+            </div>
+            {/* <!--Climate change --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Climate change
+              </h3>
+              <p className=" fs-6">
+                The three primary components of India's 2022 National Development Council are:
+                A target of achieving 45% of installed electric power capacity from non-fossil fuel sources by
+                2030; a target of achieving 50% of installed electric power capacity from non-fossil fuel sources
+                by 2030; and a target of creating a carbon sink of 2.5 to 3 GtCO2e through increased forest and
+                tree cover by 2030. India stated in its revised NDC that it will need international assistance to
+                reach its goal of 50% non-fossil capacity, yet under its existing policies, it is already on course to
+                reach 60–67% by 2030.
+
+              </p>
+            </div>
+            {/* <!-- Health, Well-Being and Sports --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Health, Well-Being and Sports
+
+              </h3>
+              <p className=" fs-6">
+                The revolutionary changes in Indian health policy show how committed the government is to the
+                welfare and health of its people, as well as how well-versed it is in political economy. By
+                promptly identifying and acknowledging the problems, significant progress has been
+                accomplished during the past seven years. To find workable policy solutions and policies, an
+                analytical and problem-solving methodology is applied. Once produced, these solutions and
+                policies are accompanied by an enabling environment to ensure sustainability. Thereafter, a
+                political opportunity is identified to introduce the policy, providing a platform with defined
+                trajectories for political attention. Achievements of recent interventions such as the Free Drugs
+                and Diagnostics Service Initiative (FDDSI), Swachh Bharat Mission (SBM), Pradhan Mantri
+                Bhartiya Janaushadhi Pariyojana (PMBJP), the four pillars of Ayushman Bharat- i.e., Ayushman
+                Bharat- Health and Wellness Centre (AB-HWC), Ayushman Bharat- Jan Arogya Yojana (AB
+                PM-JAY), Ayushman Bharat- Digital Mission (ABDM) and Pradhan Mantri Ayushman BharatHealth Infrastructure Mission (PM-ABHIM) and tied grants under the Fifteenth Finance
+                Commission (FC-XV) depict India’s progress towards achieving the National Health Policy
+                (NHP) 2017 targets, Sustainable Development Goals (SDGs) and Universal Health Coverage
+                (UHC).
+
+
+              </p>
+            </div>
+            {/* <!-- Shared Future --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Shared Future
+
+              </h3>
+              <p className=" fs-6">
+                With one of the youngest populations among the ancient civilizations and possibly the most
+                lively and diversified democracy is India. India's present population is made up of more than
+                50% people under 25 and more than 65% people under 35. Even if the world's population is
+                ageing, our younger demographic profile can be useful both domestically and in a broader global
+                perspective. India's G20 Presidency provides India's youngsters with the highly sought-after
+                opportunity to serve as ambassadors for international causes. The G20's Y20 or Youth 20
+                engagement group will harness the power of young people to forge a worldwide consensus on
+                pressing issues facing humanity.
+              </p>
+            </div>
+            {/* <!-- LiFE --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                LiFE
+
+              </h3>
+              <p className=" fs-6">
+                The honourable Prime Minister Narendra Modi created the "Lifestyle for Environment" or LiFE
+                project, a campaign with a primary focus on living sustainably. At the 26th Conference of the
+                Parties on Climate Change (COP26), which took place in Glasgow in 2021, it was officially
+                launched worldwide.
+              </p>
+              <p>
+                LiFE intends to use the power of social networks to change societal attitudes around climate. The
+                Mission intends to establish and support a worldwide community of people known as
+                "Pro-Planet People" (P3) who will all be dedicated to embracing and promoting environmentally
+                sustainable lives. The Mission aims to establish an ecosystem through the P3 community that
+                will support and enable environmentally responsible behaviour to become self-sustaining.
+
+              </p>
+            </div>
+            {/* <!-- NEW EDUCATION POLICY (NEP) 2020 --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                NEW EDUCATION POLICY (NEP) 2020
+
+              </h3>
+              <p className=" fs-6">
+                In order to become a worldwide force, India is poised to make significant reforms to its
+                educational system. The most recent modifications were implemented to end 34 years of
+                educational policies. The new approach, which is currently being implemented, places a focus on
+                online learning, extends the school day, and discourages rote memorization.
+              </p>
+              <p>
+                With an emphasis on marginalized communities, the new National Education Policy (NEP 2020)
+                aims to increase education's inclusivity, equity, and accessibility for all. Additionally, it places a
+                strong emphasis on the acquisition of 21st-century abilities including creativity, critical analysis,
+                and problem-solving. The policy also permits the creation of new organizations like digital
+                universities and the use of technology to enhance education.
+
+              </p>
+            </div>
+            {/* <!-- Education for All --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Education for All
+
+              </h3>
+              <p className=" fs-6">
+                Over the years, the federal and state governments have diligently worked to implement a number
+                of programmes and laws to increase access to education for all citizens.
+
+              </p>
+              <p>
+                It became a fundamental right for every child between the ages of 6 and 14 to attend 8 years of
+                obligatory elementary education thanks to the passage of the Right of Children to Free and
+                Compulsory Education (RTE) statute in 2009. The Indian educational system has made
+                significant strides over the past few decades and is still expanding.
+
+
+              </p>
+            </div>
+            {/* <!-- Start ups --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Start ups
+
+              </h3>
+              <p className=" fs-6">
+                Since the "Startup India" initiative started in 2016–17, startups in India have experienced
+                tremendous growth owing to the assistance and direction of the Indian government.
+              </p>
+              <p>
+                The government has made sure that PM Modi's aim for "Digital revolution in India" is being
+                successfully carried out, from offering students up to 79 courses to supporting new startup
+                initiatives with financial aid.
+              </p>
+              <p>
+                Today, India boasts more than 80,000 active businesses, 109 unicorns, and a global economy
+                worth about $274 billion.
+              </p>
+            </div>
+            {/* <!-- Digital Transformation --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                Digital Transformation
+
+              </h3>
+              <p className=" fs-6">
+                There is verifiable proof of this digital transition after eight years of digital government. India
+                currently has more than 80 crore internet users, 133 crore Aadhaar cards, more than 75 crore cell
+                phones, 4G, and is rapidly moving toward 5G. Most importantly, it has among the lowest data
+                rates in the entire world. India's advancement is the consequence of PM Modi's vision, which he
+                presented during the July 1, 2015, inauguration of Digital India. He said, " In this digital era, we
+                have the chance to improve people's lives in ways that were difficult to envision only a few
+                decades ago. Technology, in my opinion, can empower people and act as a link among
+                opportunity and hope."
+              </p>
+            </div>
+            {/* <!-- CDRI --> */}
+            <div className="col-md-6 col-lg-6 mb-4 mb-md-0">
+              <h3>
+                {/* <span className="text-primary">01.</span> */}
+                CDRI
+
+              </h3>
+              <p className=" fs-6">
+                In its initial proposal, India described CDRI as controlling governance that takes diligent action
+                to reduce infrastructure damages caused by disasters. The goal was to create a multi-level,
+                globally integrated platform that encourages smart catastrophe resilience and improves resources
+                for infrastructure sectors to prevent them. India will now carry on the CDRI mandate to promote
+                the broader terms of sustainable development goals for the world as the G20's rotating president
+                in 2023.
               </p>
             </div>
 
