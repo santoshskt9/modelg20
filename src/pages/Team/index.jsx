@@ -24,7 +24,7 @@ const Team = () => {
             Sherpas along with Teacher Coordinators are the backbone of YMG20.
           </p>
           <p>
-            If your want to engage with us, feel free to drop us an email on
+            If you want to engage with us, feel free to drop us an email on
             <a href="mailto:modelg20@yuvamanthan.org">
               {" "}
               modelg20@yuvamanthan.org
@@ -86,7 +86,7 @@ const Team = () => {
                 Nitin is a serial entrepreneur and runs multiple social
                 enterprise initiatives in the area of education and youth
                 development. He works extensively with the government clientele
-                which includes NCPCR, NCW, Niti Aayog, AICTE etc, and with
+                which includes NCPCR, NCW, NITI Aayog, AICTE etc, and with
                 private-sector players in areas of trainings, e-modules, sector
                 reforms and social awareness. His company Govardhan Learning
                 Cloud which is incubated with NITI Aayog’s Rambhau Mhalgi
@@ -94,7 +94,7 @@ const Team = () => {
                 million students in India so far. As the Managing Director of
                 National Association of School Professionals (NASP) he is
                 building a network of high-performance school systems which are
-                safe, aware and smart. He is an engineer who holds an MBA for
+                safe, aware and smart. He is an engineer who holds an MBA from
                 Management Development Institute (MDI Gurgaon) and loves to
                 explore Indian culture through his travels.
               </p>
