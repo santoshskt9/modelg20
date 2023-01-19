@@ -80,9 +80,9 @@ const Team = () => {
             <div className="col-12 col-lg-8">
               <div>
                 <h4 className="fs-3 font-monospace">Nitin Agrawal</h4>
-                <p>Managing Director</p>
+                <p>Director</p>
               </div>
-              <p className="text-justify">
+              {/* <p className="text-justify">
                 Nitin is a serial entrepreneur and runs multiple social
                 enterprise initiatives in the area of education and youth
                 development. He works extensively with the government clientele
@@ -97,6 +97,19 @@ const Team = () => {
                 safe, aware and smart. He is an engineer who holds an MBA from
                 Management Development Institute (MDI Gurgaon) and loves to
                 explore Indian culture through his travels.
+              </p> */}
+
+              <p className="text-justify">
+                Nitin is CEO of <a href="https://glcloud.in" target="_blank" rel="noopener noreferrer">Govardhan Learning Cloud (GLC)</a>, an organization focused on solving societal issues through learning based intervention among students. GLC is working with the government on issues such as Women Empowerment, <a href="https://safeinschool.in" target="_blank" rel="noopener noreferrer">Child Safety</a>, Financial Literacy, Environment Protection etc.
+              </p>
+              <p>
+                He is also the Convenor of <a href="https://nasp.in" target="_blank" rel="noopener noreferrer">National Association of School Professionals</a>, an NGO working towards bringing a fresh impact-based approach to Learning Beyond Curriculum in India.
+              </p>
+              <p>
+                He is also a Director at <a href="https://pahleindia.org/about-us/" target="_blank" rel="noopener noreferrer">Pahle India Foundation (PIF)</a> . PIF undertakes analytical research and disseminates its findings both to policy makers and in the public domain. The driving vision in all that we do is “Putting India First to make India First.”
+              </p>
+              <p>
+                He is an engineer who holds an MBA from Management Development Institute (MDI Gurgaon) and loves to explore Indian culture through his travels. He is a prolific author and has written 4 bestsellers Viz. <a href="https://www.amazon.in/Leadership-Lessons-Narendra-Damodardas-Modi/dp/9381841489/" target="_blank" rel="noopener noreferrer">21 Leadership Lessons of Narendra Damodardas Modi</a>, <a href="https://www.amazon.in/Indias-Greatest-Speeches-Nitin-Agarwal-ebook/dp/B00Q9RN4K6/" target="_blank" rel="noopener noreferrer">India's Greatest Speeches</a>, <a href="https://www.amazon.in/Do-You-Know-Narendra-Modi/dp/9381841594/" target="_blank" rel="noopener noreferrer">Do You Know Narendra Modi?</a>, and <a href="https://www.amazon.in/Narendra-Modi-Ke-Netritva-Sutra/dp/9381841993/" target="_blank" rel="noopener noreferrer">Narendra Modi Ke Netritva ke 21 Sutra</a>.
               </p>
             </div>
           </div>
