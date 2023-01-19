@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./layout/Footer";
 import GotoTop from "./layout/GotoTop";
 import Navbar from "./layout/Navbar";
+import CyberSafety from "./pages/Topics/CyberSafety";
 const Home = React.lazy(() => import("./pages/Home"));
 const Modelg20Page = React.lazy(() => import("./pages/ModelG20Page"));
 const News = React.lazy(() => import("./pages/News"));
@@ -97,6 +98,10 @@ function App() {
           <Route
             path="/unlearn-relearn-and-reskill"
             element={<UnlearnRelearnReskill />}
+          />
+          <Route
+            path="/cyber-safety-for-youth"
+            element={<CyberSafety />}
           />
           <Route path="/nep" element={<Nip />} />
           <Route path="*" element={<Error />} />

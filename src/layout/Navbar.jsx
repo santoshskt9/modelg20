@@ -132,6 +132,12 @@ const Navbar = () => {
                       >
                         Unlearn, Relearn and <br /> Reskill
                       </NavLink>
+                      <NavLink
+                        className="dropdown-item"
+                        to="/cyber-safety-for-youth"
+                      >
+                        Cyber Safety for Youth <br /> & Post-Pandemic Culture
+                      </NavLink>
                     </div>
                   </div>
                 </div>
@@ -343,6 +349,14 @@ const Navbar = () => {
                       to="/unlearn-relearn-and-reskill"
                     >
                       Unlearn relearn and Reskill
+                    </NavLink>
+                  </li>
+                  <li data-bs-dismiss="offcanvas" className="mb-2">
+                    <NavLink
+                      className="list-group-item p-3 rounded-3"
+                      to="/cyber-safety-for-youth"
+                    >
+                      Cyber Safety for Youth and Post-Pandemic Culture
                     </NavLink>
                   </li>
                 </ul>
