@@ -348,7 +348,7 @@ const Navbar = () => {
                       className="list-group-item p-3 rounded-3"
                       to="/unlearn-relearn-and-reskill"
                     >
-                      Unlearn relearn and Reskill
+                      Unlearn, Relearn and Reskill
                     </NavLink>
                   </li>
                   <li data-bs-dismiss="offcanvas" className="mb-2">
