@@ -87,7 +87,7 @@ const Youth = () => {
                 to strengthen youth’s capacity to aspire and inspire.
               </p>
 
-              <p className="mb-5">
+              <p className="mb-5 fw-bold">
                 With that in mind, take a look at what we have to offer the
                 youth of today:
               </p>
@@ -199,7 +199,7 @@ const Youth = () => {
                 that would allow members to participate and engage freely and
                 actively.
               </p>
-              <p className="mb-5">
+              <p className="mb-5 fw-bold">
                 Some of the mock topics with few starting points to break the
                 ice for forum discussion that is as follows.
               </p>
