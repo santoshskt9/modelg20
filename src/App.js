@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./layout/Footer";
 import GotoTop from "./layout/GotoTop";
 import Navbar from "./layout/Navbar";
+import Login from "./pages/Auth/Login";
 import CyberSafety from "./pages/Topics/CyberSafety";
 const Home = React.lazy(() => import("./pages/Home"));
 const Modelg20Page = React.lazy(() => import("./pages/ModelG20Page"));
@@ -104,6 +105,7 @@ function App() {
             element={<CyberSafety />}
           />
           <Route path="/nep" element={<Nip />} />
+          <Route path="/login" element={<Login/>} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Suspense>
