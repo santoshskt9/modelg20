@@ -342,14 +342,7 @@ const Home = () => {
             <div className="col">
               <h2 className="section-title mb-2">Our Knowledge Partner</h2>
               <p className="mb-5 fs-5 text-justify">
-                Institute for Competitiveness, India is the Indian knot in the global
-                network of the Institute for Strategy and Competitiveness at Harvard
-                Business School. Institute for Competitiveness, India is an
-                international initiative centered in India, dedicated to enlarging and
-                purposeful disseminating of the body of research and knowledge on
-                competition and strategy, as pioneered over the last 25 years by
-                Professor Michael Porter of the Institute for Strategy and
-                Competitiveness at Harvard Business School.
+              Institute for Competitiveness, India is the Indian knot in the global network of the Institute for Strategy and Competitiveness at Harvard Business School. It is also an international initiative centered in India, dedicated to enlarging and purposeful disseminating of the body of research and knowledge on competition and strategy, as pioneered over the last 25 years by Professor Michael Porter of the Institute for Strategy and Competitiveness at Harvard Business School.
               </p>
             </div>
             <div className="col">
