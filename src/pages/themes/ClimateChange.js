@@ -73,7 +73,64 @@ const ClimateChange = () => {
           inclusive, stable and developed economy around the globe.
         </p>
         <p>
-          On similar grounds, this year in G20, India has proposed a worldwide
+          Similarly, the European Union (EU) considers climate changer to be the most serious issue faced by
+          the world today and actively supports steps in the education and training sector to raise the effort
+          scale to tackle the climate crisis. The EU Commission at present supports all EU member states in
+          their attempts to
+        </p>
+        <div className="list row py-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4 justify-content-center">
+          <div className="col">
+
+            <div className="card text-white bg-warning h-100">
+              <div className="card-body">
+
+                <p className="card-text">
+                  Help education and training organisations to assimilate sustainability into teaching and
+                  learning models across all operations.
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-white bg-warning h-100">
+              <div className="card-body">
+
+                <p className="card-text">
+                  Equip young learners as well as educators with skills, and knowledge that is vital for a green
+                  and sustainable economy.
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-white bg-warning h-100">
+              <div className="card-body">
+
+                <p className="card-text">
+                  Develop a shared understanding of more deep-rooted changes required in the educational
+                  system for sustainability and green transition
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          On 16 June 2022, the Council of the European Union (EU) adopted a Recommendation on learning
+          for the green transition and sustainable development. This recommendation is a key policy
+          statement highlighting the crucial role of education and training in working towards the goals of
+          achieving sustainable development.
+        </p>
+        <p>
+          The idea is to bring to light that sustainability should be part of the entire spectrum of education and
+          training, including curriculum and professional development for educators, as well as buildings,
+          infrastructure and operations.
+        </p>
+        <p>
+          This year in G20, India has proposed a worldwide
           mission called, ‘LiFe (Lifestyle for Environment) initiative. It is a
           call to action for every citizen to practice sustainability and
           mindful utilisation of resources over ‘mindless destructive
@@ -93,12 +150,67 @@ const ClimateChange = () => {
           actively contribute to the Lifestyle for Environment (LiFe)
           initiative. Additionally, ‘LiFe’ seeks to implement such foundation
           techniques into the regular habit to have a more powerful impact.
-          Events like the 21-day challenge to mitigate needless resource wastage
-          initiated by the government were lauded by youth and received good
-          participation throughout the nation.
         </p>
         <p>
-          Such mass movements and campaigns are designed to mobilise almost
+          According to recent data, an average carbon footprint of a person in India is 0.56 tonnes per year,
+          compared to the global average of 4 tonnes. India's traditional knowledge, social norms and daily
+          household practices strongly position it to take on individual action to tackle the climate change issue
+          through this mass movement in the form of ‘LiFe Mission.’
+
+        </p>
+        <p>
+          Events like the 21-day challenge to mitigate needless resource wastage
+          initiated by the government were lauded by youth and received good
+          participation throughout the nation. <i><b>Some of the other
+            notable achievements of Indian initiatives in environmental conservation include:</b></i>
+        </p>
+        <div className="list row py-4 row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 g-lg-4 justify-content-center">
+          <div className="col">
+
+            <div className="card text-white bg-warning h-100">
+              <div className="card-body">
+
+                <p className="card-text">
+                  <b>India’s commitment to reach 40% of installed electric capacity</b> y from non-fossil fuel-based
+                  sources has been achieved that too 9 years ahead of schedule of the 2030 Agenda
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-white bg-warning h-100">
+              <div className="card-body">
+
+                <p className="card-text">
+                  According to REN21's Renewables 2022 Global Status Report (GSR 2022), <b>
+                    India is ranked
+                    third in wind power, fourth in solar power and third in renewable power installed capacity
+                    in 2021.
+
+                  </b>
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+          <div className="col">
+            <div className="card text-white bg-warning h-100">
+              <div className="card-body">
+
+                <p className="card-text">
+                  <b>The target of 10% ethanol blending in petrol has been achieved 5 months </b>ahead before
+                  November last year.
+
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <p>
+          Basically, such mass movements and campaigns are designed to mobilise almost
           every single citizen of the globe eventually for taking collective
           action towards environmental conservation and adopting sustainability.
         </p>
@@ -112,6 +224,109 @@ const ClimateChange = () => {
           infrastructure, enforcing effective aids to tackle calamity-prone
           situations, etc.
         </p>
+        <p>
+          According to the Global Assessment Report on disaster risk reduction (GAR2022), If current trends
+          continue, the number of disasters per year globally may increase from around 400 in 2015 to 560 per
+          year by 2030 – a projected increase of 40% during the lifetime of the Sendai Framework
+        </p>
+        <p>
+          Also it estimates that the number of extreme temperature events per year is also increasing, and
+          based on current trends will almost triple between 2001 and 2030. Disasters have negative impacts
+          on biodiversity and environmental sustainability.
+        </p>
+        <p>
+          These trends and numbers miss to calculate the ongoing climate chnage influences that are
+          accelerating which is leading to unpredictable disaster forecasts.
+        </p>
+        <p>
+          It goes wothout saying that the global stability is at risk along with recognisable challenges to
+          economy and environment. Conventional apporaches to mitigate the disasters by far have had lesser
+          impacts, so syhstematic risk governance needs to develop causal structures, dynamic responses to
+          tackle the global systemic risk.
+        </p>
+        <p>
+          <i>
+            <b>According to the GAR2022 report, three significant call to actions were highlighted for this purpose.
+              They are:</b>
+          </i>
+        </p>
+        <div className="list">
+          <div className="row row-cols-1 ">
+            <div className="col align-items-center p-4">
+              <h1 style={{ fontSize: '75px', display: 'inline' }}><i className="bi bi-1-circle-fill text-warning"></i></h1>
+              <h3 className='d-inline p-3'>
+                Designing powerful systems to determine the decision making process of humans during
+                risks
+              </h3>
+              <p className=''>
+                - Under this, lawmakers and disaster risk reduction service providers and household
+                communities come in to assess the risk perceptions including cognitive biases, decision
+                making, etc. <i>Two key actions under this idea are to:</i>
+
+              </p>
+              <ul className='fs-4 p-lg-4'>
+                <li>
+                  <i class="bi bi-check2-square text-warning"></i> Recognise the people’s perception of risks to mend the gap between intention and
+                  action taking during risk situations.
+
+                </li>
+                <li>
+                  <i class="bi bi-check2-square text-warning"></i> Recognising the data analytics value where governments can invest and develop
+                  quality models with mehtods drawn on local knowledge, community feedback and
+                  expert opinion
+
+                </li>
+              </ul>
+            </div>
+            <div className="col align-items-center p-4">
+              <h1 style={{ fontSize: '75px', display: 'inline' }}><i className="bi bi-2-circle-fill text-warning"></i></h1>
+              <h3 className='d-inline p-3'>
+                Reconfigure governance and financial systems to work across design in consultation with
+                the disaster affected people
+              </h3>
+              <p className=''>
+                Under this, goverments and financial systems must embrace
+                transdisciplinary methods and work across silos and design in consultation with affectred
+                groups. <i> Some of the jey actions under this idea are to:
+                </i>
+
+              </p>
+              <ul className='fs-4 p-lg-4'>
+                <li>
+                  <i class="bi bi-check2-square text-warning"></i> Embrace a new “risk language” that cuts across multiple disciplines.
+
+                </li>
+                <li>
+                  <i class="bi bi-check2-square text-warning"></i> Step up participation, transparency and citizen dialogue in risk decision-making to
+                  accelerate learning and necessary adjustments.
+                </li>
+                <li>
+                  <i class="bi bi-check2-square text-warning"></i> Enhancing multi-scale risk management
+                </li>
+              </ul>
+            </div>
+            <div className="col align-items-center p-4">
+              <h1 style={{ fontSize: '75px', display: 'inline' }}><i className="bi bi-3-circle-fill text-warning"></i></h1>
+              <h3 className='d-inline p-3'>
+                Measure what the humans value
+              </h3>
+              <p className=''>
+                Since the real costs of extensive risks have undervalued
+                for so long and this gap is only widening, it is important that we measure what we value. <i>Some of the key actions under this idea are to:</i>
+              </p>
+              <ul className='fs-4 p-lg-4'>
+                <li>
+                  <i class="bi bi-check2-square text-warning"></i> Reworking financial systems to account for the real costs of risk, particularly
+                  long-term risks, and rework investment and insurance systems to incentivize risk
+                  reduction.
+                </li>
+                <li>
+                  <i class="bi bi-check2-square text-warning"></i> Adapting national fiscal planning and risk financing to consider risk and uncertainty
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <p>
           From this comes the disaster risk reduction concept, which is a global
           policy focus of disaster risk management. This policy was set in 2015
@@ -215,6 +430,15 @@ const ClimateChange = () => {
           the use of solar energy in the decade of 2010-2020.
         </p>
         <p>
+          It is believed that by 2026, global renewable electricity capacity is forecast to rise more than 60%
+          from 2020 levels to over 4 800 GW – equivalent to the current total global power capacity of fossil
+          fuels and nuclear combined. Renewables are set to account for almost 95% of the increase in global
+          power capacity through 2026, with solar PV alone providing more than half. The amount of
+          renewable capacity added over the period of 2021 to 2026 is expected to be 50% higher than from
+          2015 to 2020.
+
+        </p>
+        <p>
           Moreover, efficient, reliable renewable technologies can create a
           system less prone to market shocks and improve resilience and energy
           security by diversifying power supply options.
@@ -241,12 +465,42 @@ const ClimateChange = () => {
           varied from adults’ perception by a 10% difference.
         </p>
         <p>
+          Additionally, the People’s Climate Vote was based in 18 of the G20 countries where almost 689,000
+          people were polled and out of which 302,000 were youth citizens under the age of 18. This climate
+          poll was significant to note the voices of the upcoming generation’s mindset.
+
+        </p>
+        <p>
+          For instance, In Indonesia, for climate action, the most popular policy in youth perception emerged
+          to be adopting climate-friendly farming techniques (67%), followed by forest and land conservation
+          and investments in green business and jobs with (59%) and (52%) respectively.
+
+        </p>
+        <p>
+
+          Besides this, the least supported climate policies by youth were affordable insurance (29%) and
+          pollution payment by companies (27%).
+
+        </p>
+        <p>
+          Secondly, In India, 67% population under the age of 18 compared to 57% of adults opine that
+          changing climate is a global emergency. In the People’s Climate Vote, 66,139 responses were
+          received out of which a massive 31,390 responses were from the youth of India.
+
+        </p>
+        <p>
+          When it comes to various climate action policies, 44% of the youth supports the usage of renewable
+          power, eco-friendly farming methods and conserving forests. Moreover, 43% opted to support using
+          bicycles and electric vehicles and 40% opted for an early disaster warning system to act faster.
+
+        </p>
+        <p>
           Interestingly, today the youth are becoming more inclined to advocate
           and accept the cause of green development, making climate-conscious
           choices in lifestyle like reducing the wastage of resources and opting
           for eco-friendly transportation.
         </p>
-      
+
       </div>
     </div>
   );
