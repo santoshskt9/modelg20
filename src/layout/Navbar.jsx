@@ -84,7 +84,7 @@ const Navbar = () => {
                       >
                         <span className="text-initial">
                           Health , Well-Being and
-                          <br /> Sports : Agenda for Youth
+                          <br /> Sports
                         </span>
                       </NavLink>
                       <NavLink className="dropdown-item" to="/shared-future">
