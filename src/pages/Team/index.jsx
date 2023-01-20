@@ -266,7 +266,7 @@ const Team = () => {
                 </div>
               </div>
               <div className="row g-3 g-lg-4 align-items-center">
-                <div className="col-12 col-lg-8">
+                <div className="col-12 col-lg-8 order-2 order-lg-1">
                   <div>
                     <h4 className="fs-3 font-monospace">Ravi Pokharna</h4>
 
@@ -304,7 +304,7 @@ const Team = () => {
                   </p>
                   </div>
                 </div>
-                <div className="col-lg-4 col-12">
+                <div className="col-lg-4 col-12 order-1 order-lg-2">
                   <div className="team-member text-center">
                     <div className="team-member-img position-relative mb-5">
                       <img

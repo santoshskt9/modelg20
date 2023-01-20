@@ -7,6 +7,13 @@ const api = axios.create({
     "Content-Type": "multipart/form-data",
   },
 });
+export const apiAuth = axios.create({
+  baseURL: process.env.REACT_APP_API_BASE_URL || "http://localhost:2100/",
+  timeout: 25000,
+  headers: {
+    "Content-Type": "multipart/form-data",
+  },
+});
 export async function postInstituteRegister(data) {
   try {
     const res = await api.post("register/institution", data);

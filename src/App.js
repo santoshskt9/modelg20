@@ -4,7 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./layout/Footer";
 import GotoTop from "./layout/GotoTop";
 import Navbar from "./layout/Navbar";
-import Admin from "./pages/Admin/Admin";
+import Admin from "./pages/admin/Admin";
 import Login from "./pages/Auth/Login";
 import CyberSafety from "./pages/Topics/CyberSafety";
 const Home = React.lazy(() => import("./pages/Home"));
@@ -107,11 +107,13 @@ function App() {
           />
           <Route path="/nep" element={<Nip />} />
           <Route path="/login" element={<Login/>} />
-          <Route path="/dashboard" element={<Admin/> } />
+          <Route path="/admin" element={<Admin/> } />
           <Route path="*" element={<Error />} />
+
         </Routes>
       </Suspense>
       <Footer />
+      {/* dndbf */}
     </BrowserRouter>
   );
 }
