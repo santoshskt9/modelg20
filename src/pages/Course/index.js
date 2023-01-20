@@ -127,8 +127,9 @@ const Course = () => {
                       className="btn btn-primary w-100 rounded-3  hover-ripple"
                       data-bs-toggle="modal"
                       data-bs-target="#courseEnroll"
+                      disabled
                     >
-                      Enroll Now
+                      Coming Soon
                     </button>
                   </li>
                 </ul>
