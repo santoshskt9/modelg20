@@ -186,18 +186,23 @@ const Team = () => {
                   </h2>
                 </div>
               </div>
-              <div className="row g-3 g-lg-4">
+              <div className="row g-3 g-lg-4 align-items-center">
                 <div className="col-lg-4 col-12">
                   <div className="team-member text-center">
                     <div className="team-member-img position-relative mb-5">
                       <img
                         className="img-fluid w-100"
-                        src="images/team/nitin.jpeg"
+                        src="images/team/amit-kapoor.jpg"
                         alt="team-member"
+                        // style={{
+                        //   objectPosition: "center",
+                        //   height: "450px",
+                        //   objectFit: "cover",
+                        // }}
                         style={{
-                          objectPosition: "center",
                           height: "450px",
                           objectFit: "cover",
+                          clipPath: "circle()",
                         }}
                       />
                       <div className="hover-icon py-4">
@@ -234,7 +239,7 @@ const Team = () => {
                   </div>
 
 
-                  <p className="text-justify fs-6">
+                  <p className="text-justify fs-6 fst-italic">
                     Amit Kapoor, PhD, is Honorary Chairman at Institute for Competitiveness, India. He is an
                     affiliate faculty for the Microeconomics of Competitiveness & Value-Based Health Care
                     Delivery courses of the Institute of Strategy and Competitiveness, Harvard Business School
@@ -244,13 +249,13 @@ const Team = () => {
 
                   </p>
 
-                  <p className="fs-6">
+                  <p className="fs-6 fst-italic">
                     Amit is the author of bestsellers “Riding the Tiger”, which he has co-authored with Wilfried
                     Aulber and “The Age of Awakening: The Story of the Indian Economy Since Independence”
                     published by Penguin Random House.
 
                   </p>
-                  <p className="fs-6">
+                  <p className="fs-6 fst-italic">
                     He is also a columnist with IANS in addition to his contributions being published by
                     Economic Times, Hindu, Business Insider, Hindu Business Line, Mint, Financial Express,
                     Outlook Business, Governance Now, Business Today et al. In all, he has written over 500
@@ -260,30 +265,30 @@ const Team = () => {
 
                 </div>
               </div>
-              <div className="row g-3 g-lg-4 ">
+              <div className="row g-3 g-lg-4 align-items-center">
                 <div className="col-12 col-lg-8">
                   <div>
                     <h4 className="fs-3 font-monospace">Ravi Pokharna</h4>
 
                   </div>
                   <div className="fs-6">
-                    <p className="text-justify fs-6">
+                    <p className="text-justify fs-6 fst-italic">
                     Ravi is currently Joint Coordinator at NITI Aayog’s Standing Committee on Civil Society
                     Organisation. He is also the member of the Working Group for the New National Policy for
                     Voluntary Sector constituted by NITI Aayog.
                   </p>
-                  <p className="fs-6">
+                  <p className="fs-6 fst-italic">
                     Previously, he had served as the Chief Executive Officer at the UN-ECOSOC recognized
                     leadership and training think tank, Rambhau Mhalgi Prabodhini (RMP). He had also served
                     as the Deputy Dean at the Indian Institute of Democratic Leadership and the Chief Mentor at
                     the Atal Incubation Centre- RMP Foundation
 
                   </p>
-                  <p className="fs-6">
+                  <p className="fs-6 fst-italic">
                     Ravi was also part of the Committee on Developing the ranking framework for Gram
                     Panchayats for the Ministry of Panchayati Raj.
                   </p>
-                  <p className="fs-6">
+                  <p className="fs-6 fst-italic">
                     Ravi is an alumnus of the prestigious Indian Institute of Management, Ahmedabad, Faculty
                     of Management Studies, University of Delhi and Dhirubhai Ambani Institute of Information
                     Communication and Technology, Gandhinagar. Earlier he has held several leadership
@@ -292,7 +297,7 @@ const Team = () => {
                     International Business School.
 
                   </p>
-                  <p className="fs-6">
+                  <p className="fs-6 fst-italic">
                     Few publications by Ravi include Creativity in Cooperation (2012), One Nation One Election
                     (2018) published by Rambhau Mhalgi Prabodhini.
 
@@ -304,12 +309,17 @@ const Team = () => {
                     <div className="team-member-img position-relative mb-5">
                       <img
                         className="img-fluid w-100"
-                        src="images/team/danish.jpeg"
+                        src="images/team/ravi-pokharna.jpg"
                         alt="team-member"
+                        // style={{
+                        //   objectPosition: "center",
+                        //   height: "450px",
+                        //   objectFit: "cover",
+                        // }}
                         style={{
-                          objectPosition: "center",
                           height: "450px",
                           objectFit: "cover",
+                          clipPath: "circle()",
                         }}
                       />
                       <div className="hover-icon py-4">
@@ -340,18 +350,23 @@ const Team = () => {
                   </div>
                 </div>
               </div>
-              <div className="row g-3 g-lg-4">
+              <div className="row g-3 g-lg-4 align-items-center">
                 <div className="col-lg-4 col-12">
                   <div className="team-member text-center">
                     <div className="team-member-img position-relative mb-5">
                       <img
                         className="img-fluid w-100"
-                        src="images/team/nitin.jpeg"
+                        src="images/team/pankaj-sharma.jpeg"
                         alt="team-member"
+                        // style={{
+                        //   objectPosition: "center",
+                        //   height: "450px",
+                        //   objectFit: "cover",
+                        // }}
                         style={{
-                          objectPosition: "center",
                           height: "450px",
                           objectFit: "cover",
+                          clipPath: "circle()",
                         }}
                       />
                       <div className="hover-icon py-4">
@@ -388,7 +403,7 @@ const Team = () => {
                   </div>
 
 
-                  <p className="text-justify fs-6">
+                  <p className="text-justify fs-6 fst-italic">
                     Based out of New York, USA, Pankaj Sharma is a public policy and management consultant.
                     He is an alumnus of the prestigious international Visitors Leadership Program( Deptt of
                     State, Government of USA) Alumnus, Ex Civil Rights Commissioner, State of Colorado and
