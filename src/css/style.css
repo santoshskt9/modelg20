@@ -1677,6 +1677,9 @@ textarea.form-control-sm {
     text-align: center;
   }
 }
+.spc{
+  color: lightblue;
+}
 
 @media screen and (min-width: 600px) {
   .navbar .dropdown-item {

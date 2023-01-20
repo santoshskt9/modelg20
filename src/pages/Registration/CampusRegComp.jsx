@@ -69,6 +69,7 @@ const CampusRegComp = () => {
       validationSchema: campusregisterSchema,
       onSubmit,
     });
+  console.log(errors);
   return (
     <>
       <form

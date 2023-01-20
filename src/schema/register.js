@@ -25,7 +25,6 @@ export const instituteregisterSchema = yup.object().shape({
     .matches(/^[0-9]{10}$/, "Invalid Mobile Number"),
 });
 export const campusregisterSchema = yup.object().shape({
-  title: yup.string().max(10).required("Title is Required"),
   first_name: yup.string().max(100).required("First Name is Required"),
   middle_name: yup.string().min(0).max(100),
   last_name: yup.string().max(100).required("Last Name is Required"),
