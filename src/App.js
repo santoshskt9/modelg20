@@ -1,46 +1,62 @@
+import SetPassword from "pages/Auth/SetPassword";
+import StudentRegister from "pages/Auth/StudentRegister";
 import React, { Suspense } from "react";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./layout/Footer";
 import GotoTop from "./layout/GotoTop";
 import Navbar from "./layout/Navbar";
-import Admin from "./pages/admin/Admin";
+import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Auth/Login";
-import CyberSafety from "./pages/Topics/CyberSafety";
-const Home = React.lazy(() => import("./pages/Home"));
-const Modelg20Page = React.lazy(() => import("./pages/ModelG20Page"));
-const News = React.lazy(() => import("./pages/News"));
-const AllBlog = React.lazy(() => import("./pages/Blog/AllBlogs"));
-const Cdri = React.lazy(() => import("./pages/Topics/Cdri"));
-const Nip = React.lazy(() => import("./pages/Topics/Nip"));
-const Course = React.lazy(() => import("./pages/Course"));
-const CampusAmbass = React.lazy(() => import("./pages/Topics/CampusAmbass"));
-const StartupIndia = React.lazy(() => import("./pages/Topics/StartupIndia"));
-const DigitalTransform = React.lazy(() =>
-  import("./pages/Topics/DigitalTransform")
+import CyberSafety from "./pages/static/Topics/CyberSafety";
+const Home = React.lazy(() => import("./pages/static/Home"));
+const Modelg20Page = React.lazy(() => import("./pages/static/ModelG20Page"));
+const News = React.lazy(() => import("./pages/static/News"));
+const AllBlog = React.lazy(() => import("./pages/static/Blog/AllBlogs"));
+const Cdri = React.lazy(() => import("./pages/static/Topics/Cdri"));
+const Nip = React.lazy(() => import("./pages/static/Topics/Nip"));
+const Course = React.lazy(() => import("./pages/static/Course"));
+const CampusAmbass = React.lazy(() =>
+  import("./pages/static/Topics/CampusAmbass")
 );
-const Presidency = React.lazy(() => import("./pages/Presidency"));
-const Youth = React.lazy(() => import("./pages/Topics/Youth"));
+const StartupIndia = React.lazy(() =>
+  import("./pages/static/Topics/StartupIndia")
+);
+const DigitalTransform = React.lazy(() =>
+  import("./pages/static/Topics/DigitalTransform")
+);
+const Presidency = React.lazy(() => import("./pages/static/Presidency"));
+const Youth = React.lazy(() => import("./pages/static/Topics/Youth"));
 const Error = React.lazy(() => import("./pages/Error"));
 const Registration = React.lazy(() => import("./pages/Registration"));
 const CampusRegister = React.lazy(() =>
   import("./pages/Registration/CampusRegister")
 );
-const Education = React.lazy(() => import("./pages/Topics/Education"));
+const Education = React.lazy(() => import("./pages/static/Topics/Education"));
 const IndiaAchivements = React.lazy(() =>
-  import("./pages/Topics/IndiaAchivements")
+  import("./pages/static/Topics/IndiaAchivements")
 );
-const SharedFuture = React.lazy(() => import("./pages/Topics/SharedFuture"));
-const HealthWell = React.lazy(() => import("./pages/Topics/HealthWell"));
-const FutureOfWork = React.lazy(() => import("./pages/Topics/FutureOfWork"));
-const ClimateChange = React.lazy(() => import("./pages/themes/ClimateChange"));
-const PeaceBuilding = React.lazy(() => import("./pages/themes/PeaceBuilding"));
-const Team = React.lazy(() => import("./pages/Team"));
-const WomenEmpower = React.lazy(() => import("./pages/Topics/WomenEmpower"));
-const Life = React.lazy(() => import("./pages/LifeEnvironment"));
-const Blog = React.lazy(() => import("./pages/Blog"));
+const SharedFuture = React.lazy(() =>
+  import("./pages/static/Topics/SharedFuture")
+);
+const HealthWell = React.lazy(() => import("./pages/static/Topics/HealthWell"));
+const FutureOfWork = React.lazy(() =>
+  import("./pages/static/Topics/FutureOfWork")
+);
+const ClimateChange = React.lazy(() =>
+  import("./pages/static/themes/ClimateChange")
+);
+const PeaceBuilding = React.lazy(() =>
+  import("./pages/static/themes/PeaceBuilding")
+);
+const Team = React.lazy(() => import("./pages/static/Team"));
+const WomenEmpower = React.lazy(() =>
+  import("./pages/static/Topics/WomenEmpower")
+);
+const Life = React.lazy(() => import("./pages/static/LifeEnvironment"));
+const Blog = React.lazy(() => import("./pages/static/Blog"));
 const UnlearnRelearnReskill = React.lazy(() =>
-  import("./pages/Topics/UnlearnRelearnReskill")
+  import("./pages/static/Topics/UnlearnRelearnReskill")
 );
 
 function App() {
@@ -101,15 +117,13 @@ function App() {
             path="/unlearn-relearn-and-reskill"
             element={<UnlearnRelearnReskill />}
           />
-          <Route
-            path="/cyber-safety-for-youth"
-            element={<CyberSafety />}
-          />
+          <Route path="/cyber-safety-for-youth" element={<CyberSafety />} />
           <Route path="/nep" element={<Nip />} />
-          <Route path="/login" element={<Login/>} />
-          <Route path="/admin" element={<Admin/> } />
+          <Route path="/login" element={<Login />} />
+          <Route path="/auth/setpassword" element={<SetPassword />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/college" element={<StudentRegister />} />
           <Route path="*" element={<Error />} />
-
         </Routes>
       </Suspense>
       <Footer />

@@ -59,3 +59,10 @@ export const campusregisterSchema = yup.object().shape({
     .required("This Field is Required"),
   topics: yup.array().required(),
 });
+export const setpasswordSchema = yup.object().shape({
+  email: yup.string().email().required("Email is required"),
+  password: yup.string().required("Password is required"),
+  confirm_password: yup
+    .string()
+    .oneOf([yup.ref("password"), null], "Password must match"),
+});
