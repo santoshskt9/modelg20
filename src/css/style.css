@@ -2789,11 +2789,15 @@ blockquote p {
   color: black;
   border: 1px solid white;
   padding-inline: 20px !important;
+  transition: 0.5s;
+  padding: 15px;
 }
 
 .nav-pill-design .btn-primary-outline.active {
-  color: black;
-  border: 1px solid black;
+  color: rgb(248, 246, 246);
+  border: 1px solid rgb(255, 255, 255);
+  box-shadow: 0 0 12px rgb(235, 194, 46);
+  background-color: var(--main-color);
   padding-inline: 40px !important;
 }
 
