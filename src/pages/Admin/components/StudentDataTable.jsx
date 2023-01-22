@@ -1,10 +1,8 @@
-import { Avatar } from "@mui/material";
 import * as React from "react";
 import { toast } from "react-hot-toast";
 import { apiAuth } from "../../../api";
 const heads = [
   "id",
-  "Profile",
   "first_name",
   "middle_name",
   "last_name",
@@ -76,13 +74,6 @@ export default function StudentDataTable({ data, reload }) {
           {data.map((row, i) => {
             return (
               <tr key={i}>
-                <td className="p-3">
-                  <Avatar
-                    alt={row.first_name}
-                    src={process.env.REACT_APP_API_BASE_URL+row?.profile}
-                    sx={{ width: 46, height: 46 }}
-                  />
-                </td>
                 <td className="p-3">{row.id}</td>
                 <td className="p-3">{row.first_name}</td>
                 <td className="p-3">{row.middle_name}</td>

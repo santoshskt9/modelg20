@@ -5,6 +5,7 @@ const heads = [
   "id",
   "institution_name",
   "institution_address",
+  "bio",
   "logo",
   "title",
   "first_name",
@@ -75,6 +76,7 @@ export default function InstituteDataTable({ data, reload }) {
                 <td className="p-3">{row.id}</td>
                 <td className="p-3">{row.institution_name}</td>
                 <td className="p-3">{row.institution_address}</td>
+                <td className="p-3">{row.bio}</td>
                 <td className="p-3">
                   <img
                     src={`${process.env.REACT_APP_API_BASE_URL}${row.logo}`}
