@@ -8,11 +8,14 @@ import "swiper/css";
 import './css/animate.min.css';
 import './css/style.css';
 import App from './App';
+import { UserProvider } from 'global/context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <UserProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </UserProvider>
 );
 
