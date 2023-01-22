@@ -1,7 +1,9 @@
-import React from "react";
-import { useLocation } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { setpasswordSchema } from "schema/register";
+import { api } from "api";
+import { toast } from "react-hot-toast";
 function useQuery() {
   const { search } = useLocation();
   return React.useMemo(() => new URLSearchParams(search), [search]);
@@ -9,9 +11,28 @@ function useQuery() {
 
 const SetPassword = () => {
   let query = useQuery();
+  const [emailId, setEmail] = useState("");
   let collegeId = query.get("id");
   let secretKey = query.get("key");
+  const navigate = useNavigate();
   console.log("params", collegeId, secretKey);
+  async function fetchEmail() {
+    try {
+      const res = await api.post("/institute/info?instituteId=" + collegeId);
+      console.log("res", res);
+      if (res.status == 200) {
+        setEmail(res.data.result[0].email);
+      }
+    } catch (error) {
+      toast.dismiss();
+      toast.error("Something Went Wrong");
+      navigate("/");
+    }
+  }
+
+  useEffect(() => {
+    fetchEmail();
+  }, []);
 
   const handleSubmit = () => {};
 
@@ -19,29 +40,59 @@ const SetPassword = () => {
     <>
       <div className="p-5"></div>
       <div className="py-5">
-        <div className="container py-5 border rounded-4 p-4 bg-light" style={{ maxWidth: "450px" }}>
+        <div
+          className="container py-5 border rounded-4 p-4 bg-light"
+          style={{ maxWidth: "450px" }}
+        >
           <h4 className="text-center">Set Account Password</h4>
           <Formik
-            initialValues={{ email: "", password: "", confirm_password: "" }}
+            initialValues={{
+              password: "",
+              confirm_password: "",
+            }}
             validationSchema={setpasswordSchema}
             onSubmit={(values, { setSubmitting }) => {
-              setTimeout(() => {
-                alert(JSON.stringify(values, null, 2));
-                setSubmitting(false);
-              }, 400);
+              console.log("values", values);
+              (async function submitForm() {
+                console.log("Payload", {
+                  email: emailId,
+                  password: values.password,
+                });
+                try {
+                  const res = await api.post(
+                    `auth/setpassword?id=${collegeId}&key=${secretKey}`,
+                    {
+                      email: emailId,
+                      password: values.password,
+                    }
+                  );
+                  console.log("res", res);
+                  if (res.status == 200) {
+                    toast.success("Password set successfully Now you can login");
+                    navigate("/login");
+                  }
+                } catch (error) {
+                  toast.dismiss();
+                  toast.error("Invalid Request try again later");
+                  navigate("/");
+                }
+              })();
             }}
           >
-            {({ isSubmitting }) => (
+            {({ isSubmitting, values }) => (
               <Form>
+                {console.log("values", values)}
                 <div className="row g-3">
                   <div className="col-12">
                     <span className="form-label text-dark">Email Address</span>
-                    <Field type="email" name="email" className="form-control" />
-                    <ErrorMessage
-                      name="email"
-                      className="text-danger"
-                      component="div"
-                    />
+                    <span
+                      type="email"
+                      value={emailId}
+                      disabled={true}
+                      className="form-control p-3"
+                    >
+                      {emailId}
+                    </span>
                   </div>
                   <div className="col-12">
                     <span className="text-dark form-label">Password</span>

@@ -1,6 +1,11 @@
-import React from "react";
+import { api } from "api";
+import { ErrorMessage, Field, Form, Formik, useFormik } from "formik";
+import React, { useEffect, useState } from "react";
+import { toast } from "react-hot-toast";
+import { useLocation, useNavigate } from "react-router-dom";
 import CollegeBreadCrumb from "./CollegeBreadCrumb";
 import bgImg from "./flag-bg.jpg";
+import StudentRegisterForm from "./StudentRegisterForm";
 const styles = {
   title: {
     backgroundImage: `url(${bgImg})`,
@@ -8,12 +13,81 @@ const styles = {
     backgroundRepeat: "no-repeat",
   },
 };
-
+function useQuery() {
+  const { search } = useLocation();
+  return React.useMemo(() => new URLSearchParams(search), [search]);
+}
 const StudentRegister = () => {
+  let query = useQuery();
+  const navigate = useNavigate();
+  let collegeId = query.get("collegeId");
+  const [details, setDetails] = useState({});
+  const fetchCollegeDetails = async () => {
+    try {
+      const res = await api.get(`/public/institute?collegeId=${collegeId}`);
+      console.log("result", res);
+      if (res.status == 200) {
+        setDetails(res.data.result[0]);
+      } else if (res.status == 404) {
+        toast.error("Invalid Url College not Found");
+      }
+    } catch (error) {
+      toast.dismiss();
+      toast.error("OOps something went wrong");
+      navigate("/404");
+    }
+  };
+  useEffect(() => {
+    if (!collegeId) {
+      toast.dismiss();
+      toast.error("Invalid link");
+    } else {
+      fetchCollegeDetails();
+    }
+  }, []);
+
   return (
     <div>
       {" "}
-      <CollegeBreadCrumb />
+      <div>
+        <div className="bg-white p-5"></div>
+        <img
+          src={
+            details?.banner
+              ? details.banner
+              : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/college-open-house-invitation-banner-design-template-64bb82e1fda7fcd9e6fec7e1fcb13be9_screen.jpg?ts=1566569378"
+          }
+          alt=""
+          className="w-100 d-block"
+          style={{ height: "350px", objectFit: "cover", objectPosition: "top" }}
+        />
+        <div className="container">
+          <div className="d-flex justify-content-start flex-column flex-lg-row">
+            <div className=" p-3">
+              <img
+                src={
+                  details?.logo && details?.logo !== ""
+                    ? details.logo
+                    : "/images/icons/university.png"
+                }
+                alt="Logo"
+                className="p-3 shadow border border-3 rounded-4"
+                style={{
+                  width: "180px",
+                  height: "180px",
+                  objectFit: "contain",
+                }}
+              />
+            </div>
+            <div className=" p-3">
+              <div>
+                <h3>{details?.institution_name}</h3>
+                <p>{details?.bio}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container py-5 mt-lg-5 h-100">
         {/* <!-- ========== Start Login ========== --> */}
         <div className="row row-cols-1 row-cols-lg-2 align-items-start">
@@ -23,140 +97,7 @@ const StudentRegister = () => {
             </h1>
           </div>
           <div className="col">
-            <div>
-              <p className="fs-3 fw-bold">
-                Register for the yuvamanthan programme
-              </p>
-              <div className="register-card">
-                <div className="row g-3">
-                  <div className="col-8">
-                    <span className="form-label">Profile</span>
-                    <input type="file" className="" required />
-                  </div>
-                  <div className="col-12 col-lg-6">
-                    <span className="label">First Name</span>
-                    <input type="text" className="form-control" />
-                  </div>
-                  <div className="col-12 col-lg-6">
-                    <span className="label">last Name</span>
-                    <input type="text" className="form-control" />
-                  </div>
-                  <div className="col-12 col-lg-6">
-                    <span className="label">Contact Number</span>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter your Contact number"
-                    />
-                  </div>
-                  <div className="col-12 col-lg-6">
-                    <span className="label">Email Address</span>
-                    <input
-                      type="text"
-                      className="form-control"
-                      placeholder="Enter your Email address"
-                    />
-                  </div>
-                  <div className="col-12 col-lg-6">
-                    <span className="form-label">Date of Birth</span>
-                    <input type="date" name="" id="" className="form-control" />
-                  </div>
-                  <div className="col-12 col-lg-6">
-                    <span className="form-label">Father's Name</span>
-                    <input type="text" name="" id="" className="form-control" placeholder="Father Name"/>
-                  </div>
-                  <div className="col-12">
-                    <span className="form-label">Gender</span>
-                    <div className="d-flex">
-                      <div className="form-check m-2">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault1"
-                        />
-                        <label
-                          className="form-check-label"
-                          for="flexRadioDefault1"
-                        >
-                          Male
-                        </label>
-                      </div>
-                      <div className="form-check m-2">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault2"
-                          defaultChecked
-                        />
-                        <label
-                          className="form-check-label"
-                          for="flexRadioDefault2"
-                        >
-                          Female
-                        </label>
-                      </div>
-                      <div className="form-check m-2">
-                        <input
-                          className="form-check-input"
-                          type="radio"
-                          name="flexRadioDefault"
-                          id="flexRadioDefault2"
-                          defaultChecked
-                        />
-                        <label
-                          className="form-check-label"
-                          for="flexRadioDefault2"
-                        >
-                          Otherss
-                        </label>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-12">
-                    <label for="password" className="form-label">
-                      Password
-                    </label>
-                    <input
-                      type="password"
-                      required
-                      className="form-control"
-                      name="password"
-                      id="password"
-                      aria-describedby="passwordHelpId"
-                      placeholder="Enter Password"
-                    />
-                  </div>
-                  <div className="col-12">
-                    <label for="password" className="form-label">
-                      Confirm Password
-                    </label>
-                    <input
-                      type="password"
-                      required
-                      className="form-control"
-                      name="password"
-                      id="password"
-                      aria-describedby="passwordHelpId"
-                      placeholder="Confirm Password"
-                    />
-                  </div>
-                </div>
-                <div className="mb-3"></div>
-                <a className="text-end w-100">Forget Password?</a>
-                <div className="mt-3">
-                  <button
-                    type="button"
-                    name="login-btn"
-                    id="login-btn"
-                    className="btn btn-primary px-5"
-                  >
-                    Login
-                  </button>
-                </div>
-              </div>
-            </div>
+            <StudentRegisterForm collegeId={collegeId}/>
           </div>
         </div>
 

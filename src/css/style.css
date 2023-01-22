@@ -1677,7 +1677,7 @@ textarea.form-control-sm {
     text-align: center;
   }
 }
-.spc{
+.spc {
   color: lightblue;
 }
 
@@ -2988,4 +2988,13 @@ input[type="number"] {
 
 .text-justify {
   text-align: justify !important;
+}
+
+.nav-pill-design-2 .nav-link {
+  background-color: white;
+  border-color: white !important;
+}
+.nav-pill-design-2 .nav-link.active {
+  background-color: white;
+  border-color: rgb(38, 107, 227) !important;
 }
