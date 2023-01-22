@@ -1,5 +1,8 @@
 import SetPassword from "pages/Auth/SetPassword";
 import StudentRegister from "pages/Auth/StudentRegister";
+import DashboardInstitute from "pages/college/DashboardInstitute";
+import StudentDashboard from "pages/student/StudentDashboard";
+import StudentEditProfile from "pages/student/StudentEditProfile";
 import React, { Suspense } from "react";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
@@ -60,6 +63,7 @@ const UnlearnRelearnReskill = React.lazy(() =>
 );
 
 function App() {
+  const user = JSON.parse(localStorage.getItem("user"));
   return (
     <BrowserRouter>
       <Navbar />
@@ -121,8 +125,29 @@ function App() {
           <Route path="/nep" element={<Nip />} />
           <Route path="/login" element={<Login />} />
           <Route path="/auth/setpassword" element={<SetPassword />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/college" element={<StudentRegister />} />
+          <Route
+            path="/college/student/register"
+            element={<StudentRegister />}
+          />
+          {user ? (
+            <>
+              <Route path="/admin" element={<Admin />} />
+            </>
+          ) : (
+            ""
+          )}
+          {/* {user?.type == 1 && (
+            <Route path="/dashboard" element={<DashboardInstitute />} />
+          )} */}
+          <Route exact path="/dashboard" element={<StudentDashboard />} />
+          <Route
+            path="/dashboard/editprofile"
+            element={<StudentEditProfile />}
+          />
+          {/* {user?.type == 0 && (
+            <>
+            </>
+          )} */}
           <Route path="*" element={<Error />} />
         </Routes>
       </Suspense>

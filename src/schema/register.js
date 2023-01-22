@@ -59,8 +59,24 @@ export const campusregisterSchema = yup.object().shape({
     .required("This Field is Required"),
   topics: yup.array().required(),
 });
-export const setpasswordSchema = yup.object().shape({
+export const studentRegisterSchema = yup.object().shape({
   email: yup.string().email().required("Email is required"),
+  dob: yup.string().required("Pin code is Required"),
+  first_name: yup.string().max(100).required("First Name is Required"),
+  middle_name: yup.string().min(0).max(100),
+  last_name: yup.string().max(100).required("Last Name is Required"),
+  contact: yup
+    .string()
+    .required("Phone Number is Required")
+    .matches(/^[0-9]{10}$/, "Invalid Mobile Number"),
+  father_name: yup.string().max(100).required("Father Name is Required"),
+  gender: yup.string().required("Gender is required"),
+  password: yup.string().required("Password is required"),
+  confirm_password: yup
+    .string()
+    .oneOf([yup.ref("password"), null], "Password must match"),
+});
+export const setpasswordSchema = yup.object().shape({
   password: yup.string().required("Password is required"),
   confirm_password: yup
     .string()
