@@ -15,6 +15,8 @@ import { apiAuth } from "api";
 import { toast } from "react-hot-toast";
 import { useGlobalContext } from "global/context";
 import { useNavigate } from "react-router-dom";
+import DashboardHeader from "./DashboardHeader";
+import CourseCardItem from "pages/course/components/CourseCardItem";
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
@@ -48,51 +50,8 @@ const StudentDashboard = () => {
   return (
     <div className="container">
       <div className="p-5"></div>
-      <div>
-        <img
-          src="https://img.freepik.com/free-vector/abstract-shape-with-halftone-background_1409-1277.jpg?t=st=1674384483~exp=1674385083~hmac=c15416d4a9483d729a0d4b544a11cd5eb151ac8ae4ba8757adcf420aaa7565bb"
-          alt=""
-          className="w-100 rounded-4"
-          style={{ height: "330px", objectFit: "cover" }}
-        />
-      </div>
-      <div className="d-flex justify-content-between p-3">
-        <div className="d-flex">
-          <Avatar
-            alt={"Tuba Ali Khan"}
-            src={process.env.REACT_APP_API_BASE_URL + details?.profile}
-            sx={{ width: 146, height: 146 }}
-            style={{ marginTop: "-40px" }}
-            className="ms-4 shadow-lg"
-          />
-          <div className="p-2" style={{ maxWidth: "650px" }}>
-            <h3 className="fs-2 text-initial">
-              {details?.first_name} {details?.middle_name} {details?.last_name}
-            </h3>
-            <p className="fs-6">{details?.bio}</p>
-          </div>
-        </div>
-        <div>
-          <button className="btn btn-primary-outline p-2 px-4 rounded-4">
-            Edit
-          </button>
-          <button
-            className="btn btn-primary-outline p-2 px-4 rounded-4 mx-2"
-            onClick={() => {
-              removeToken();
-              removeUser();
-              navigate("/login");
-            }}
-          >
-            Logout
-          </button>
-          <button className="btn border-0 p-2 px-4">
-            <i className="bi bi-three-dots fs-3"></i>
-          </button>
-        </div>
-      </div>
+      <DashboardHeader setEdit={true}/>
       <div className="container p-4 ">
-        Token: {token}
         <ul
           class="nav nav-pill-design-2 nav-pills mb-3"
           id="pills-tab"
@@ -265,6 +224,7 @@ const StudentDashboard = () => {
                 alt=""
                 className="w-100"
               />
+              <CourseCardItem/>
             </div>
           </div>
           <div
