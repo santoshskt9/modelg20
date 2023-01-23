@@ -1,5 +1,5 @@
 import { useGlobalContext } from "global/context";
-import AdminLogin from "pages/Admin/AdminLogin";
+import AdminLogin from "pages/admin/AdminLogin";
 import SetPassword from "pages/Auth/SetPassword";
 import StudentRegister from "pages/Auth/StudentRegister";
 import DashboardInstitute from "pages/college/DashboardInstitute";
