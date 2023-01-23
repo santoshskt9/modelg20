@@ -1,5 +1,5 @@
 import { useGlobalContext } from "global/context";
-import AdminLogin from "pages/admin/AdminLogin";
+import AdminLogin from "pages/Admin/AdminLogin";
 import SetPassword from "pages/Auth/SetPassword";
 import StudentRegister from "pages/Auth/StudentRegister";
 import DashboardInstitute from "pages/college/DashboardInstitute";
@@ -14,7 +14,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./layout/Footer";
 import GotoTop from "./layout/GotoTop";
 import Navbar from "./layout/Navbar";
-import Admin from "./pages/admin/Admin";
+import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Auth/Login";
 import CyberSafety from "./pages/static/Topics/CyberSafety";
 const Home = React.lazy(() => import("./pages/static/Home"));
