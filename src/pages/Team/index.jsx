@@ -88,7 +88,7 @@ const Team = () => {
                         Saurabh Sharma
                       </a>
                     </h4>
-                    <span>IT Development</span>
+                    <span>Software Developer</span>
                   </div>
                 </div>
                 {/* <!-- team member --> */}
@@ -107,7 +107,45 @@ const Team = () => {
                       />
                     </div>
                     <h4>Santosh Kushwaha</h4>
-                    <span>IT Development</span>
+                    <span>Software Developer</span>
+                  </div>
+                </div>
+                {/* <!-- team member --> */}
+                <div className="col-lg-3 col-sm-6 mb-5">
+                  <div className="team-member text-center">
+                    <div className="team-member-img position-relative mb-5">
+                      <img
+                        className="img-fluid w-100"
+                        src="images/team/shivam.jpeg"
+                        alt="team-member"
+                        style={{
+                          height: "350px",
+                          objectFit: "cover",
+                          clipPath: "circle()",
+                        }}
+                      />
+                    </div>
+                    <h4>Shivam Manchanda</h4>
+                    <span>Software Developer</span>
+                  </div>
+                </div>
+                {/* <!-- team member --> */}
+                <div className="col-lg-3 col-sm-6 mb-5">
+                  <div className="team-member text-center">
+                    <div className="team-member-img position-relative mb-5">
+                      <img
+                        className="img-fluid w-100"
+                        src="images/team/garg.jpeg"
+                        alt="team-member"
+                        style={{
+                          height: "350px",
+                          objectFit: "cover",
+                          clipPath: "circle()",
+                        }}
+                      />
+                    </div>
+                    <h4>Mr. Garg</h4>
+                    <span>DevOps Engineer</span>
                   </div>
                 </div>
                 {/* <!-- team member --> */}
@@ -403,7 +441,7 @@ const Team = () => {
                 <div className="team-member-img position-relative mb-5">
                   <img
                     className="img-fluid w-100 rounded-5"
-                    src="images/team/nitin.jpeg"
+                    src="images/team/nitin.jpg"
                     alt="team-member"
                     style={{
                       objectPosition: "center",
@@ -424,7 +462,7 @@ const Team = () => {
                         </a>
                       </li> */}
                       <li className="list-inline-item">
-                        <a href="https://www.linkedin.com/in/nitinagarwaleducator/" className="hover-ripple ripple-white">
+                        <a href="https://www.linkedin.com/in/nitinagarwaleducator/" target="_blank" className="hover-ripple ripple-white">
                           <i className="bi bi-linkedin"></i>
                         </a>
                       </li>
@@ -453,9 +491,11 @@ const Team = () => {
               <p className="fs-6">
                 He is also a Director at <a href="https://pahleindia.org/about-us/" target="_blank" rel="noopener noreferrer">Pahle India Foundation (PIF)</a> . PIF undertakes analytical research and disseminates its findings both to policy makers and in the public domain. The driving vision in all that we do is “Putting India First to make India First.”
               </p>
+              <p className="fs-6">He was previously Advisor at the UN-ECOSOC recognized leadership and training think tank, <a href="https://rmponweb.org/" target="_blank" rel="noopener noreferrer">Rambhau Mhalgi Prabodhini (RMP)</a>.  He founded <a href='https://www.google.com/search?q="chakh+le+india"+"nitin+agarwal"' target="_blank" rel="noopener noreferrer">Chakh Le India</a> in the food space and <a href="http://mbawithus.com" target="_blank" rel="noopener noreferrer">Mbawithus.com</a>, one of India's earliest edtech companies in the past.</p>
               <p className="fs-6">
                 He is an engineer who holds an MBA from Management Development Institute (MDI Gurgaon) and loves to explore Indian culture through his travels. He is a prolific author and has written 4 bestsellers Viz. <a href="https://www.amazon.in/Leadership-Lessons-Narendra-Damodardas-Modi/dp/9381841489/" target="_blank" rel="noopener noreferrer">21 Leadership Lessons of Narendra Damodardas Modi</a>, <a href="https://www.amazon.in/Indias-Greatest-Speeches-Nitin-Agarwal-ebook/dp/B00Q9RN4K6/" target="_blank" rel="noopener noreferrer">India's Greatest Speeches</a>, <a href="https://www.amazon.in/Do-You-Know-Narendra-Modi/dp/9381841594/" target="_blank" rel="noopener noreferrer">Do You Know Narendra Modi?</a>, and <a href="https://www.amazon.in/Narendra-Modi-Ke-Netritva-Sutra/dp/9381841993/" target="_blank" rel="noopener noreferrer">Narendra Modi Ke Netritva ke 21 Sutra</a>.
               </p>
+              
             </div>
           </div>
           <div className="row g-3 g-lg-4 ">
@@ -505,7 +545,7 @@ const Team = () => {
                         </a>
                       </li> */}
                       <li className="list-inline-item">
-                        <a href="https://www.linkedin.com/in/danish-kamal-9130b05/" className="hover-ripple ripple-white">
+                        <a href="https://www.linkedin.com/in/danish-kamal-9130b05/" target={"_blank"} className="hover-ripple ripple-white">
                           <i className="bi bi-linkedin"></i>
                         </a>
                       </li>
