@@ -1,15 +1,17 @@
+import { useGlobalContext } from "global/context";
+import AdminLogin from "pages/Admin/AdminLogin";
 import SetPassword from "pages/Auth/SetPassword";
 import StudentRegister from "pages/Auth/StudentRegister";
 import DashboardInstitute from "pages/college/DashboardInstitute";
 import StudentDashboard from "pages/student/StudentDashboard";
 import StudentEditProfile from "pages/student/StudentEditProfile";
-import React, { Suspense } from "react";
+import React, { Suspense, useEffect } from "react";
 import { Toaster } from "react-hot-toast";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Footer from "./layout/Footer";
 import GotoTop from "./layout/GotoTop";
 import Navbar from "./layout/Navbar";
-import Admin from "./pages/admin/Admin";
+import Admin from "./pages/Admin/Admin";
 import Login from "./pages/Auth/Login";
 import CyberSafety from "./pages/static/Topics/CyberSafety";
 const Home = React.lazy(() => import("./pages/static/Home"));
@@ -64,6 +66,16 @@ const UnlearnRelearnReskill = React.lazy(() =>
 
 function App() {
   const user = JSON.parse(localStorage.getItem("user"));
+  const { userData, token, isLoggedIn } = useGlobalContext();
+  console.log(userData);
+  const renderRoute = {
+    0: <StudentDashboard />,
+    1: <DashboardInstitute />,
+    2: <Admin />,
+  };
+  useEffect(() => {
+    isLoggedIn();
+  }, []);
   return (
     <BrowserRouter>
       <Navbar />
@@ -129,25 +141,12 @@ function App() {
             path="/college/student/register"
             element={<StudentRegister />}
           />
-          {user ? (
-            <>
-              <Route path="/admin" element={<Admin />} />
-            </>
-          ) : (
-            ""
-          )}
-          {/* {user?.type == 1 && (
-            <Route path="/dashboard" element={<DashboardInstitute />} />
-          )} */}
-          <Route exact path="/dashboard" element={<StudentDashboard />} />
+          <Route exact path="/dashboard" element={renderRoute[userData.type]} />
+          <Route exact path="/administrator/login" element={<AdminLogin />} />
           <Route
             path="/dashboard/editprofile"
             element={<StudentEditProfile />}
           />
-          {/* {user?.type == 0 && (
-            <>
-            </>
-          )} */}
           <Route path="*" element={<Error />} />
         </Routes>
       </Suspense>

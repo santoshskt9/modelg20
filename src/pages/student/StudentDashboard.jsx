@@ -22,7 +22,9 @@ const StudentDashboard = () => {
   const [details, setDetails] = useState({});
   const fetchDetails = async () => {
     try {
-      const res = await apiAuth.get("/student/detail");
+      const res = await apiAuth.get("/student/detail", {
+        headers: { Authorization: token },
+      });
       console.log("response", res);
       if (res.status == 200) {
         setDetails(res.data.result[0]);
@@ -74,11 +76,14 @@ const StudentDashboard = () => {
           <button className="btn btn-primary-outline p-2 px-4 rounded-4">
             Edit
           </button>
-          <button className="btn btn-primary-outline p-2 px-4 rounded-4 mx-2" onClick={() => {
-            removeToken();
-            removeUser();
-            navigate('/login');
-          }}>
+          <button
+            className="btn btn-primary-outline p-2 px-4 rounded-4 mx-2"
+            onClick={() => {
+              removeToken();
+              removeUser();
+              navigate("/login");
+            }}
+          >
             Logout
           </button>
           <button className="btn border-0 p-2 px-4">
@@ -206,7 +211,13 @@ const StudentDashboard = () => {
                       </ListItemAvatar>
                       <ListItemText
                         primary={details?.institution_name}
-                        secondary={details?.institution_address + ", " + details?.instituteState + ", Pincode-" + details?.institutePincode}
+                        secondary={
+                          details?.institution_address +
+                          ", " +
+                          details?.instituteState +
+                          ", Pincode-" +
+                          details?.institutePincode
+                        }
                       />
                     </ListItem>
                   </List>

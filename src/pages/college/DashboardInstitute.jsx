@@ -1,4 +1,5 @@
-import { apiAuth } from "api";
+import { api, apiAuth } from "api";
+import { useGlobalContext } from "global/context";
 import CollegeBreadCrumb from "pages/Auth/CollegeBreadCrumb";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
@@ -9,27 +10,46 @@ const DashboardInstitute = () => {
   const navigate = useNavigate();
   const [details, setDetails] = useState({});
   const [students, setStudents] = useState([]);
-  const user = JSON.parse(localStorage.getItem("user"));
+  const { userData, token } = useGlobalContext();
   const [shareableLink, setShareableLink] = useState(
-    `http://localhost:3000/college/student/register?collegeId=${user.id}`
+    `http://localhost:3000/college/student/register?collegeId=${userData.id}`
   );
   const fetchDetails = async () => {
     try {
-      const res = await apiAuth.post("/institute", { instituteId: user.id });
+      const res = await apiAuth.post(
+        "/institute",
+        {
+          instituteId: userData.id,
+        },
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      );
       console.log("response", res);
       setDetails(res.data.result[0]);
     } catch (error) {
       toast.dismiss();
       toast.error("Oops Something went wrong");
       console.log("error", error);
-      handlelogout();
+      // handlelogout();
     }
   };
   const fetchStudents = async () => {
     try {
-      const res = await apiAuth.post(`/institute/data?type=students`, {
-        instituteId: user.id,
-      });
+      const res = await apiAuth.post(
+        `/institute/data?type=students`,
+
+        {
+          instituteId: userData.id,
+        },
+        {
+          headers: {
+            Authorization: token,
+          },
+        }
+      );
       console.log("res", res);
       if (res.status === 200) {
         setStudents(res.data.result);
