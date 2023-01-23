@@ -16,6 +16,7 @@ import { toast } from "react-hot-toast";
 import { useGlobalContext } from "global/context";
 import { useNavigate } from "react-router-dom";
 import DashboardHeader from "./DashboardHeader";
+import CourseCardItem from "pages/course/components/CourseCardItem";
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
@@ -223,6 +224,7 @@ const StudentDashboard = () => {
                 alt=""
                 className="w-100"
               />
+              <CourseCardItem/>
             </div>
           </div>
           <div

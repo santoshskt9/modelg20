@@ -3,6 +3,9 @@ import AdminLogin from "pages/admin/AdminLogin";
 import SetPassword from "pages/Auth/SetPassword";
 import StudentRegister from "pages/Auth/StudentRegister";
 import DashboardInstitute from "pages/college/DashboardInstitute";
+import Certificate from "pages/course/certificate/Certificate";
+import CourseViewPage from "pages/course/CourseViewPage";
+import PrintCertificate from "pages/course/PrintCertificate/PrintCertificate";
 import StudentDashboard from "pages/student/StudentDashboard";
 import StudentEditProfile from "pages/student/StudentEditProfile";
 import React, { Suspense, useEffect } from "react";
@@ -147,6 +150,9 @@ function App() {
             path="/dashboard/editprofile"
             element={<StudentEditProfile />}
           />
+          <Route path="/dashboard/classboard" element={<CourseViewPage/> }/>
+          <Route path="/dashboard/certificate" element={<PrintCertificate/>}/>
+          <Route path="/dashboard/mycertificates" element={<Certificate/>} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Suspense>
