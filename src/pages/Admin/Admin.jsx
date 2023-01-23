@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { apiAuth } from "../../api";
 import BreadCrumb from "./components/BreadCrumb";
-import InstituteDataTable from "../../../../InstituteDataTable";
-import EnhancedTable from "./components/EnhancedTable";
+import InstituteDataTable from "./components/InstituteDataTable";
 import StudentDataTable from "./components/StudentDataTable";
 
 const Admin = () => {

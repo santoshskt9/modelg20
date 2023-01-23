@@ -52,7 +52,7 @@ const Team = () => {
                   />
                   <div className="hover-icon py-4">
                     <ul className="list-inline social-icon">
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <a href="#" className="hover-ripple ripple-white">
                           <i className="bi bi-facebook"></i>
                         </a>
@@ -61,17 +61,17 @@ const Team = () => {
                         <a href="#" className="hover-ripple ripple-white">
                           <i className="bi bi-twitter"></i>
                         </a>
-                      </li>
+                      </li> */}
                       <li className="list-inline-item">
                         <a href="https://www.linkedin.com/in/nitinagarwaleducator/" className="hover-ripple ripple-white">
                           <i className="bi bi-linkedin"></i>
                         </a>
                       </li>
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <a href="#" className="hover-ripple ripple-white">
                           <i className="bi bi-pinterest"></i>
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -82,22 +82,6 @@ const Team = () => {
                 <h4 className="fs-3 font-monospace">Nitin Agarwal</h4>
                 <p>Director</p>
               </div>
-              {/* <p className="text-justify">
-                Nitin is a serial entrepreneur and runs multiple social
-                enterprise initiatives in the area of education and youth
-                development. He works extensively with the government clientele
-                which includes NCPCR, NCW, NITI Aayog, AICTE etc, and with
-                private-sector players in areas of trainings, e-modules, sector
-                reforms and social awareness. His company Govardhan Learning
-                Cloud which is incubated with NITI Aayog’s Rambhau Mhalgi
-                Prabodhini - Atal Incubation Center has engaged with over 1.5
-                million students in India so far. As the Managing Director of
-                National Association of School Professionals (NASP) he is
-                building a network of high-performance school systems which are
-                safe, aware and smart. He is an engineer who holds an MBA from
-                Management Development Institute (MDI Gurgaon) and loves to
-                explore Indian culture through his travels.
-              </p> */}
 
               <p className="text-justify">
                 Nitin is CEO of <a href="https://glcloud.in" target="_blank" rel="noopener noreferrer">Govardhan Learning Cloud (GLC)</a>, an organization focused on solving societal issues through learning based intervention among students. GLC is working with the government on issues such as Women Empowerment, <a href="https://safeinschool.in" target="_blank" rel="noopener noreferrer">Child Safety</a>, Financial Literacy, Environment Protection etc.
@@ -149,7 +133,7 @@ const Team = () => {
                   />
                   <div className="hover-icon py-4">
                     <ul className="list-inline social-icon">
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <a href="#" className="hover-ripple ripple-white">
                           <i className="bi bi-facebook"></i>
                         </a>
@@ -158,17 +142,17 @@ const Team = () => {
                         <a href="#" className="hover-ripple ripple-white">
                           <i className="bi bi-twitter"></i>
                         </a>
-                      </li>
+                      </li> */}
                       <li className="list-inline-item">
                         <a href="https://www.linkedin.com/in/danish-kamal-9130b05/" className="hover-ripple ripple-white">
                           <i className="bi bi-linkedin"></i>
                         </a>
                       </li>
-                      <li className="list-inline-item">
+                      {/* <li className="list-inline-item">
                         <a href="#" className="hover-ripple ripple-white">
                           <i className="bi bi-pinterest"></i>
                         </a>
-                      </li>
+                      </li> */}
                     </ul>
                   </div>
                 </div>
@@ -207,7 +191,7 @@ const Team = () => {
                       />
                       <div className="hover-icon py-4">
                         <ul className="list-inline social-icon">
-                          <li className="list-inline-item">
+                          {/* <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-facebook"></i>
                             </a>
@@ -216,17 +200,17 @@ const Team = () => {
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-twitter"></i>
                             </a>
-                          </li>
+                          </li> */}
                           <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-linkedin"></i>
                             </a>
                           </li>
-                          <li className="list-inline-item">
+                          {/* <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-pinterest"></i>
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -324,7 +308,7 @@ const Team = () => {
                       />
                       <div className="hover-icon py-4">
                         <ul className="list-inline social-icon">
-                          <li className="list-inline-item">
+                          {/* <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-facebook"></i>
                             </a>
@@ -333,17 +317,17 @@ const Team = () => {
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-twitter"></i>
                             </a>
-                          </li>
+                          </li> */}
                           <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-linkedin"></i>
                             </a>
                           </li>
-                          <li className="list-inline-item">
+                          {/* <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-pinterest"></i>
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>
@@ -371,7 +355,7 @@ const Team = () => {
                       />
                       <div className="hover-icon py-4">
                         <ul className="list-inline social-icon">
-                          <li className="list-inline-item">
+                          {/* <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-facebook"></i>
                             </a>
@@ -380,17 +364,17 @@ const Team = () => {
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-twitter"></i>
                             </a>
-                          </li>
+                          </li> */}
                           <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-linkedin"></i>
                             </a>
                           </li>
-                          <li className="list-inline-item">
+                          {/* <li className="list-inline-item">
                             <a href="#" className="hover-ripple ripple-white">
                               <i className="bi bi-pinterest"></i>
                             </a>
-                          </li>
+                          </li> */}
                         </ul>
                       </div>
                     </div>

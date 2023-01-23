@@ -1,4 +1,5 @@
 import { api } from "api";
+import { useGlobalContext } from "global/context";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
@@ -14,6 +15,7 @@ const styles = {
 };
 const Login = () => {
   const navigate = useNavigate();
+  const {setUser, setToken} = useGlobalContext();
   const [usertype, setUsertype] = useState(0);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,8 +29,10 @@ const Login = () => {
       });
       console.log("res", res);
       if (res.status == 200) {
-        localStorage.setItem("token", res.data.jwt);
-        localStorage.setItem("user", JSON.stringify(res.data.user));
+        // localStorage.setItem("token", res.data.jwt);
+        // localStorage.setItem("user", JSON.stringify(res.data.user));
+        setUser(res.data.user);
+        setToken(res.data.jwt);
         toast.dismiss();
         toast.success(res.data.message);
         navigate("/dashboard");

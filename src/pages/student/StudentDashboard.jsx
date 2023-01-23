@@ -13,8 +13,12 @@ import {
 } from "@mui/icons-material";
 import { apiAuth } from "api";
 import { toast } from "react-hot-toast";
+import { useGlobalContext } from "global/context";
+import { useNavigate } from "react-router-dom";
 
 const StudentDashboard = () => {
+  const navigate = useNavigate();
+  const { userData, token, removeToken, removeUser } = useGlobalContext();
   const [details, setDetails] = useState({});
   const fetchDetails = async () => {
     try {
@@ -35,6 +39,8 @@ const StudentDashboard = () => {
     }
   };
   useEffect(() => {
+    console.log("User Data of Context API: ", userData);
+    console.log("Token of Context API: ", token);
     fetchDetails();
   }, []);
   return (
@@ -68,12 +74,20 @@ const StudentDashboard = () => {
           <button className="btn btn-primary-outline p-2 px-4 rounded-4">
             Edit
           </button>
+          <button className="btn btn-primary-outline p-2 px-4 rounded-4 mx-2" onClick={() => {
+            removeToken();
+            removeUser();
+            navigate('/login');
+          }}>
+            Logout
+          </button>
           <button className="btn border-0 p-2 px-4">
             <i className="bi bi-three-dots fs-3"></i>
           </button>
         </div>
       </div>
       <div className="container p-4 ">
+        Token: {token}
         <ul
           class="nav nav-pill-design-2 nav-pills mb-3"
           id="pills-tab"
@@ -192,7 +206,7 @@ const StudentDashboard = () => {
                       </ListItemAvatar>
                       <ListItemText
                         primary={details?.institution_name}
-                        secondary={details?.institution_address+", "+details?.instituteState+", Pincode-"+details?.institutePincode}
+                        secondary={details?.institution_address + ", " + details?.instituteState + ", Pincode-" + details?.institutePincode}
                       />
                     </ListItem>
                   </List>

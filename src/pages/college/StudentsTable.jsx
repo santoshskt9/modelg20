@@ -2,6 +2,7 @@ import { Avatar } from "@mui/material";
 import { apiAuth } from "api";
 import React from "react";
 import { toast } from "react-hot-toast";
+import { useContext } from "react";
 const Studentheads = [
   "Profile",
   "First Name",
