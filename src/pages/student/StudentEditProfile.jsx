@@ -13,9 +13,14 @@ import { studentRegisterSchema } from "schema/register";
 import { toast } from "react-hot-toast";
 import { apiAuth } from "api";
 import { Avatar } from "@mui/material";
+import DashboardHeader from "./DashboardHeader";
+import { useGlobalContext } from "global/context";
+import { useNavigate } from "react-router-dom";
 
 const StudentEditProfile = () => {
+  const navigate = useNavigate();
   const [profile, setProfile] = useState("");
+  const { userData } = useGlobalContext();
   let collegeId = 5;
 
   const passwordformik = useFormik({
@@ -28,17 +33,21 @@ const StudentEditProfile = () => {
     onSubmit: async (values, { resetForm }) => {
       toast.dismiss();
       toast.loading("Submiting the form");
+      console.log("Values: ", values);
       const formData = new FormData();
-      formData.append("oldpassword", values.email);
-      formData.append("password", values.password);
-      console.log("formData", formData);
+      console.log('check',userData.id)
+      formData.append("password", values.oldpassword);
+      formData.append("newpassword", values.password);
+      formData.append("type", userData.type);
+      formData.append("email", userData.email);
       try {
-        const res = await apiAuth.post("/auth/resetpassword?type=0", formData);
+        const res = await apiAuth.post(`/auth/changepassword?id=${userData?.id}`, formData);
         console.log("res", res);
         if (res.status == 200) {
           toast.dismiss();
-          toast.success("Registered Successfully");
+          toast.success("Password Changed Successfully");
           resetForm();
+          // navigate('/dashboard');
         }
       } catch (error) {
         if (error) {
@@ -103,6 +112,7 @@ const StudentEditProfile = () => {
   return (
     <div className="container">
       <div className="p-5"></div>
+      <DashboardHeader setEdit={false} />
       <ul
         class="nav nav-pill-design-2 nav-pills mb-3"
         id="pills-tab"
@@ -380,14 +390,14 @@ const StudentEditProfile = () => {
                       name="oldpassword"
                       label="Old Password"
                       type="password"
-                      value={formik.values.oldpassword}
-                      onChange={formik.handleChange}
+                      value={passwordformik.values.oldpassword}
+                      onChange={passwordformik.handleChange}
                       error={
-                        formik.touched.oldpassword &&
-                        Boolean(formik.errors.oldpassword)
+                        passwordformik.touched.oldpassword &&
+                        Boolean(passwordformik.errors.oldpassword)
                       }
                       helperText={
-                        formik.touched.password && formik.errors.password
+                        passwordformik.touched.password && passwordformik.errors.password
                       }
                     />
                   </div>
