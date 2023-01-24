@@ -50,7 +50,7 @@ const Team = () => {
                     <div className="team-member-img position-relative mb-5">
                       <img
                         className="img-fluid w-100"
-                        src="images/team/sakshi.jpg"
+                        src="images/team/sakshi.jpeg"
                         alt="team-member"
                         style={{
                           height: "350px",
