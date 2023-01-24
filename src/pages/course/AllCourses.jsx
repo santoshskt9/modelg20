@@ -5,5 +5,5 @@ const AllCourses = () => {
     <div>AllCourses</div>
   )
 }
-
-export default AllCourses
+// fikfnikfn
+export default AllCourses;
