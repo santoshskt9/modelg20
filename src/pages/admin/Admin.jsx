@@ -6,7 +6,7 @@ import { apiAuth } from "../../api";
 import BreadCrumb from "./components/BreadCrumb";
 import InstituteDataTable from "./components/InstituteDataTable";
 import StudentDataTable from "./components/StudentDataTable";
-
+// Chutiya 
 const Admin = () => {
   const [institute, setInstitute] = useState([]);
   const [student, setStudent] = useState([]);
