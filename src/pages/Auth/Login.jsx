@@ -2,7 +2,7 @@ import { api } from "api";
 import { useGlobalContext } from "global/context";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import BreadCrumb from "../../layout/BreadCrumb";
 import bgImg from "./flag-bg.jpg";
 
@@ -15,10 +15,12 @@ const styles = {
 };
 const Login = () => {
   const navigate = useNavigate();
-  const {setUser, setToken} = useGlobalContext();
+  const location = useLocation();
+  const { setUser, setToken } = useGlobalContext();
   const [usertype, setUsertype] = useState(0);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+
   const handlesubmit = async (e) => {
     e.preventDefault();
     console.log(email, password);
@@ -35,7 +37,11 @@ const Login = () => {
         setToken(res.data.jwt);
         toast.dismiss();
         toast.success(res.data.message);
-        navigate("/dashboard");
+        if (location?.state?.nextRoute) {
+          navigate(location?.state?.nextRoute);
+        } else {
+          navigate("/dashboard");
+        }
       }
       setEmail("");
       setPassword("");
@@ -70,9 +76,8 @@ const Login = () => {
               >
                 <li className="nav-item" role="presentation">
                   <button
-                    className={`nav-link ${
-                      usertype == 0 ? "active" : ""
-                    } btn-primary-outline fw-semibold rounded-pill`}
+                    className={`nav-link ${usertype == 0 ? "active" : ""
+                      } btn-primary-outline fw-semibold rounded-pill`}
                     onClick={() => setUsertype(0)}
                   >
                     Student
@@ -80,9 +85,8 @@ const Login = () => {
                 </li>
                 <li className="nav-item" role="presentation">
                   <button
-                    className={`nav-link ${
-                      usertype == 1 ? "active" : ""
-                    } btn-primary-outline  fw-semibold rounded-pill`}
+                    className={`nav-link ${usertype == 1 ? "active" : ""
+                      } btn-primary-outline  fw-semibold rounded-pill`}
                     onClick={() => setUsertype(1)}
                   >
                     Institute
