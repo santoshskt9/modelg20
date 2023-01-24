@@ -7,49 +7,49 @@ import html2canvas from "html2canvas";
 import { jsPDF } from "jspdf";
 import { useState, useEffect } from "react";
 import { useParams, useLocation } from "react-router-dom";
+import { apiAuth } from "api";
+import { toast } from "react-hot-toast";
+import { useGlobalContext } from "global/context";
 // import { common_axios } from "../../../../../../api/axios";
 // import Swal from "sweetalert2";
 
 const PrintCertificate = () => {
   const params = useParams();
   const location = useLocation();
+  const { userData } = useGlobalContext();
   // const history = useHistory();
-  console.log("param", params.courseid);
+  console.log("param", params);
   const [certData, setCertData] = useState({});
 
-  // const getCertificate = async () => {
-  //   try {
-  //     const res = await common_axios.post("/certificate", {
-  //       courseId: params.courseid,
-  //       userId: JSON.parse(localStorage.getItem("userDetails")).id,
-  //     });
-  //     if (res?.data?.statusDescription?.statusCode == 200) {
-  //       console.log(res?.data);
-  //       setCertData(res?.data);
-  //       setName(res.data.certificate[0].studentName);
-  //     } else {
-  //       await Swal.fire({
-  //         title: "No Certificate Found !!",
-  //         text: "....",
-  //         icon: "warning",
-  //         timer: 4000,
-  //         timerProgressBar: true,
-  //       });
-  //       // history.push("/certificates");
-  //       console.log(res?.data?.statusDescription?.statusMessage);
-  //     }
-  //   } catch (err) {
-  //     console.log(err);
-  //     await Swal.fire({
-  //       title: "Something Went Wrong !!",
-  //       text: "Please try re visiting again",
-  //       icon: "warning",
-  //       timer: 4000,
-  //       timerProgressBar: true,
-  //     });
-  //     // history.push("/certificate");
-  //   }
-  // };
+  const getCertificate = async () => {
+    try {
+      if (userData.id) {
+        const res = await apiAuth.get(
+          `/course/certificate?courseId=${params.courseId}&studentId=${userData.id}`
+        );
+        if (res?.status == 200) {
+          console.log(res?.data);
+          setCertData(res?.data);
+          setName(
+            res?.data?.result?.first_name +
+              " " +
+              res?.data?.result?.middle_name +
+              " " +
+              res?.data?.result?.last_name
+          );
+        }
+      }
+    } catch (err) {
+      console.log(err);
+      toast.dismiss();
+      toast.error(
+        err?.response?.data?.message
+          ? err?.response?.data?.message
+          : "Something Went wrong check your internet connection"
+      );
+      // history.push("/certificate");
+    }
+  };
 
   const printCert = () => {
     console.log("print");
@@ -77,7 +77,7 @@ const PrintCertificate = () => {
   }
   useEffect(() => {
     getDateToday();
-    // getCertificate();
+    getCertificate();
   }, []);
 
   return (
@@ -92,13 +92,11 @@ const PrintCertificate = () => {
               <span>
                 Certficate No. <br />
                 <b className="DMserif fs-4 text-dark fw-regular">
-                  {certData?.certificate
-                    ? certData?.certificate[0]?.CERT_ID
-                    : ""}
+                  {certData?.certificate ? certData?.certificate_key : ""}
                 </b>
               </span>
               <span className="DMserif fs-4 text-warning fw-regular">
-                {today}
+                {certData?.created_at}
               </span>
             </div>
             <img src={CertificateTemplate} alt="" className="w-100" />

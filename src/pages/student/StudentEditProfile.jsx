@@ -111,7 +111,6 @@ const StudentEditProfile = () => {
   });
   return (
     <div className="container">
-      <div className="p-5"></div>
       <DashboardHeader setEdit={false} />
       <ul
         class="nav nav-pill-design-2 nav-pills mb-3"

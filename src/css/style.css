@@ -2998,3 +2998,6 @@ input[type="number"] {
   background-color: white;
   border-color: rgb(38, 107, 227) !important;
 }
+.logged-navbar {
+  position: static;
+}

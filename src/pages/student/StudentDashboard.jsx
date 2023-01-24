@@ -17,15 +17,17 @@ import { useGlobalContext } from "global/context";
 import { useNavigate } from "react-router-dom";
 import DashboardHeader from "./DashboardHeader";
 import CourseCardItem from "pages/course/components/CourseCardItem";
+import Certificate from "pages/course/certificate/Certificate";
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
   const { userData, token, removeToken, removeUser } = useGlobalContext();
   const [details, setDetails] = useState({});
+  const [enrolledCourses, setEnrolledCourses] = useState([]);
   const fetchDetails = async () => {
     try {
       const res = await apiAuth.get("/student/detail", {
-        headers: { Authorization: token },
+        headers: { authorization: token },
       });
       console.log("response", res);
       if (res.status == 200) {
@@ -42,15 +44,39 @@ const StudentDashboard = () => {
       }
     }
   };
+  const fetchEnrolled = async () => {
+    try {
+      if (token) {
+        console.log("new Token", token);
+        const res = await apiAuth.post("/course/enrolled", { studentId: userData?.id });
+        console.log("response enrolle", res);
+        if (res.status == 200) {
+          setEnrolledCourses(res.data.courses);
+        }
+      }
+    } catch (error) {
+      if (error) {
+        console.log("enroll error", error);
+        if (error?.response?.status !== 404) {
+          toast.dismiss();
+          toast.error(
+            error.response.data.message
+              ? error.response.data.message
+              : "Something went wrong check your network connection"
+          );
+        }
+      }
+    }
+  };
   useEffect(() => {
     console.log("User Data of Context API: ", userData);
     console.log("Token of Context API: ", token);
     fetchDetails();
+    fetchEnrolled();
   }, []);
   return (
-    <div className="container">
-      <div className="p-5"></div>
-      <DashboardHeader setEdit={true}/>
+    <div>
+      <DashboardHeader setEdit={true} />
       <div className="container p-4 ">
         <ul
           class="nav nav-pill-design-2 nav-pills mb-3"
@@ -208,24 +234,29 @@ const StudentDashboard = () => {
             aria-labelledby="pills-profile-tab"
             tabindex="0"
           >
+            {console.log("Enrolledd COurses", enrolledCourses)}
             {/* fallback screen  */}
-            <div className="p-relative">
-              <div className="p-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center">
-                <h1
-                  className="text-light"
-                  style={{ textShadow: "4px 4px grey" }}
-                >
-                  No Course Enrolled
-                </h1>
+            {!enrolledCourses || enrolledCourses?.length === 0 ? (
+              <div className="p-relative">
+                <div className="p-absolute w-100 h-100 d-flex flex-column align-items-center justify-content-center">
+                  <h1
+                    className="text-light"
+                    style={{ textShadow: "4px 4px grey" }}
+                  >
+                    No Course Enrolled
+                  </h1>
+                </div>
+                <img
+                  src="/images/fallback/nocourse.gif"
+                  alt=""
+                  className="w-100"
+                />
               </div>
-
-              <img
-                src="/images/fallback/nocourse.gif"
-                alt=""
-                className="w-100"
-              />
-              <CourseCardItem/>
-            </div>
+            ) : (
+              enrolledCourses.map((courses,i) => {
+                return <CourseCardItem courses={courses} key={i} enrolled={true}/>;
+              })
+            )}
           </div>
           <div
             class="tab-pane fade"
@@ -234,7 +265,7 @@ const StudentDashboard = () => {
             aria-labelledby="pills-contact-tab"
             tabindex="0"
           >
-            ...
+            <Certificate/>
           </div>
         </div>
       </div>

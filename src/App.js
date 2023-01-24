@@ -3,6 +3,7 @@ import AdminLogin from "pages/Admin/AdminLogin";
 import SetPassword from "pages/Auth/SetPassword";
 import StudentRegister from "pages/Auth/StudentRegister";
 import DashboardInstitute from "pages/college/DashboardInstitute";
+import AllCourses from "pages/course/AllCourses";
 import Certificate from "pages/course/certificate/Certificate";
 import CourseViewPage from "pages/course/CourseViewPage";
 import PrintCertificate from "pages/course/PrintCertificate/PrintCertificate";
@@ -138,6 +139,8 @@ function App() {
           />
           <Route path="/cyber-safety-for-youth" element={<CyberSafety />} />
           <Route path="/nep" element={<Nip />} />
+          <Route path="/courses" element={<AllCourses />} />
+
           <Route path="/login" element={<Login />} />
           <Route path="/auth/setpassword" element={<SetPassword />} />
           <Route
@@ -150,8 +153,9 @@ function App() {
             path="/dashboard/editprofile"
             element={<StudentEditProfile />}
           />
+          <Route path="/dashboard/courses" element={<CourseViewPage/> }/>
           <Route path="/dashboard/classboard" element={<CourseViewPage/> }/>
-          <Route path="/dashboard/certificate" element={<PrintCertificate/>}/>
+          <Route path="/dashboard/certificate/:courseId" element={<PrintCertificate/>}/>
           <Route path="/dashboard/mycertificates" element={<Certificate/>} />
           <Route path="*" element={<Error />} />
         </Routes>

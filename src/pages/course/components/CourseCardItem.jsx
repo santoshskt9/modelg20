@@ -16,9 +16,9 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
           className="course-container course-card h-100 rounded-4 shadow p-4"
           style={{ position: "relative", overflow: "hidden" }}
         >
-          {/* <Link to={`/coursedetail/${courses.id}`}>
+          <Link to={`/coursedetail/${courses.id}`}>
             <img
-              src={courses.thumbnailImage}
+              src={courses.thumbnail}
               className="rounded"
               alt=""
               style={{
@@ -27,7 +27,7 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
                 objectFit: "cover",
               }}
             />
-          </Link> */}
+          </Link>
           <div className="course-details mt-4 font-third">
             <div className="d-flex align-items-center justify-content-between">
               <div className="d-flex justify-content-start align-items-center">
@@ -65,36 +65,35 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
               )}
             </div>
 
-            <div className="d-flex justify-content-between align-items-start">
-              {/* <Link to={`/coursedetail/${courses.id}`}>
-                <h3 className="DMserif fw-bold text-dark">
-                  {courses.courseTitle}
-                </h3>
-              </Link> */}
+            <div className="d-flex justify-content-between align-items-start mt-2">
+              <Link to={`/coursedetail/${courses.id}`}>
+                <h4 className="DMserif fw-bold text-dark text-initial">
+                  {courses.course_name}
+                </h4>
+              </Link>
             </div>
             <div>
               <span className="font-third font-sm text-secondary">
                 <i className="bi bi-journal-bookmark-fill"></i>{" "}
-                {courses?.Sections?.length} lessons
+                {courses?.sections?.length} lessons
               </span>
               <span className="font-third font-sm text-secondary ms-2">
                 <i className="bi bi-stopwatch"></i>{" "}
-                {courses?.Sections?.reduce((total, reduce) => {
-                  return (total =
-                    ((reduce.VideoDocuments.length + 1) * 30) / 60);
-                }, 0)}{" "}
+                {courses?.duration}min
               </span>
               <span className="font-third font-sm text-secondary ms-2">
-                <i className="bi bi-person"></i> {courses?.authorName}
+                <i className="bi bi-person"></i> {courses?.author}
               </span>
             </div>
-            <p className=" fw-regular text-justify">{courses?.Desc}</p>
+            <p className=" fw-regular text-justify">
+              <small> {courses?.desc.slice(0, 60)}...</small>
+            </p>
             {enrolled && (
               <>
                 <div className="d-flex align-items-center justify-content-between ">
                   <span className="fs-6 font-third text-secondary">
-                    {(courses?.sectionCompleted * 100) /
-                      courses?.courseSections ===
+                    {(courses?.section_completed * 100) /
+                      courses?.total_sections ===
                     100 ? (
                       <b className="text-success fw-semibold">
                         <i className="bi bi-check-circle-fill"></i>
@@ -105,8 +104,8 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
                     )}
                   </span>
                   <span className="DMserif">
-                    {courses?.sectionCompleted ? courses?.sectionCompleted : 0}/
-                    {courses?.totalSections}
+                    {courses?.section_completed ? courses?.section_completed : 0}/
+                    {courses?.total_sections}
                   </span>
                 </div>
                 <div
@@ -119,8 +118,8 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
                     className="progress-bar p-0"
                     style={{
                       width: `${
-                        (courses?.sectionCompleted * 100) /
-                        courses?.totalSections
+                        (courses?.section_completed * 100) /
+                        courses?.total_sections
                       }%`,
                     }}
                   ></div>
