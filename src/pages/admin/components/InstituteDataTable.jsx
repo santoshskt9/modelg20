@@ -18,6 +18,8 @@ const heads = [
   "created_on",
   "status",
 ];
+  // comment 
+
 export default function InstituteDataTable({ data, reload }) {
   const activate = async (instituteId, email, status) => {
     const formData = new FormData();

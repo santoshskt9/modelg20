@@ -4,6 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const BreadCrumb = () => {
   const route = useLocation().pathname;
   const routeArr = route.split("/");
+  // comment 
   return (
     <section
       className="section breadcrumb"
