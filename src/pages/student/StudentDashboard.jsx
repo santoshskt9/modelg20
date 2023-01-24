@@ -14,13 +14,15 @@ import {
 import { apiAuth } from "api";
 import { toast } from "react-hot-toast";
 import { useGlobalContext } from "global/context";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import DashboardHeader from "./DashboardHeader";
 import CourseCardItem from "pages/course/components/CourseCardItem";
 import Certificate from "pages/course/certificate/Certificate";
 
 const StudentDashboard = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  console.log("Location : ", location);
   const { userData, token, removeToken, removeUser } = useGlobalContext();
   const [details, setDetails] = useState({});
   const [enrolledCourses, setEnrolledCourses] = useState([]);

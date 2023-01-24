@@ -16,7 +16,7 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
           className="course-container course-card h-100 rounded-4 shadow p-4"
           style={{ position: "relative", overflow: "hidden" }}
         >
-          <Link to={`/coursedetail/${courses.id}`}>
+          <Link to={`/dashboard/courses/class`}>
             <img
               src={courses.thumbnail}
               className="rounded"
@@ -136,13 +136,13 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
                   View Course <i className="bi bi-arrow-right"></i>
                 </Link>
               ) : (
-                // <Link
-                //   className="font-third text-warning"
-                //   to={`/coursedetail/${courses.id}`}
-                // >
-                //   View Details <i className="bi bi-arrow-right"></i>
-                // </Link>
-                <a>Details</a>
+                <Link
+                  className="font-third text-warning"
+                  to={`/course/detail/${courses.slug}`}
+                >
+                  View Details <i className="bi bi-arrow-right"></i>
+                </Link>
+                // <a>Details</a>
               )}
             </div>
           </div>

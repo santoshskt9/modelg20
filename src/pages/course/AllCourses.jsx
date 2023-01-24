@@ -1,8 +1,48 @@
-import React from 'react'
+import { api } from 'api';
+import React, {useEffect, useState} from 'react';
+import { toast } from "react-hot-toast";
+import CourseCardItem from './components/CourseCardItem';
 
 const AllCourses = () => {
+  const [allcourses, setAllcourses] = useState([]);
+
+  const fetchAllCourses = async () => {
+    try {
+      const res = await api.get(`/course`);
+      if (res.status == 200) {
+        setAllcourses(res.data.courses);
+      }
+    } catch (error) {
+      if (error) {
+        toast.dismiss();
+        toast.error(
+          error.response.data.message
+            ? error.response.data.message
+            : "Something went wrong check your network connection"
+        );
+      }
+    }
+  }
+
+  useEffect(()=>{
+    console.log("All Courses: ",allcourses);
+  }, [allcourses]);
+
+  useEffect(()=> {
+    fetchAllCourses();
+  }, []);
+
+
   return (
-    <div>AllCourses</div>
+    <React.Fragment>
+      <div className="container py-5">
+        {
+          allcourses?.map((course,i) => {
+            return <CourseCardItem courses={course} key={i} enrolled={false}/>;
+          })
+        }
+      </div>
+    </React.Fragment>
   )
 }
 // fikfnikfn

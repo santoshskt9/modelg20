@@ -49,7 +49,7 @@ const DashboardHeader = ({ setEdit }) => {
         <div className="d-flex justify-content-between p-3">
           <div className="d-flex">
             <Avatar
-              alt={"Avatar"}
+              alt={details?details?.first_name:"Avatar"}
               src={process.env.REACT_APP_API_BASE_URL + details?.profile}
               sx={{ width: 146, height: 146 }}
               style={{ marginTop: "-40px" }}

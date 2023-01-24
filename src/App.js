@@ -5,6 +5,7 @@ import StudentRegister from "pages/Auth/StudentRegister";
 import DashboardInstitute from "pages/college/DashboardInstitute";
 import AllCourses from "pages/course/AllCourses";
 import Certificate from "pages/course/certificate/Certificate";
+import CourseDetails from "pages/course/CourseDetails";
 import CourseViewPage from "pages/course/CourseViewPage";
 import PrintCertificate from "pages/course/PrintCertificate/PrintCertificate";
 import StudentDashboard from "pages/student/StudentDashboard";
@@ -83,7 +84,8 @@ function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Toaster />
+      <Toaster position="top-right"
+        reverseOrder={true} />
       <Suspense
         fallback={
           <div className="w-100 d-flex vh-100 align-items-center justify-content-between">
@@ -97,6 +99,44 @@ function App() {
         }
       >
         <Routes>
+
+          {/* --------------------- */}
+          {/* Administrator Routes Started */}
+          {/* --------------------- */}
+
+          <Route exact path="/administrator/login" element={<AdminLogin />} />
+
+          {/* --------------------- */}
+          {/* /Administrator Routes Ended */}
+          {/* ------------------- */}
+
+
+          {/* ------------- */}
+          {/* Private Routes Started */}
+          {/* ------------- */}
+          <Route path="/auth/setpassword" element={<SetPassword />} />
+          <Route
+            path="/dashboard/editprofile"
+            element={<StudentEditProfile />}
+          />
+
+          <Route exact path="/dashboard" element={renderRoute[userData.type]} />
+
+          <Route path="/courses/class/:id" element={<CourseViewPage />} />
+          <Route path="/dashboard/certificate/:courseId" element={<PrintCertificate />} />
+          <Route path="/dashboard/mycertificates" element={<Certificate />} />
+
+          {/* ------------- */}
+          {/* /Private Routes Ended */}
+          {/* ------------- */}
+
+
+
+
+          {/* ------------- */}
+          {/* Static Routes Started */}
+          {/* ------------- */}
+
           <Route exact path="/" element={<Home />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/team" element={<Team />} />
@@ -139,25 +179,22 @@ function App() {
           />
           <Route path="/cyber-safety-for-youth" element={<CyberSafety />} />
           <Route path="/nep" element={<Nip />} />
-          <Route path="/courses" element={<AllCourses />} />
 
-          <Route path="/login" element={<Login />} />
-          <Route path="/auth/setpassword" element={<SetPassword />} />
           <Route
             path="/college/student/register"
             element={<StudentRegister />}
           />
-          <Route exact path="/dashboard" element={renderRoute[userData.type]} />
-          <Route exact path="/administrator/login" element={<AdminLogin />} />
-          <Route
-            path="/dashboard/editprofile"
-            element={<StudentEditProfile />}
-          />
-          <Route path="/dashboard/courses" element={<CourseViewPage/> }/>
-          <Route path="/dashboard/classboard" element={<CourseViewPage/> }/>
-          <Route path="/dashboard/certificate/:courseId" element={<PrintCertificate/>}/>
-          <Route path="/dashboard/mycertificates" element={<Certificate/>} />
+          <Route path="/login" element={<Login />} />
+
+          <Route path="/courses" element={<AllCourses />} />
+          <Route path="/course/detail/:slug" element={<CourseDetails />} />
+
           <Route path="*" element={<Error />} />
+
+          {/* -------------s */}
+          {/* /Static Routes Ended */}
+          {/* -------------s */}
+
         </Routes>
       </Suspense>
       <Footer />
