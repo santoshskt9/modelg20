@@ -77,7 +77,7 @@ const CourseDetails = () => {
                                     </li>
                                     <li className="list-group-item p-3 text-center">
                                         {
-                                            isLoggedIn ?
+                                            !isLoggedIn ?
                                                 (
                                                     <button
                                                         className="btn btn-primary w-100 rounded-3  hover-ripple"
