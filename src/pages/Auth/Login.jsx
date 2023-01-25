@@ -2,7 +2,7 @@ import { api } from "api";
 import { useGlobalContext } from "global/context";
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import BreadCrumb from "../../layout/BreadCrumb";
 import bgImg from "./flag-bg.jpg";
 
@@ -137,8 +137,17 @@ const Login = () => {
                   </button>
                 </div>
                 <div className="text-center mt-4">
-                  <a className="text-end w-100">Forget Password ?</a> <br />
-                  <a className="text-end w-100">Not have an account register</a>
+                  {/* <a className="text-end w-100">Forget Password ?</a> <br /> */}
+                  {usertype == 1 ? (
+                    <>
+                      Not have an Account? {" "}
+                      <Link to={"/registration"} className="text-end w-100 fw-bold">
+                        Register
+                      </Link>
+                    </>
+                  ) : (
+                    ""
+                  )}
                 </div>
               </form>
             </div>

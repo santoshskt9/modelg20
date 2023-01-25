@@ -1,12 +1,13 @@
+import { Avatar } from "@mui/material";
 import * as React from "react";
 import { toast } from "react-hot-toast";
 import { apiAuth } from "../../../api";
 const heads = [
+  "logo",
   "id",
   "institution_name",
   "institution_address",
   "bio",
-  "logo",
   "title",
   "first_name",
   "middle_name",
@@ -18,7 +19,7 @@ const heads = [
   "created_on",
   "status",
 ];
-  // comment 
+// comment
 
 export default function InstituteDataTable({ data, reload }) {
   const activate = async (instituteId, email, status) => {
@@ -75,16 +76,20 @@ export default function InstituteDataTable({ data, reload }) {
           {data.map((row, i) => {
             return (
               <tr key={i}>
+                <td className="p-3">
+                  <Avatar
+                    // type="button"
+                    // data-bs-toggle="modal"
+                    // data-bs-target={"#ProfileModal" + i}
+                    alt={row.first_name}
+                    src={process.env.REACT_APP_API_BASE_URL + row?.logo}
+                    sx={{ width: 46, height: 46 }}
+                  />
+                </td>
                 <td className="p-3">{row.id}</td>
                 <td className="p-3">{row.institution_name}</td>
                 <td className="p-3">{row.institution_address}</td>
-                <td className="p-3">{row.bio}</td>
-                <td className="p-3">
-                  <img
-                    src={`${process.env.REACT_APP_API_BASE_URL}${row.logo}`}
-                    alt={row.institution_name}
-                  />
-                </td>
+                <td className="p-3">{row?.bio?.slice(0,50)} ...</td>
                 <td className="p-3">{row.title}</td>
                 <td className="p-3">{row.first_name}</td>
                 <td className="p-3">{row.middle_name}</td>

@@ -43,9 +43,9 @@ function App() {
         }
       >
         {/* <StudentRoute /> */}
-          <InstituteRoute />
+          {/* <InstituteRoute /> */}
           {/* <AdminRoute /> */}
-        {/* <StaticRoute /> */}
+        <StaticRoute />
       </Suspense>
       <Footer />
     </BrowserRouter>
