@@ -38,6 +38,10 @@ const CourseViewPage = () => {
         navigate(`/dashboard/certificate/${courseId}`);
       }
     } catch (err) {
+      console.log(err);
+      if (err.response.status === 409) {
+        navigate("/dashboard/certificate/" + courseId);
+      }
       toast.error(
         err.response.data.message
           ? err.response.data.message
@@ -55,6 +59,7 @@ const CourseViewPage = () => {
       });
       if (res.status == 200) {
         setCourse(res.data.course);
+        console.log("courseres", res);
         setSeries(res.data.seriesArr);
       }
     } catch (error) {
@@ -123,12 +128,11 @@ const CourseViewPage = () => {
 
   const setCurrentCourse = (id) => {
     if (series[viewIndex].id !== id) {
-      series.forEach((ele, i) => {
+      series?.forEach((ele, i) => {
         if (ele.seriesId == id) setViewIndex(i);
       });
     }
   };
-
   const [sectionCompleted, setSectionCompleted] = useState(0);
   const [progress, setProgress] = useState([]);
 
@@ -165,7 +169,7 @@ const CourseViewPage = () => {
         studentId: userData.id,
         courseId,
         seriesId: seriesId,
-        totalLength: series.length,
+        totalLength: series?.length,
       });
       if (res.status == 200) {
         toast.success("Section Marked as Completed");
@@ -180,7 +184,7 @@ const CourseViewPage = () => {
     }
   }
 
-  useEffect(() => {}, [viewIndex, series.length]);
+  useEffect(() => {}, [viewIndex, series?.length]);
 
   useEffect(() => {
     getCourse();
@@ -206,7 +210,7 @@ const CourseViewPage = () => {
                 }}
               >
                 {/* Course Viewer */}
-                {series.length !== 0
+                {series?.length !== 0
                   ? view(series[viewIndex])
                   : "No course Found"}
                 {/*End Course Viewer */}

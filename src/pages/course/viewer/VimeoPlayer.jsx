@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Player from "@u-wave/react-vimeo";
 import Loading from "../components/Loader/Loading";
+import YouTube from "react-youtube";
 const VimeoPlayer = ({
   videoId,
   viewIndex,
@@ -12,20 +13,29 @@ const VimeoPlayer = ({
   const [loader, setLoader] = useState(false);
   const onEndHandler = () => {
     console.log("Video Ended");
+    postProgress(series[viewIndex].seriesId);
+  };
+  const opts = {
+    height: '500',
+    width: '100%',
+    playerVars: {
+      autoplay: true,
+    },
   };
   return (
     <>
       <div className="h-100">
-        {/* <Loading attr={loader} /> */}
-        <Player
+        <Loading attr={loader} />
+        <YouTube videoId={videoId} autoplay={true} opts={opts} onReady={() => setLoader(false)} onEnd={onEndHandler} />
+        {/* <Player
           video={videoId}
           controls
           autoplay
-          // onLoaded={() => setLoader(false)}
+          onLoaded={() => setLoader(false)}
           responsive={true}
-          onEnd={onEndHandler}
+          onEnd={()=>console.log("%c ENded")}
           pip={false}
-        />
+        /> */}
       </div>
 
       {/* Buttons  */}
@@ -47,7 +57,6 @@ const VimeoPlayer = ({
                 // setCertificateDownloadable(true);
               } else {
                 setViewIndex(viewIndex + 1);
-                postProgress(series[viewIndex].seriesId);
               }
             }}
           >

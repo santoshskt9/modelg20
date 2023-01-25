@@ -105,7 +105,7 @@ const CourseDetails = () => {
         </div>
       </section>
       {/* <!-- Modal --> */}
-      <CourseEnroll />
+      <CourseEnroll id={details?.id}/>
     </>
   );
 };

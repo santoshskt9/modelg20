@@ -44,9 +44,9 @@ const Navbar = () => {
             {token ? (
               <>
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around"></ul>
-                <div class="dropdown">
+                <div className="dropdown">
                   <button
-                    class="btn bg-white border-0  p-0"
+                    className="btn bg-white border-0  p-0"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -60,21 +60,21 @@ const Navbar = () => {
                       className="ms-4 shadow-lg"
                     />
                   </button>
-                  <ul class="dropdown-menu p-2 py-3">
+                  <ul className="dropdown-menu p-2 py-3">
                     <li className="mt-2">
-                      <Link class="dropdown-item" to="/dashboard">
+                      <Link className="dropdown-item" to="/dashboard">
                         Dashboard
                       </Link>
                     </li>
                     {userData.type == 0 && (
                       <li className="mt-2">
-                        <Link class="dropdown-item" to="/courses">
+                        <Link className="dropdown-item" to="/courses">
                           Courses
                         </Link>
                       </li>
                     )}
                     <li className="mt-2">
-                      <Link class="dropdown-item" to="/dashboard/editprofile">
+                      <Link className="dropdown-item" to="/dashboard/editprofile">
                         Edit Profile
                       </Link>
                     </li>

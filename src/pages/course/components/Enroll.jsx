@@ -1,16 +1,17 @@
 import { apiAuth } from "api";
+import { useGlobalContext } from "global/context";
 import React from "react";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 
-const Enroll = () => {
+const Enroll = ({id}) => {
+  const { userData } = useGlobalContext();
   const navigate = useNavigate();
   const proceedEnroll = async () => {
     let formdata = {
-      courseId: 1,
-      studentId: 25,
+      courseId: id,
+      studentId: userData.id,
     };
-
     try {
       const res = await apiAuth.post(`/course/enroll`, formdata);
       if (res.status == 200) {
