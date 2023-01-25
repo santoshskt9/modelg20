@@ -119,7 +119,7 @@ const DashboardInstitute = () => {
                     {details?.last_name}
                   </span>
                 </div>
-                <p>{details?.bio}</p>
+                <p className="fs-6 fst-italic">{details?.bio}</p>
               </div>
             </div>
           </div>
