@@ -4,15 +4,36 @@ import CollegeBreadCrumb from "pages/Auth/CollegeBreadCrumb";
 import React, { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import CertificationTable from "./CertificationTable";
 import StudentsTable from "./StudentsTable";
+import ReactDOM from "react-dom";
+import QRCode from "qrcode.react";
+import {
+  EmailIcon,
+  EmailShareButton,
+  FacebookIcon,
+  FacebookShareButton,
+  InstapaperShareButton,
+  LinkedinIcon,
+  LinkedinShareButton,
+  PinterestIcon,
+  PinterestShareButton,
+  TelegramIcon,
+  TelegramShareButton,
+  TwitterIcon,
+  TwitterShareButton,
+  WhatsappIcon,
+  WhatsappShareButton,
+} from "react-share";
 
 const DashboardInstitute = () => {
   const navigate = useNavigate();
   const [details, setDetails] = useState({});
   const [students, setStudents] = useState([]);
+  const [certificates, setCertificates] = useState([]);
   const { userData, token } = useGlobalContext();
   const [shareableLink, setShareableLink] = useState(
-    `http://localhost:3000/college/student/register?collegeId=${userData.id}`
+    `https://www.yuvamanthan.org/college/student/register?collegeId=${userData.id}`
   );
   const fetchDetails = async () => {
     try {
@@ -43,11 +64,6 @@ const DashboardInstitute = () => {
 
         {
           instituteId: userData.id,
-        },
-        {
-          headers: {
-            Authorization: token,
-          },
         }
       );
       console.log("res", res);
@@ -61,10 +77,44 @@ const DashboardInstitute = () => {
       }
     }
   };
+  const fetchCertificates = async () => {
+    try {
+      const res = await apiAuth.get(`/institute/certificates`, {
+        instituteId: userData.id,
+      });
+      console.log("Certificates", res);
+      if (res.status === 200) {
+        setCertificates(res.data.result);
+      }
+    } catch (error) {
+      if (error) {
+        toast.dismiss();
+        toast.error(
+          error.response?.data.message
+            ? error.response?.data.message
+            : "Something Went Wrong Check your Internet Connection"
+        );
+      }
+    }
+  };
   useEffect(() => {
     fetchStudents();
     fetchDetails();
+    fetchCertificates();
   }, []);
+  const DownloadQR = () => {
+    //TODO: WIll be implemented soon
+    const canvas = document.getElementById("qrcode");
+    const pngUrl = canvas
+      .toDataURL("image/png")
+      .replace("image/png", "image/octet-stream");
+    let downloadLink = document.createElement("a");
+    downloadLink.href = pngUrl;
+    downloadLink.download = "registerqrcode.png";
+    document.body.appendChild(downloadLink);
+    downloadLink.click();
+    document.body.removeChild(downloadLink);
+  };
   return (
     <div>
       <div>
@@ -91,7 +141,7 @@ const DashboardInstitute = () => {
         </div>
         <div className="container">
           <div className="d-flex justify-content-start flex-column flex-lg-row">
-            <div className=" p-3">
+            <div className=" p-3 text-center">
               <img
                 src={
                   details?.logo
@@ -106,6 +156,88 @@ const DashboardInstitute = () => {
                   objectFit: "contain",
                 }}
               />
+              <div className="d-flex flex-column justify-content-center align-items-center mt-4">
+                <h6>Shareable link</h6>
+                <div
+                  className="border rounded-4 bg-grad"
+                  style={{ height: 200, width: 200, padding: "13px" }}
+                >
+                  <QRCode
+                    id="qrcode"
+                    value={shareableLink}
+                    size={174}
+                    includeMargin={true}
+                    level={"H"}
+                    bgColor={"#ffffff"}
+                  />
+                  ,
+                </div>
+                <div className="d-flex align-items-center py-4">
+                  <button
+                    className={`btn btn-primary-outline rounded-3 mx-2 py-0`}
+                    onClick={() => navigator.clipboard.writeText(shareableLink)}
+                  >
+                    <i className="bi bi-link fs-1"></i>
+                  </button>
+                  <button
+                    className="btn btn-success rounded-3 mx-2 py-0"
+                    onClick={DownloadQR}
+                  >
+                    <i className="bi bi-cloud-download fs-1"></i>
+                  </button>
+                </div>
+                <div>
+                  <EmailShareButton
+                    url={shareableLink}
+                    quote={"Model g20 India"}
+                    className="m-1"
+                  >
+                    <EmailIcon size={32} round />
+                  </EmailShareButton>
+                  <FacebookShareButton
+                    url={shareableLink}
+                    quote={"Model g20 India"}
+                    className="m-1"
+                  >
+                    <FacebookIcon size={32} round />
+                  </FacebookShareButton>
+                  <TwitterShareButton
+                    url={shareableLink}
+                    quote={"Model g20 India"}
+                    className="m-1"
+                  >
+                    <TwitterIcon size={32} round />
+                  </TwitterShareButton>
+                  <LinkedinShareButton
+                    url={shareableLink}
+                    quote={"Model g20 India"}
+                    className="m-1"
+                  >
+                    <LinkedinIcon size={32} round />
+                  </LinkedinShareButton>
+                  <WhatsappShareButton
+                    url={shareableLink}
+                    quote={"Model g20 India"}
+                    className="mx-1"
+                  >
+                    <WhatsappIcon size={32} round />
+                  </WhatsappShareButton>
+                  <TelegramShareButton
+                    url={shareableLink}
+                    quote={"Model g20 India"}
+                    className="m-1"
+                  >
+                    <TelegramIcon size={32} round />
+                  </TelegramShareButton>
+                  <PinterestShareButton
+                    url={shareableLink}
+                    quote={"Model g20 India"}
+                    className="m-1"
+                  >
+                    <PinterestIcon size={32} round />
+                  </PinterestShareButton>
+                </div>
+              </div>
             </div>
             <div className=" p-3">
               <div>
@@ -125,24 +257,7 @@ const DashboardInstitute = () => {
           </div>
         </div>
       </div>
-      <div className="container p-4">
-        <h6>Shareable link</h6>
-        <div className="d-flex align-items-center">
-          <span
-            className={`bg-success bg-opacity-25 rounded-2 p-3 py-3 me-2 `}
-            style={{ minWidth: "250px" }}
-          >
-            {shareableLink}
-          </span>
-          <button
-            className={`btn btn-primary-outline rounded-3 mx-2 py-2`}
-            onClick={() => navigator.clipboard.writeText(shareableLink)}
-          >
-            copy
-          </button>
-          <button className="btn btn-primary rounded-3 mx-2 py-2">Share</button>
-        </div>
-      </div>
+      <div className="container p-4"></div>
       <div className="container p-4">
         <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
           <li className="nav-item" role="presentation">
@@ -186,7 +301,7 @@ const DashboardInstitute = () => {
             aria-labelledby="pills-profile-tab"
             tabIndex="0"
           >
-            ...
+            <CertificationTable certificates={certificates} />
           </div>
         </div>
       </div>

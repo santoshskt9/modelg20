@@ -2998,10 +2998,10 @@ input[type="number"] {
   background-color: white;
   border-color: rgb(38, 107, 227) !important;
 }
-.logged-navbar,.navbar {
+.logged-navbar,
+.navbar {
   position: static;
 }
-
 
 /* Course CSS Additions  */
 .font-xs {
@@ -3081,9 +3081,9 @@ input[type="number"] {
   top: 50%;
   left: 30%;
 }
-.certificate-bottom{
+.certificate-bottom {
   bottom: 120px;
-  left: 120px;
+  left: 10px;
   /* width: 700px !important */
 }
 
@@ -3162,6 +3162,14 @@ Link {
   border-radius: 10px;
 }
 /* user agent stylesheet */
-::marker{
+::marker {
   display: none !important;
+}
+.bg-grad {
+  background-image: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
 }

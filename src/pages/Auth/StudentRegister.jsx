@@ -53,12 +53,12 @@ const StudentRegister = () => {
         <img
           src={
             details?.banner
-              ? details.banner
+              ? process.env.REACT_APP_API_BASE_URL + details.banner
               : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/college-open-house-invitation-banner-design-template-64bb82e1fda7fcd9e6fec7e1fcb13be9_screen.jpg?ts=1566569378"
           }
           alt=""
           className="w-100 d-block"
-          style={{ height: "350px", objectFit: "cover", objectPosition: "top" }}
+          style={{ height: "350px", objectFit: "cover", objectPosition: "center" }}
         />
         <div className="container">
           <div className="d-flex justify-content-start flex-column flex-lg-row">
@@ -66,7 +66,7 @@ const StudentRegister = () => {
               <img
                 src={
                   details?.logo && details?.logo !== ""
-                    ? details.logo
+                    ? process.env.REACT_APP_API_BASE_URL + details.logo
                     : "/images/icons/university.png"
                 }
                 alt="Logo"
