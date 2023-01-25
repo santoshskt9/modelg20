@@ -7,12 +7,8 @@ const CourseDescriptions = ({ course, activeCourse }) => {
       {/* top view  */}
       <div className="row pt-4 align-items-center">
         <div className="col-11">
-          <h1 className="DMserif">{course?.course?.courseName}</h1>
-          <p className="text-secondary fw-semibold">
-            {course?.course?.authorName}
-          </p>
+          <h1 className="DMserif fs-1">{course?.course_name}</h1>
         </div>
-        <div className="col-1">...</div>
       </div>
       <div className="border-top py-5">
         <ul
@@ -22,7 +18,7 @@ const CourseDescriptions = ({ course, activeCourse }) => {
         >
           <li className="nav-item" role="presentation">
             <button
-              className="nav-link active p-3"
+              className="nav-link active p-3 fw-semibold border ms-3"
               id="home-tab"
               data-bs-toggle="tab"
               data-bs-target="#home"
@@ -54,7 +50,7 @@ const CourseDescriptions = ({ course, activeCourse }) => {
             tabIndex="0"
           >
             <div className="container p-4">
-              <p>{activeCourse?.documentDesc}</p>
+              <p>{course?.desc}</p>
             </div>
           </div>
         </div>
@@ -66,7 +62,7 @@ const CourseDescriptions = ({ course, activeCourse }) => {
           tabIndex="0"
         >
           <div className="container p-4">
-            <h5 className="fw-semibold">Reviews</h5>
+            {/* <h5 className="fw-semibold">Reviews</h5> */}
             {/* <p>{reviews}</p> */}
           </div>
         </div>

@@ -7,29 +7,19 @@ const CoursePanel = ({
   activeCourse,
   sectionCompleted,
   progress,
+  series,
   sidebarActive,
   setSidebarActive,
 }) => {
   const [percent, setPercent] = useState(0);
   useEffect(() => {
-    if (
-      // certificateDownloadable &&
-      modules?.courseSections == sectionCompleted
-    ) {
+    if (modules?.sectionArr == progress.length) {
       setPercent(100);
     } else {
-      if (modules?.courseSections)
-        console.log(
-          { SectionCompleted: sectionCompleted },
-          { "courseSections:": modules?.courseSections },
-          "percent",
-          (sectionCompleted * 100) / modules?.courseSections
-        );
-
-      setPercent((sectionCompleted * 100) / modules?.courseSections);
+      if (modules?.sectionArr)
+        setPercent((progress.length * 100) / modules?.courseSections);
     }
   }, [sectionCompleted]);
-  console.log("modules panel", modules?.course);
   return (
     <div className="container pt-0 pb-5">
       <div className="d-flex align-items-center justify-content-between">
@@ -48,7 +38,7 @@ const CoursePanel = ({
       <div className="py-3">
         <div className="d-flex align-items-center justify-content-between ">
           <span className=" fs-5 fw-semibold">
-            {(sectionCompleted * 100) / modules?.courseSections === 100 ? (
+            {progress?.length === series?.length ? (
               <b className="text-success fw-semibold">
                 <i className="bi bi-check-circle-fill"></i> Course Completed
               </b>
@@ -57,7 +47,7 @@ const CoursePanel = ({
             )}
           </span>
           <span className="DMserif">
-            {sectionCompleted ? sectionCompleted : 0}/{modules?.courseSections}
+            {progress?.length ? progress?.length : 0}/{series?.length}
           </span>
         </div>
         <div
@@ -69,16 +59,18 @@ const CoursePanel = ({
           <div
             className="progress-bar p-0"
             style={{
-              width: `${(sectionCompleted * 100) / modules?.courseSections}%`,
+              width: `${
+                (progress?.length * 100) / series?.length
+              }%`,
             }}
           ></div>
         </div>
       </div>
       <div className="coursemodules">
         <div className="accordion accordion-flush" id="courseModuleAccordian">
-          {modules?.course?.Sections.map((section, index) => (
+          {modules?.sectionArr?.map((section, index) => (
             <div className="accordion-item" key={index}>
-              <h2 className="accordion-header" id="flush-headingOne">
+              <h2 className="accordion-header">
                 <button
                   className={
                     index == 0
@@ -87,13 +79,13 @@ const CoursePanel = ({
                   }
                   type="button"
                   data-bs-toggle="collapse"
-                  data-bs-target={"#course-module-" + section.id}
+                  data-bs-target={"#course-module-" + section.sectionId}
                 >
-                  {section?.sectionName}
+                  {section?.section_title}
                 </button>
               </h2>
               <div
-                id={"course-module-" + section.id}
+                id={"course-module-" + section.sectionId}
                 className={
                   index == 0
                     ? "accordion-collapse collapse show"
@@ -102,22 +94,23 @@ const CoursePanel = ({
                 data-bs-parent="#courseModuleAccordian"
               >
                 <ul className="module-sublist p-1">
-                  {section?.VideoDocuments?.map((topic, index) => (
+                  {}
+                  {section?.video_documents?.map((topic, index) => (
                     <li
                       key={index}
                       className={
-                        activeCourse?.id == topic.id
+                        activeCourse?.seriesId == topic.seriesId
                           ? "rounded mt-1 active"
                           : "rounded mt-1"
                       }
                       style={{ cursor: "pointer" }}
                     >
                       <div
-                        onClick={() => setCurrentCourse(topic.id)}
-                        className="p-3 border rounded-1"
+                        onClick={() => setCurrentCourse(topic.seriesId)}
+                        className="p-3 border rounded-1 p-relative"
                       >
-                        {topic.documentTitle}{" "}
-                        {progress?.includes(topic.id) ? (
+                        {topic?.series_title}{" "}
+                        {progress?.includes(topic.seriesId) ? (
                           <img
                             src="https://cdn-icons-png.flaticon.com/512/1634/1634264.png"
                             alt=""
@@ -138,42 +131,32 @@ const CoursePanel = ({
               </div>
             </div>
           ))}
-          {
-            // certificateDownloadable &&
-            modules?.courseSections == sectionCompleted ? (
-              <li
-                className={"rounded mt-1 bg-success"}
-                onClick={() => generateCertificate()}
-                style={{ cursor: "pointer" }}
-              >
-                <div className="p-3 border text-white rounded-1">
-                  Download Certificate
-                </div>
-              </li>
-            ) : (
-              ""
-            )
-          }
+          {progress?.length == series?.length ? (
+            <div
+              className={"rounded mt-1 bg-success"}
+              onClick={() => generateCertificate()}
+              style={{ cursor: "pointer" }}
+            >
+              <div className="p-3 border text-white rounded-1">
+                Download Certificate
+              </div>
+            </div>
+          ) : (
+            ""
+          )}
         </div>
       </div>
       <hr />
       <h5 className="DMserif text-secondary fw-bold">About the Author</h5>
       <div className="d-flex align-items-center">
         <Avatar
-          alt={modules?.course?.authorName}
+          alt={modules?.author}
           src={"./favicon_io/android-chrome-192x192.png"}
           sx={{ width: 66, height: 66 }}
           className="me-4"
         />
-        <h5 className=" DMserif">{modules?.course?.authorName}</h5>
+        <h5 className=" DMserif">{modules?.author}</h5>
       </div>
-      <p className="text-secondary mt-3">
-        It's the Demo Text About the Author who is been working on this Lorem
-        ipsum dolor sit amet consectetur adipisicing elit. Ratione, odit. ...{" "}
-        <a href="#" className="text-warning">
-          Read More
-        </a>
-      </p>
     </div>
   );
 };

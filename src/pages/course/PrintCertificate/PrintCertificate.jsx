@@ -29,7 +29,7 @@ const PrintCertificate = () => {
         );
         if (res?.status == 200) {
           console.log(res?.data);
-          setCertData(res?.data);
+          setCertData(res?.data.result);
           setName(
             res?.data?.result?.first_name +
               " " +
@@ -50,7 +50,6 @@ const PrintCertificate = () => {
       // history.push("/certificate");
     }
   };
-
   const printCert = () => {
     console.log("print");
     const input = document.getElementById("certificate");
@@ -65,18 +64,8 @@ const PrintCertificate = () => {
       pdf.save("certificate.pdf");
     });
   };
-  const [today, setToday] = useState("");
   const [name, setName] = useState("");
-  function getDateToday() {
-    var today = new Date();
-    var dd = String(today.getDate()).padStart(2, "0");
-    var mm = String(today.getMonth() + 1).padStart(2, "0");
-    var yyyy = today.getFullYear();
-    today = mm + "/" + dd + "/" + yyyy;
-    setToday(today);
-  }
   useEffect(() => {
-    getDateToday();
     getCertificate();
   }, []);
 
@@ -84,7 +73,7 @@ const PrintCertificate = () => {
     <div className="container py-5">
       <div className="row gy-5 justify-content-center">
         <div className="col-12 col-lg-9">
-          <div id="certificate" className="certficate-container">
+          <div id="certificate" className="certficate-container p-relative">
             <h2 className="certificate-name DMserif text-capitalize p-absolute text-center w-100">
               {name}
             </h2>
@@ -92,11 +81,23 @@ const PrintCertificate = () => {
               <span>
                 Certficate No. <br />
                 <b className="DMserif fs-4 text-dark fw-regular">
-                  {certData?.certificate ? certData?.certificate_key : ""}
+                  {certData?.certificate_key ? certData?.certificate_key : ""}
                 </b>
               </span>
               <span className="DMserif fs-4 text-warning fw-regular">
                 {certData?.created_at}
+              </span>
+            </div>
+            <div className="certificate-bottom p-3 p-absolute d-flex align-items-center w-75 mx-auto justify-content-around">
+              <span>
+                <b className="DMserif fs-4 text-dark fw-regular">
+                  {certData?.endorsed_by}
+                </b>
+              </span>
+              <span>
+                <b className="DMserif fs-4 text-dark fw-regular">
+                  {certData?.accredited_by}
+                </b>
               </span>
             </div>
             <img src={CertificateTemplate} alt="" className="w-100" />

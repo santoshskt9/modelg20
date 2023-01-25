@@ -4,8 +4,10 @@ import reducer from "./reducer";
 const UserContext = createContext();
 
 const initialState = {
-  userData: {},
-  token: "",
+  userData: localStorage.getItem("user")
+    ? JSON.parse(localStorage.getItem("user"))
+    : {},
+  token: localStorage.getItem("token") ? localStorage.getItem("token") : "",
   loginStatus: false,
 };
 const UserProvider = ({ children }) => {
@@ -21,7 +23,6 @@ const UserProvider = ({ children }) => {
       },
     });
   };
-
   const removeUser = () => {
     localStorage.removeItem("user");
     return dispatch({
@@ -32,7 +33,6 @@ const UserProvider = ({ children }) => {
       },
     });
   };
-
   const setToken = (token) => {
     console.log("Reducer got the Token: ", token);
     localStorage.setItem("token", token);
@@ -60,6 +60,7 @@ const UserProvider = ({ children }) => {
       setToken(token);
     }
     return state.loginStatus;
+    return true;
   };
 
   return (
@@ -82,6 +83,5 @@ const UserProvider = ({ children }) => {
 const useGlobalContext = () => {
   return useContext(UserContext);
 };
-
 
 export { UserContext, UserProvider, useGlobalContext };

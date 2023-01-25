@@ -131,7 +131,7 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
               {enrolled ? (
                 <Link
                   className="font-third text-danger"
-                  to={`/coursedetail/${courses.id}`}
+                  to={`/dashboard/courseview/${courses.courseId}`}
                 >
                   View Course <i className="bi bi-arrow-right"></i>
                 </Link>

@@ -7,25 +7,21 @@ const VimeoPlayer = ({
   setViewIndex,
   series,
   postProgress,
-  // setCertificateDownloadable,
 }) => {
   console.log("Vimeo Player Active", videoId);
-  const [loader, setLoader] = useState(true);
-  const [certificateDownloadable, setCertificateDownloadable] = useState(false);
+  const [loader, setLoader] = useState(false);
   const onEndHandler = () => {
     console.log("Video Ended");
-    postProgress(series[viewIndex].id);
   };
-
   return (
     <>
       <div className="h-100">
-        <Loading attr={loader} />
+        {/* <Loading attr={loader} /> */}
         <Player
           video={videoId}
           controls
           autoplay
-          onLoaded={() => setLoader(false)}
+          // onLoaded={() => setLoader(false)}
           responsive={true}
           onEnd={onEndHandler}
           pip={false}
@@ -51,6 +47,7 @@ const VimeoPlayer = ({
                 // setCertificateDownloadable(true);
               } else {
                 setViewIndex(viewIndex + 1);
+                postProgress(series[viewIndex].seriesId);
               }
             }}
           >

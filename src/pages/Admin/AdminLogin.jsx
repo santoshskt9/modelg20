@@ -54,8 +54,6 @@ const AdminLogin = () => {
 
   return (
     <>
-      {/* <BreadCrumb heading={"Login"} /> */}
-      <div className="p-5 bg-white"></div>
       <div className="container py-5 mt-lg-5 h-100">
         {/* <!-- ========== Start Login ========== --> */}
         <div className="row row-cols-1 row-cols-lg-2 align-items-center">

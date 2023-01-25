@@ -50,7 +50,9 @@ const StudentDashboard = () => {
     try {
       if (token) {
         console.log("new Token", token);
-        const res = await apiAuth.post("/course/enrolled", { studentId: userData?.id });
+        const res = await apiAuth.post("/course/enrolled", {
+          studentId: userData?.id,
+        });
         console.log("response enrolle", res);
         if (res.status == 200) {
           setEnrolledCourses(res.data.courses);
@@ -78,7 +80,39 @@ const StudentDashboard = () => {
   }, []);
   return (
     <div>
-      <DashboardHeader setEdit={true} />
+      <div className="p-relative">
+        <div className="d-flex p-absolute text-white justify-content-center align-items-center w-100 h-100">
+          <h1 className="text-initial text-center fs-2 bg-white px-4 py-2 bg-opacity-75">
+            Dashboard
+          </h1>
+        </div>
+        <img
+          src="https://img.freepik.com/free-vector/abstract-shape-with-halftone-background_1409-1277.jpg?t=st=1674384483~exp=1674385083~hmac=c15416d4a9483d729a0d4b544a11cd5eb151ac8ae4ba8757adcf420aaa7565bb"
+          alt=""
+          className="w-100"
+          style={{ height: "230px", objectFit: "cover" }}
+        />
+      </div>
+      <div className="container">
+        <div className="d-flex justify-content-between p-3">
+          <div className="d-flex">
+            <Avatar
+              alt={details ? details?.first_name : "Avatar"}
+              src={process.env.REACT_APP_API_BASE_URL + details?.profile}
+              sx={{ width: 146, height: 146 }}
+              style={{ marginTop: "-40px" }}
+              className="ms-4 shadow-lg"
+            />
+            <div className="p-2" style={{ maxWidth: "650px" }}>
+              <h3 className="fs-2 text-initial">
+                {details?.first_name} {details?.middle_name}{" "}
+                {details?.last_name}
+              </h3>
+              <p className="fs-6">{details?.bio}</p>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="container p-4 ">
         <ul
           class="nav nav-pill-design-2 nav-pills mb-3"
@@ -255,8 +289,10 @@ const StudentDashboard = () => {
                 />
               </div>
             ) : (
-              enrolledCourses.map((courses,i) => {
-                return <CourseCardItem courses={courses} key={i} enrolled={true}/>;
+              enrolledCourses.map((courses, i) => {
+                return (
+                  <CourseCardItem courses={courses} key={i} enrolled={true} />
+                );
               })
             )}
           </div>
@@ -267,7 +303,7 @@ const StudentDashboard = () => {
             aria-labelledby="pills-contact-tab"
             tabindex="0"
           >
-            <Certificate/>
+            <Certificate />
           </div>
         </div>
       </div>

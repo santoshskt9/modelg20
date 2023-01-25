@@ -61,12 +61,6 @@ const DashboardInstitute = () => {
       }
     }
   };
-  const handlelogout = async () => {
-    localStorage.clear();
-    toast.dismiss();
-    toast.success("Logged Out");
-    navigate("/");
-  };
   useEffect(() => {
     fetchStudents();
     fetchDetails();
@@ -74,23 +68,35 @@ const DashboardInstitute = () => {
   return (
     <div>
       <div>
-        <div className="bg-white p-5"></div>
-        <img
-          src={
-            details?.banner
-              ? details.banner
-              : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/college-open-house-invitation-banner-design-template-64bb82e1fda7fcd9e6fec7e1fcb13be9_screen.jpg?ts=1566569378"
-          }
-          alt=""
-          className="w-100 d-block"
-          style={{ height: "350px", objectFit: "cover", objectPosition: "top" }}
-        />
+        <div className="p-relative">
+          <div className="d-flex p-absolute text-white justify-content-center align-items-center w-100 h-100">
+            <h1 className="text-initial text-center fs-2 bg-white px-4 py-2 bg-opacity-75">
+              Dashboard
+            </h1>
+          </div>
+          <img
+            src={
+              details?.banner
+                ? process.env.REACT_APP_API_BASE_URL + details?.banner
+                : "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/college-open-house-invitation-banner-design-template-64bb82e1fda7fcd9e6fec7e1fcb13be9_screen.jpg?ts=1566569378"
+            }
+            alt=""
+            className="w-100 d-block"
+            style={{
+              height: "230px",
+              objectFit: "cover",
+              objectPosition: "center",
+            }}
+          />
+        </div>
         <div className="container">
           <div className="d-flex justify-content-start flex-column flex-lg-row">
             <div className=" p-3">
               <img
                 src={
-                  details?.logo ? details.logo : "images/icons/university.png"
+                  details?.logo
+                    ? process.env.REACT_APP_API_BASE_URL + details.logo
+                    : "images/icons/university.png"
                 }
                 alt=""
                 className="p-3 shadow border border-3 rounded-4"
@@ -118,12 +124,6 @@ const DashboardInstitute = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="container">
-        <button className="btn btn-primary-outline m-2">Edit Profile</button>
-        <button className="btn btn-danger m-2" onClick={handlelogout}>
-          Log out
-        </button>
       </div>
       <div className="container p-4">
         <h6>Shareable link</h6>

@@ -5,16 +5,19 @@ import CoursePanel from "./coursepanel/CoursePanel";
 import IframePdfViewer from "./viewer/IframePdfViewer";
 import Loader from "./components/Loader/Loader";
 // import { common_axios } from "../../../../../api/axios";
-// import { useParams, useNavigate } from "react-router-dom";
-// import { useHistory } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 // import Swal from "sweetalert2";
 import Loading from "./components/Loader/Loading";
 import QuizComp from "./quiz/QuizComp";
+import { api, apiAuth } from "api";
+import { useGlobalContext } from "global/context";
+import { toast } from "react-hot-toast";
 
 const CourseViewPage = () => {
   // Declarations
-  // const param = useParams();
-  // const history = useHistory();
+  const { courseId } = useParams();
+  const { userData } = useGlobalContext();
+  const navigate = useNavigate();
   // const courseData = democourse;
   const [loader, setLoader] = useState(true);
   const [course, setCourse] = useState({});
@@ -23,69 +26,58 @@ const CourseViewPage = () => {
   const [certificateDownloadable, setCertificateDownloadable] = useState(false);
 
   //Generating the certificate
-  // const generateCertificate = async () => {
-  //   try {
-  //     let formdata = {
-  //       courseId: course?.course?.id,
-  //       studentName: JSON.parse(localStorage.getItem("userDetails")).firstName,
-  //       hours: course?.course?.duration || 1,
-  //       CrDescription: "COurse Description",
-  //       principal: "Safeinschool",
-  //       accreditedBy: "SafeInSchool",
-  //       endorsedBy: "National Commission for Child Protection",
-  //       userId: JSON.parse(localStorage.getItem("userDetails")).id,
-  //     };
-  //     console.log("Certificate Form: ", formdata);
-  //     const res = await common_axios.post("/certificate/generate", formdata);
-  //     console.log(res);
-  //     if (res.data.statusDescription.statusCode == 200) {
-  //       console.log("Certificate Generated: ", res.data);
-  //       history.push(`/printcertificate/${course?.course?.id}`);
-  //     } else if (res.data.statusDescription.statusCode == 303) {
-  //       console.log("");
-  //       await Swal.fire({
-  //         title: "Certificate already generated !!",
-  //         text: "Visit Your Certificates Tab in My Profile to See Your Certificate",
-  //         icon: "warning",
-  //         timer: 4000,
-  //         timerProgressBar: true,
-  //       });
-  //     } else {
-  //       console.log("Contact admin", res);
-  //     }
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
+  const generateCertificate = async () => {
+    try {
+      let formdata = {
+        courseId,
+        studentId: userData.id,
+      };
+      const res = await apiAuth.post("/course/certificate", formdata);
+      if (res.status == 200) {
+        toast.success("Certificate Genrerated Successfully");
+        navigate(`/dashboard/certificate/${courseId}`);
+      }
+    } catch (err) {
+      toast.error(
+        err.response.data.message
+          ? err.response.data.message
+          : "Something Went Wrong Check Your Internet Connection"
+      );
+    }
+  };
 
-  //Getting the course data
-  // const getCourse = async (id) => {
-  //   try {
-  //     // const res = await common_axios(`/course/v2/${id}`);
-  //     if (res.data.statusDescription.statusCode == 200) {
-  //       setCourse(res.data.coursedetail);
-  //       setSeries(res.data.coursedetail.series);
-  //       setLoader(false);
-  //     }
-  //   } catch (error) {
-  //     console.log(error);
-  //   }
-  // };
+  // Getting the course data
+  const getCourse = async (id) => {
+    try {
+      const res = await apiAuth.post(`course/enrolled/view`, {
+        courseId,
+        studentId: userData.id,
+      });
+      if (res.status == 200) {
+        setCourse(res.data.course);
+        setSeries(res.data.seriesArr);
+      }
+    } catch (error) {
+      toast.error(
+        error.response.data.message
+          ? error.response.data.message
+          : "Something Went Wrong Check Your Internet Connection"
+      );
+    }
+  };
 
   // Course View Type Renderer
   const [viewIndex, setViewIndex] = useState(0);
-
   const view = (data) => {
-    switch (data.documentType) {
+    switch (data.vd_type) {
       case 1:
-        console.log("Video");
         return (
           <VimeoPlayer
-            videoId={data.documentPath}
+            videoId={data.path}
             viewIndex={viewIndex}
             setViewIndex={setViewIndex}
             series={series}
-            // postProgress={postProgress}
+            postProgress={postProgress}
             setCertificateDownloadable={setCertificateDownloadable}
           />
         );
@@ -93,14 +85,13 @@ const CourseViewPage = () => {
         break;
 
       case 2:
-        console.log("Pdf");
         return (
           <IframePdfViewer
             file={data.documentPath}
             viewIndex={viewIndex}
             setViewIndex={setViewIndex}
             series={series}
-            // postProgress={postProgress}
+            postProgress={postProgress}
             setCertificateDownloadable={setCertificateDownloadable}
           />
         );
@@ -114,7 +105,7 @@ const CourseViewPage = () => {
             viewIndex={viewIndex}
             setViewIndex={setViewIndex}
             series={series}
-            // postProgress={postProgress}
+            postProgress={postProgress}
             setCertificateDownloadable={setCertificateDownloadable}
           />
         );
@@ -130,68 +121,73 @@ const CourseViewPage = () => {
     }
   };
 
-  // const setCurrentCourse = (id) => {
-  //   if (series[viewIndex].id !== id) {
-  //     series.forEach((ele, i) => {
-  //       if (ele.id == id) setViewIndex(i);
-  //     });
-  //   }
-  // };
+  const setCurrentCourse = (id) => {
+    if (series[viewIndex].id !== id) {
+      series.forEach((ele, i) => {
+        if (ele.seriesId == id) setViewIndex(i);
+      });
+    }
+  };
 
-  // const [sectionCompleted, setSectionCompleted] = useState(0);
-  // const [progress, setProgress] = useState([]);
+  const [sectionCompleted, setSectionCompleted] = useState(0);
+  const [progress, setProgress] = useState([]);
 
-  //Function for get Progress
-  // async function fetchPrevProgress() {
-  //   try {
-  //     if (course?.course) {
-  //       const res = await common_axios.post("/courseenrolled/getprogress", {
-  //         userId: JSON.parse(localStorage.getItem("userDetails")).id,
-  //         courseId: course.course.id,
-  //       });
-  //       console.log("Response", res);
-  //       if (res.data) {
-  //         setProgress(res.data.sectionProgress);
-  //         setSectionCompleted(res.data.sectionCompleted);
-  //         let lastIndex = res.data.sectionProgress.length - 1;
-  //         setViewIndex(lastIndex);
-  //       }
-  //     }
-  //   } catch (error) {
-  //     console.log("Error", error);
-  //   }
-  // }
-
+  // Function for get Progress
+  async function fetchPrevProgress() {
+    try {
+      if (course) {
+        const res = await apiAuth.post("/course/getprogress", {
+          courseId,
+          studentId: userData.id,
+        });
+        if (res.status === 200) {
+          setProgress(res.data.sectionProgress);
+          setSectionCompleted(res.data.sectionCompleted);
+          if (res.data.sectionProgress.length !== 0) {
+            let lastIndex = res.data.sectionProgress.length - 1;
+            setViewIndex(lastIndex);
+          }
+        }
+      }
+    } catch (error) {
+      toast.error(
+        error.response.data.message
+          ? error.response.data.message
+          : "Something Went Wrong Check Your Internet Connection"
+      );
+    }
+  }
 
   //Function for Post Progress
-  // async function postProgress(Id) {
-  //   try {
-  //     const res = await common_axios.post("/courseenrolled/updateprogress", {
-  //       userId: JSON.parse(localStorage.getItem("userDetails")).id,
-  //       courseId: course?.course?.id,
-  //       seriesId: Id,
-  //       totalLength: course.courseSections,
-  //     });
-  //     if (res.data) {
-  //       setProgress(res.data.sectionProgress);
-  //       setSectionCompleted(res.data.sectionCompleted);
-  //     }
-  //   } catch (error) {
-  //     console.log("Error Progress", error);
-  //   }
-  // }
+  async function postProgress(seriesId) {
+    try {
+      const res = await apiAuth.post("/course/updateprogress", {
+        studentId: userData.id,
+        courseId,
+        seriesId: seriesId,
+        totalLength: series.length,
+      });
+      if (res.status == 200) {
+        toast.success("Section Marked as Completed");
+        fetchPrevProgress();
+      }
+    } catch (error) {
+      toast.error(
+        error.response.data.message
+          ? error.response.data.message
+          : "Something Went Wrong Check Your Internet Connnection"
+      );
+    }
+  }
 
-  // postProgress(36);
-  // useEffect(() => {
-  //   console.log("ACTIVE", series[viewIndex]);
-  // }, [viewIndex, series.length]);
+  useEffect(() => {}, [viewIndex, series.length]);
 
-  // useEffect(() => {
-  //   getCourse(param.id);
-  // }, []);
-  // useEffect(() => {
-  //   fetchPrevProgress();
-  // }, [course]);
+  useEffect(() => {
+    getCourse();
+  }, []);
+  useEffect(() => {
+    fetchPrevProgress();
+  }, []);
   return (
     <>
       {/* <Loading attr={loader} /> */}
@@ -242,13 +238,13 @@ const CourseViewPage = () => {
             <CoursePanel
               sidebarActive={sidebarActive}
               setSidebarActive={setSidebarActive}
-              // generateCertificate={generateCertificate}
-              // progress={progress}
-              certificateDownloadable
-              // sectionCompleted={sectionCompleted}
+              generateCertificate={generateCertificate}
+              progress={progress}
+              sectionCompleted={sectionCompleted}
               modules={course}
+              series={series}
               activeCourse={series[viewIndex]}
-              // setCurrentCourse={setCurrentCourse}
+              setCurrentCourse={setCurrentCourse}
             />{" "}
           </div>
         </div>

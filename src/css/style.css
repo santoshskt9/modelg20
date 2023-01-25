@@ -1597,7 +1597,7 @@ textarea.form-control-sm {
 /* navigation */
 .navigation {
   box-shadow: 0px 9px 20px 0px rgba(0, 0, 0, 0.09);
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 
@@ -2998,6 +2998,170 @@ input[type="number"] {
   background-color: white;
   border-color: rgb(38, 107, 227) !important;
 }
-.logged-navbar {
+.logged-navbar,.navbar {
   position: static;
+}
+
+
+/* Course CSS Additions  */
+.font-xs {
+  font-size: 11px;
+}
+.font-sm {
+  font-size: 14px;
+}
+.icon-50 {
+  height: 50px;
+  width: 50px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.icon-80 {
+  height: 80px;
+  width: 80px;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.coursebreadcrumb {
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0 0 0 2000px rgba(216, 216, 216, 0.464);
+  background: url(https://cdn.pixabay.com/photo/2016/02/18/19/25/pc-1207886_1280.jpg)
+    no-repeat center;
+  background-size: cover;
+}
+.grad-bg-1 {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+.grad-bg-2 {
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+.grad-bg-3 {
+  background-color: #0093e9;
+  background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+.grad-bg-4 {
+  background-color: #d9afd9;
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+}
+.grad-bg-5 {
+  background-color: #fbab7e;
+  background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+.grad-bg-6 {
+  background-color: #8bc6ec;
+  background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+}
+.grad-bg-light {
+  background: rgb(255, 255, 255);
+}
+
+.certficate-container {
+  position: relative;
+}
+.p-absolute {
+  position: absolute;
+}
+.certficate-container .certificate-name {
+  top: 45%;
+  font-size: 3rem;
+}
+.certficate-container .certificate-date {
+  top: 50%;
+  left: 30%;
+}
+.certificate-bottom{
+  bottom: 120px;
+  left: 120px;
+  /* width: 700px !important */
+}
+
+Link {
+  color: black !important;
+}
+.accordion-button::after {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/5337/5337906.png) !important;
+}
+.p-relative {
+  position: relative;
+}
+@media only screen and (max-width: 992px) {
+  .coursepanelColumn {
+    position: absolute;
+    right: -100%;
+    top: 0;
+    width: 350px !important;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .coursepanelColumn.active {
+    position: absolute;
+    /* right: -100%; */
+    right: 0%;
+    top: 0;
+    width: 350px !important;
+    background-color: white;
+  }
+  .coursePanelToggle {
+    position: fixed;
+    width: 50px !important;
+    right: 10px;
+    top: 100px;
+    border-radius: 20px 0px 0px 20px !important;
+  }
+}
+.module-sublist li a {
+  color: black;
+}
+.module-sublist li {
+  color: black;
+  position: relative;
+  background: white;
+}
+.module-sublist li:hover {
+  color: black;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+  font-weight: 500;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+}
+
+.module-sublist li.active {
+  color: black;
+  position: relative;
+  background-image: linear-gradient(
+    to right,
+    #f09819 0%,
+    #edde5d 51%,
+    #f09819 100%
+  );
+  font-weight: 600;
+  transition: 0.3s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+}
+/* user agent stylesheet */
+::marker{
+  display: none !important;
 }

@@ -49,7 +49,11 @@ const Login = () => {
       if (error) {
         console.log(error);
         toast.dismiss();
-        toast.error(error.response?.data.message);
+        toast.error(
+          error.response?.data.message
+            ? error.response?.data.message
+            : "OOps Something went Wrong"
+        );
       }
       setEmail("");
       setPassword("");
@@ -57,8 +61,6 @@ const Login = () => {
   };
   return (
     <>
-      {/* <BreadCrumb heading={"Login"} /> */}
-      <div className="p-5 bg-white"></div>
       <div className="container py-5 mt-lg-5 h-100">
         {/* <!-- ========== Start Login ========== --> */}
         <div className="row row-cols-1 row-cols-lg-2 align-items-center">
@@ -76,8 +78,9 @@ const Login = () => {
               >
                 <li className="nav-item" role="presentation">
                   <button
-                    className={`nav-link ${usertype == 0 ? "active" : ""
-                      } btn-primary-outline fw-semibold rounded-pill`}
+                    className={`nav-link ${
+                      usertype == 0 ? "active" : ""
+                    } btn-primary-outline fw-semibold rounded-pill`}
                     onClick={() => setUsertype(0)}
                   >
                     Student
@@ -85,8 +88,9 @@ const Login = () => {
                 </li>
                 <li className="nav-item" role="presentation">
                   <button
-                    className={`nav-link ${usertype == 1 ? "active" : ""
-                      } btn-primary-outline  fw-semibold rounded-pill`}
+                    className={`nav-link ${
+                      usertype == 1 ? "active" : ""
+                    } btn-primary-outline  fw-semibold rounded-pill`}
                     onClick={() => setUsertype(1)}
                   >
                     Institute

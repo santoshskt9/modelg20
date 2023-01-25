@@ -9,5 +9,4 @@ const AdminRoute = () => {
         </Routes>
     )
 }
-
 export default AdminRoute

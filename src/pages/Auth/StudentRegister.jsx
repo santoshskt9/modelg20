@@ -50,7 +50,6 @@ const StudentRegister = () => {
     <div>
       {" "}
       <div>
-        <div className="bg-white p-5"></div>
         <img
           src={
             details?.banner
@@ -97,7 +96,7 @@ const StudentRegister = () => {
             </h1>
           </div>
           <div className="col">
-            <StudentRegisterForm collegeId={collegeId}/>
+            <StudentRegisterForm collegeId={collegeId} />
           </div>
         </div>
 

@@ -9,7 +9,6 @@ const IframePdfViewer = ({
   setViewIndex,
   series,
   postProgress,
-  // setCertificateDownloadable
 }) => {
   const [certificateDownloadable, setCertificateDownloadable] = useState(false);
   const startTime = new Date().getTime();

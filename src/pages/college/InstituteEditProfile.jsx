@@ -12,18 +12,36 @@ import FormLabel from "@mui/material/FormLabel";
 import { studentRegisterSchema } from "schema/register";
 import { toast } from "react-hot-toast";
 import { apiAuth } from "api";
-import { Avatar } from "@mui/material";
-import DashboardHeader from "./DashboardHeader";
+import { Avatar, InputLabel, MenuItem, Select } from "@mui/material";
 import { useGlobalContext } from "global/context";
 import { useNavigate } from "react-router-dom";
-// import EditProfile from "./EditProfile";
+import { useEffect } from "react";
 
-const StudentEditProfile = () => {
+const InstituteEditProfile = () => {
   const navigate = useNavigate();
   const [profile, setProfile] = useState("");
   const [banner, setBanner] = useState("");
   const { userData } = useGlobalContext();
+  const [details, setDetails] = useState({});
   let collegeId = 5;
+  // fetchDetails
+  const fetchDetails = async () => {
+    try {
+      const res = await apiAuth.post("/institute", {
+        instituteId: userData.id,
+      });
+      console.log("response", res);
+      setDetails(res.data.result[0]);
+    } catch (error) {
+      toast.dismiss();
+      toast.error("Oops Something went wrong");
+      console.log("error", error);
+      // handlelogout();
+    }
+  };
+  useEffect(() => {
+    fetchDetails();
+  }, []);
   //Reset Password
   const passwordformik = useFormik({
     initialValues: {
@@ -75,7 +93,7 @@ const StudentEditProfile = () => {
     formData.append("file", profile);
     try {
       const res = await apiAuth.put(
-        `/student/profile?update_type=profile_pic`,
+        `/institute/profile?update_type=logo`,
         formData
       );
       if (res.status === 200) {
@@ -99,7 +117,7 @@ const StudentEditProfile = () => {
     formData.append("file", banner);
     try {
       const res = await apiAuth.put(
-        `/student/profile?update_type=banner`,
+        `/institute/profile?update_type=banner`,
         formData
       );
       if (res.status === 200) {
@@ -116,43 +134,47 @@ const StudentEditProfile = () => {
       }
     }
   }
+  console.log({
+    title: details.title,
+    first_name: details.first_name,
+    middle_name: details.middle_name,
+    last_name: details.last_name,
+    contact: details.contact,
+    email: details.email,
+  });
   const basicFormik = useFormik({
     initialValues: {
-      first_name: "",
-      middle_name: "",
-      last_name: "2001-01-26",
-      contact: "",
-      email: "",
-      last_name: "",
-      dob: "",
-      father_name: "",
-      gender: "female",
+      title: details.title,
+      first_name: details.first_name,
+      middle_name: details.middle_name,
+      last_name: details.last_name,
+      contact: details.contact,
+      email: details.email,
     },
     onSubmit: async (values, { resetForm }) => {
       toast.dismiss();
       toast.loading("Submiting the form");
       const formData = new FormData();
+      formData.append("title", values.title);
       formData.append("first_name", values.first_name);
       formData.append("middle_name", values.middle_name);
       formData.append("last_name", values.last_name);
       formData.append("contact", values.contact);
-      formData.append("email", values.email);
-      formData.append("dob", values.dob);
-      formData.append("father_name", values.father_name);
-      formData.append("gender", values.gender);
       console.log("formData", formData);
       try {
         const res = await apiAuth.put(
-          `/student/profile?update_type=basic`,
+          `/institute/profile?update_type=basic`,
           formData
         );
         if (res.status === 200) {
+          toast.dismiss();
           toast.success(res.data.message);
+          resetForm();
         }
         console.log("Basic Update", res);
-        // console.log("Basic Update", values);
       } catch (error) {
         if (error) {
+          toast.dismiss();
           toast.error(
             error.response.data.message
               ? error.response.data.message
@@ -167,9 +189,10 @@ const StudentEditProfile = () => {
       fb: "",
       twitter: "",
       insta: "",
+      institution_name: "",
       bio: "",
-      address: "",
-      state: "2001-01-26",
+      institution_address: "",
+      state: "",
       pincode: "",
     },
     onSubmit: async (values, { resetForm }) => {
@@ -179,15 +202,15 @@ const StudentEditProfile = () => {
       formData.append("fb", values.fb);
       formData.append("twitter", values.twitter);
       formData.append("insta", values.insta);
+      formData.append("institution_name", values.institution_name);
       formData.append("bio", values.bio);
-      formData.append("address", values.address);
-      formData.append("dob", values.dob);
+      formData.append("institution_address", values.institution_address);
       formData.append("state", values.state);
       formData.append("pincode", values.pincode);
       console.log("formData", formData);
       try {
         const res = await apiAuth.put(
-          `/student/profile?update_type=additional`,
+          `/institute/profile?update_type=additional`,
           formData
         );
         if (res.status === 200) {
@@ -217,7 +240,11 @@ const StudentEditProfile = () => {
           </h1>
         </div>
         <img
-          src="https://img.freepik.com/free-vector/abstract-shape-with-halftone-background_1409-1277.jpg?t=st=1674384483~exp=1674385083~hmac=c15416d4a9483d729a0d4b544a11cd5eb151ac8ae4ba8757adcf420aaa7565bb"
+          src={
+            details?.banner
+              ? process.env.REACT_APP_API_BASE_URL + details?.banner
+              : "https://img.freepik.com/free-vector/abstract-shape-with-halftone-background_1409-1277.jpg?t=st=1674384483~exp=1674385083~hmac=c15416d4a9483d729a0d4b544a11cd5eb151ac8ae4ba8757adcf420aaa7565bb"
+          }
           alt=""
           className="w-100"
           style={{ height: "230px", objectFit: "cover" }}
@@ -282,7 +309,11 @@ const StudentEditProfile = () => {
                     <Avatar
                       alt=""
                       name="profilepic"
-                      src={profile && URL.createObjectURL(profile)}
+                      src={
+                        profile
+                          ? URL.createObjectURL(profile)
+                          : process.env.REACT_APP_API_BASE_URL + details?.logo
+                      }
                       sx={{ width: 96, height: 96 }}
                     />
                     <IconButton
@@ -322,10 +353,14 @@ const StudentEditProfile = () => {
                 <div className="col">
                   <form onSubmit={uploadBanner}>
                     <img
-                      src={banner && URL.createObjectURL(banner)}
+                      src={
+                        banner
+                          ? URL.createObjectURL(banner)
+                          : process.env.REACT_APP_API_BASE_URL + details?.banner
+                      }
                       alt=""
                       className="w-100 border rounded-3"
-                      style={{ height: "200px" }}
+                      style={{ height: "200px", objectFit: "cover" }}
                     />
                     <div className="d-flex align-items-center">
                       <IconButton
@@ -366,7 +401,35 @@ const StudentEditProfile = () => {
                 <div className="col">
                   <form onSubmit={basicFormik.handleSubmit}>
                     <div className="row gy-4">
-                      <div className="col-12 col-lg-4">
+                      <div className="col-12 col-lg-3">
+                        <FormControl fullWidth>
+                          <InputLabel id="demo-simple-select-label">
+                            Title
+                          </InputLabel>
+                          <Select
+                            labelId="demo-simple-select-label"
+                            id="title"
+                            name="title"
+                            label="Title"
+                            value={basicFormik.values.title}
+                            onChange={basicFormik.handleChange}
+                            error={
+                              basicFormik.touched.title &&
+                              Boolean(basicFormik.errors.title)
+                            }
+                            required
+                            helperText={
+                              basicFormik.touched.title &&
+                              basicFormik.errors.title
+                            }
+                          >
+                            <MenuItem value={"Mr."}>Mr.</MenuItem>
+                            <MenuItem value={"Ms."}>Ms.</MenuItem>
+                            <MenuItem value={"Miss"}>Miss</MenuItem>
+                          </Select>
+                        </FormControl>
+                      </div>
+                      <div className="col-12 col-lg-9">
                         <TextField
                           fullWidth
                           id="first_name"
@@ -385,7 +448,7 @@ const StudentEditProfile = () => {
                           }
                         />
                       </div>
-                      <div className="col-12 col-lg-4">
+                      <div className="col-12 col-lg-6">
                         <TextField
                           fullWidth
                           id="middle_name"
@@ -404,7 +467,7 @@ const StudentEditProfile = () => {
                           }
                         />
                       </div>
-                      <div className="col-12 col-lg-4">
+                      <div className="col-12 col-lg-6">
                         <TextField
                           fullWidth
                           id="last_name"
@@ -455,80 +518,12 @@ const StudentEditProfile = () => {
                             basicFormik.touched.email &&
                             Boolean(basicFormik.errors.email)
                           }
+                          disabled={true}
                           helperText={
                             basicFormik.touched.email &&
                             basicFormik.errors.email
                           }
                         />
-                      </div>
-                      <div className="col-12 col-lg-6">
-                        <TextField
-                          fullWidth
-                          id="dob"
-                          name="dob"
-                          type="date"
-                          label="Date of Birth"
-                          size="large"
-                          value={basicFormik.values.dob}
-                          onChange={basicFormik.handleChange}
-                          error={
-                            basicFormik.touched.dob &&
-                            Boolean(basicFormik.errors.dob)
-                          }
-                          helperText={
-                            basicFormik.touched.dob && basicFormik.errors.dob
-                          }
-                        />
-                      </div>
-                      <div className="col-12 col-lg-6">
-                        <TextField
-                          fullWidth
-                          id="father_name"
-                          name="father_name"
-                          label="Father's Name"
-                          size="large"
-                          value={basicFormik.values.father_name}
-                          onChange={basicFormik.handleChange}
-                          error={
-                            basicFormik.touched.father_name &&
-                            Boolean(basicFormik.errors.father_name)
-                          }
-                          helperText={
-                            basicFormik.touched.father_name &&
-                            basicFormik.errors.father_name
-                          }
-                        />
-                      </div>
-                      <div className="col-12">
-                        <FormControl>
-                          <FormLabel id="demo-radio-buttons-group-label">
-                            Gender
-                          </FormLabel>
-                          <RadioGroup
-                            aria-labelledby="demo-radio-buttons-group-label"
-                            defaultValue={basicFormik.values.gender}
-                            id="gender"
-                            name="gender"
-                            onChange={basicFormik.handleChange}
-                            row
-                          >
-                            <FormControlLabel
-                              value="female"
-                              control={<Radio />}
-                              label="Female"
-                            />
-                            <FormControlLabel
-                              value="male"
-                              control={<Radio />}
-                              label="Male"
-                            />
-                            <FormControlLabel
-                              value="other"
-                              control={<Radio />}
-                              label="Other"
-                            />
-                          </RadioGroup>
-                        </FormControl>
                       </div>
                       <div className="col-12">
                         <Button
@@ -580,21 +575,42 @@ const StudentEditProfile = () => {
                       <div className="col-12">
                         <TextField
                           fullWidth
-                          id="address"
-                          name="address"
-                          label="Address"
+                          id="institution_name"
+                          name="institution_name"
+                          label="Institute Name"
                           multiline
                           rows={3}
                           size="large"
-                          value={additionalFormik.values.address}
+                          value={additionalFormik.values.institution_name}
                           onChange={additionalFormik.handleChange}
                           error={
-                            additionalFormik.touched.address &&
-                            Boolean(additionalFormik.errors.address)
+                            additionalFormik.touched.institution_name &&
+                            Boolean(additionalFormik.errors.institution_name)
                           }
                           helperText={
-                            additionalFormik.touched.address &&
-                            additionalFormik.errors.address
+                            additionalFormik.touched.institution_name &&
+                            additionalFormik.errors.institution_name
+                          }
+                        />
+                      </div>
+                      <div className="col-12">
+                        <TextField
+                          fullWidth
+                          id="institution_address"
+                          name="institution_address"
+                          label="Institute Address"
+                          multiline
+                          rows={3}
+                          size="large"
+                          value={additionalFormik.values.institution_address}
+                          onChange={additionalFormik.handleChange}
+                          error={
+                            additionalFormik.touched.institution_address &&
+                            Boolean(additionalFormik.errors.institution_address)
+                          }
+                          helperText={
+                            additionalFormik.touched.institution_address &&
+                            additionalFormik.errors.institution_address
                           }
                         />
                       </div>
@@ -633,6 +649,66 @@ const StudentEditProfile = () => {
                           helperText={
                             additionalFormik.touched.pincode &&
                             additionalFormik.errors.pincode
+                          }
+                        />
+                      </div>
+                      <div className="col-12">
+                        <TextField
+                          fullWidth
+                          id="fb"
+                          name="fb"
+                          label="Facebook"
+                          size="large"
+                          type={"url"}
+                          value={additionalFormik.values.fb}
+                          onChange={additionalFormik.handleChange}
+                          error={
+                            additionalFormik.touched.fb &&
+                            Boolean(additionalFormik.errors.fb)
+                          }
+                          helperText={
+                            additionalFormik.touched.fb &&
+                            additionalFormik.errors.fb
+                          }
+                        />
+                      </div>
+                      <div className="col-12">
+                        <TextField
+                          fullWidth
+                          id="twitter"
+                          name="twitter"
+                          label="Twitter"
+                          type={"url"}
+                          size="large"
+                          value={additionalFormik.values.twitter}
+                          onChange={additionalFormik.handleChange}
+                          error={
+                            additionalFormik.touched.twitter &&
+                            Boolean(additionalFormik.errors.twitter)
+                          }
+                          helperText={
+                            additionalFormik.touched.twitter &&
+                            additionalFormik.errors.twitter
+                          }
+                        />
+                      </div>
+                      <div className="col-12">
+                        <TextField
+                          fullWidth
+                          id="insta"
+                          name="insta"
+                          label="Instagram"
+                          type={"url"}
+                          size="large"
+                          value={additionalFormik.values.insta}
+                          onChange={additionalFormik.handleChange}
+                          error={
+                            additionalFormik.touched.insta &&
+                            Boolean(additionalFormik.errors.insta)
+                          }
+                          helperText={
+                            additionalFormik.touched.insta &&
+                            additionalFormik.errors.insta
                           }
                         />
                       </div>
@@ -702,6 +778,7 @@ const StudentEditProfile = () => {
                           passwordformik.touched.password &&
                           passwordformik.errors.password
                         }
+                        
                       />
                     </div>
                     <div className="col-12">
@@ -746,4 +823,4 @@ const StudentEditProfile = () => {
   );
 };
 
-export default StudentEditProfile;
+export default InstituteEditProfile;
