@@ -120,11 +120,6 @@ const DashboardInstitute = () => {
     <div>
       <div>
         <div className="p-relative">
-          <div className="d-flex p-absolute text-white justify-content-center align-items-center w-100 h-100">
-            <h1 className="text-initial text-center fs-2 bg-white px-4 py-2 bg-opacity-75">
-              Dashboard
-            </h1>
-          </div>
           <img
             src={
               details?.banner
@@ -134,8 +129,8 @@ const DashboardInstitute = () => {
             alt=""
             className="w-100 d-block"
             style={{
-              height: "230px",
-              objectFit: "cover",
+              maxHeight: "60vh",
+              objectFit: "contain",
               objectPosition: "center",
             }}
           />

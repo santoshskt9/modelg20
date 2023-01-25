@@ -58,7 +58,12 @@ const StudentRegister = () => {
           }
           alt=""
           className="w-100 d-block"
-          style={{ height: "350px", objectFit: "cover", objectPosition: "center" }}
+          style={{
+            maxHeight: "60vh",
+            objectFit: "contain",
+            objectPosition: "center",
+            objectPosition: "center",
+          }}
         />
         <div className="container">
           <div className="d-flex justify-content-start flex-column flex-lg-row">

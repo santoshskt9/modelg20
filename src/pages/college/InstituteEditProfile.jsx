@@ -233,11 +233,6 @@ const InstituteEditProfile = () => {
   return (
     <>
       <div className="p-relative">
-        <div className="d-flex p-absolute text-white justify-content-center align-items-center w-100 h-100">
-          <h1 className="text-initial text-center fs-2 bg-white px-4 py-2 bg-opacity-75">
-            Edit Profile
-          </h1>
-        </div>
         <img
           src={
             details?.banner
@@ -246,7 +241,7 @@ const InstituteEditProfile = () => {
           }
           alt=""
           className="w-100"
-          style={{ height: "230px", objectFit: "cover" }}
+          style={{ maxHeight: "60vh", objectFit: "contain" }}
         />
       </div>
       <div className="container py-5">
@@ -291,7 +286,7 @@ const InstituteEditProfile = () => {
           >
             {/* <EditProfile /> */}
             <div className="container">
-              <div className="row row-col-1 row-cols-lg-2 gy-5">
+              <div className="row row-cols-1 row-cols-lg-2 gy-5">
                 {/* -------------------
                 Profile Picture
                -------------------*/}
