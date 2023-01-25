@@ -22,10 +22,7 @@ const Navbar = () => {
         }`}
       >
         <div className="container">
-          <NavLink
-            className="navbar-brand"
-            to={token ? "/dashboard" : "/"}
-          >
+          <NavLink className="navbar-brand" to={token ? "/dashboard" : "/"}>
             <img
               className="img-responsive height-60 pe-2  border-3"
               src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
@@ -74,7 +71,10 @@ const Navbar = () => {
                       </li>
                     )}
                     <li className="mt-2">
-                      <Link className="dropdown-item" to="/dashboard/editprofile">
+                      <Link
+                        className="dropdown-item"
+                        to="/dashboard/editprofile"
+                      >
                         Edit Profile
                       </Link>
                     </li>
@@ -271,206 +271,267 @@ const Navbar = () => {
         </div>
         <div className="offcanvas-body">
           <ul className="list-group">
-            <li
-              className="list-group-item p-3 mb-2 rounded-3 "
-              data-bs-dismiss="offcanvas"
-            >
-              <NavLink
-                to="/model-g20"
-                className="fs-6 text-uppercase text-dark"
-              >
-                Model G20
-              </NavLink>
-            </li>
-            <li
-              className="list-group-item p-3 border rounded-3 "
-              data-bs-dismiss="offcanvas"
-            >
-              <NavLink
-                className="fs-6 text-uppercase text-dark"
-                to="/g20-genius-certification"
-              >
-                G20 Genius
-              </NavLink>
-            </li>
-            <li
-              className="list-group-item p-3 mt-2 border rounded-3"
-              data-bs-dismiss="offcanvas"
-            >
-              <NavLink
-                to="/g20-campus-sherpa"
-                className="fs-6 text-uppercase text-dark"
-              >
-                CAMPUS SHERPA
-              </NavLink>
-            </li>
+            {token ? (
+              <>
+                <li
+                  className="list-group-item p-3 mb-2 rounded-3 "
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    to="/dashboard"
+                    className="fs-6 text-uppercase text-dark"
+                  >
+                    Dashboard
+                  </NavLink>
+                </li>
+                <li
+                  className="list-group-item p-3 mb-2 rounded-3 "
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    to="/courses"
+                    className="fs-6 text-uppercase text-dark"
+                  >
+                    Courses
+                  </NavLink>
+                </li>
+                <li
+                  className="list-group-item p-3 mb-2 rounded-3 "
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    to="/course/detail/g20-genius-certificartion-course"
+                    className="fs-6 text-uppercase text-dark"
+                  >
+                    G20 Genius Certification Course
+                  </NavLink>
+                </li>
+                <li
+                  className="list-group-item p-3 mb-2 rounded-3 "
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    to="/dashboard/editprofile"
+                    className="fs-6 text-uppercase text-dark"
+                  >
+                    Edit Profile
+                  </NavLink>
+                </li>
+                <li
+                  className="list-group-item mt-2 border-0 rounded-3"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <button
+                    onClick={handlelogout}
+                    className="btn btn-danger hover-ripple w-100 text-initial"
+                  >
+                    Logout
+                  </button>
+                </li>
+              </>
+            ) : (
+              <>
+                <li
+                  className="list-group-item p-3 mb-2 rounded-3 "
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    to="/model-g20"
+                    className="fs-6 text-uppercase text-dark"
+                  >
+                    Model G20
+                  </NavLink>
+                </li>
+                <li
+                  className="list-group-item p-3 border rounded-3 "
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    className="fs-6 text-uppercase text-dark"
+                    to="/g20-genius-certification"
+                  >
+                    G20 Genius
+                  </NavLink>
+                </li>
+                <li
+                  className="list-group-item p-3 mt-2 border rounded-3"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    to="/g20-campus-sherpa"
+                    className="fs-6 text-uppercase text-dark"
+                  >
+                    CAMPUS SHERPA
+                  </NavLink>
+                </li>
+                <li className="list-group-item p-3 mt-2 border rounded-3">
+                  <p
+                    className="fs-6 text-uppercase text-dark mb-0"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThemes"
+                  >
+                    Themes
+                  </p>
+                  <div className="collapse p-0 m-0 mt-3" id="collapseThemes">
+                    <ul className="list-group">
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/future-of-work"
+                        >
+                          <span className="text-initial">Future of Work</span>
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/peacebuilding-and-reconciliation"
+                        >
+                          <span className="text-initial">
+                            Peacebuilding and Reconciliation
+                          </span>
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/climate-change-and-disaster-risk-reduction"
+                        >
+                          <span className="text-initial">
+                            Climate Change and Disaster Risk Reduction
+                          </span>
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/health-well-being-and-sports"
+                        >
+                          <span className="text-initial">
+                            Health , Well-Being and Sports
+                          </span>
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/shared-future"
+                        >
+                          <span className="text-initial">Shared Future</span>
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li className="list-group-item p-3 mt-2 border rounded-3">
+                  <p
+                    className="fs-6 text-uppercase mb-0 text-dark"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTopics"
+                  >
+                    Topics
+                  </p>
+                  <div className="collapse p-0 m-0 mt-3" id="collapseTopics">
+                    <ul className="list-group">
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/life-environment-intiative"
+                        >
+                          <span className="text-initial">LiFE</span>
+                        </NavLink>
+                      </li>
 
-            <li className="list-group-item p-3 mt-2 border rounded-3">
-              <p
-                className="fs-6 text-uppercase text-dark mb-0"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThemes"
-              >
-                Themes
-              </p>
-              <div className="collapse p-0 m-0 mt-3" id="collapseThemes">
-                <ul className="list-group">
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/future-of-work"
-                    >
-                      <span className="text-initial">Future of Work</span>
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/peacebuilding-and-reconciliation"
-                    >
-                      <span className="text-initial">
-                        Peacebuilding and Reconciliation
-                      </span>
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/climate-change-and-disaster-risk-reduction"
-                    >
-                      <span className="text-initial">
-                        Climate Change and Disaster Risk Reduction
-                      </span>
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/health-well-being-and-sports"
-                    >
-                      <span className="text-initial">
-                        Health , Well-Being and Sports
-                      </span>
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/shared-future"
-                    >
-                      <span className="text-initial">Shared Future</span>
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li className="list-group-item p-3 mt-2 border rounded-3">
-              <p
-                className="fs-6 text-uppercase mb-0 text-dark"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTopics"
-              >
-                Topics
-              </p>
-              <div className="collapse p-0 m-0 mt-3" id="collapseTopics">
-                <ul className="list-group">
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/life-environment-intiative"
-                    >
-                      <span className="text-initial">LiFE</span>
-                    </NavLink>
-                  </li>
-
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/nep"
-                    >
-                      NEP 2020
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/education-for-all"
-                    >
-                      Education For All
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/startup-india"
-                    >
-                      Startup India
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/digital-transform"
-                    >
-                      Digital Transformation
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/cdri"
-                    >
-                      CDRI
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/woman-empowerment"
-                    >
-                      Women Empowerment
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/unlearn-relearn-and-reskill"
-                    >
-                      Unlearn, Relearn and Reskill
-                    </NavLink>
-                  </li>
-                  <li data-bs-dismiss="offcanvas" className="mb-2">
-                    <NavLink
-                      className="list-group-item p-3 rounded-3"
-                      to="/cyber-safety-for-youth"
-                    >
-                      Cyber Safety for Youth and Post-Pandemic Culture
-                    </NavLink>
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li
-              className="list-group-item p-3 mb-2 rounded-3 "
-              data-bs-dismiss="offcanvas"
-            >
-              <NavLink to="/team" className="fs-6 text-uppercase text-dark">
-                Team
-              </NavLink>
-            </li>
-            <li
-              className="list-group-item mt-2 border-0 rounded-3"
-              data-bs-dismiss="offcanvas"
-            >
-              <NavLink
-                to={"/youth-community"}
-                className="btn btn-primary hover-ripple w-100 text-initial"
-              >
-                Yuvamanthan
-              </NavLink>
-            </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/nep"
+                        >
+                          NEP 2020
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/education-for-all"
+                        >
+                          Education For All
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/startup-india"
+                        >
+                          Startup India
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/digital-transform"
+                        >
+                          Digital Transformation
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/cdri"
+                        >
+                          CDRI
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/woman-empowerment"
+                        >
+                          Women Empowerment
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/unlearn-relearn-and-reskill"
+                        >
+                          Unlearn, Relearn and Reskill
+                        </NavLink>
+                      </li>
+                      <li data-bs-dismiss="offcanvas" className="mb-2">
+                        <NavLink
+                          className="list-group-item p-3 rounded-3"
+                          to="/cyber-safety-for-youth"
+                        >
+                          Cyber Safety for Youth and Post-Pandemic Culture
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li
+                  className="list-group-item p-3 mb-2 rounded-3 "
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink to="/team" className="fs-6 text-uppercase text-dark">
+                    Team
+                  </NavLink>
+                </li>
+                <li
+                  className="list-group-item mt-2 border-0 rounded-3"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <NavLink
+                    to={"/youth-community"}
+                    className="btn btn-primary hover-ripple w-100 text-initial"
+                  >
+                    Yuvamanthan
+                  </NavLink>
+                </li>
+              </>
+            )}
           </ul>
         </div>
       </div>

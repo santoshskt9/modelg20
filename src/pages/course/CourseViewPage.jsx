@@ -57,8 +57,8 @@ const CourseViewPage = () => {
         studentId: userData.id,
       });
       if (res.status == 200) {
-        setCourse(res.data.course);
-        setSeries(res.data.seriesArr);
+        setCourse(res?.data?.course);
+        setSeries(res?.data?.seriesArr);
       }
     } catch (error) {
       toast.error(
@@ -72,7 +72,7 @@ const CourseViewPage = () => {
   // Course View Type Renderer
   const [viewIndex, setViewIndex] = useState(0);
   const view = (data) => {
-    switch (data.vd_type) {
+    switch (data?.vd_type) {
       case 1:
         return (
           <VimeoPlayer

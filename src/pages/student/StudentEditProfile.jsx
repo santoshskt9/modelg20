@@ -204,13 +204,13 @@ const StudentEditProfile = () => {
       </div>
       <div className="container py-5">
         <ul
-          class="nav nav-pill-design-2 justify-content-center nav-pills mb-3"
+          className="nav nav-pill-design-2 justify-content-center nav-pills mb-3"
           id="pills-tab"
           role="tablist"
         >
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link active fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd "
+              className="nav-link active fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd "
               id="pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-home"
@@ -220,9 +220,9 @@ const StudentEditProfile = () => {
               General Profile
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li className="nav-item" role="presentation">
             <button
-              class="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd "
+              className="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd "
               id="pills-profile-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-profile"
@@ -234,17 +234,17 @@ const StudentEditProfile = () => {
           </li>
         </ul>
         {/* Tabs contents  */}
-        <div class="tab-content py-5" id="pills-tabContent">
+        <div className="tab-content py-5" id="pills-tabContent">
           <div
-            class="tab-pane fade show active"
+            className="tab-pane fade show active"
             id="pills-home"
             role="tabpanel"
             aria-labelledby="pills-home-tab"
-            tabindex="0"
+            tabIndex="0"
           >
             {/* <EditProfile /> */}
             <div className="container">
-              <div className="row row-col-1 row-cols-lg-2 gy-5">
+              <div className="row row-cols-1 row-cols-lg-2 gy-5">
                 {/* -------------------
                 Profile Picture
                -------------------*/}
@@ -634,11 +634,11 @@ const StudentEditProfile = () => {
             </div>
           </div>
           <div
-            class="tab-pane fade"
+            className="tab-pane fade"
             id="pills-profile"
             role="tabpanel"
             aria-labelledby="pills-profile-tab"
-            tabindex="0"
+            tabIndex="0"
           >
             <div className="py-5 container">
               <div className="container" style={{ maxWidth: "450px" }}>
