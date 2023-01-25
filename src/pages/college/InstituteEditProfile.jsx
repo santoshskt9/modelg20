@@ -30,12 +30,10 @@ const InstituteEditProfile = () => {
       const res = await apiAuth.post("/institute", {
         instituteId: userData.id,
       });
-      console.log("response", res);
       setDetails(res.data.result[0]);
     } catch (error) {
       toast.dismiss();
       toast.error("Oops Something went wrong");
-      console.log("error", error);
       // handlelogout();
     }
   };
@@ -52,22 +50,17 @@ const InstituteEditProfile = () => {
     // validationSchema: studentRegisterSchema,
     onSubmit: async (values, { resetForm }) => {
       toast.dismiss();
-      console.log("userData", userData);
       toast.loading("Submiting the form");
-      console.log("Values: ", values);
       const formData = new FormData();
-      console.log("check", userData.id);
       formData.append("password", values.oldpassword);
       formData.append("newpassword", values.password);
       formData.append("type", userData.type);
       formData.append("email", userData.email);
-      console.log(formData, userData);
       try {
         const res = await apiAuth.post(
           `/auth/changepassword?id=${userData.id}`,
           formData
         );
-        console.log("res", res);
         if (res.status == 200) {
           toast.dismiss();
           toast.success("Password Changed Successfully");
@@ -99,7 +92,6 @@ const InstituteEditProfile = () => {
       if (res.status === 200) {
         toast.success(res.data.message);
       }
-      console.log("Profile Update", res);
     } catch (error) {
       if (error) {
         toast.error(
@@ -123,7 +115,6 @@ const InstituteEditProfile = () => {
       if (res.status === 200) {
         toast.success(res.data.message);
       }
-      console.log("Banner Update", res);
     } catch (error) {
       if (error) {
         toast.error(
@@ -134,14 +125,6 @@ const InstituteEditProfile = () => {
       }
     }
   }
-  console.log({
-    title: details.title,
-    first_name: details.first_name,
-    middle_name: details.middle_name,
-    last_name: details.last_name,
-    contact: details.contact,
-    email: details.email,
-  });
   const basicFormik = useFormik({
     initialValues: {
       title: details.title,
@@ -160,7 +143,6 @@ const InstituteEditProfile = () => {
       formData.append("middle_name", values.middle_name);
       formData.append("last_name", values.last_name);
       formData.append("contact", values.contact);
-      console.log("formData", formData);
       try {
         const res = await apiAuth.put(
           `/institute/profile?update_type=basic`,
@@ -171,7 +153,6 @@ const InstituteEditProfile = () => {
           toast.success(res.data.message);
           resetForm();
         }
-        console.log("Basic Update", res);
       } catch (error) {
         if (error) {
           toast.dismiss();
@@ -207,7 +188,6 @@ const InstituteEditProfile = () => {
       formData.append("institution_address", values.institution_address);
       formData.append("state", values.state);
       formData.append("pincode", values.pincode);
-      console.log("formData", formData);
       try {
         const res = await apiAuth.put(
           `/institute/profile?update_type=additional`,
@@ -217,7 +197,6 @@ const InstituteEditProfile = () => {
           toast.dismiss();
           toast.success(res.data.message);
         }
-        console.log("Basic Update", res);
       } catch (error) {
         if (error) {
           toast.dismiss();

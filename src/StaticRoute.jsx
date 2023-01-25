@@ -2,20 +2,33 @@ import Login from "pages/Auth/Login";
 import React from "react";
 
 import { Route, Routes, useRouteLoaderData } from "react-router-dom";
-import SetPassword from "pages/Auth/SetPassword";
-import AdminLogin from "pages/Admin/AdminLogin";
-import StudentRegister from "pages/Auth/StudentRegister";
-import CourseDetails from "pages/course/CourseDetails";
-import AllCourses from "pages/course/AllCourses";
-import CyberSafety from "./pages/static/Topics/CyberSafety";
 import { useGlobalContext } from "global/context";
-import StudentDashboard from "pages/student/StudentDashboard";
-import DashboardInstitute from "pages/college/DashboardInstitute";
-import Admin from "pages/Admin/Admin";
-import StudentEditProfile from "pages/student/StudentEditProfile";
-import InstituteEditProfile from "pages/college/InstituteEditProfile";
-import CourseViewPage from "pages/course/CourseViewPage";
-import PrintCertificate from "pages/course/PrintCertificate/PrintCertificate";
+const SetPassword = React.lazy(() => import("pages/Auth/SetPassword"));
+const AdminLogin = React.lazy(() => import("pages/Admin/AdminLogin"));
+const StudentRegister = React.lazy(() => import("pages/Auth/StudentRegister"));
+const CourseDetails = React.lazy(() => import("pages/course/CourseDetails"));
+const AllCourses = React.lazy(() => import("pages/course/AllCourses"));
+const CyberSafety = React.lazy(() =>
+  import("./pages/static/Topics/CyberSafety")
+);
+const StudentDashboard = React.lazy(() =>
+  import("pages/student/StudentDashboard")
+);
+const DashboardInstitute = React.lazy(() =>
+  import("pages/college/DashboardInstitute")
+);
+const Admin = React.lazy(() => import("pages/Admin/Admin"));
+const StudentEditProfile = React.lazy(() =>
+  import("pages/student/StudentEditProfile")
+);
+const InstituteEditProfile = React.lazy(() =>
+  import("pages/college/InstituteEditProfile")
+);
+const CourseViewPage = React.lazy(() => import("pages/course/CourseViewPage"));
+
+const PrintCertificate = React.lazy(() =>
+  import("pages/course/PrintCertificate/PrintCertificate")
+);
 const Home = React.lazy(() => import("./pages/static/Home"));
 const Modelg20Page = React.lazy(() => import("./pages/static/ModelG20Page"));
 const News = React.lazy(() => import("./pages/static/News"));

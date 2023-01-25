@@ -49,12 +49,10 @@ const DashboardInstitute = () => {
           },
         }
       );
-      console.log("response", res);
       setDetails(res.data.result[0]);
     } catch (error) {
       toast.dismiss();
       toast.error("Oops Something went wrong");
-      console.log("error", error);
       // handlelogout();
     }
   };
@@ -67,7 +65,6 @@ const DashboardInstitute = () => {
           instituteId: userData.id,
         }
       );
-      console.log("res", res);
       if (res.status === 200) {
         setStudents(res.data.result);
       }
@@ -83,7 +80,6 @@ const DashboardInstitute = () => {
       const res = await apiAuth.get(`/institute/certificates`, {
         instituteId: userData.id,
       });
-      console.log("Certificates", res);
       if (res.status === 200) {
         setCertificates(res.data.result);
       }

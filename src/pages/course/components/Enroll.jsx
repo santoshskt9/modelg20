@@ -21,7 +21,6 @@ const Enroll = ({id}) => {
       }
     } catch (error) {
       if (error) {
-        console.log("errpr", error);
         toast.dismiss();
         if (error.response.status === 409) {
           toast(
@@ -54,7 +53,6 @@ const Enroll = ({id}) => {
   };
 
   const enrollHandler = () => {
-    console.log("You have confirmed to enroll course");
     proceedEnroll();
   };
 

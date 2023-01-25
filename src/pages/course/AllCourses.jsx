@@ -24,10 +24,6 @@ const AllCourses = () => {
     }
   }
 
-  useEffect(()=>{
-    console.log("All Courses: ",allcourses);
-  }, [allcourses]);
-
   useEffect(()=> {
     fetchAllCourses();
   }, []);
@@ -35,8 +31,8 @@ const AllCourses = () => {
 
   return (
     <React.Fragment>
-      <div className='p-5 bg-primary'>
-        <div className="d-flex align-items-center justify-content-center">
+      <div className='bg-primary' style={{height: "230px"}}>
+        <div className="d-flex align-items-center h-100 w-100 justify-content-center" >
           <h3 className='text-white font-ubd text-initial'>Our Courses</h3>
         </div>
       </div>

@@ -9,10 +9,8 @@ const VimeoPlayer = ({
   series,
   postProgress,
 }) => {
-  console.log("Vimeo Player Active", videoId);
   const [loader, setLoader] = useState(false);
   const onEndHandler = () => {
-    console.log("Video Ended");
     postProgress(series[viewIndex].seriesId);
   };
   const opts = {
@@ -44,7 +42,7 @@ const VimeoPlayer = ({
           <button
             type="button"
             className="btn btn-outline-warning rounded-pill py-2 px-4"
-            disabled={viewIndex == 0}
+            disabled={viewIndex === 0}
             onClick={() => setViewIndex(viewIndex - 1)}
           >
             <i className="bi bi-arrow-left"></i>
@@ -53,7 +51,7 @@ const VimeoPlayer = ({
             type="button"
             className="btn btn-outline-warning rounded-pill py-2 px-4"
             onClick={() => {
-              if (viewIndex == series.length - 1) {
+              if (viewIndex === series.length - 1) {
                 // setCertificateDownloadable(true);
               } else {
                 setViewIndex(viewIndex + 1);

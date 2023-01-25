@@ -15,9 +15,7 @@ const Studentheads = [
   "Actions",
 ];
 const StudentsTable = ({ data, reload }) => {
-  console.log("data", data);
   const handleDelete = async (id) => {
-    console.log(`Delete ${id}`);
     const confirmation = window.confirm("Are you sure you want to delete");
     if (confirmation) {
       try {
@@ -28,7 +26,6 @@ const StudentsTable = ({ data, reload }) => {
           reload();
         }
       } catch (error) {
-        console.log("err", error);
         toast.dismiss();
         toast.error(error?.response?.data?.message);
       }

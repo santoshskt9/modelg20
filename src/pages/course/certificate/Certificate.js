@@ -4,13 +4,9 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
-// import { common_axios } from "../../../../api/axios";
-// import SimpleBreadcrumb from "../components/SimpleBreadcrumb";
 import CertImage from "../PrintCertificate/certificate.png";
-// import { Link, useHistory } from "react-router-dom";
 
 const CertficateComponent = ({ cert }) => {
-  //   const history = useHistory();
   return (
     <div className="border">
       <div id="certificate" className="certficate-container">
@@ -55,9 +51,7 @@ const CertficateComponent = ({ cert }) => {
             {cert?.certificate_key}
           </span>
         </h6>
-        <Link to={`/dashboard/certificate/${cert.courseId}`}>
-          View
-        </Link>
+        <Link to={`/dashboard/certificate/${cert.courseId}`}>View</Link>
       </div>
     </div>
   );
@@ -66,20 +60,14 @@ const CertficateComponent = ({ cert }) => {
 const Certificate = () => {
   const [certificates, setcertificates] = useState([]);
   const { userData } = useGlobalContext();
-  useEffect(() => {
-    getCertificatesByuserId();
-  }, []);
-  console.log(`Cert UserData`, userData);
   const getCertificatesByuserId = async () => {
     if (userData.id) {
       try {
         const res = await apiAuth.get(
           `/course/allcertificates?studentId=${userData.id}`
         );
-        if (res?.status == 200) {
-          console.log(res?.data);
-          setcertificates(res.data.result);
-          console.log(certificates);
+        if (res?.status === 200) {
+          setcertificates(res?.data?.result);
         }
       } catch (err) {
         toast.dismiss();
@@ -91,11 +79,14 @@ const Certificate = () => {
       }
     }
   };
+  useEffect(() => {
+    getCertificatesByuserId();
+  }, []);
   return (
     <>
       {/* <SimpleBreadcrumb title={"Certificates"} /> */}
       <div className="container p-4 py-5">
-        {certificates.length == 0 ? (
+        {certificates.length === 0 ? (
           <div
             class="col-12 text-center"
             style={{ marginTop: "5rem", marginBottom: "5rem" }}

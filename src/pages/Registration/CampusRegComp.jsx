@@ -25,14 +25,12 @@ const CampusRegComp = () => {
     formdata.append("social_active", values.social_active);
     formdata.append("views_on_g20", values.views_on_g20);
     formdata.append("topics", values.topics);
-    console.log("registerdata", resume, formdata);
     if (resume.size > 1200000) {
       toast.dismiss();
       return toast.error("Maximum resume file size is 600kb");
     } else {
       try {
         const registerto = await postCampusRegister({ ...values, resume });
-        console.log(registerto);
         if (registerto.data.status === "ERROR") {
           toast.dismiss();
           return toast.error(registerto.data.message);
@@ -69,7 +67,6 @@ const CampusRegComp = () => {
       validationSchema: campusregisterSchema,
       onSubmit,
     });
-  console.log(errors);
   return (
     <>
       <form

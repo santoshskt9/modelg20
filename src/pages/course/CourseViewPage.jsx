@@ -38,7 +38,6 @@ const CourseViewPage = () => {
         navigate(`/dashboard/certificate/${courseId}`);
       }
     } catch (err) {
-      console.log(err);
       if (err.response.status === 409) {
         navigate("/dashboard/certificate/" + courseId);
       }
@@ -59,7 +58,6 @@ const CourseViewPage = () => {
       });
       if (res.status == 200) {
         setCourse(res.data.course);
-        console.log("courseres", res);
         setSeries(res.data.seriesArr);
       }
     } catch (error) {

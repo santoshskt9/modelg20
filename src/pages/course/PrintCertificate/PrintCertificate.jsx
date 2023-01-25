@@ -18,7 +18,6 @@ const PrintCertificate = () => {
   const location = useLocation();
   const { userData } = useGlobalContext();
   // const history = useHistory();
-  console.log("param", params);
   const [certData, setCertData] = useState({});
 
   const getCertificate = async () => {
@@ -28,7 +27,6 @@ const PrintCertificate = () => {
           `/course/certificate?courseId=${params.courseId}&studentId=${userData.id}`
         );
         if (res?.status == 200) {
-          console.log(res?.data);
           setCertData(res?.data.result);
           setName(
             res?.data?.result?.first_name +
@@ -40,7 +38,6 @@ const PrintCertificate = () => {
         }
       }
     } catch (err) {
-      console.log(err);
       toast.dismiss();
       toast.error(
         err?.response?.data?.message
@@ -51,7 +48,6 @@ const PrintCertificate = () => {
     }
   };
   const printCert = () => {
-    console.log("print");
     const input = document.getElementById("certificate");
     html2canvas(input).then((canvas) => {
       const imgData = canvas.toDataURL("image/png");

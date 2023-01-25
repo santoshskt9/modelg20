@@ -14,16 +14,11 @@ import {
 import { apiAuth } from "api";
 import { toast } from "react-hot-toast";
 import { useGlobalContext } from "global/context";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
-import DashboardHeader from "./DashboardHeader";
 import CourseCardItem from "pages/course/components/CourseCardItem";
 import Certificate from "pages/course/certificate/Certificate";
 
 const StudentDashboard = () => {
-  const navigate = useNavigate();
-  const location = useLocation();
-  console.log("Location : ", location);
-  const { userData, token, removeToken, removeUser } = useGlobalContext();
+  const { userData, token} = useGlobalContext();
   const [details, setDetails] = useState({});
   const [enrolledCourses, setEnrolledCourses] = useState([]);
   const fetchDetails = async () => {
@@ -31,8 +26,7 @@ const StudentDashboard = () => {
       const res = await apiAuth.get("/student/detail", {
         headers: { authorization: token },
       });
-      console.log("response", res);
-      if (res.status == 200) {
+      if (res.status === 200) {
         setDetails(res.data.result[0]);
       }
     } catch (error) {
@@ -49,18 +43,15 @@ const StudentDashboard = () => {
   const fetchEnrolled = async () => {
     try {
       if (token) {
-        console.log("new Token", token);
         const res = await apiAuth.post("/course/enrolled", {
           studentId: userData?.id,
         });
-        console.log("response enrolle", res);
-        if (res.status == 200) {
+        if (res.status === 200) {
           setEnrolledCourses(res.data.courses);
         }
       }
     } catch (error) {
       if (error) {
-        console.log("enroll error", error);
         if (error?.response?.status !== 404) {
           toast.dismiss();
           toast.error(
@@ -73,8 +64,6 @@ const StudentDashboard = () => {
     }
   };
   useEffect(() => {
-    console.log("User Data of Context API: ", userData);
-    console.log("Token of Context API: ", token);
     fetchDetails();
     fetchEnrolled();
   }, []);
@@ -82,7 +71,7 @@ const StudentDashboard = () => {
     <div>
       <div className="p-relative">
         <div className="d-flex p-absolute text-white justify-content-center align-items-center w-100 h-100">
-          <h1 className="text-initial text-center fs-2 bg-white px-4 py-2 bg-opacity-75">
+          <h1 className="text-initial text-white text-center fs-1  px-4 py-2  font-ubd">
             Dashboard
           </h1>
         </div>
@@ -94,8 +83,7 @@ const StudentDashboard = () => {
         />
       </div>
       <div className="container">
-        <div className="d-flex justify-content-between p-3">
-          <div className="d-flex">
+          <div className="d-flex w-100">
             <Avatar
               alt={details ? details?.first_name : "Avatar"}
               src={process.env.REACT_APP_API_BASE_URL + details?.profile}
@@ -103,14 +91,15 @@ const StudentDashboard = () => {
               style={{ marginTop: "-40px" }}
               className="ms-4 shadow-lg"
             />
-            <div className="p-2" style={{ maxWidth: "650px" }}>
-              <h3 className="fs-2 text-initial">
+            <div className="p-2" style={{ maxWidth: "450px" }}>
+              <h3 className="fs-4 text-initial font-ubd">
                 {details?.first_name} {details?.middle_name}{" "}
                 {details?.last_name}
               </h3>
               <p className="fs-6">{details?.bio}</p>
             </div>
           </div>
+        <div className="d-flex justify-content-between p-3">
         </div>
       </div>
       <div className="container p-4 ">
@@ -121,7 +110,7 @@ const StudentDashboard = () => {
         >
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link active fs-5 border-bottom border-3 rounded-0 text-dark fw-semibold font-monospace"
+              class="nav-link active fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd"
               id="pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-home"
@@ -133,7 +122,7 @@ const StudentDashboard = () => {
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-semibold font-monospace"
+              class="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd"
               id="pills-profile-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-profile"
@@ -145,7 +134,7 @@ const StudentDashboard = () => {
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-semibold font-monospace"
+              class="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd"
               id="pills-contact-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-contact"
@@ -270,7 +259,6 @@ const StudentDashboard = () => {
             aria-labelledby="pills-profile-tab"
             tabindex="0"
           >
-            {console.log("Enrolledd COurses", enrolledCourses)}
             {/* fallback screen  */}
             {!enrolledCourses || enrolledCourses?.length === 0 ? (
               <div className="p-relative">

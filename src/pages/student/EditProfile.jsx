@@ -51,10 +51,8 @@ const EditProfile = () => {
       formData.append("contact", values.contact);
       formData.append("father_name", values.father_name);
       formData.append("gender", values.gender);
-      console.log("formData", formData);
       try {
         const res = await apiAuth.post("/auth/register?type=0", formData);
-        console.log("res", res);
         if (res.status == 200) {
           toast.dismiss();
           toast.success("Registered Successfully");

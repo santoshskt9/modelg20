@@ -9,21 +9,15 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
-import { studentRegisterSchema } from "schema/register";
 import { toast } from "react-hot-toast";
 import { apiAuth } from "api";
 import { Avatar } from "@mui/material";
-import DashboardHeader from "./DashboardHeader";
 import { useGlobalContext } from "global/context";
-import { useNavigate } from "react-router-dom";
-// import EditProfile from "./EditProfile";
 
 const StudentEditProfile = () => {
-  const navigate = useNavigate();
   const [profile, setProfile] = useState("");
   const [banner, setBanner] = useState("");
   const { userData } = useGlobalContext();
-  let collegeId = 5;
   //Reset Password
   const passwordformik = useFormik({
     initialValues: {
@@ -31,26 +25,20 @@ const StudentEditProfile = () => {
       password: "",
       confirm_password: "",
     },
-    // validationSchema: studentRegisterSchema,
     onSubmit: async (values, { resetForm }) => {
       toast.dismiss();
-      console.log("userData", userData);
       toast.loading("Submiting the form");
-      console.log("Values: ", values);
       const formData = new FormData();
-      console.log("check", userData.id);
       formData.append("password", values.oldpassword);
       formData.append("newpassword", values.password);
       formData.append("type", userData.type);
       formData.append("email", userData.email);
-      console.log(formData, userData);
       try {
         const res = await apiAuth.post(
           `/auth/changepassword?id=${userData.id}`,
           formData
         );
-        console.log("res", res);
-        if (res.status == 200) {
+        if (res.status === 200) {
           toast.dismiss();
           toast.success("Password Changed Successfully");
           resetForm();
@@ -81,7 +69,6 @@ const StudentEditProfile = () => {
       if (res.status === 200) {
         toast.success(res.data.message);
       }
-      console.log("Profile Update", res);
     } catch (error) {
       if (error) {
         toast.error(
@@ -105,7 +92,6 @@ const StudentEditProfile = () => {
       if (res.status === 200) {
         toast.success(res.data.message);
       }
-      console.log("Banner Update", res);
     } catch (error) {
       if (error) {
         toast.error(
@@ -120,7 +106,6 @@ const StudentEditProfile = () => {
     initialValues: {
       first_name: "",
       middle_name: "",
-      last_name: "2001-01-26",
       contact: "",
       email: "",
       last_name: "",
@@ -140,7 +125,6 @@ const StudentEditProfile = () => {
       formData.append("dob", values.dob);
       formData.append("father_name", values.father_name);
       formData.append("gender", values.gender);
-      console.log("formData", formData);
       try {
         const res = await apiAuth.put(
           `/student/profile?update_type=basic`,
@@ -149,8 +133,6 @@ const StudentEditProfile = () => {
         if (res.status === 200) {
           toast.success(res.data.message);
         }
-        console.log("Basic Update", res);
-        // console.log("Basic Update", values);
       } catch (error) {
         if (error) {
           toast.error(
@@ -184,7 +166,6 @@ const StudentEditProfile = () => {
       formData.append("dob", values.dob);
       formData.append("state", values.state);
       formData.append("pincode", values.pincode);
-      console.log("formData", formData);
       try {
         const res = await apiAuth.put(
           `/student/profile?update_type=additional`,
@@ -194,8 +175,6 @@ const StudentEditProfile = () => {
           toast.dismiss();
           toast.success(res.data.message);
         }
-        console.log("Basic Update", res);
-        // console.log("Basic Update", values);
       } catch (error) {
         if (error) {
           toast.dismiss();
@@ -212,7 +191,7 @@ const StudentEditProfile = () => {
     <>
       <div className="p-relative">
         <div className="d-flex p-absolute text-white justify-content-center align-items-center w-100 h-100">
-          <h1 className="text-initial text-center fs-2 bg-white px-4 py-2 bg-opacity-75">
+          <h1 className="text-initial text-white text-center fs-1  px-4 py-2  font-ubd">
             Edit Profile
           </h1>
         </div>
@@ -231,7 +210,7 @@ const StudentEditProfile = () => {
         >
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link active fs-5 border-bottom border-3 rounded-0 text-dark fw-semibold font-monospace"
+              class="nav-link active fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd "
               id="pills-home-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-home"
@@ -243,7 +222,7 @@ const StudentEditProfile = () => {
           </li>
           <li class="nav-item" role="presentation">
             <button
-              class="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-semibold font-monospace"
+              class="nav-link fs-5 border-bottom border-3 rounded-0 text-dark fw-slim font-ubd "
               id="pills-profile-tab"
               data-bs-toggle="pill"
               data-bs-target="#pills-profile"

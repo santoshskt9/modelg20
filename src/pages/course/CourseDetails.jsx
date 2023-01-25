@@ -14,7 +14,6 @@ const CourseDetails = () => {
   const fetchCourseDetails = async () => {
     try {
       const res = await api.get(`/course/detail/${param.slug}`);
-      console.log("Course Details: ", res.data.course);
       if (res.status == 200) {
         setDetails(res.data.course);
       }
@@ -29,13 +28,6 @@ const CourseDetails = () => {
       }
     }
   };
-
-  //   const
-
-  useEffect(() => {
-    console.log("Details: ", details);
-  }, [details]);
-
   useEffect(() => {
     fetchCourseDetails();
   }, []);

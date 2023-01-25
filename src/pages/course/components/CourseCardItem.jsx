@@ -47,7 +47,6 @@ const CourseCardItem = ({ courses, addTOWishlist, enrolled }) => {
               {addTOWishlist ? (
                 <button
                   onClick={() => {
-                    console.log("course", courses);
                     addTOWishlist({
                       courseName: courses.courseName,
                       authorName: courses.authorName,

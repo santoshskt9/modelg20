@@ -24,7 +24,6 @@ export default function StudentDataTable({ data, reload }) {
     const formData = new FormData();
     formData.append("instituteId", instituteId);
     formData.append("email", email);
-    console.log({ instituteId, email });
     if (status == "active") {
       try {
         const res = await apiAuth.post(

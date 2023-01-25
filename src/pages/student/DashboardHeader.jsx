@@ -16,7 +16,6 @@ const DashboardHeader = ({ setEdit }) => {
       const res = await apiAuth.get("/student/detail", {
         headers: { Authorization: token },
       });
-      console.log("response", res);
       if (res.status == 200) {
         setDetails(res.data.result[0]);
       }

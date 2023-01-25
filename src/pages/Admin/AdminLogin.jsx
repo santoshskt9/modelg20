@@ -21,13 +21,11 @@ const AdminLogin = () => {
   const [password, setPassword] = useState("");
   const handlesubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password);
     try {
       const res = await api.post(`auth/login?type=${usertype}`, {
         identifier: email,
         password,
       });
-      console.log("res", res);
       if (res.status == 200) {
         setUser(res.data.user);
         setToken(res.data.jwt);
@@ -39,7 +37,6 @@ const AdminLogin = () => {
       setPassword("");
     } catch (error) {
       if (error) {
-        console.log(error);
         toast.dismiss();
         toast.error(
           error.response?.data.message

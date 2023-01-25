@@ -16,22 +16,18 @@ const Admin = () => {
     useGlobalContext();
   async function fetchInstitute() {
     const res = await apiAuth.get("admin?data=institutions");
-    console.log("%c Institutes", "color:green", res);
     if (res.status == 200) {
       setInstitute(res.data.result);
     } else {
-      console.log("Error something went wrong while");
       toast.error("Something wen wrong");
     }
   }
   async function fetchStudents() {
     const res = await apiAuth.get("admin?data=students");
-    console.log("%c Students", "color:red", res);
     if (res.status == 200) {
       setStudent(res.data.result);
     } else {
-      console.log("Error something went wrong while");
-      toast.error("Something wen wrong");
+      toast.error("Something went wrong");
     }
   }
   useEffect(() => {

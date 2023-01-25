@@ -15,11 +15,9 @@ const SetPassword = () => {
   let collegeId = query.get("id");
   let secretKey = query.get("key");
   const navigate = useNavigate();
-  console.log("params", collegeId, secretKey);
   async function fetchEmail() {
     try {
       const res = await api.post("/institute/info?instituteId=" + collegeId);
-      console.log("res", res);
       if (res.status == 200) {
         setEmail(res.data.result[0].email);
       }
@@ -52,12 +50,7 @@ const SetPassword = () => {
             }}
             validationSchema={setpasswordSchema}
             onSubmit={(values, { setSubmitting }) => {
-              console.log("values", values);
               (async function submitForm() {
-                console.log("Payload", {
-                  email: emailId,
-                  password: values.password,
-                });
                 try {
                   const res = await api.post(
                     `auth/setpassword?id=${collegeId}&key=${secretKey}`,
@@ -66,7 +59,6 @@ const SetPassword = () => {
                       password: values.password,
                     }
                   );
-                  console.log("res", res);
                   if (res.status == 200) {
                     toast.success("Password set successfully Now you can login");
                     navigate("/login");
@@ -81,7 +73,6 @@ const SetPassword = () => {
           >
             {({ isSubmitting, values }) => (
               <Form>
-                {console.log("values", values)}
                 <div className="row g-3">
                   <div className="col-12">
                     <span className="form-label text-dark">Email Address</span>

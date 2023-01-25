@@ -9,7 +9,6 @@ const InstituteRegComp = () => {
     toast.loading("Loading...");
     try {
       const registerto = await postInstituteRegister(values);
-      console.log("result", registerto);
       if (registerto.data.status === "ERROR") {
         toast.dismiss();
         return toast.error(registerto.data.message);
@@ -18,7 +17,6 @@ const InstituteRegComp = () => {
         return toast.success(registerto.data.message);
       }
     } catch (error) {
-      console.log("error", error);
       toast.dismiss();
       return toast.error("Something went wrong check your connection");
     }

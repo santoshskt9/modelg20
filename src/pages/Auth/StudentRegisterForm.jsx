@@ -16,7 +16,6 @@ import { api } from "api";
 
 const StudentRegisterForm = ({ collegeId }) => {
   const [profile, setProfile] = useState("");
-  console.log("profile", profile);
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -46,10 +45,8 @@ const StudentRegisterForm = ({ collegeId }) => {
       formData.append("contact", values.contact);
       formData.append("father_name", values.father_name);
       formData.append("gender", values.gender);
-      console.log("formData", formData);
       try {
         const res = await api.post("/auth/register?type=0", formData);
-        console.log("res", res);
         if (res.status == 200) {
           toast.dismiss();
           toast.success("Registered Successfully");

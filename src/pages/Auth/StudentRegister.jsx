@@ -25,7 +25,6 @@ const StudentRegister = () => {
   const fetchCollegeDetails = async () => {
     try {
       const res = await api.get(`/public/institute?collegeId=${collegeId}`);
-      console.log("result", res);
       if (res.status == 200) {
         setDetails(res.data.result[0]);
       } else if (res.status == 404) {

@@ -99,12 +99,6 @@ const QuizComp = ({
   const onEndHandler = () => {
     postProgress(series[viewIndex].id);
   };
-  useEffect(() => {
-    console.log("Series", series);
-    console.log("Quiz", JSON);
-    // setQuizData(JSON.parse(file));
-  }, []);
-
   return (
     <div style={{ maxHeight: "600px", overflowY: "auto" }}>
       {/* <Quiz
@@ -118,7 +112,7 @@ const QuizComp = ({
           <button
             type="button"
             className="btn btn-outline-warning rounded-pill py-2 px-4"
-            disabled={viewIndex == 0}
+            disabled={viewIndex === 0}
             onClick={() => setViewIndex(viewIndex - 1)}
           >
             <i className="bi bi-arrow-left"></i>
@@ -127,7 +121,7 @@ const QuizComp = ({
             type="button"
             className="btn btn-outline-warning rounded-pill py-2 px-4"
             onClick={() => {
-              if (viewIndex == series.length - 1) {
+              if (viewIndex === series.length - 1) {
                 // setCertificateDownloadable(true);
               } else {
                 setViewIndex(viewIndex + 1);

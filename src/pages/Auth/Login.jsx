@@ -20,34 +20,30 @@ const Login = () => {
   const [usertype, setUsertype] = useState(0);
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
   const handlesubmit = async (e) => {
     e.preventDefault();
-    console.log(email, password);
     try {
       const res = await api.post(`auth/login?type=${usertype}`, {
         identifier: email,
         password,
       });
-      console.log("res", res);
       if (res.status == 200) {
-        // localStorage.setItem("token", res.data.jwt);
-        // localStorage.setItem("user", JSON.stringify(res.data.user));
         setUser(res.data.user);
         setToken(res.data.jwt);
         toast.dismiss();
         toast.success(res.data.message);
         if (location?.state?.nextRoute) {
           navigate(location?.state?.nextRoute);
+          window.location.reload();
         } else {
           navigate("/dashboard");
+          window.location.reload();
         }
       }
       setEmail("");
       setPassword("");
     } catch (error) {
       if (error) {
-        console.log(error);
         toast.dismiss();
         toast.error(
           error.response?.data.message
@@ -140,8 +136,11 @@ const Login = () => {
                   {/* <a className="text-end w-100">Forget Password ?</a> <br /> */}
                   {usertype == 1 ? (
                     <>
-                      Not have an Account? {" "}
-                      <Link to={"/registration"} className="text-end w-100 fw-bold">
+                      Not have an Account?{" "}
+                      <Link
+                        to={"/registration"}
+                        className="text-end w-100 fw-bold"
+                      >
                         Register
                       </Link>
                     </>
