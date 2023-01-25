@@ -6,7 +6,7 @@ import { apiAuth } from "../../api";
 import BreadCrumb from "./components/BreadCrumb";
 import InstituteDataTable from "./components/InstituteDataTable";
 import StudentDataTable from "./components/StudentDataTable";
-// Chutiya 
+// Chutiya
 const Admin = () => {
   const [institute, setInstitute] = useState([]);
   const [student, setStudent] = useState([]);
@@ -38,19 +38,9 @@ const Admin = () => {
     fetchInstitute();
     fetchStudents();
   }, []);
-  const handlelogout = () => {
-    removeToken();
-    removeUser();
-    toast.dismiss();
-    toast.success("Logged Out Successfully");
-    navigate("/");
-  };
   return (
     <>
       <BreadCrumb />
-      <button className="btn btn-danger" onClick={handlelogout}>
-        Logout
-      </button>
       <div className="container py-5 mt-5">
         <nav className="d-inline-block mx-auto mb-4">
           <div

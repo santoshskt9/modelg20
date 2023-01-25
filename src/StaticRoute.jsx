@@ -1,13 +1,21 @@
 import Login from "pages/Auth/Login";
 import React from "react";
 
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useRouteLoaderData } from "react-router-dom";
 import SetPassword from "pages/Auth/SetPassword";
 import AdminLogin from "pages/Admin/AdminLogin";
 import StudentRegister from "pages/Auth/StudentRegister";
 import CourseDetails from "pages/course/CourseDetails";
 import AllCourses from "pages/course/AllCourses";
 import CyberSafety from "./pages/static/Topics/CyberSafety";
+import { useGlobalContext } from "global/context";
+import StudentDashboard from "pages/student/StudentDashboard";
+import DashboardInstitute from "pages/college/DashboardInstitute";
+import Admin from "pages/Admin/Admin";
+import StudentEditProfile from "pages/student/StudentEditProfile";
+import InstituteEditProfile from "pages/college/InstituteEditProfile";
+import CourseViewPage from "pages/course/CourseViewPage";
+import PrintCertificate from "pages/course/PrintCertificate/PrintCertificate";
 const Home = React.lazy(() => import("./pages/static/Home"));
 const Modelg20Page = React.lazy(() => import("./pages/static/ModelG20Page"));
 const News = React.lazy(() => import("./pages/static/News"));
@@ -58,6 +66,7 @@ const UnlearnRelearnReskill = React.lazy(() =>
   import("./pages/static/Topics/UnlearnRelearnReskill")
 );
 const StaticRoute = () => {
+  const { userData } = useGlobalContext();
   return (
     <Routes>
       <Route exact path="/" element={<Home />} />
@@ -102,6 +111,44 @@ const StaticRoute = () => {
       <Route path="/course/detail/:slug" element={<CourseDetails />} />
       <Route path="/auth/setpassword" element={<SetPassword />} />
       <Route path="/administrator/login" element={<AdminLogin />} />
+      <Route path="/college/student/register" element={<StudentRegister />} />
+      <Route path="/course/detail/:slug" element={<CourseDetails />} />
+      {/* Dynamic Routes  */}
+      <Route
+        exact
+        path="/dashboard"
+        element={
+          userData?.type === 0 ? (
+            <StudentDashboard />
+          ) : userData.type === 1 ? (
+            <DashboardInstitute />
+          ) : userData.type === 2 ? (
+            <Admin />
+          ) : (
+            <Error />
+          )
+        }
+      ></Route>
+      <Route
+        path="/dashboard/editprofile"
+        element={
+          userData?.type === 0 ? (
+            <StudentEditProfile />
+          ) : userData.type === 1 ? (
+            <InstituteEditProfile />
+          ) : (
+            <Error />
+          )
+        }
+      ></Route>
+      <Route
+        path="dashboard/courseview/:courseId"
+        element={userData?.type === 0 ? <CourseViewPage /> : <Error />}
+      ></Route>
+      <Route
+        path="dashboard/certificate/:courseId"
+        element={userData?.type === 0 ? <PrintCertificate /> : <Error />}
+      ></Route>
       <Route path="*" element={<Error />} />
     </Routes>
   );

@@ -25,6 +25,7 @@ import {
   WhatsappIcon,
   WhatsappShareButton,
 } from "react-share";
+import { Tooltip } from "@mui/material";
 
 const DashboardInstitute = () => {
   const navigate = useNavigate();
@@ -140,8 +141,8 @@ const DashboardInstitute = () => {
           />
         </div>
         <div className="container">
-          <div className="d-flex justify-content-start flex-column flex-lg-row">
-            <div className=" p-3 text-center">
+          <div className="row justify-content-start flex-column flex-lg-row">
+            <div className="col-12 col-md-4 col-lg-4 p-3 text-center">
               <img
                 src={
                   details?.logo
@@ -173,18 +174,30 @@ const DashboardInstitute = () => {
                   ,
                 </div>
                 <div className="d-flex align-items-center py-4">
-                  <button
-                    className={`btn btn-primary-outline rounded-3 mx-2 py-0`}
-                    onClick={() => navigator.clipboard.writeText(shareableLink)}
+                  <Tooltip
+                    title="Copy Link to Share Anywhere"
+                    placement="top-start"
                   >
-                    <i className="bi bi-link fs-1"></i>
-                  </button>
-                  <button
-                    className="btn btn-success rounded-3 mx-2 py-0"
-                    onClick={DownloadQR}
+                    <button
+                      className={`btn btn-primary-outline rounded-3 mx-2 py-0`}
+                      onClick={() =>
+                        navigator.clipboard.writeText(shareableLink)
+                      }
+                    >
+                      <i className="bi bi-link fs-3"></i>
+                    </button>
+                  </Tooltip>
+                  <Tooltip
+                    title="Download QR code"
+                    placement="top-start"
                   >
-                    <i className="bi bi-cloud-download fs-1"></i>
-                  </button>
+                    <button
+                      className="btn btn-success rounded-3 mx-2 py-0"
+                      onClick={DownloadQR}
+                    >
+                      <i className="bi bi-cloud-download fs-3"></i>
+                    </button>
+                  </Tooltip>
                 </div>
                 <div>
                   <EmailShareButton
@@ -239,7 +252,7 @@ const DashboardInstitute = () => {
                 </div>
               </div>
             </div>
-            <div className=" p-3">
+            <div className="col-12 col-md-8 col-lg-8 p-3">
               <div>
                 <h3>{details?.institution_name}</h3>
                 <div>

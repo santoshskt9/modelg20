@@ -48,6 +48,7 @@
 /* bootstrap Icon  */
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700|Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;700;800;900&display=swap");
 
 body {
   line-height: 1.6;
@@ -3172,4 +3173,8 @@ Link {
     #edde5d 51%,
     #f09819 100%
   );
+}
+
+.font-ubd {
+  font-family: "Unbounded", cursive;
 }

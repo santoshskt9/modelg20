@@ -1,8 +1,10 @@
+import { useGlobalContext } from "global/context";
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const { token } = useGlobalContext();
   var CurrentYear = new Date().getFullYear();
   var NextYear = new Date().getFullYear() + 1;
   const copydate = CurrentYear + " ~ " + NextYear;
@@ -10,7 +12,7 @@ const Footer = () => {
     <footer>
       {/* main footer */}
       <div
-        className="py-5 border-top"
+        className={`py-5 border-top ${token && "d-none"}`}
         style={{ background: "#f5f5f7", color: "#6e6e73" }}
       >
         <div className="container">
@@ -202,9 +204,8 @@ const Footer = () => {
             <div className=" text-center text-md-left mb-3 mb-md-0">
               <p className="mb-0 text-white fs-6">
                 <span className="text-primary fs-6">Model G20 India</span>{" "}
-                &copy; {copydate}{" "}
-                All Rights Reserved | <i className="bi bi-cloud-fill"></i>{" "}
-                Govardhan Learning Cloud
+                &copy; {copydate} All Rights Reserved |{" "}
+                <i className="bi bi-cloud-fill"></i> Govardhan Learning Cloud
               </p>
             </div>
             {/* <div className="col-md-6 text-center text-md-right">

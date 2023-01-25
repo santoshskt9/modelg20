@@ -13,7 +13,7 @@ const BreadCrumb = () => {
         boxShadow: "inset 0 0 0 2000px rgba(8, 8, 8, 0.618)",
       }}
     >
-      <div className="container pt-2 pt-sm-3 pt-md-4 pt-lg-5">
+      <div className="container">
         <div className="row">
           <div className="col-lg-8">
             <h2 className="text-white mb-3 text-initial">ADMIN PANEL</h2>

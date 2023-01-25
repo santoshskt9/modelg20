@@ -35,6 +35,11 @@ const AllCourses = () => {
 
   return (
     <React.Fragment>
+      <div className='p-5 bg-primary'>
+        <div className="d-flex align-items-center justify-content-center">
+          <h3 className='text-white font-ubd text-initial'>Our Courses</h3>
+        </div>
+      </div>
       <div className="container py-5">
         {
           allcourses?.map((course,i) => {

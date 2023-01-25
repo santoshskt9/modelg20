@@ -22,7 +22,10 @@ const Navbar = () => {
         }`}
       >
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
+          <NavLink
+            className="navbar-brand"
+            to={token ? "/dashboard" : "/"}
+          >
             <img
               className="img-responsive height-60 pe-2  border-3"
               src={process.env.REACT_APP_MAIN_URL + "images/logo-yuva.png"}
@@ -40,18 +43,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             {token ? (
               <>
-                <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around">
-                  <li className="nav-item">
-                    <NavLink className="nav-link text-dark" to="/dashboard">
-                      Dashboard
-                    </NavLink>
-                  </li>
-                  <li className="nav-item">
-                    <NavLink className="nav-link text-dark" to="/courses">
-                      Courses
-                    </NavLink>
-                  </li>
-                </ul>
+                <ul className="navbar-nav ms-auto mb-2 mb-lg-0 justify-content-around"></ul>
                 <div class="dropdown">
                   <button
                     class="btn bg-white border-0  p-0"
@@ -71,9 +63,16 @@ const Navbar = () => {
                   <ul class="dropdown-menu p-2 py-3">
                     <li className="mt-2">
                       <Link class="dropdown-item" to="/dashboard">
-                        My Profile
+                        Dashboard
                       </Link>
                     </li>
+                    {userData.type == 0 && (
+                      <li className="mt-2">
+                        <Link class="dropdown-item" to="/courses">
+                          Courses
+                        </Link>
+                      </li>
+                    )}
                     <li className="mt-2">
                       <Link class="dropdown-item" to="/dashboard/editprofile">
                         Edit Profile
@@ -233,9 +232,15 @@ const Navbar = () => {
                 </ul>
                 <NavLink
                   to={"/youth-community"}
-                  className="btn btn-primary hover-ripple d-flex align-items-center ms-3 text-initial"
+                  className="btn btn-primary hover-ripple d-flex align-items-center ms-3 text-initial py-2"
                 >
                   Yuvamanthan
+                </NavLink>
+                <NavLink
+                  to={"/login"}
+                  className="btn btn-primary-outline hover-ripple d-flex align-items-center ms-3 text-initial py-2"
+                >
+                  Login
                 </NavLink>
               </>
             )}
