@@ -1,0 +1,50 @@
+export const tableData = [
+    {
+        "id": 47,
+        "title": "Mr.",
+        "first_name": "Nadine",
+        "middle_name": "Bethany Levy",
+        "last_name": "Winters",
+        "institution_name": "Gabriel Holman",
+        "institution_address": "Ab dolores corrupti",
+        "state": "Vero atque id modi ",
+        "pincode": 110044,
+        "email": "sekete9080@moneyzon.com",
+        "contact": 9310259192,
+        "created_on": "2023-01-20T06:41:12.000Z",
+        "status": "active",
+        "password": "77BV5J9zc6WkpeDpwzFV1ilQW"
+    },
+    {
+        "id": 48,
+        "title": "Ms.",
+        "first_name": "Sakira",
+        "middle_name": "Bethany Levy",
+        "last_name": "Winters",
+        "institution_name": "Gabriel Holman",
+        "institution_address": "Ab dolores corrupti",
+        "state": "Vero atque id modi ",
+        "pincode": 110044,
+        "email": "sekete9080@moneyzon.com",
+        "contact": 9310259192,
+        "created_on": "2023-01-20T06:41:12.000Z",
+        "status": "active",
+        "password": "77BV5J9zc6WkpeDpwzFV1ilQW"
+    },
+    {
+        "id": 79,
+        "title": "Mr.",
+        "first_name": "Jhon",
+        "middle_name": "Bethany Levy",
+        "last_name": "Winters",
+        "institution_name": "Gabriel Holman",
+        "institution_address": "Ab dolores corrupti",
+        "state": "Vero atque id modi ",
+        "pincode": 110044,
+        "email": "sekete9080@moneyzon.com",
+        "contact": 9310259192,
+        "created_on": "2023-01-20T06:41:12.000Z",
+        "status": "active",
+        "password": "77BV5J9zc6WkpeDpwzFV1ilQW"
+    }
+];
