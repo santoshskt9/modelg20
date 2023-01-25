@@ -218,7 +218,6 @@ const InstituteEditProfile = () => {
           toast.success(res.data.message);
         }
         console.log("Basic Update", res);
-        // console.log("Basic Update", values);
       } catch (error) {
         if (error) {
           toast.dismiss();
